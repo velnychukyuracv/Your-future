@@ -1,0 +1,159 @@
+footer {
+  background-color: #5d3f49;
+  padding: 70px 30px 55px;
+}
+footer h3 {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+footer hr {
+  width: 15%;
+  height: 8px;
+  background-color: #fd537c;
+  border: none;
+  margin: 15px 0 50px;
+}
+footer .topFooter {
+  padding-bottom: 25px;
+  border-bottom: 2px solid #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .topFooter h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+footer .topFooter .leftTopFooter {
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: 15px;
+  width: 50%;
+  text-align: right;
+}
+footer .topFooter .rightTopFooter {
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 15px;
+  width: 50%;
+}
+footer .bottomFooter {
+  padding-top: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .bottomFooter .leftBottomFooter {
+  width: 45%;
+}
+footer .bottomFooter .leftBottomFooter h5 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #c3bbbd;
+}
+footer .bottomFooter .middleBottomFooter {
+  width: 10%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .bottomFooter .middleBottomFooter .fa-arrow-circle-o-up {
+  color: #c3bbbd;
+}
+footer .bottomFooter .middleBottomFooter .fa-arrow-circle-o-up:hover {
+  color: #fff;
+}
+footer .bottomFooter .rightBottomFooter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 45%;
+}
+footer .bottomFooter .rightBottomFooter a {
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 2px solid #c3bbbd;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+footer .bottomFooter .rightBottomFooter a .fa-facebook,
+footer .bottomFooter .rightBottomFooter a .fa-instagram,
+footer .bottomFooter .rightBottomFooter a .fa-youtube-play {
+  color: #c3bbbd;
+}
+footer .bottomFooter .rightBottomFooter .instagram {
+  margin: 0 55px;
+}
+footer .bottomFooter .rightBottomFooter .facebook:hover {
+  border-color: #3B5998;
+}
+footer .bottomFooter .rightBottomFooter .facebook:hover .fa-facebook {
+  color: #3B5998;
+}
+footer .bottomFooter .rightBottomFooter .instagram:hover {
+  border-color: #FE902E;
+}
+footer .bottomFooter .rightBottomFooter .instagram:hover .fa-instagram {
+  color: #FE902E;
+}
+footer .bottomFooter .rightBottomFooter .youtube:hover {
+  border-color: #FF0000;
+}
+footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
+  color: #FF0000;
+}

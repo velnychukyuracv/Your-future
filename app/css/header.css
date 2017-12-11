@@ -1,0 +1,170 @@
+/*header start*/
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#65dec4), to(#48b097));
+  background: -webkit-linear-gradient(top, #65dec4 0%, #48b097 100%);
+  background: -o-linear-gradient(top, #65dec4 0%, #48b097 100%);
+  background: linear-gradient(top, #65dec4 0%, #48b097 100%);
+  border-bottom: #5d3f49 2px solid;
+  position: fixed;
+  width: 100%;
+  z-index: 40;
+  /*logo and help section start*/
+  /*logo and help section end*/
+  /*navigation start*/
+  /*navigation end*/
+}
+header .topHeader {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  margin-bottom: 18px;
+  /*logo section start*/
+  /*logo section end*/
+  /*help button section start*/
+  /*help button section end*/
+}
+header .topHeader .leftHeader {
+  width: 60%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 130px;
+}
+header .topHeader .leftHeader h2 {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 18px 0 0 14px;
+}
+header .topHeader .rightHeader {
+  width: 40%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 30px;
+}
+header .topHeader .rightHeader .help {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff7f9c;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  width: 170px;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 23px 35px 0 0;
+  -webkit-animation: pulsate 1.2s linear infinite;
+          animation: pulsate 1.2s linear infinite;
+}
+header .topHeader .rightHeader .help:hover {
+  background-color: #fb5a87;
+}
+@-webkit-keyframes pulsate {
+  50% {
+    color: #fff;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
+  }
+}
+@keyframes pulsate {
+  50% {
+    color: #fff;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
+  }
+}
+header .topHeader .rightHeader h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 23px;
+  text-align: right;
+}
+header .topHeader .rightHeader h2 span {
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+header nav {
+  width: 70%;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  background: -webkit-gradient(linear, left top, right top, from(#825c60), to(#493136));
+  background: -webkit-linear-gradient(left, #825c60 0%, #493136 100%);
+  background: -o-linear-gradient(left, #825c60 0%, #493136 100%);
+  background: linear-gradient(left, #825c60 0%, #493136 100%);
+  margin: -1.5% 15% 0;
+  position: absolute;
+}
+header nav .b-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin: 0 20px;
+}
+header nav .b-nav li {
+  list-style-type: none;
+  margin: 13px 0 ;
+}
+header nav .b-nav li .b-link {
+  padding: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+header nav .b-nav li .b-link:hover {
+  color: #61d1b7;
+}
+header nav .b-nav li .b-nav {
+  position: absolute;
+  -webkit-border-radius: 0 0 15px 15px;
+          border-radius: 0 0 15px 15px;
+  top: 45px;
+  padding-left: 20px;
+  margin: 0;
+  background-color: #5d3f49;
+  opacity: 0.8;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+}
+header nav .b-nav li .b-nav li {
+  width: 180px;
+  display: list-item;
+  position: relative;
+}
+header nav .b-nav li:hover > .b-nav {
+  display: inherit;
+}
+header nav .b-nav li:hover:hover > .b-link {
+  color: #61d1b7;
+}
+/*header section end*/

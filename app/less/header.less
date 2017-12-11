@@ -1,0 +1,142 @@
+@font_Raleway: Raleway, sans-serif;
+@font_size_title: 30px;
+@color_text_header_nav: #fff;
+@color_bg_dark: #5d3f49;
+@color_button_normal: #ff7f9c;
+@color_button_hover: #fb5a87;
+@color_title_line: #fd537c ;
+@color_bg:#ececec;
+@color_active:#61d1b7;
+@color_footer:#c3bbbd;
+
+
+
+/*header start*/
+header {
+  background: linear-gradient(top, #65dec4 0%, #48b097 100%);
+  border-bottom: @color_bg_dark 2px solid;
+  position: fixed;
+  width: 100%;
+  z-index: 40;
+
+  /*logo and help section start*/
+  .topHeader{
+    display: flex;
+    padding-top:10px;
+    margin-bottom: 18px;
+
+    /*logo section start*/
+    .leftHeader{
+      width: 60%;
+      display: flex;
+      margin-left: 130px;
+      h2{
+        text-transform: capitalize;
+        color: @color_text_header_nav;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 18px 0 0 14px;
+      }
+    }
+    /*logo section end*/
+
+    /*help button section start*/
+    .rightHeader{
+      width: 40%;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 30px;
+      .help{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: @color_text_header_nav;
+        background-color:@color_button_normal;
+        border-radius: 25px;
+        width: 170px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 23px 35px 0 0;
+        animation: pulsate 1.2s linear infinite;
+      }
+      .help:hover{
+        background-color: @color_button_hover;
+      }
+      @keyframes pulsate {
+        50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+      }
+      h2{
+        color: @color_text_header_nav;
+        font-size: 18px;
+        font-weight: 600;
+        padding-top: 23px;
+        text-align: right;
+        span{
+          font-family: Roboto, sans-serif;
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+    }
+    /*help button section end*/
+  }
+  /*logo and help section end*/
+
+  /*navigation start*/
+  nav {
+    width: 70%;
+    border-radius: 25px;
+    background: linear-gradient(left, #825c60 0%, #493136 100%);
+    margin: -1.5% 15% 0;
+    position: absolute;
+    .b-nav {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 20px;
+      li {
+        list-style-type: none;
+        margin: 13px 0 ;
+        .b-link {
+          padding: 5px;
+          color: @color_text_header_nav;
+          text-decoration: none;
+          &:hover {
+            color: @color_active;
+          }
+        }
+        .b-nav {
+          position: absolute;
+          border-radius: 0 0 15px 15px;
+          top: 45px;
+          padding-left: 20px;
+          margin: 0;
+          background-color:@color_bg_dark ;
+          opacity: 0.8;
+          display: none;
+          flex-direction: column;
+          list-style-type: none;
+          li {
+            width: 180px;
+            display: list-item;
+            position: relative;
+          }
+        }
+        &:hover {
+          >.b-nav {
+            display: inherit;
+          }
+          &:hover{
+            >.b-link{
+              color: @color_active;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*navigation end*/
+}
+/*header section end*/
