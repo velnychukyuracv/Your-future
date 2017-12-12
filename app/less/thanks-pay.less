@@ -19,18 +19,26 @@ body{
 @import "header";
 
 header .navigationPage .namePage h3:before{
-  content: 'Про нас';
+  content: 'дякуємо';
 }
 
 main{
-  background-image: url("../img/bg_thanks.jpg");
-  padding: 200px 60px 50px 60px;
-  p{
-    span{
-      font-size: 18px;
-      font-weight: 600;
-    }
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .bg_thanks{
+    width: 100%;
+    height: 100%;
   }
+  h1{
+    font-size: 100px;
+    color: #5d3f49;
+    position: absolute;
+  }
+
 }
 
 @import "footer";

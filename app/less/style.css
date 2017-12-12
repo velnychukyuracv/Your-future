@@ -97,14 +97,13 @@ header nav {
 header nav .b-nav {
   display: flex;
   justify-content: space-around;
-  margin: 0 20px;
+  margin: 13px 20px;
 }
 header nav .b-nav li {
   list-style-type: none;
-  margin: 13px 0 ;
 }
 header nav .b-nav li .b-link {
-  padding: 5px;
+  padding: 25px 5px;
   color: #fff;
   text-decoration: none;
 }
@@ -127,6 +126,8 @@ header nav .b-nav li .b-nav li {
   width: 180px;
   display: list-item;
   position: relative;
+  padding: 5px 0;
+  margin: 5px 5px;
 }
 header nav .b-nav li:hover > .b-nav {
   display: inherit;
@@ -752,29 +753,29 @@ article .sl .slick-dots li.slick-active button:before {
   font-weight: 700;
   padding: 20px 0 28px;
 }
-.map form .input {
+.map form .input_form {
   display: flex;
   flex-direction: column;
   padding: 0px 30px;
 }
-.map form .input input {
+.map form .input_form input {
   margin: 10px 0;
   border-radius: 10px;
   background-color: #eeeeee;
   border: none;
   padding: 11px 12px;
 }
-.map form .input input[placeholder] {
+.map form .input_form input[placeholder] {
   font-size: 20px;
 }
-.map form .input textarea {
+.map form .input_form textarea {
   margin: 10px 0;
   border-radius: 10px;
   background-color: #eeeeee;
   border: none;
   padding: 12px 12px 65px 12px ;
 }
-.map form .input textarea[placeholder] {
+.map form .input_form textarea[placeholder] {
   font-size: 20px;
 }
 .map form .button {

@@ -1,13 +1,13 @@
 var gulp         = require('gulp'), // Подключаем Gulp
-    less         = require('gulp-less'), //Подключаем Less пакет
+    less         = require('gulp-less'), //Подключаем Less пакет,
     browserSync  = require('browser-sync'), // Подключаем Browser Sync
+    cssnano      = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
     rename       = require('gulp-rename'), // Подключаем библиотеку для переименования файлов
     del          = require('del'), // Подключаем библиотеку для удаления файлов и папок
     imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
     pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
     autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
     htmlmin      = require('gulp-html-minifier');// Подключаем пакет для минификации HTML
-    cssnano      = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
     uglify       = require('gulp-uglifyjs'); // Подключаем пакет для минификации JS
 
 
@@ -34,7 +34,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 
 //  таск для минификации CSS
 gulp.task('css-libs', ['less'], function() {
-    return gulp.src('app/css/*.css') // Выбираем файл для минификации
+    return gulp.src('app/css/style.css') // Выбираем файл для минификации
         .pipe(cssnano()) // Сжимаем
         .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
         .pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
@@ -50,7 +50,7 @@ gulp.task('minify', function() {
 
 // Наблюдение
 gulp.task('watch', ['browser-sync'], function() {
-    gulp.watch('app/less/*.less',['less']); // Наблюдение за sass файлами в папке less
+    gulp.watch('app/less/*.less', ['less']); // Наблюдение за sass файлами в папке less
     gulp.watch('app/js/*.js', browserSync.reload); // Наблюдение за js файлами в папке js
     gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
 });
@@ -86,7 +86,7 @@ gulp.task('clean', function() {
 gulp.task('build', ['clean', 'img', 'css-libs','scripts','minify'], function() {
 
     var buildCss = gulp.src(['app/css/*.min.css']) // Переносим библиотеки css в продакшен
-        .pipe(rename('*.css'))
+        .pipe(rename('style.css'))
         .pipe(gulp.dest('dist/css'))
 
     var buildJs = gulp.src(['app/js/*.min.js']) // Переносим скрипты в продакшен
@@ -94,7 +94,7 @@ gulp.task('build', ['clean', 'img', 'css-libs','scripts','minify'], function() {
         .pipe(gulp.dest('dist/js'))
 
     var buildHtml = gulp.src(['app/*.min.html'])// Переносим библиотеки html в продакшен
-        .pipe(rename('*.html'))
+        .pipe(rename('index.html'))
         .pipe(gulp.dest('dist'));
 
 });

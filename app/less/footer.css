@@ -1,6 +1,14 @@
+/*start footer style*/
 footer {
   background-color: #5d3f49;
   padding: 70px 30px 55px;
+  /*title*/
+  /*Requisites section start*/
+  /*Requisites section end*/
+  /*Contacts section start*/
+  /*Contacts section end*/
+  /*Copyright section start*/
+  /*Copyright section end*/
 }
 footer h3 {
   font-size: 30px;
@@ -17,8 +25,11 @@ footer hr {
 }
 footer .topFooter {
   padding-bottom: 25px;
-  border-bottom: 2px solid #fff;
   display: flex;
+  /*Requisites in Russian section start*/
+  /*Requisites in Russian section end*/
+  /*Requisites in English section start*/
+  /*Requisites in English section end*/
 }
 footer .topFooter h4 {
   font-size: 18px;
@@ -41,9 +52,49 @@ footer .topFooter .rightTopFooter {
   padding-left: 15px;
   width: 50%;
 }
+footer .middleFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 30px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+footer .middleFooter h5 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  color: #fff;
+}
+footer .middleFooter .address {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  padding: 19px 0 23px 24px;
+}
+footer .middleFooter .phone {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 19px 0 23px 0;
+}
+footer .middleFooter .mail {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 19px 0 23px 0;
+}
 footer .bottomFooter {
   padding-top: 60px;
   display: flex;
+  /*Copyright section start*/
+  /*Copyright section end*/
+  /*Button to back start*/
+  /*Button to back end*/
+  /*Social section start*/
+  /*Social section end*/
 }
 footer .bottomFooter .leftBottomFooter {
   width: 45%;
@@ -106,3 +157,4 @@ footer .bottomFooter .rightBottomFooter .youtube:hover {
 footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
   color: #FF0000;
 }
+/*end footer style*/

@@ -7,8 +7,8 @@ header {
   z-index: 40;
   /*logo and help section start*/
   /*logo and help section end*/
-  /*navigation start*/
-  /*navigation end*/
+  /*navigation section start*/
+  /*navigation section end*/
 }
 header .topHeader {
   display: flex;
@@ -74,31 +74,41 @@ header .topHeader .rightHeader h2 span {
   font-size: 20px;
   font-weight: 700;
 }
-header nav {
-  width: 70%;
-  border-radius: 25px;
-  background: linear-gradient(left, #825c60 0%, #493136 100%);
+header .navigationPage {
   margin: -1.5% 15% 0;
   position: absolute;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*navigation start*/
+  /*navigation end*/
+  /*name page start*/
+  /*name page end*/
 }
-header nav .b-nav {
+header .navigationPage nav {
+  width: 100%;
+  border-radius: 25px;
+  background: linear-gradient(left, #825c60 0%, #493136 100%);
+  padding: 13px 20px;
+}
+header .navigationPage nav .b-nav {
   display: flex;
   justify-content: space-around;
-  margin: 0 20px;
 }
-header nav .b-nav li {
+header .navigationPage nav .b-nav li {
   list-style-type: none;
-  margin: 13px 0 ;
 }
-header nav .b-nav li .b-link {
-  padding: 5px;
+header .navigationPage nav .b-nav li .b-link {
+  padding: 25px 5px;
   color: #fff;
   text-decoration: none;
 }
-header nav .b-nav li .b-link:hover {
+header .navigationPage nav .b-nav li .b-link:hover {
   color: #61d1b7;
 }
-header nav .b-nav li .b-nav {
+header .navigationPage nav .b-nav li .b-nav {
   position: absolute;
   border-radius: 0 0 15px 15px;
   top: 45px;
@@ -110,15 +120,33 @@ header nav .b-nav li .b-nav {
   flex-direction: column;
   list-style-type: none;
 }
-header nav .b-nav li .b-nav li {
+header .navigationPage nav .b-nav li .b-nav li {
   width: 180px;
   display: list-item;
   position: relative;
+  padding: 5px 0;
+  margin: 5px 5px;
 }
-header nav .b-nav li:hover > .b-nav {
+header .navigationPage nav .b-nav li:hover > .b-nav {
   display: inherit;
 }
-header nav .b-nav li:hover:hover > .b-link {
+header .navigationPage nav .b-nav li:hover:hover > .b-link {
   color: #61d1b7;
+}
+header .navigationPage .namePage {
+  background: linear-gradient(top, #65dec4 0%, #48b097 100%);
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 0;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+header .navigationPage .namePage h3 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
 }
 /*header section end*/

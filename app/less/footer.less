@@ -2,16 +2,14 @@
 @font_size_title: 30px;
 @color_text_header_nav: #fff;
 @color_bg_dark: #5d3f49;
-@color_button_normal: #ff7f9c;
-@color_button_hover: #fb5a87;
 @color_title_line: #fd537c ;
-@color_bg:#ececec;
-@color_active:#61d1b7;
 @color_footer:#c3bbbd;
 
+/*start footer style*/
 footer{
   background-color: @color_bg_dark;
   padding: 70px 30px 55px;
+  /*title*/
   h3{
     font-size: @font_size_title;
     font-weight: 600;
@@ -25,15 +23,15 @@ footer{
     border: none;
     margin: 15px 0 50px;
   }
+  /*Requisites section start*/
   .topFooter{
     padding-bottom: 25px;
-    border-bottom: 2px solid @color_text_header_nav;
     display: flex;
-
     h4{
       font-size: 18px;
       font-weight: 500;
     }
+    /*Requisites in Russian section start*/
     .leftTopFooter{
       color: @color_text_header_nav;
       display: flex;
@@ -43,6 +41,9 @@ footer{
       width: 50%;
       text-align: right;
     }
+    /*Requisites in Russian section end*/
+
+    /*Requisites in English section start*/
     .rightTopFooter{
       color: @color_text_header_nav;
       display: flex;
@@ -51,12 +52,52 @@ footer{
       padding-left: 15px;
       width: 50%;
     }
-
-
+    /*Requisites in English section end*/
   }
+  /*Requisites section end*/
+
+  /*Contacts section start*/
+  .middleFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 30px;
+    border-top: 2px solid @color_text_header_nav;
+    border-bottom: 2px solid @color_text_header_nav;
+    h5{
+      font-size: 18px;
+      font-weight: 500;
+      margin-left: 25px;
+      color: @color_text_header_nav;
+    }
+    .address{
+      width: 33%;
+      display: flex;
+      align-items: center;
+      padding: 19px 0 23px 24px;
+    }
+    .phone{
+      width: 33%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 19px 0 23px 0;
+    }
+    .mail{
+      width: 33%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 19px 0 23px 0;
+    }
+  }
+  /*Contacts section end*/
+
+  /*Copyright section start*/
   .bottomFooter{
     padding-top: 60px;
     display: flex;
+    /*Copyright section start*/
     .leftBottomFooter{
       width: 45%;
       h5{
@@ -64,8 +105,10 @@ footer{
         font-weight: 500;
         color: @color_footer;
       }
-
     }
+    /*Copyright section end*/
+
+    /*Button to back start*/
     .middleBottomFooter{
       width: 10%;
       display: flex;
@@ -78,6 +121,9 @@ footer{
         color: @color_text_header_nav;
       }
     }
+    /*Button to back end*/
+
+    /*Social section start*/
     .rightBottomFooter{
       display: flex;
       justify-content: flex-end;
@@ -117,6 +163,8 @@ footer{
         }
       }
     }
+    /*Social section end*/
   }
+  /*Copyright section end*/
 }
-
+/*end footer style*/
