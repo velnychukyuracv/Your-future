@@ -7,9 +7,7 @@ body {
   min-width: 320px;
   margin: 0 auto;
   font-family: Raleway, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #494949;
+  font-weight: 500;
 }
 /*header start*/
 header {
@@ -119,7 +117,7 @@ header .navigationPage nav .b-nav li .b-link {
   text-decoration: none;
 }
 header .navigationPage nav .b-nav li .b-link:hover {
-  color: #61d1b7;
+  color: #5bddbb;
 }
 header .navigationPage nav .b-nav li .b-nav {
   position: absolute;
@@ -140,11 +138,14 @@ header .navigationPage nav .b-nav li .b-nav li {
   padding: 5px 0;
   margin: 5px 5px;
 }
+header .navigationPage nav .b-nav li .b-nav li a {
+  padding: 5px 5px ;
+}
 header .navigationPage nav .b-nav li:hover > .b-nav {
   display: inherit;
 }
 header .navigationPage nav .b-nav li:hover:hover > .b-link {
-  color: #61d1b7;
+  color: #5bddbb;
 }
 header .navigationPage .namePage {
   background: linear-gradient(top, #65dec4 0%, #48b097 100%);
@@ -164,7 +165,7 @@ header .navigationPage .namePage h3 {
 }
 /*header section end*/
 header .navigationPage .namePage h3:before {
-  content: 'дякуємо';
+  content: '';
 }
 main {
   width: 100%;

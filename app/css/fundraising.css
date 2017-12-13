@@ -241,7 +241,7 @@ header .navigationPage .namePage h3 {
 }
 /*header section end*/
 header .navigationPage .namePage h3:before {
-  content: 'Про нас';
+  content: 'Спеціаліст з фандрайзингу';
 }
 main {
   background: -webkit-gradient(linear, left top, left bottom, from(#ddfcf6), to(#E6FDF7));
@@ -250,9 +250,8 @@ main {
   background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
   padding: 200px 60px 50px 60px;
 }
-main p span {
-  font-size: 18px;
-  font-weight: 600;
+main h3 {
+  text-align: center;
 }
 /*start footer style*/
 footer {

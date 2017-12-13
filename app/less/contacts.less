@@ -21,22 +21,42 @@ body{
   font-family: @font_Raleway;
   font-size: 16px;
   font-weight: 400;
-  color: #494949;
+  color: #2a2a2a;
 }
 
 @import "header";
 
 header .navigationPage .namePage h3:before{
-  content: 'Про нас';
+  content: 'Контакти';
 }
 
 main{
   background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
   padding: 200px 60px 50px 60px;
-  p{
+  a{
+    text-decoration: none;
+    color: #180c0d;
+    font-weight: 500;
+  }
+  h4{
+    font-size: 18px;
+    font-weight: 600;
     span{
-      font-size: 18px;
-      font-weight: 600;
+      font-weight: 400;
+      margin-left: 10px;
+    }
+  }
+  p{
+    font-size: 17px;
+    font-weight: 400;
+  }
+  h5{
+    font-size: 17px;
+    font-weight: 500;
+    span{
+      font-weight: 400;
+      margin-left: 10px;
+      color: #180c0d;
     }
   }
 }

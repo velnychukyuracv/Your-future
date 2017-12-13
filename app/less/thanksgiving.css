@@ -167,15 +167,64 @@ header .navigationPage .namePage h3 {
 }
 /*header section end*/
 header .navigationPage .namePage h3:before {
-  content: 'Про нас';
+  content: 'Подяки';
 }
 main {
   background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
   padding: 200px 60px 50px 60px;
 }
-main p span {
-  font-size: 18px;
-  font-weight: 600;
+main .sl {
+  display: flex;
+  width: 90% ;
+  margin-left: 5%;
+  margin-right: 5%;
+  /*Arrows*/
+  /*dots*/
+}
+main .sl .sl_slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .sl .slick-prev {
+  height: 100px;
+  width: 100px;
+  opacity: 0.25;
+  left: -8%;
+}
+main .sl .slick-prev:hover {
+  opacity: 1;
+}
+main .sl .slick-prev:before {
+  content: url("../img/arrow-prev.png");
+}
+main .sl .slick-next {
+  height: 100px;
+  width: 100px;
+  opacity: 0.25;
+  right: -8%;
+}
+main .sl .slick-next:hover {
+  opacity: 1;
+}
+main .sl .slick-next:before {
+  content: url("../img/arrow-next.png");
+}
+main .sl .slick-dotted .slick-slider {
+  margin-bottom: 20px;
+}
+main .sl .slick-dots li button:before {
+  content: '';
+  background-color: #ececec;
+  border-radius: 50%;
+  border: 1px solid #5d3f49;
+  width: 10px;
+  height: 10px;
+  opacity: 0.5;
+}
+main .sl .slick-dots li.slick-active button:before {
+  background-color: #5d3f49;
+  opacity: 0.7;
 }
 /*start footer style*/
 footer {

@@ -1,6 +1,13 @@
 @font_Raleway: Raleway, sans-serif;
-
-
+@font_size_title: 30px;
+@color_text_header_nav: #fff;
+@color_bg_dark: #5d3f49;
+@color_button_normal: #ff7f9c;
+@color_button_hover: #fb5a87;
+@color_title_line: #fd537c ;
+@color_bg:#ececec;
+@color_active:#61d1b7;
+@color_footer:#c3bbbd;
 * {
   margin: 0;
   padding: 0;
@@ -11,15 +18,13 @@ body{
   min-width: 320px;
   margin: 0 auto;
   font-family: @font_Raleway;
-  font-size: 16px;
-  font-weight: 400;
-  color: #494949;
+  font-weight: 500;
 }
 
 @import "header";
 
 header .navigationPage .namePage h3:before{
-  content: 'дякуємо';
+  content: '';
 }
 
 main{
@@ -38,7 +43,6 @@ main{
     color: #5d3f49;
     position: absolute;
   }
-
 }
 
 @import "footer";

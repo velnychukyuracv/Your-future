@@ -129,6 +129,9 @@ header nav .b-nav li .b-nav li {
   padding: 5px 0;
   margin: 5px 5px;
 }
+header nav .b-nav li .b-nav li a {
+  padding: 5px 5px ;
+}
 header nav .b-nav li:hover > .b-nav {
   display: inherit;
 }
@@ -281,7 +284,7 @@ header nav .b-nav li:hover:hover > .b-link {
 }
 .team .teamCooperator {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .team .teamCooperator .cooperator {

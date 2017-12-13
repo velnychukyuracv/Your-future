@@ -241,18 +241,104 @@ header .navigationPage .namePage h3 {
 }
 /*header section end*/
 header .navigationPage .namePage h3:before {
-  content: 'Про нас';
+  content: 'Вакансії';
 }
 main {
   background: -webkit-gradient(linear, left top, left bottom, from(#ddfcf6), to(#E6FDF7));
   background: -webkit-linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
   background: -o-linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
   background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
-  padding: 200px 60px 50px 60px;
+  padding: 230px 60px 100px 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
 }
-main p span {
-  font-size: 18px;
-  font-weight: 600;
+main .button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 5px 0 10px;
+}
+main .button .vacancies_link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#65dec4), to(#48b097));
+  background: -webkit-linear-gradient(top, #65dec4 0%, #48b097 100%);
+  background: -o-linear-gradient(top, #65dec4 0%, #48b097 100%);
+  background: linear-gradient(top, #65dec4 0%, #48b097 100%);
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  width: 200px;
+  height: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+main .button .vacancies_link .fa-arrow-right {
+  margin-left: 10px;
+}
+main .button .vacancies_link:hover {
+  background: #ececec;
+  border: 2px solid #5bddbb;
+  color: #5bddbb;
+}
+main h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 10px 0 5px;
+}
+main .vacancies {
+  width: 400px;
+  height: 350px;
+  border: 2px solid #C3C3C3;
+  background-color: #ececec;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .vacancies img {
+  width: 100%;
+  height: 70%;
 }
 /*start footer style*/
 footer {

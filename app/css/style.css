@@ -176,6 +176,9 @@ header nav .b-nav li .b-nav li {
   padding: 5px 0;
   margin: 5px 5px;
 }
+header nav .b-nav li .b-nav li a {
+  padding: 5px 5px ;
+}
 header nav .b-nav li:hover > .b-nav {
   display: inherit;
 }
@@ -366,10 +369,9 @@ header nav .b-nav li:hover:hover > .b-link {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
