@@ -177,6 +177,14 @@ main p span {
   font-size: 18px;
   font-weight: 600;
 }
+main p a {
+  text-decoration: none;
+  color: #5d3f49;
+  font-weight: 500;
+}
+main p a:hover {
+  color: #5bddbb;
+}
 /*start footer style*/
 footer {
   background-color: #5d3f49;

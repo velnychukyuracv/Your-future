@@ -175,8 +175,11 @@ main {
 }
 main a {
   text-decoration: none;
-  color: #180c0d;
   font-weight: 500;
+  color: #5d3f49;
+}
+main a:hover {
+  color: #5bddbb;
 }
 main h4 {
   font-size: 18px;
@@ -195,7 +198,7 @@ main h5 {
   font-weight: 500;
 }
 main h5 span {
-  font-weight: 400;
+  font-weight: 500;
   margin-left: 10px;
   color: #180c0d;
 }
