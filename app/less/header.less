@@ -4,15 +4,15 @@
 @color_button_hover: #fb5a87;
 @color_active: #5bddbb;
 
+@import "button_help";
 
 /*header start*/
-header {
+#header {
   background: linear-gradient(top, #65dec4 0%, #48b097 100%);
   border-bottom: @color_bg_dark 2px solid;
-  position: fixed;
-  width: 100%;
-  z-index: 40;
-
+  z-index: 100;
+  position: relative;
+  width:100%;
   /*logo and help section start*/
   .topHeader{
     display: flex;
@@ -40,28 +40,10 @@ header {
       display: flex;
       justify-content: flex-end;
       margin-right: 30px;
-      .help{
-        text-decoration: none;
-        text-transform: uppercase;
-        color: @color_text_header_nav;
-        background-color:@color_button_normal;
-        border-radius: 25px;
-        width: 170px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 18px;
-        font-weight: 700;
-        margin: 23px 35px 0 0;
-        animation: pulsate 1.2s linear infinite;
-      }
-      .help:hover{
-        background-color: @color_button_hover;
-      }
-      @keyframes pulsate {
-        50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
-      }
+
+
+
+
       h2{
         color: @color_text_header_nav;
         font-size: 18px;
@@ -111,7 +93,7 @@ header {
             position: absolute;
             border-radius: 0 0 15px 15px;
             top: 45px;
-            padding-left: 20px;
+            padding-left: 15px;
             margin: 0;
             background-color:@color_bg_dark ;
             opacity: 0.8;

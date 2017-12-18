@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "lightbox2": "^2.10.0"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",

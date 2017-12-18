@@ -13,66 +13,26 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet">
 
+    <!-- Magnific Popup core CSS file -->
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css'>
+
+
     <!--Style-->
     <link href="css/fotograf.css" rel="stylesheet">
+
+
+    <link rel="import" href="header-footer.html">
 
 </head>
 <body>
 
 
 <!--Header section start-->
-<header id="header">
-    <!--top logo-help section start-->
-    <div class="topHeader">
-        <div class="leftHeader">
-            <a  href="index.html" class="logoDesktop"><img class="img-responsive" src="img/logo.png" alt="Logo"></a>
-            <h2>благодійна організація <br> міжнародний благодійний фонд "твоє майбутнє" </h2>
-        </div>
-
-        <div class="rightHeader">
-            <a href="#" type="button" class="help">допомогти</a>
-            <h2>Зв'яжіться з нами <br> <span>+38 (067) 46-90-571</span> </h2>
-        </div>
-    </div>
-    <!--top logo-help section end-->
-
-    <!--navigation section start-->
-    <div class="navigationPage">
-        <!--navigation section-->
-        <nav>
-            <ul class="b-nav">
-                <li>
-                    <a class="b-link" href="about-us.html">Про нас </a>
-                    <ul class="b-nav">
-                        <li><a class="b-link" href="thanksgiving.html" >Подяки </a></li>
-                        <li><a class="b-link" href="vacancies.html" >Вакансії </a></li>
-                        <li><a class="b-link" href="contacts.html" >Контакти</a></li>
-                    </ul>
-                </li>
-                <li><a class="b-link" href="#">Проекти </a></li>
-                <li>
-                    <a class="b-link " href="#">Звітність</a>
-                    <ul class="b-nav">
-                        <li><a class="b-link" href="reviews.html" >Відгуки</a></li>
-                        <li><a class="b-link" href="#" >Відео </a></li>
-                        <li><a class="b-link" href="#" >Фотозвітність </a></li>
-                        <li><a class="b-link" href="quarterly-reporting.html" >Квартальна звітність</a></li>
-                        <li><a class="b-link" href="financial-statements.html" >Фінансова звітність</a></li>
-                    </ul>
-                </li>
-                <li><a class="b-link" href="documentation.html" >Документацiя</a></li>
-                <li><a class="b-link" href="cooperation.html" >Співпраця</a></li>
-                <li><a class="b-link" href="requisites.html" >Реквізити</a></li>
-                <li><a class="b-link" href="need-help.html" >Потрібна допомога?</a></li>
-            </ul>
-        </nav>
-        <!--name page section-->
-        <div class="namePage">
-            <h3> </h3>  <!--the name in h3 include from css selector - h3:before-->
-        </div>
-    </div>
-    <!--navigation section end-->
-</header>
+<script>
+    var link = document.querySelector('link[rel=import]');
+    var content = link.import.querySelector('header');
+    document.body.appendChild(content.cloneNode(true));
+</script>
 <!--Header section end-->
 
 <!--Main section start-->
@@ -102,7 +62,7 @@
     <br>
     <p>Дружній, молодий колектив.</p>
     <br>
-    <h6>Прохання надсилати Ваше резюме з фотографією на електронну пошту: <a href="#">icf.your.future@ukr.net</a> </h6>
+    <h6>Прохання надсилати Ваше резюме з фотографією на електронну пошту: <a href="mailto:icf.your.future@ukr.net">icf.your.future@ukr.net</a> </h6>
     <br>
     <h6>З повагою,</h6>
     <br>
@@ -112,86 +72,11 @@
 <!--Main section end-->
 
 <!--Footer section start-->
-<footer>
-    <!--Requisites section start-->
-    <h3>реквізити</h3>
-    <hr>
-    <div class="topFooter">
-        <!--Requisites in Russian section start-->
-        <div class="leftTopFooter">
-            <h4>Благодійна організація «МБФ «ТВОЄ МАЙБУТНЄ», м.Київ,
-                <br> р/р 26004559823
-                <br> ЄДРПОУ 41155236
-                <br> МФО банку 380805
-                <br> ПАТ «Райффайзен Банк Аваль»
-            </h4>
-        </div>
-        <!--Requisites in Russian section end-->
-
-        <!--Requisites in English section start-->
-        <div class="rightTopFooter">
-            <h4>CHARITY ORGANIZATION «INTERNATIONAL CHARITY FOUNDATION
-                <br> «YOUR FUTURE»
-                <br> 01030, KIEV, SHEVCHENKO DISTRICT,
-                <br> BOGDAN KHMELNITSKY STREET,HOUSE 23-B
-                <br> 26003568246
-            </h4>
-        </div>
-        <!--Requisites in English section end-->
-    </div>
-    <!--Requisites section end-->
-
-    <!--Contacts section start-->
-    <div class="middleFooter">
-        <div class="address">
-            <img class="img-responsive" src="img/contacts-location.png" alt="location">
-            <h5>Київ, Україна
-                <br>вул. Богдана Хмельницького 23-Б</h5>
-        </div>
-        <div class="phone">
-            <img class="img-responsive" src="img/contacts-phone-call.png" alt="phone">
-            <h5>+38 (067) 469 05 71</h5>
-        </div>
-        <div class="mail">
-            <img class="img-responsive" src="img/contacts-email.png" alt="email">
-            <h5>icf.your.future@ukr.net</h5>
-        </div>
-    </div>
-    <!--Contacts section end-->
-
-    <!--Copyright section start-->
-    <div class="bottomFooter">
-        <!--Copyright section start-->
-        <div class="leftBottomFooter">
-            <h5>
-                © 2017 - CHARITY ORGANIZATION «INTERNATIONAL
-                <br> CHARITY FOUNDATION «YOUR FUTURE»
-            </h5>
-        </div>
-        <!--Copyright section end-->
-
-        <!--Button to back start-->
-        <div class="middleBottomFooter">
-            <a href="#main"> <i class="fa fa-arrow-circle-o-up fa-3x" aria-hidden="true"></i>  </a>
-        </div>
-        <!--Button to back end-->
-
-        <!--Social section start-->
-        <div class="rightBottomFooter">
-            <a href="https://www.facebook.com/" class="facebook" target="_blank">
-                <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.instagram.com/" class="instagram" target="_blank">
-                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.youtube.com/" class="youtube" target="_blank">
-                <i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
-            </a>
-        </div>
-        <!--Social section end-->
-    </div>
-    <!--Copyright section end-->
-</footer>
+<script>
+    var link = document.querySelector('link[rel=import]');
+    var content = link.import.querySelector('footer');
+    document.body.appendChild(content.cloneNode(true));
+</script>
 <!--Footer section end-->
 
 <!--scripts-->
@@ -202,14 +87,14 @@
 <!--jquery-->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
 <!-- Magnific Popup core JS file -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
 
+
 <!--index js-->
 <script  src="js/index.js"></script>
+<script  src="js/scroll.js"></script>
+<script  src="js/effects_button_help.js"></script>
 
 </body>
 </html>

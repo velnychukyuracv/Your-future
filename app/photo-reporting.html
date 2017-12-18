@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Фотозвітність</title>
+
+    <!--Favicon logo-->
+    <link rel="shortcut icon" href="./img/logo.png" type="image/png">
+
+    <!--Font-Google-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet">
+
+    <!-- Magnific Popup core CSS file -->
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css'>
+
+    <!-- slick слайдер -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+
+    <!--Style-->
+    <link href="css/photo-reporting.css" rel="stylesheet">
+
+
+    <link rel="import" href="header-footer.html">
+
+</head>
+<body>
+
+
+<!--Header section start-->
+<script>
+    var link = document.querySelector('link[rel=import]');
+    var content = link.import.querySelector('header');
+    document.body.appendChild(content.cloneNode(true));
+</script>
+<!--Header section end-->
+
+<!--Main section start-->
+<main id="main">
+
+    <div class='link_album'>
+        <img src="img/portfolio (1).jpg" alt="image">
+        <div class="link_album_container">
+            <h2>Альбом</h2>
+            <a href="photo-reporting-album-1.html">Переглянути</a>
+        </div>
+    </div>
+
+    <div class='link_album'>
+        <img src="img/portfolio (1).jpg" alt="image">
+        <div class="link_album_container">
+            <h2>Альбом</h2>
+            <a href="#popup">Переглянути</a>
+        </div>
+    </div>
+    <!-- popups -->
+    <!-- Inside coup -->
+    <div id="popup" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class='content'>
+                <!-- Slider -->
+                <div class="sl-main">
+                    <div class="sl_slide">
+                        <img class="img-responsive thanksgiving" src="reviews/List-podyaka-vid-babusi-Stasika.jpg" alt="Відгуки">
+                    </div>
+                    <div class="sl_slide">
+                        <img class="img-responsive thanksgiving" src="reviews/List-podyaka-vid-babusi-Vitalini.jpg" alt="Відгуки">
+                    </div>
+                    <div class="sl_slide">
+                        <img class="img-responsive thanksgiving" src="reviews/List-podyaka-vid-didusya-Stasika.jpg" alt="Відгуки">
+                    </div>
+                    <div class="sl_slide">
+                        <img class="img-responsive thanksgiving" src="reviews/List-podyaka-vid-simyi-Belej.jpg" alt="Відгуки">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</main>
+<!--Main section end-->
+
+<!--Footer section start-->
+<script>
+    var link = document.querySelector('link[rel=import]');
+    var content = link.import.querySelector('footer');
+    document.body.appendChild(content.cloneNode(true));
+</script>
+<!--Footer section end-->
+
+<!--scripts-->
+
+<!--Font-Awesome-->
+<script  src="https://use.fontawesome.com/2ce0afabeb.js"></script>
+
+<!--jquery-->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<!-- Magnific Popup core JS file -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+
+
+<!-- slick слайдер -->
+<script  type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+
+
+<!--index js-->
+<script  src="js/index.js"></script>
+<script  src="js/scroll.js"></script>
+<script  src="js/effects_button_help.js"></script>
+
+</body>
+</html>

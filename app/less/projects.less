@@ -1,0 +1,136 @@
+@font_Raleway: Raleway, sans-serif;
+@font_size_title: 30px;
+@color_text_header_nav: #fff;
+@color_bg_dark: #5d3f49;
+@color_button_normal: #ff7f9c;
+@color_button_hover: #fb5a87;
+@color_title_line: #fd537c ;
+@color_bg:#ececec;
+@color_active:#61d1b7;
+@color_footer:#c3bbbd;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: @font_Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  color: #494949;
+}
+
+@import "header";
+
+#header .navigationPage .namePage h3:before{
+  content: 'Проекти';
+}
+
+main{
+  background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
+  padding: 100px 60px 50px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .project{
+    width: 80%;
+    border: 2px solid @color_bg;
+    padding: 25px 20px;
+    .project_title{
+      border-bottom: 2px solid @color_bg_dark;
+      width: 25%;
+      .letter_santa{
+        font-size: 27px;
+        font-weight: 400;
+        margin: 5px 0;
+        color: @color_bg_dark;
+        text-decoration: none;
+      }
+    }
+    h4{
+      font-size: 12px;
+      font-weight: 400;
+      margin: 15px 0 10px;
+    }
+    .description_project{
+      display: flex;
+      justify-content: space-between;
+      .picture{
+        width: 20%;
+        img{
+          width: 100%;
+        }
+      }
+
+      .about{
+        width: 50%;
+        p{
+          font-size: 17px;
+          font-weight: 400;
+          font-family: 'PT Sans', sans-serif;
+          text-align: justify;
+        }
+      }
+
+      .price{
+        width: 25%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        .help{
+          width: 100%;
+          font-size: 18px;
+          font-weight: 700;
+          animation: none;
+
+        }
+        .help:hover{
+          background-color: #fff;
+          border: 3px solid @color_button_hover;
+          color: @color_button_hover;
+        }
+        .progress {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-items: flex-end;
+
+          .need{
+             margin:30px 0 5px;
+            h4{
+              font-size: 17px;
+              font-weight: 400;
+              margin: 0;
+            }
+          }
+          .need_progress{
+            margin: 20px 0;
+            width: 100%;
+            border: 1px solid #e3e3e3;
+            height: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            span{
+              background-color: #EF87A2;
+              display: inline-block;
+              height: 100%;
+            }
+          }
+          .left_progress{
+            h5{
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "footer";

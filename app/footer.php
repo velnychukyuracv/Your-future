@@ -1,5 +1,3 @@
-<?php
-
 
 <!--Footer section start-->
 <footer>
@@ -83,6 +81,4 @@
     <!--Copyright section end-->
 </footer>
 <!--Footer section end-->;
-
-    ?>
 

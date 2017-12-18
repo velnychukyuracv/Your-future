@@ -1,0 +1,133 @@
+@font_Raleway: Raleway, sans-serif;
+@font_size_title: 30px;
+@color_text_header_nav: #fff;
+@color_bg_dark: #5d3f49;
+@color_button_normal: #ff7f9c;
+@color_button_hover: #fb5a87;
+@color_title_line: #fd537c ;
+@color_bg:#ececec;
+@color_active:#61d1b7;
+@color_footer:#c3bbbd;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: @font_Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  color: #494949;
+}
+
+@import "header";
+
+#header .navigationPage .namePage h3:before{
+  content:'Фотозвітність';
+}
+
+main {
+  background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
+  padding: 100px 60px 50px 60px;
+  display: flex;
+  justify-content: space-around;
+  .link_album {
+    position: relative;
+    border: 3px solid @color_text_header_nav;
+    margin: 5px;
+    img {
+      width: 350px;
+      height: auto;
+      padding: 5px;
+    }
+    .link_album_container{
+      position: absolute;
+      bottom: 35px;
+      z-index: 50;
+      left: 14px;
+      padding: 1% 5%;
+      h2 {
+        font: 600 20px @font_Raleway;
+        color: @color_text_header_nav;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+      }
+      a{
+        font: 600 12px @font_Raleway;
+        color: @color_text_header_nav;
+        padding: 3px 8px;
+        border: 1px solid @color_text_header_nav;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover{
+          color: @color_active;
+          border: 1px solid @color_active;
+        }
+      }
+    }
+    &:hover {
+      border: 3px solid @color_active;
+      transform: scale(1.05, 1.05);
+      transition-timing-function: ease-out;
+      transition-duration: 250ms;
+
+    }
+  }
+
+
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 200;
+    width: 90%;
+    height: 90%;
+    &:target {
+       visibility: visible;
+      opacity: 1;
+    }
+    .popup {
+      margin: 0 auto;
+      padding: 0;
+      background: #fff;
+      border-radius: 5px;
+      width: 50%;
+      position: relative;
+      .close {
+        position: absolute;
+        top: 8px;
+        right: 17px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+
+        &:hover{
+          color:@color_bg_dark ;
+        }
+      }
+      .content {
+        overflow: hidden;
+        height: auto;
+        .img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+    }
+  }
+}
+@import "footer";

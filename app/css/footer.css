@@ -29,6 +29,7 @@ footer .topFooter {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  border-bottom: 2px solid #fff;
   /*Requisites in Russian section start*/
   /*Requisites in Russian section end*/
   /*Requisites in English section start*/
@@ -89,7 +90,6 @@ footer .middleFooter {
       -ms-flex-pack: distribute;
           justify-content: space-around;
   padding: 0 30px;
-  border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
 }
 footer .middleFooter h5 {
@@ -141,6 +141,13 @@ footer .middleFooter .mail {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 19px 0 23px 0;
+}
+footer .middleFooter .mail a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  color: #fff;
 }
 footer .bottomFooter {
   padding-top: 60px;

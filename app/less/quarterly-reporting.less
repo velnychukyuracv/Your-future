@@ -26,81 +26,26 @@ body{
 
 @import "header";
 
-header .navigationPage .namePage h3:before{
+#header .navigationPage .namePage h3:before{
   content:'Квартальна звітність';
 }
 
 main{
   background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
-  padding: 200px 60px 50px 60px;
-  .sl-main {
-    display: flex;
-    width:90% ;
-    margin-left: 5%;
-    margin-right: 5%;
-    .sl_slide {
-      display: flex;
-      justify-content: center;
+  padding: 100px 60px 50px 60px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 
+  .picture{
+    width: 25%;
+    height: 25%;
+    a{
+      outline: none;
+      border: none;
       img{
-        width:90% ;
-        height: 60%;
-      }
-    }
-
-
-    /*Arrows*/
-    .slick-prev {
-      border-radius: 50%;
-      background-color: #fff;
-      height: 100px;
-      width: 100px;
-      opacity: 0.25;
-      left: -100px;
-      z-index: 10;
-      &:hover {
-        opacity: 0.7;
-      }
-      &:before{
-        content: url("../img/arrow-prev.png");
-      }
-    }
-    .slick-next {
-      border-radius: 50%;
-      background-color: #fff;
-      height: 100px;
-      width: 100px;
-      opacity: 0.25;
-      right: -100px;
-      &:hover {
-        opacity: 0.7;
-      }
-      &:before{
-        content: url("../img/arrow-next.png");
-      }
-    }
-
-    /*dots*/
-    .slick-dotted .slick-slider {
-      margin-bottom: 20px;
-    }
-    .slick-dots {
-      li {
-        button {
-          &:before {
-            content: '';
-            background-color: @color_bg;
-            border-radius: 50%;
-            border: 1px solid @color_bg_dark;
-            width: 10px;
-            height: 10px;
-            opacity: 0.5;
-          }
-        }
-        &.slick-active button:before {
-          background-color: @color_bg_dark;
-          opacity: 0.7;
-        }
+      width: 100%;
+      height: 100%;
       }
     }
   }
