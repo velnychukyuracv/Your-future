@@ -1,6 +1,4 @@
-/**
- * Created by Admin on 15.12.2017.
- */
+
 
 // Scroll Events
 $(window).scroll(function(){

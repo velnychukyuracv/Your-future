@@ -1,6 +1,4 @@
-/**
- * Created by Admin on 14.12.2017.
- */
+
 $('.count').click(function() {
     event.preventDefault();
     $('.count').removeClass('curent');

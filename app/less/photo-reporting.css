@@ -333,6 +333,7 @@ main .link_album:hover {
 }
 main .overlay {
   position: fixed;
+  margin: 0 auto;
   top: 0;
   bottom: 0;
   left: 0;
@@ -340,10 +341,9 @@ main .overlay {
   background: rgba(0, 0, 0, 0.3);
   transition: opacity 500ms;
   visibility: hidden;
-  opacity: 0;
   z-index: 200;
-  width: 90%;
-  height: 90%;
+  width: auto;
+  height: auto ;
 }
 main .overlay:target {
   visibility: visible;
@@ -351,21 +351,21 @@ main .overlay:target {
 }
 main .overlay .popup {
   margin: 0 auto;
-  padding: 0;
-  background: #fff;
+  padding: 5px;
   border-radius: 5px;
-  width: 50%;
+  width: auto;
+  height: auto;
   position: relative;
 }
 main .overlay .popup .close {
   position: absolute;
-  top: 8px;
-  right: 17px;
+  right: 40px;
   transition: all 200ms;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: #c3bbbd;
+  z-index: 3;
 }
 main .overlay .popup .close:hover {
   color: #5d3f49;
@@ -374,9 +374,68 @@ main .overlay .popup .content {
   overflow: hidden;
   height: auto;
 }
-main .overlay .popup .content .img {
-  width: 100%;
-  height: 100%;
+main .overlay .popup .content .sl-main {
+  display: flex;
+  align-items: center;
+  width: 100% ;
+  position: relative;
+  /*Arrows*/
+  /*Dots*/
+}
+main .overlay .popup .content .sl-main .sl_slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+}
+main .overlay .popup .content .sl-main .sl_slide img {
+  margin: auto 0;
+}
+main .overlay .popup .content .sl-main .slick-prev {
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.25;
+  height: 100px;
+  width: 100px;
+  left: 5px;
+  z-index: 10;
+}
+main .overlay .popup .content .sl-main .slick-prev:hover {
+  opacity: 0.7;
+}
+main .overlay .popup .content .sl-main .slick-prev:before {
+  content: url("../img/arrow-prev.png");
+}
+main .overlay .popup .content .sl-main .slick-next {
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.25;
+  height: 100px;
+  width: 100px;
+  right: 5px;
+}
+main .overlay .popup .content .sl-main .slick-next:hover {
+  opacity: 0.7;
+}
+main .overlay .popup .content .sl-main .slick-next:before {
+  content: url("../img/arrow-next.png");
+}
+main .overlay .popup .content .sl-main .slick-dots {
+  bottom: 15px;
+}
+main .overlay .popup .content .sl-main .slick-dots li button:before {
+  content: '';
+  background-color: #ececec;
+  border-radius: 50%;
+  border: 1px solid #5d3f49;
+  width: 10px;
+  height: 10px;
+  opacity: 0.5;
+}
+main .overlay .popup .content .sl-main .slick-dots li.slick-active button:before {
+  background-color: #5d3f49;
+  opacity: 0.7;
 }
 /*start footer style*/
 footer {

@@ -1,15 +1,33 @@
-
-<!--Header section start-->
 <header id="header">
     <!--top logo-help section start-->
     <div class="topHeader">
         <div class="leftHeader">
-            <a  href="index.php" class="logoDesktop"><img class="img-responsive" src="img/logo.png" alt="Logo"></a>
+            <a  href="index.html" class="logoDesktop"><img class="img-responsive" src="img/logo.png" alt="Logo"></a>
             <h2>благодійна організація <br> міжнародний благодійний фонд "твоє майбутнє" </h2>
         </div>
 
         <div class="rightHeader">
-            <a href="#" type="button" class="help">допомогти</a>
+            <div id="button_help">
+                <div id="inline-popups">
+                    <a href="#test-popup" data-effect="mfp-zoom-out" type="button" class="help">допомогти</a>
+                </div>
+                <div id="test-popup" class="container_count white-popup mfp-with-anim mfp-hide">
+                    <div class="block_count">
+                        <a href="" class=" count" data-count="200" data-left="0"><span>200 грн.</span></a>
+                        <a href="" class=" count" data-count="500" data-left="110"><span>500 грн.</span></a>
+                        <a href="" class=" count curent" data-count="1000" data-left="220"><span>1 000 грн.</span></a>
+                        <a href="" class=" count" data-count="2000" data-left="330"><span>2 000 грн.</span></a>
+                        <a href="" class=" count" data-count="5000" data-left="440"><span>5 000 грн.</span></a>
+                        <div class="active"></div>
+                    </div>
+                    <h2 class="price">1000 грн.</h2>
+                    <form action="thanks-pay.html" >
+                        <input type="number" name="count" placeholder="або інша сума" min="1">
+                        <input type="hidden" name="final_price" value="1000">
+                        <input  type="submit" value="Допомогти">
+                    </form>
+                </div>
+            </div>
             <h2>Зв'яжіться з нами <br> <span>+38 (067) 46-90-571</span> </h2>
         </div>
     </div>
@@ -21,28 +39,28 @@
         <nav>
             <ul class="b-nav">
                 <li>
-                    <a class="b-link" href="about-us.php">Про нас </a>
+                    <a class="b-link" href="about-us.html">Про нас </a>
                     <ul class="b-nav">
-                        <li><a class="b-link" href="thanksgiving.php" >Подяки </a></li>
-                        <li><a class="b-link" href="vacancies.php" >Вакансії </a></li>
-                        <li><a class="b-link" href="contacts.php" >Контакти</a></li>
+                        <li><a class="b-link" href="thanksgiving.html" >Подяки </a></li>
+                        <li><a class="b-link" href="vacancies.html" >Вакансії </a></li>
+                        <li><a class="b-link" href="contacts.html" >Контакти</a></li>
                     </ul>
                 </li>
-                <li><a class="b-link" href="#">Проекти </a></li>
+                <li><a class="b-link" href="projects.html">Проекти </a></li>
                 <li>
-                    <a class="b-link ">Звітність</a>
+                    <a class="b-link " href="#">Звітність</a>
                     <ul class="b-nav">
-                        <li><a class="b-link" href="reviews.php" >Відгуки</a></li>
-                        <li><a class="b-link" href="#" >Відео </a></li>
-                        <li><a class="b-link" href="#" >Фотозвітність </a></li>
-                        <li><a class="b-link" href="quarterly-reporting.php" >Квартальна звітність</a></li>
-                        <li><a class="b-link" href="financial-statements.php" >Фінансова звітність</a></li>
+                        <li><a class="b-link" href="reviews.html" >Відгуки</a></li>
+                        <li><a class="b-link" href="video-reporting.html" >Відео </a></li>
+                        <li><a class="b-link" href="photo-reporting.html" >Фотозвітність </a></li>
+                        <li><a class="b-link" href="quarterly-reporting.html" >Квартальна звітність</a></li>
+                        <li><a class="b-link" href="financial-statements.html" >Фінансова звітність</a></li>
                     </ul>
                 </li>
-                <li><a class="b-link" href="documentation.php" >Документацiя</a></li>
-                <li><a class="b-link" href="cooperation.php" >Співпраця</a></li>
-                <li><a class="b-link" href="requisites.php" >Реквізити</a></li>
-                <li><a class="b-link" href="need-help.php" >Потрібна допомога?</a></li>
+                <li><a class="b-link" href="documentation.html" >Документацiя</a></li>
+                <li><a class="b-link" href="cooperation.html" >Співпраця</a></li>
+                <li><a class="b-link" href="requisites.html" >Реквізити</a></li>
+                <li><a class="b-link" href="need-help.html" >Потрібна допомога?</a></li>
             </ul>
         </nav>
         <!--name page section-->
@@ -52,4 +70,3 @@
     </div>
     <!--navigation section end-->
 </header>
-<!--Header section end-->

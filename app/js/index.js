@@ -1,6 +1,6 @@
 
 //slick slider
-//slick header top slider
+//slick slider at top header index,thanksgiving,reviews and photo-reporting (pop up)
 $('.sl-main').slick({
         autoplay: true,
         autoplaySpeed:3000,
@@ -8,22 +8,22 @@ $('.sl-main').slick({
     }
 );
 
-//slick header bottom slider
+//slick slider at header bottom index
 $('.sl').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 4,
         autoplay: true,
         autoplaySpeed:3000,
-       dots:true
+        dots:true
 });
 
 
-//slick  slider in foto-reporting
+//slick  slider at photo-reporting-album
 $('.sl-reporting').slick({
         autoplay: true,
         autoplaySpeed:3000,
-         asNavFor: '.sl-reporting-2'
+        asNavFor: '.sl-reporting-2'
     }
 );
 $('.sl-reporting-2').slick({
@@ -51,7 +51,7 @@ $('.sl-reporting-video').slick({
 
 
 
-//Zoom-gallery pop up
+//Zoom-gallery pop up at index
 $(document).ready(function() {
     $('.zoom-gallery').magnificPopup({
         delegate: 'a',

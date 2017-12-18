@@ -1,4 +1,3 @@
-
 <!--Footer section start-->
 <footer>
     <!--Requisites section start-->
@@ -42,7 +41,7 @@
         </div>
         <div class="mail">
             <img class="img-responsive" src="img/contacts-email.png" alt="email">
-            <h5>icf.your.future@ukr.net</h5>
+            <a href="mailto:icf.your.future@ukr.net">icf.your.future@ukr.net</a>
         </div>
     </div>
     <!--Contacts section end-->
@@ -66,13 +65,13 @@
 
         <!--Social section start-->
         <div class="rightBottomFooter">
-            <a href="https://www.facebook.com/" class="facebook" target="_blank">
+            <a href="https://ru-ru.facebook.com/people/%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD-%D0%9F%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2/100012234516408" class="facebook" target="_blank">
                 <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
             </a>
-            <a href="https://www.instagram.com/" class="instagram" target="_blank">
+            <a href="https://www.instagram.com/icf.your.future/" class="instagram" target="_blank">
                 <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
             </a>
-            <a href="https://www.youtube.com/" class="youtube" target="_blank">
+            <a href="https://www.youtube.com/channel/UCOCoOTux5Nd8THZ0lrtUEkQ/videos" class="youtube" target="_blank">
                 <i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
             </a>
         </div>
@@ -81,4 +80,3 @@
     <!--Copyright section end-->
 </footer>
 <!--Footer section end-->;
-
