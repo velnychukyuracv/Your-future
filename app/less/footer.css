@@ -26,6 +26,7 @@ footer hr {
 footer .topFooter {
   padding-bottom: 25px;
   display: flex;
+  flex-wrap: wrap;
   border-bottom: 2px solid #fff;
   /*Requisites in Russian section start*/
   /*Requisites in Russian section end*/
@@ -55,6 +56,7 @@ footer .topFooter .rightTopFooter {
 }
 footer .middleFooter {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   padding: 0 30px;

@@ -165,6 +165,7 @@ h6 {
 }
 #header .topHeader {
   display: flex;
+  flex-direction: row;
   padding-top: 10px;
   margin-bottom: 18px;
   /*logo section start*/
@@ -281,6 +282,35 @@ h6 {
   font-weight: 600;
 }
 /*header section end*/
+/*
+
+!*style for mobile size from 320px to 767px*!
+@media  (min-width: 320px) and (max-width: 1024px) {
+  .topHeader {
+    display: flex;
+    flex-direction: column !important;
+    .leftHeader{
+      width: 100% !important;
+      display: flex;
+      margin-left: 10px!important;
+    }
+    .rightHeader{
+      width: 100% !important;
+      display: flex;
+      justify-content: center !important;
+      margin-left: 0px!important;
+      border-top: @color_bg_dark 2px solid;
+      h2{
+        white-space:nowrap!important;
+      }
+    }
+  }
+  .navigationPage{
+    display: none!important;
+  }
+
+
+}*/
 #header .navigationPage .namePage h3:before {
   content: 'Контакти';
 }
@@ -345,6 +375,7 @@ footer hr {
 footer .topFooter {
   padding-bottom: 25px;
   display: flex;
+  flex-wrap: wrap;
   border-bottom: 2px solid #fff;
   /*Requisites in Russian section start*/
   /*Requisites in Russian section end*/
@@ -374,6 +405,7 @@ footer .topFooter .rightTopFooter {
 }
 footer .middleFooter {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   padding: 0 30px;

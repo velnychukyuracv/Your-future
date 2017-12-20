@@ -4,7 +4,7 @@
 $('.sl-main').slick({
         autoplay: true,
         autoplaySpeed:3000,
-        dots:true
+        dots:true,
     }
 );
 
@@ -15,6 +15,7 @@ $('.sl').slick({
         slidesToScroll: 4,
         autoplay: true,
         autoplaySpeed:3000,
+
         dots:true
 });
 
@@ -23,7 +24,9 @@ $('.sl').slick({
 $('.sl-reporting').slick({
         autoplay: true,
         autoplaySpeed:3000,
-        asNavFor: '.sl-reporting-2'
+        asNavFor: '.sl-reporting-2',
+        centerMode: true,
+        variableWidth: true
     }
 );
 $('.sl-reporting-2').slick({
@@ -46,6 +49,7 @@ $('.sl-reporting-2').slick({
 $('.sl-reporting-video').slick({
     centerMode:true,
     dots:true,
+    centerMode: true,
     touchMove:true
     });
 
