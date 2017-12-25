@@ -3,8 +3,10 @@
 @color_button_normal: #ff7f9c;
 @color_button_hover: #fb5a87;
 @color_active: #5bddbb;
+@color_footer:#c3bbbd;
 
 @import "button_help";
+
 
 /*header start*/
 #header {
@@ -16,7 +18,6 @@
   /*logo and help section start*/
   .topHeader{
     display: flex;
-    flex-direction: row;
     padding-top:10px;
     margin-bottom: 18px;
 
@@ -32,8 +33,70 @@
         font-weight: 600;
         padding: 18px 0 0 14px;
       }
-    }
+      /*burger menu start*/
+      #b-container {
+        height: 60px;
+        left: 30px;
+        position: absolute;
+        top: 20px;
+        cursor: pointer;
+        display: none;
+        padding-left: 15.5px;
+        padding-top: 17.5px;
+        transition: all 0.4s ease;
+        user-select: none;
+        width: 60px;
+      }
+      .b-bun {
+        background: white;
+        position: relative;
+        transition: all 0.4s ease;
+      }
 
+      .b-bun--top {
+        height: 2px;
+        top: 0;
+        width: 30px;
+        background: white;
+      }
+
+      .b-bun--mid {
+        height: 2px;
+        top: 8px;
+        width: 30px;
+        background: white;
+      }
+
+      .b-bun--bottom {
+        height: 2px;
+        top: 16px;
+        width: 30px;
+        background: white;
+      }
+      #b-container.open  {
+        left:320px;
+      }
+
+      #b-container.open .b-bun--top {
+        background: @color_bg_dark;
+        top: 9px;
+        transform: rotate(45deg);
+
+      }
+      #b-container.open .b-bun--mid {
+        opacity: 0;
+      }
+      #b-container.open .b-bun--bottom {
+        background: @color_bg_dark;
+        top: 5px;
+        transform: rotate(-45deg);
+      }
+
+      header.open{
+        opacity: 0.8;
+      }
+      /*burger menu end*/
+    }
     /*logo section end*/
 
     /*help button section start*/
@@ -42,10 +105,6 @@
       display: flex;
       justify-content: flex-end;
       margin-right: 30px;
-
-
-
-
       h2{
         color: @color_text_header_nav;
         font-size: 18px;
@@ -78,6 +137,9 @@
       border-radius: 25px;
       background: linear-gradient(left, #825c60 0%, #493136 100%);
       padding: 13px 20px;
+      .help_section{
+        display: none;
+      }
       .b-nav {
         display: flex;
         justify-content: space-around;
@@ -151,32 +213,186 @@
 }
 /*header section end*/
 
-/*
+/*style for  size from 1024px to 1145px*/
+@media  (min-width: 1024px) and (max-width: 1145px) {
+  #header {
+    .topHeader{
+      /*logo section start*/
+      .leftHeader{
+        margin-left: 70px;
+        h2{
+          font-size: 18px;
+        }
+      }
+      /*logo section end*/
 
-!*style for mobile size from 320px to 767px*!
-@media  (min-width: 320px) and (max-width: 1024px) {
-  .topHeader {
-    display: flex;
-    flex-direction: column !important;
-    .leftHeader{
-      width: 100% !important;
-      display: flex;
-      margin-left: 10px!important;
+      /*help button section start*/
+      .rightHeader{
+        margin-right: 30px;
+        .help{
+          margin: 23px 20px 0 0;
+        }
+        h2{
+          font-size: 16px;
+          span{
+            font-size: 16px;
+          }
+        }
+      }
+      /*help button section end*/
     }
-    .rightHeader{
-      width: 100% !important;
-      display: flex;
-      justify-content: center !important;
-      margin-left: 0px!important;
-      border-top: @color_bg_dark 2px solid;
-      h2{
-        white-space:nowrap!important;
+    /*logo and help section end*/
+
+    /*navigation section start*/
+    .navigationPage{
+      margin: -1.8% 12.5% 0;
+      width: 75%;
+      nav {
+        .b-nav {
+          li {
+            .b-nav {
+              top: 44px;
+            }
+          }
+        }
       }
     }
+    /*navigation section end*/
   }
-  .navigationPage{
-    display: none!important;
+}
+
+/*style for tablet size from 768px to 850px*/
+@media  (min-width: 768px) and (max-width: 1023px) {
+  #header {
+    width:100%;
+    /*logo and help section start*/
+    .topHeader{
+      margin-bottom: 25px;
+      /*logo section start*/
+      .leftHeader{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: 0 6%;
+        .logoDesktop{
+            position: absolute;
+            left:85%;
+            top:15%;
+        }
+        h2{
+          padding: 20px 0 2.5% 0;
+          text-align: center;
+        }
+
+        /*burger menu start*/
+        #b-container {
+          height: 60px;
+          left: 40px;
+          position: absolute;
+          top: 20%;
+          cursor: pointer;
+          display: block;
+          padding-left: 15.5px;
+          padding-top: 17.5px;
+          transition: all 0.4s ease;
+          user-select: none;
+          width: 60px;
+        }
+        .b-bun {
+          background: white;
+          position: relative;
+          transition: all 0.4s ease;
+        }
+
+        .b-bun--top {
+          height: 2px;
+          top: 0;
+          width: 30px;
+          background: white;
+        }
+
+        .b-bun--mid {
+          height: 2px;
+          top: 8px;
+          width: 30px;
+          background: white;
+        }
+
+        .b-bun--bottom {
+          height: 2px;
+          top: 16px;
+          width: 30px;
+          background: white;
+        }
+        #b-container.open  {
+          left:320px;
+        }
+
+        #b-container.open .b-bun--top {
+          background: @color_bg_dark;
+          top: 9px;
+          transform: rotate(45deg);
+
+        }
+        #b-container.open .b-bun--mid {
+          opacity: 0;
+        }
+        #b-container.open .b-bun--bottom {
+          background: @color_bg_dark;
+          top: 5px;
+          transform: rotate(-45deg);
+        }
+
+        header.open{
+          opacity: 0.8;
+        }
+        /*burger menu end*/
+      }
+      /*logo section end*/
+
+      /*help button section start*/
+      .rightHeader{
+        display: none;
+      }
+      /*help button section end*/
+    }
+    /*logo and help section end*/
+
+    /*navigation section start*/
+    .navigationPage{
+      margin: -28px 28% 0;
+      max-width: 410px;
+      position: absolute;
+      /*navigation start*/
+      nav {
+        border-radius: 45px;
+        padding: 5px 5px;
+        .help_section{
+          display: flex;
+          justify-content: space-between;
+          .help{
+            margin: 0;
+          }
+          h2{
+            color: @color_text_header_nav;
+            font-size: 16px;
+            margin: 1% 5% 0;
+            text-align: right;
+          }
+        }
+        .b-nav {
+          display: none;
+        }
+      }
+      /*navigation end*/
+
+      /*name page start*/
+      .namePage{
+        width: 80%;
+      }
+      /*name page end*/
+    }
+    /*navigation section end*/
   }
-
-
-}*/
+}

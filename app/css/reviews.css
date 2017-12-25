@@ -191,6 +191,205 @@ h6 {
 .mfp-close-btn-in .mfp-close {
   display: none;
 }
+#navigation_out_menu {
+  min-width: 300px;
+  height: 100%;
+  position: fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6bf3d9), to(#336b54));
+  background: -webkit-linear-gradient(top, #6bf3d9 0%, #336b54 100%);
+  background: -o-linear-gradient(top, #6bf3d9 0%, #336b54 100%);
+  background: linear-gradient(top, #6bf3d9 0%, #336b54 100%);
+  z-index: 200;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  left: -350px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-transition: left ease 0.4s;
+  -o-transition: left ease 0.4s;
+  transition: left ease 0.4s;
+}
+#navigation_out_menu .header_out_menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+#navigation_out_menu .header_out_menu img {
+  width: 90%;
+  padding: 0 10px ;
+}
+#navigation_out_menu .header_out_menu h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  padding: 0 10px ;
+}
+#navigation_out_menu nav .nav_out_menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#navigation_out_menu nav .nav_out_menu li {
+  padding: 8px 10px;
+  list-style-type: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6cffe5), to(#1b5148));
+  background: -webkit-linear-gradient(top, #6cffe5 0%, #1b5148 100%);
+  background: -o-linear-gradient(top, #6cffe5 0%, #1b5148 100%);
+  background: linear-gradient(top, #6cffe5 0%, #1b5148 100%);
+  /*&:hover {
+         >.sub_nav_out_menu{
+           display: inherit;
+         }
+         &:hover{
+           >.link_out_menu{
+             color: @color_bg_dark;
+           }
+         }
+       }*/
+}
+#navigation_out_menu nav .nav_out_menu li .link_out_menu {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
+#navigation_out_menu nav .nav_out_menu li .link_out_menu:hover {
+  color: #5d3f49;
+}
+#navigation_out_menu nav .nav_out_menu li:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#6cffe5), to(#ff7f9c));
+  background: -webkit-linear-gradient(left, #6cffe5 0%, #ff7f9c 100%);
+  background: -o-linear-gradient(left, #6cffe5 0%, #ff7f9c 100%);
+  background: linear-gradient(left, #6cffe5 0%, #ff7f9c 100%);
+  color: #5d3f49;
+}
+#navigation_out_menu nav .nav_out_menu li .sub_nav_out_menu {
+  display: none;
+  margin-left: 20px;
+}
+#navigation_out_menu nav .nav_out_menu li .sub_nav_out_menu li {
+  background: none;
+}
+#navigation_out_menu .help {
+  width: 80%;
+  margin: 10% 10%;
+  -webkit-animation: none;
+          animation: none;
+}
+#navigation_out_menu .help:hover {
+  border: 2px solid #ff7f9c;
+  color: #ff7f9c;
+  background: #fff;
+}
+#navigation_out_menu .footer_out_menu {
+  margin: 0 5%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#navigation_out_menu .footer_out_menu a {
+  width: 45px;
+  height: 45px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 2px solid #c3bbbd;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+#navigation_out_menu .footer_out_menu a .fa-facebook,
+#navigation_out_menu .footer_out_menu a .fa-instagram,
+#navigation_out_menu .footer_out_menu a .fa-youtube-play {
+  color: #c3bbbd;
+}
+#navigation_out_menu .footer_out_menu .instagram {
+  margin: 0 55px;
+}
+#navigation_out_menu .footer_out_menu .facebook:hover {
+  border-color: #3B5998;
+}
+#navigation_out_menu .footer_out_menu .facebook:hover .fa-facebook {
+  color: #3B5998;
+}
+#navigation_out_menu .footer_out_menu .instagram:hover {
+  border-color: #FE902E;
+}
+#navigation_out_menu .footer_out_menu .instagram:hover .fa-instagram {
+  color: #FE902E;
+}
+#navigation_out_menu .footer_out_menu .youtube:hover {
+  border-color: #FF0000;
+}
+#navigation_out_menu .footer_out_menu .youtube:hover .fa-youtube-play {
+  color: #FF0000;
+}
+#navigation_out_menu .copyright_out_menu {
+  margin: 1% 5%;
+}
+#navigation_out_menu .copyright_out_menu h5 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+}
+#navigation_out_menu.open {
+  left: 0px;
+}
+main.open {
+  opacity: 0.3;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #navigation_out_menu .help {
+    margin: 2% 10%;
+  }
+}
 /*header start*/
 #header {
   background: -webkit-gradient(linear, left top, left bottom, from(#65dec4), to(#48b097));
@@ -211,11 +410,6 @@ h6 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
   padding-top: 10px;
   margin-bottom: 18px;
   /*logo section start*/
@@ -230,6 +424,8 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   margin-left: 130px;
+  /*burger menu start*/
+  /*burger menu end*/
 }
 #header .topHeader .leftHeader h2 {
   text-transform: capitalize;
@@ -237,6 +433,72 @@ h6 {
   font-size: 20px;
   font-weight: 600;
   padding: 18px 0 0 14px;
+}
+#header .topHeader .leftHeader #b-container {
+  height: 60px;
+  left: 30px;
+  position: absolute;
+  top: 20px;
+  cursor: pointer;
+  display: none;
+  padding-left: 15.5px;
+  padding-top: 17.5px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 60px;
+}
+#header .topHeader .leftHeader .b-bun {
+  background: white;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+#header .topHeader .leftHeader .b-bun--top {
+  height: 2px;
+  top: 0;
+  width: 30px;
+  background: white;
+}
+#header .topHeader .leftHeader .b-bun--mid {
+  height: 2px;
+  top: 8px;
+  width: 30px;
+  background: white;
+}
+#header .topHeader .leftHeader .b-bun--bottom {
+  height: 2px;
+  top: 16px;
+  width: 30px;
+  background: white;
+}
+#header .topHeader .leftHeader #b-container.open {
+  left: 320px;
+}
+#header .topHeader .leftHeader #b-container.open .b-bun--top {
+  background: #5d3f49;
+  top: 9px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+#header .topHeader .leftHeader #b-container.open .b-bun--mid {
+  opacity: 0;
+}
+#header .topHeader .leftHeader #b-container.open .b-bun--bottom {
+  background: #5d3f49;
+  top: 5px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+#header .topHeader .leftHeader header.open {
+  opacity: 0.8;
 }
 #header .topHeader .rightHeader {
   width: 40%;
@@ -297,6 +559,9 @@ h6 {
   background: -o-linear-gradient(left, #825c60 0%, #493136 100%);
   background: linear-gradient(left, #825c60 0%, #493136 100%);
   padding: 13px 20px;
+}
+#header .navigationPage nav .help_section {
+  display: none;
 }
 #header .navigationPage nav .b-nav {
   display: -webkit-box;
@@ -382,35 +647,198 @@ h6 {
   font-weight: 600;
 }
 /*header section end*/
-/*
-
-!*style for mobile size from 320px to 767px*!
-@media  (min-width: 320px) and (max-width: 1024px) {
-  .topHeader {
+/*style for  size from 1024px to 1145px*/
+@media (min-width: 1024px) and (max-width: 1145px) {
+  #header {
+    /*logo and help section end*/
+    /*navigation section start*/
+    /*navigation section end*/
+  }
+  #header .topHeader {
+    /*logo section start*/
+    /*logo section end*/
+    /*help button section start*/
+    /*help button section end*/
+  }
+  #header .topHeader .leftHeader {
+    margin-left: 70px;
+  }
+  #header .topHeader .leftHeader h2 {
+    font-size: 18px;
+  }
+  #header .topHeader .rightHeader {
+    margin-right: 30px;
+  }
+  #header .topHeader .rightHeader .help {
+    margin: 23px 20px 0 0;
+  }
+  #header .topHeader .rightHeader h2 {
+    font-size: 16px;
+  }
+  #header .topHeader .rightHeader h2 span {
+    font-size: 16px;
+  }
+  #header .navigationPage {
+    margin: -1.8% 12.5% 0;
+    width: 75%;
+  }
+  #header .navigationPage nav .b-nav li .b-nav {
+    top: 44px;
+  }
+}
+/*style for tablet size from 768px to 850px*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  #header {
+    width: 100%;
+    /*logo and help section start*/
+    /*logo and help section end*/
+    /*navigation section start*/
+    /*navigation section end*/
+  }
+  #header .topHeader {
+    margin-bottom: 25px;
+    /*logo section start*/
+    /*logo section end*/
+    /*help button section start*/
+    /*help button section end*/
+  }
+  #header .topHeader .leftHeader {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column !important;
-    .leftHeader{
-      width: 100% !important;
-      display: flex;
-      margin-left: 10px!important;
-    }
-    .rightHeader{
-      width: 100% !important;
-      display: flex;
-      justify-content: center !important;
-      margin-left: 0px!important;
-      border-top: @color_bg_dark 2px solid;
-      h2{
-        white-space:nowrap!important;
-      }
-    }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 6%;
+    /*burger menu start*/
+    /*burger menu end*/
   }
-  .navigationPage{
-    display: none!important;
+  #header .topHeader .leftHeader .logoDesktop {
+    position: absolute;
+    left: 85%;
+    top: 15%;
   }
-
-
-}*/
+  #header .topHeader .leftHeader h2 {
+    padding: 20px 0 2.5% 0;
+    text-align: center;
+  }
+  #header .topHeader .leftHeader #b-container {
+    height: 60px;
+    left: 40px;
+    position: absolute;
+    top: 20%;
+    cursor: pointer;
+    display: block;
+    padding-left: 15.5px;
+    padding-top: 17.5px;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    width: 60px;
+  }
+  #header .topHeader .leftHeader .b-bun {
+    background: white;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  #header .topHeader .leftHeader .b-bun--top {
+    height: 2px;
+    top: 0;
+    width: 30px;
+    background: white;
+  }
+  #header .topHeader .leftHeader .b-bun--mid {
+    height: 2px;
+    top: 8px;
+    width: 30px;
+    background: white;
+  }
+  #header .topHeader .leftHeader .b-bun--bottom {
+    height: 2px;
+    top: 16px;
+    width: 30px;
+    background: white;
+  }
+  #header .topHeader .leftHeader #b-container.open {
+    left: 320px;
+  }
+  #header .topHeader .leftHeader #b-container.open .b-bun--top {
+    background: #5d3f49;
+    top: 9px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #header .topHeader .leftHeader #b-container.open .b-bun--mid {
+    opacity: 0;
+  }
+  #header .topHeader .leftHeader #b-container.open .b-bun--bottom {
+    background: #5d3f49;
+    top: 5px;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  #header .topHeader .leftHeader header.open {
+    opacity: 0.8;
+  }
+  #header .topHeader .rightHeader {
+    display: none;
+  }
+  #header .navigationPage {
+    margin: -28px 28% 0;
+    max-width: 410px;
+    position: absolute;
+    /*navigation start*/
+    /*navigation end*/
+    /*name page start*/
+    /*name page end*/
+  }
+  #header .navigationPage nav {
+    -webkit-border-radius: 45px;
+            border-radius: 45px;
+    padding: 5px 5px;
+  }
+  #header .navigationPage nav .help_section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #header .navigationPage nav .help_section .help {
+    margin: 0;
+  }
+  #header .navigationPage nav .help_section h2 {
+    color: #fff;
+    font-size: 16px;
+    margin: 1% 5% 0;
+    text-align: right;
+  }
+  #header .navigationPage nav .b-nav {
+    display: none;
+  }
+  #header .navigationPage .namePage {
+    width: 80%;
+  }
+}
 #header .navigationPage .namePage h3:before {
   content: 'Відгуки';
 }
@@ -753,3 +1181,4 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
   color: #FF0000;
 }
 /*end footer style*/
+/*style for tablet size from 768px to 850px*/

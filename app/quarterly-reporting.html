@@ -26,6 +26,13 @@
 
 </head>
 <body>
+<!--Navigation out menu section start-->
+<script>
+    var link = document.querySelector('link[rel=import]');
+    var content = link.import.querySelector('#navigation_out_menu');
+    document.body.appendChild(content.cloneNode(true));
+</script>
+<!--Navigation out menu section end-->
 
 
 <!--Header section start-->

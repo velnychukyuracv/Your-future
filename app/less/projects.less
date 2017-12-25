@@ -23,7 +23,7 @@ body{
   font-weight: 400;
   color: #494949;
 }
-
+@import "navigation_out_menu";
 @import "header";
 
 #header .navigationPage .namePage h3:before{
@@ -134,3 +134,38 @@ main{
 }
 
 @import "footer";
+
+@media  (min-width: 1024px) and (max-width: 1145px) {
+  main{
+    .project{
+      width: 90%;
+      .project_title{
+        width: 30%;
+      }
+      .description_project{
+        .about{
+          p{
+            font-size: 16px;
+          }
+        }
+        .price{
+          .help{
+            margin: 0;
+          }
+          .progress {
+            .need{
+              h4{
+                font-size: 16px;
+              }
+            }
+            .left_progress{
+              h5{
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -24,10 +24,10 @@ body{
   color: #494949;
 }
 
+@import "navigation_out_menu";
 
 /*header start*/
 @import "header";
-
 #header .navigationPage .namePage{
   display: none;
 }
@@ -388,7 +388,6 @@ body{
 
   }
 }
-
 /*our way section end*/
 
 /*partners section start*/
@@ -477,7 +476,6 @@ article{
     }
   }
 }
-
 /*partners section end*/
 
 /*photo section start*/
@@ -638,7 +636,6 @@ article{
     }
   }
 }
-
 /*photo section end*/
 
 .map{
@@ -772,3 +769,49 @@ footer .middleFooter{
 }
 
 
+
+@media  (min-width: 1024px) and (max-width: 1145px) {
+  /*mission section start*/
+  .mission{
+    display: flex;
+    padding: 120px 30px;
+
+    /*mission main section start*/
+    .leftMission{
+      width: 60%;
+      P{
+        font-size: 17px;
+      }
+    }
+    /*mission main section end*/
+
+    /*mission picture section start*/
+    .rightMission{
+      width: 40%;
+      .hands{
+        height: 85%;
+        width: 95%;
+      }
+    }
+    /*mission picture section end*/
+  }
+  /*mission section end*/
+
+  /*partners section start*/
+  article{
+    .sl {
+      .sl_slide {
+        img{
+          margin: auto 0;
+          width: 80%;
+          height: 80%;
+        }
+      }
+    }
+  }
+  /*partners section end*/
+}
+
+@media  (min-width: 768px) and (max-width: 1023px) {
+
+}
