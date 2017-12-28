@@ -15,6 +15,7 @@
   z-index: 100;
   position: relative;
   width:100%;
+
   /*logo and help section start*/
   .topHeader{
     display: flex;
@@ -32,6 +33,12 @@
         font-size: 20px;
         font-weight: 600;
         padding: 18px 0 0 14px;
+        &:before{
+          content:'благодійна організація';
+        }
+        span:before{
+          content:'міжнародний благодійний фонд "твоє майбутнє"';
+        }
       }
       /*burger menu start*/
       #b-container {
@@ -46,6 +53,7 @@
         transition: all 0.4s ease;
         user-select: none;
         width: 60px;
+        opacity: 1;
       }
       .b-bun {
         background: white;
@@ -74,14 +82,14 @@
         background: white;
       }
       #b-container.open  {
-        left:320px;
+        left:280px;
+        opacity: 1;
       }
-
       #b-container.open .b-bun--top {
         background: @color_bg_dark;
         top: 9px;
         transform: rotate(45deg);
-
+        opacity: 1;
       }
       #b-container.open .b-bun--mid {
         opacity: 0;
@@ -90,10 +98,7 @@
         background: @color_bg_dark;
         top: 5px;
         transform: rotate(-45deg);
-      }
-
-      header.open{
-        opacity: 0.8;
+        opacity: 1;
       }
       /*burger menu end*/
     }
@@ -149,6 +154,7 @@
             padding:25px 5px;
             color: @color_text_header_nav;
             text-decoration: none;
+            font-weight: 500;
             &:hover {
               color: @color_active;
             }
@@ -213,8 +219,8 @@
 }
 /*header section end*/
 
-/*style for  size from 1024px to 1145px*/
-@media  (min-width: 1024px) and (max-width: 1145px) {
+/*style for  size from 1024px to 1250px*/
+@media  (min-width: 1024px) and (max-width: 1250px) {
   #header {
     .topHeader{
       /*logo section start*/
@@ -261,7 +267,7 @@
   }
 }
 
-/*style for tablet size from 768px to 850px*/
+/*style for tablet size from 768px to 1023px*/
 @media  (min-width: 768px) and (max-width: 1023px) {
   #header {
     width:100%;
@@ -361,23 +367,26 @@
 
     /*navigation section start*/
     .navigationPage{
-      margin: -28px 28% 0;
-      max-width: 410px;
+      margin: -28px 25% 0;
+      max-width: 50%;
       position: absolute;
       /*navigation start*/
       nav {
-        border-radius: 45px;
+        border-radius: 25px;
         padding: 5px 5px;
         .help_section{
           display: flex;
           justify-content: space-between;
           .help{
             margin: 0;
+            height: 40px;
+            border-radius: 20px;
           }
           h2{
             color: @color_text_header_nav;
-            font-size: 16px;
-            margin: 1% 5% 0;
+            font-size: 15px;
+            font-family: Roboto, sans-serif;
+            margin: 0 5% ;
             text-align: right;
           }
         }
@@ -396,3 +405,269 @@
     /*navigation section end*/
   }
 }
+
+/*style for tablet size from 480px to 767px*/
+@media  (min-width: 480px) and (max-width: 767px) {
+  #header {
+    width:100%;
+    /*logo and help section start*/
+    .topHeader{
+      margin-bottom: 35px;
+      /*logo section start*/
+      .leftHeader{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: 0 3%;
+        .logoDesktop{
+          position: absolute;
+          left:80%;
+          top:15%;
+        }
+        h2{
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 19px;
+          &:before{
+            content:'благодійна організація';
+          }
+          span:before{
+            content:'мбф "твоє майбутнє"';
+          }
+        }
+        /*burger menu start*/
+        #b-container {
+          left: 20px;
+          display: block;
+        }
+        /*burger menu end*/
+      }
+      /*logo section end*/
+
+      /*help button section start*/
+      .rightHeader{
+        display: none;
+      }
+      /*help button section end*/
+    }
+    /*logo and help section end*/
+
+    /*navigation section start*/
+    .navigationPage{
+      margin: -25px 37.5% 0;
+      width: 25%;
+      position: absolute;
+      /*navigation start*/
+      nav {
+        border-radius: 25px;
+        padding: 5px 5px;
+        width: 160px;
+        .help_section{
+          display: flex;
+          justify-content: center;
+          width: 150px;
+          .help{
+            margin: 0;
+            height: 40px;
+          }
+          h2{
+            display: none;
+          }
+        }
+        .b-nav {
+          display: none;
+        }
+      }
+      /*navigation end*/
+
+      /*name page start*/
+      .namePage{
+        display: none;
+      }
+      /*name page end*/
+    }
+    /*navigation section end*/
+
+  }
+}
+
+/*style for tablet size from 320px to 479px*/
+@media  (min-width: 401px) and (max-width: 479px) {
+  #header {
+    width:100%;
+    /*logo and help section start*/
+    .topHeader{
+      margin-bottom: 25px;
+      /*logo section start*/
+      .leftHeader{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: 0 2%;
+        .logoDesktop{
+          position: absolute;
+          left:77%;
+          top:20%;
+          img{
+            height: 75%;
+            width: 75%;
+          }
+        }
+        h2{
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 18px;
+          &:before{
+            content:'благодійний фонд';
+          }
+          span:before{
+            content:'"твоє майбутнє"';
+          }
+        }
+        /*burger menu start*/
+        #b-container {
+          left: 25px;
+          display: block;
+        }
+        /*burger menu end*/
+      }
+      /*logo section end*/
+
+      /*help button section start*/
+      .rightHeader{
+        display: none;
+      }
+      /*help button section end*/
+    }
+    /*logo and help section end*/
+
+    /*navigation section start*/
+    .navigationPage{
+      margin: -20px 37.5% 0;
+      width: 25%;
+      position: absolute;
+      /*navigation start*/
+      nav {
+        border-radius: 22px;
+        padding: 5px 5px;
+        width: 160px;
+        .help_section{
+          display: flex;
+          justify-content: center;
+          width: 150px;
+          .help{
+            margin: 0;
+            height: 35px;
+          }
+          h2{
+            display: none;
+          }
+        }
+        .b-nav {
+          display: none;
+        }
+      }
+      /*navigation end*/
+
+      /*name page start*/
+      .namePage{
+        display: none;
+      }
+      /*name page end*/
+    }
+    /*navigation section end*/
+
+  }
+}
+
+@media  (min-width: 320px) and (max-width: 400px) {
+  #header {
+    width:100%;
+    /*logo and help section start*/
+    .topHeader{
+      margin-bottom: 25px;
+      /*logo section start*/
+      .leftHeader{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: 0 2%;
+        .logoDesktop{
+          position: absolute;
+          left:77%;
+          top:20%;
+          img{
+            height: 75%;
+            width: 75%;
+          }
+        }
+        h2{
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 18px;
+          &:before{
+            content:'бо мбф твоє';
+          }
+          span:before{
+            content:'майбутнє';
+          }
+        }
+        /*burger menu start*/
+        #b-container {
+          left: 25px;
+          display: block;
+        }
+        /*burger menu end*/
+      }
+      /*logo section end*/
+
+      /*help button section start*/
+      .rightHeader{
+        display: none;
+      }
+      /*help button section end*/
+    }
+    /*logo and help section end*/
+
+    /*navigation section start*/
+    .navigationPage{
+      margin: -20px 37.5% 0;
+      width: 25%;
+      position: absolute;
+      /*navigation start*/
+      nav {
+        border-radius: 22px;
+        padding: 5px 5px;
+        width: 160px;
+        .help_section{
+          display: flex;
+          justify-content: center;
+          width: 150px;
+          .help{
+            margin: 0;
+            height: 35px;
+          }
+          h2{
+            display: none;
+          }
+        }
+        .b-nav {
+          display: none;
+        }
+      }
+      /*navigation end*/
+
+      /*name page start*/
+      .namePage{
+        display: none;
+      }
+      /*name page end*/
+    }
+    /*navigation section end*/
+
+  }
+}
+

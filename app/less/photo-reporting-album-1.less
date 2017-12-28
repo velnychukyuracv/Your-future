@@ -145,3 +145,144 @@ main {
 
 }
 @import "footer";
+
+/*style for  size from 320px to 768px*/
+@media  (min-width: 320px) and (max-width: 768px) {
+  main {
+    background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
+    padding: 8% 4% 4% ;
+
+    .sl-reporting {
+      display: flex;
+      width: 96%;
+      margin-left: 2%;
+      margin-right: 2%;
+      .slick_list{
+
+      }
+      .sl_slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:auto 0;
+        outline: none;
+        border: none;
+        max-height: 100%;
+        max-width:100%;
+        img {
+          max-height: 100%;
+        }
+      }
+
+      /*Arrows*/
+      .slick-prev {
+        border-radius: 0;
+        background-color: #fff;
+        height: 100px;
+        width: 60px;
+        opacity: 0.25;
+        left: -50px;
+        z-index: 10;
+        &:hover {
+          opacity: 0.7;
+        }
+        &:before {
+          content: url("../img/arrow-prev.png");
+        }
+      }
+      .slick-next {
+        border-radius: 0;
+        background-color: #fff;
+        height: 100px;
+        width: 60px;
+        opacity: 0.25;
+        right: -50px;
+        &:hover {
+          opacity: 0.7;
+        }
+        &:before {
+          content: url("../img/arrow-next.png");
+        }
+      }
+
+    }
+
+    .sl-reporting-2 {
+      padding-top: 1%;
+      display: flex;
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      .sl_slide-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        border: none;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .slick-current img {
+        background: @color_active;
+      }
+      /*dots*/
+      .slick-dotted .slick-slider {
+        margin-bottom: 10px;
+      }
+      .slick-dots {
+        bottom: -40px;
+        li {
+          button {
+            &:before {
+              content: '';
+              background-color: @color_bg;
+              border-radius: 50%;
+              border: 1px solid @color_bg_dark;
+              width: 5px;
+              height: 5px;
+              opacity: 0.5;
+            }
+          }
+          &.slick-active button:before {
+            background-color: @color_bg_dark;
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+/*header with name page*/
+@media  (min-width: 491px) and (max-width: 768px) {
+  #header .topHeader {
+    margin-bottom: 50px;
+    .leftHeader h2 {
+      font-size: 20px;
+      &:before {
+        content: 'бо мбф "твоє майбутнє"';
+      }
+      span:before {
+        content: 'Альбом';
+      }
+    }
+  }
+}
+
+@media  (min-width: 320px) and (max-width: 490px) {
+  #header .topHeader {
+    margin-bottom: 50px;
+    .leftHeader h2 {
+      font-size: 22px;
+      &:before {
+        content: 'Альбом';
+      }
+      span:before {
+        content: ' ';
+      }
+    }
+  }
+}

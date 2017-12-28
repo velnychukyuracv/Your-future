@@ -8,7 +8,7 @@
 /*start footer style*/
 footer{
   background-color: @color_bg_dark;
-  padding: 70px 30px 55px;
+  padding:5% 3% 4%;
   /*title*/
   h3{
     font-size: @font_size_title;
@@ -28,10 +28,11 @@ footer{
     padding-bottom: 25px;
     display: flex;
     flex-wrap: wrap;
-    border-bottom: 2px solid @color_text_header_nav;
+    border-bottom: 1px solid @color_text_header_nav;
     h4{
       font-size: 18px;
       font-weight: 500;
+      font-family: Roboto, sans-serif;
     }
     /*Requisites in Russian section start*/
     .leftTopFooter{
@@ -105,7 +106,7 @@ footer{
 
   /*Copyright section start*/
   .bottomFooter{
-    padding-top: 60px;
+    padding-top: 4%;
     display: flex;
     /*Copyright section start*/
     .leftBottomFooter{
@@ -179,7 +180,259 @@ footer{
 }
 /*end footer style*/
 
-/*style for tablet size from 768px to 850px*/
-@media  (min-width: 768px) and (max-width: 900px) {
+/*style for tablet size from 650px to 850px*/
+@media  (min-width:650px) and (max-width: 850px) {
+  footer{
+    width:100%;
+    padding:5% 4% 4%;
+    /*title*/
+    h3{
+      font-size:20px;
+    }
+    hr{
+      width: 20%;
+      margin: 15px 0;
+    }
+    /*Requisites section start*/
+    .topFooter{
+      padding-bottom: 15px;
+      flex-direction: row;
+      /*Requisites in Russian section start*/
+      .leftTopFooter{
+        color: @color_text_header_nav;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 5px;
+        width: 50%;
+        text-align: right;
+        h4{
+          font-size: 13px;
+        }
+      }
+      /*Requisites in Russian section end*/
 
+      /*Requisites in English section start*/
+      .rightTopFooter{
+        padding: 0;
+        width: 50%;
+        text-align: justify;
+        padding-left: 5px;
+        h4{
+          font-size: 12px;
+        }
+      }
+      /*Requisites in English section end*/
+    }
+    /*Requisites section end*/
+
+    /*Contacts section start*/
+    .middleFooter{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0;
+      border-bottom: 1px solid @color_text_header_nav;
+      width: 100%;
+      h5{
+        font-size: 14px;
+        font-weight: 500;
+        margin-left: 15px;
+        color: @color_text_header_nav;
+        font-family: Roboto, sans-serif;
+      }
+      .address{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2% 0;
+      }
+      .phone{
+        display: flex;
+        align-items: center;
+        justify-content: center;;
+        padding: 2% 0;
+        width: 50%;
+      }
+      .mail{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2% 0;
+        width: 50%;
+        a{
+          font-size: 16px;
+        }
+      }
+    }
+    /*Contacts section end*/
+
+    /*Copyright section start*/
+    .bottomFooter{
+      padding-top: 4%;
+      display: flex;
+      flex-direction: column-reverse;
+      /*Copyright section start*/
+      .leftBottomFooter{
+        width: 100%;
+        padding-top: 4%;
+        h5{
+          font-size: 10px;
+          font-weight: 400;
+        }
+      }
+      /*Copyright section end*/
+
+      /*Button to back start*/
+      .middleBottomFooter{
+        display: none;
+      }
+      /*Button to back end*/
+
+      /*Social section start*/
+      .rightBottomFooter{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        border-bottom: 1px solid @color_text_header_nav;
+        padding-bottom: 4%;
+        .instagram{
+          margin: 0;
+        }
+        a{
+          width: 50px;
+          height: 50px;
+        }
+      }
+      /*Social section end*/
+    }
+    /*Copyright section end*/
+  }
+}
+
+/*style for tablet size from 320px to 649px*/
+@media  (min-width: 320px) and (max-width: 649px) {
+  footer{
+    width:100%;
+    padding:5% 4% 4%;
+    /*title*/
+    h3{
+      font-size:20px;
+    }
+    hr{
+      width: 20%;
+      margin: 15px 0;
+    }
+    /*Requisites section start*/
+    .topFooter{
+      padding-bottom: 20px;
+      flex-direction: column;
+      /*Requisites in Russian section start*/
+      .leftTopFooter{
+        padding: 0;
+        width: 100%;
+        text-align: justify;
+        padding-bottom: 15px;
+        display: flex;
+        align-items: flex-start;
+        h4{
+          font-size: 13px;
+        }
+      }
+      /*Requisites in Russian section end*/
+
+      /*Requisites in English section start*/
+      .rightTopFooter{
+        padding: 0;
+        width: 100%;
+        text-align: justify;
+        h4{
+          font-size: 12px;
+        }
+      }
+      /*Requisites in English section end*/
+    }
+    /*Requisites section end*/
+
+    /*Contacts section start*/
+    .middleFooter{
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      border-bottom: 1px solid @color_text_header_nav;
+      h5{
+        font-size: 14px;
+        font-weight: 500;
+        margin-left: 15px;
+        color: @color_text_header_nav;
+        font-family: Roboto, sans-serif;
+      }
+      .address{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 2% 0;
+      }
+      .phone{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 2% 0;
+        width: 100%;
+      }
+      .mail{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 2% 0;
+        width: 100%;
+        a{
+          font-size: 16px;
+        }
+      }
+    }
+    /*Contacts section end*/
+
+    /*Copyright section start*/
+    .bottomFooter{
+      padding-top: 4%;
+      display: flex;
+      flex-direction: column-reverse;
+      /*Copyright section start*/
+      .leftBottomFooter{
+        width: 100%;
+        padding-top: 4%;
+        h5{
+          font-size: 10px;
+          font-weight: 400;
+        }
+      }
+      /*Copyright section end*/
+
+      /*Button to back start*/
+      .middleBottomFooter{
+        display: none;
+      }
+      /*Button to back end*/
+
+      /*Social section start*/
+      .rightBottomFooter{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        border-bottom: 1px solid @color_text_header_nav;
+        padding-bottom: 4%;
+        .instagram{
+          margin: 0;
+        }
+        a{
+          width: 50px;
+          height: 50px;
+        }
+      }
+      /*Social section end*/
+    }
+    /*Copyright section end*/
+  }
 }

@@ -1,7 +1,7 @@
 /*start footer style*/
 footer {
   background-color: #5d3f49;
-  padding: 70px 30px 55px;
+  padding: 5% 3% 4%;
   /*title*/
   /*Requisites section start*/
   /*Requisites section end*/
@@ -32,7 +32,7 @@ footer .topFooter {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
   /*Requisites in Russian section start*/
   /*Requisites in Russian section end*/
   /*Requisites in English section start*/
@@ -41,6 +41,7 @@ footer .topFooter {
 footer .topFooter h4 {
   font-size: 18px;
   font-weight: 500;
+  font-family: Roboto, sans-serif;
 }
 footer .topFooter .leftTopFooter {
   color: #fff;
@@ -156,7 +157,7 @@ footer .middleFooter .mail a {
   color: #fff;
 }
 footer .bottomFooter {
-  padding-top: 60px;
+  padding-top: 4%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -255,4 +256,363 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
   color: #FF0000;
 }
 /*end footer style*/
-/*style for tablet size from 768px to 850px*/
+/*style for tablet size from 650px to 850px*/
+@media (min-width: 650px) and (max-width: 850px) {
+  footer {
+    width: 100%;
+    padding: 5% 4% 4%;
+    /*title*/
+    /*Requisites section start*/
+    /*Requisites section end*/
+    /*Contacts section start*/
+    /*Contacts section end*/
+    /*Copyright section start*/
+    /*Copyright section end*/
+  }
+  footer h3 {
+    font-size: 20px;
+  }
+  footer hr {
+    width: 20%;
+    margin: 15px 0;
+  }
+  footer .topFooter {
+    padding-bottom: 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    /*Requisites in Russian section start*/
+    /*Requisites in Russian section end*/
+    /*Requisites in English section start*/
+    /*Requisites in English section end*/
+  }
+  footer .topFooter .leftTopFooter {
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-right: 5px;
+    width: 50%;
+    text-align: right;
+  }
+  footer .topFooter .leftTopFooter h4 {
+    font-size: 13px;
+  }
+  footer .topFooter .rightTopFooter {
+    padding: 0;
+    width: 50%;
+    text-align: justify;
+    padding-left: 5px;
+  }
+  footer .topFooter .rightTopFooter h4 {
+    font-size: 12px;
+  }
+  footer .middleFooter {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding: 0;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+  }
+  footer .middleFooter h5 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 15px;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+  }
+  footer .middleFooter .address {
+    width: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2% 0;
+  }
+  footer .middleFooter .phone {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2% 0;
+    width: 50%;
+  }
+  footer .middleFooter .mail {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2% 0;
+    width: 50%;
+  }
+  footer .middleFooter .mail a {
+    font-size: 16px;
+  }
+  footer .bottomFooter {
+    padding-top: 4%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    /*Copyright section start*/
+    /*Copyright section end*/
+    /*Button to back start*/
+    /*Button to back end*/
+    /*Social section start*/
+    /*Social section end*/
+  }
+  footer .bottomFooter .leftBottomFooter {
+    width: 100%;
+    padding-top: 4%;
+  }
+  footer .bottomFooter .leftBottomFooter h5 {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  footer .bottomFooter .middleBottomFooter {
+    display: none;
+  }
+  footer .bottomFooter .rightBottomFooter {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 4%;
+  }
+  footer .bottomFooter .rightBottomFooter .instagram {
+    margin: 0;
+  }
+  footer .bottomFooter .rightBottomFooter a {
+    width: 50px;
+    height: 50px;
+  }
+}
+/*style for tablet size from 320px to 649px*/
+@media (min-width: 320px) and (max-width: 649px) {
+  footer {
+    width: 100%;
+    padding: 5% 4% 4%;
+    /*title*/
+    /*Requisites section start*/
+    /*Requisites section end*/
+    /*Contacts section start*/
+    /*Contacts section end*/
+    /*Copyright section start*/
+    /*Copyright section end*/
+  }
+  footer h3 {
+    font-size: 20px;
+  }
+  footer hr {
+    width: 20%;
+    margin: 15px 0;
+  }
+  footer .topFooter {
+    padding-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /*Requisites in Russian section start*/
+    /*Requisites in Russian section end*/
+    /*Requisites in English section start*/
+    /*Requisites in English section end*/
+  }
+  footer .topFooter .leftTopFooter {
+    padding: 0;
+    width: 100%;
+    text-align: justify;
+    padding-bottom: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer .topFooter .leftTopFooter h4 {
+    font-size: 13px;
+  }
+  footer .topFooter .rightTopFooter {
+    padding: 0;
+    width: 100%;
+    text-align: justify;
+  }
+  footer .topFooter .rightTopFooter h4 {
+    font-size: 12px;
+  }
+  footer .middleFooter {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    border-bottom: 1px solid #fff;
+  }
+  footer .middleFooter h5 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 15px;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+  }
+  footer .middleFooter .address {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2% 0;
+  }
+  footer .middleFooter .phone {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 2% 0;
+    width: 100%;
+  }
+  footer .middleFooter .mail {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 2% 0;
+    width: 100%;
+  }
+  footer .middleFooter .mail a {
+    font-size: 16px;
+  }
+  footer .bottomFooter {
+    padding-top: 4%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    /*Copyright section start*/
+    /*Copyright section end*/
+    /*Button to back start*/
+    /*Button to back end*/
+    /*Social section start*/
+    /*Social section end*/
+  }
+  footer .bottomFooter .leftBottomFooter {
+    width: 100%;
+    padding-top: 4%;
+  }
+  footer .bottomFooter .leftBottomFooter h5 {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  footer .bottomFooter .middleBottomFooter {
+    display: none;
+  }
+  footer .bottomFooter .rightBottomFooter {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 4%;
+  }
+  footer .bottomFooter .rightBottomFooter .instagram {
+    margin: 0;
+  }
+  footer .bottomFooter .rightBottomFooter a {
+    width: 50px;
+    height: 50px;
+  }
+}

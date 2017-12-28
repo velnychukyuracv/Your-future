@@ -1,15 +1,3 @@
-* {
-  font-family: 'Roboto', cursive;
-}
-/*button help style*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Roboto', cursive;
-}
 /*button*/
 .help {
   text-decoration: none;
@@ -88,6 +76,7 @@ h6 {
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
+  font-family: Roboto, sans-serif;
 }
 .container_count .block_count .count.curent {
   color: #5d3f49;
@@ -107,12 +96,14 @@ h6 {
   -webkit-transform: translateX(220%);
       -ms-transform: translateX(220%);
           transform: translateX(220%);
+  font-family: Roboto, sans-serif;
 }
 .container_count form {
   margin-top: 50px;
 }
 .container_count form input[name='count'] {
   text-align: center;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   height: 50px;
   text-transform: uppercase;
@@ -139,6 +130,7 @@ h6 {
   font-size: 48px;
   text-align: center;
   margin-top: 50px;
+  font-family: Roboto, sans-serif;
 }
 /* Zoom-out effect style*/
 .mfp-zoom-out .mfp-with-anim {
@@ -221,6 +213,12 @@ h6 {
   font-weight: 600;
   padding: 18px 0 0 14px;
 }
+#header .topHeader .leftHeader h2:before {
+  content: 'благодійна організація';
+}
+#header .topHeader .leftHeader h2 span:before {
+  content: 'міжнародний благодійний фонд "твоє майбутнє"';
+}
 #header .topHeader .leftHeader #b-container {
   height: 60px;
   left: 30px;
@@ -238,6 +236,7 @@ h6 {
       -ms-user-select: none;
           user-select: none;
   width: 60px;
+  opacity: 1;
 }
 #header .topHeader .leftHeader .b-bun {
   background: white;
@@ -265,7 +264,8 @@ h6 {
   background: white;
 }
 #header .topHeader .leftHeader #b-container.open {
-  left: 320px;
+  left: 280px;
+  opacity: 1;
 }
 #header .topHeader .leftHeader #b-container.open .b-bun--top {
   background: #5d3f49;
@@ -273,6 +273,7 @@ h6 {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
+  opacity: 1;
 }
 #header .topHeader .leftHeader #b-container.open .b-bun--mid {
   opacity: 0;
@@ -283,9 +284,7 @@ h6 {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-}
-#header .topHeader .leftHeader header.open {
-  opacity: 0.8;
+  opacity: 1;
 }
 #header .topHeader .rightHeader {
   width: 40%;
@@ -366,6 +365,7 @@ h6 {
   padding: 25px 5px;
   color: #fff;
   text-decoration: none;
+  font-weight: 500;
 }
 #header .navigationPage nav .b-nav li .b-link:hover {
   color: #5bddbb;
@@ -434,8 +434,8 @@ h6 {
   font-weight: 600;
 }
 /*header section end*/
-/*style for  size from 1024px to 1145px*/
-@media (min-width: 1024px) and (max-width: 1145px) {
+/*style for  size from 1024px to 1250px*/
+@media (min-width: 1024px) and (max-width: 1250px) {
   #header {
     /*logo and help section end*/
     /*navigation section start*/
@@ -473,7 +473,7 @@ h6 {
     top: 44px;
   }
 }
-/*style for tablet size from 768px to 850px*/
+/*style for tablet size from 768px to 1023px*/
 @media (min-width: 768px) and (max-width: 1023px) {
   #header {
     width: 100%;
@@ -587,8 +587,8 @@ h6 {
     display: none;
   }
   #header .navigationPage {
-    margin: -28px 28% 0;
-    max-width: 410px;
+    margin: -28px 25% 0;
+    max-width: 50%;
     position: absolute;
     /*navigation start*/
     /*navigation end*/
@@ -596,8 +596,8 @@ h6 {
     /*name page end*/
   }
   #header .navigationPage nav {
-    -webkit-border-radius: 45px;
-            border-radius: 45px;
+    -webkit-border-radius: 25px;
+            border-radius: 25px;
     padding: 5px 5px;
   }
   #header .navigationPage nav .help_section {
@@ -612,11 +612,15 @@ h6 {
   }
   #header .navigationPage nav .help_section .help {
     margin: 0;
+    height: 40px;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
   }
   #header .navigationPage nav .help_section h2 {
     color: #fff;
-    font-size: 16px;
-    margin: 1% 5% 0;
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    margin: 0 5% ;
     text-align: right;
   }
   #header .navigationPage nav .b-nav {
@@ -624,5 +628,306 @@ h6 {
   }
   #header .navigationPage .namePage {
     width: 80%;
+  }
+}
+/*style for tablet size from 480px to 767px*/
+@media (min-width: 480px) and (max-width: 767px) {
+  #header {
+    width: 100%;
+    /*logo and help section start*/
+    /*logo and help section end*/
+    /*navigation section start*/
+    /*navigation section end*/
+  }
+  #header .topHeader {
+    margin-bottom: 35px;
+    /*logo section start*/
+    /*logo section end*/
+    /*help button section start*/
+    /*help button section end*/
+  }
+  #header .topHeader .leftHeader {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 3%;
+    /*burger menu start*/
+    /*burger menu end*/
+  }
+  #header .topHeader .leftHeader .logoDesktop {
+    position: absolute;
+    left: 80%;
+    top: 15%;
+  }
+  #header .topHeader .leftHeader h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 19px;
+  }
+  #header .topHeader .leftHeader h2:before {
+    content: 'благодійна організація';
+  }
+  #header .topHeader .leftHeader h2 span:before {
+    content: 'мбф "твоє майбутнє"';
+  }
+  #header .topHeader .leftHeader #b-container {
+    left: 20px;
+    display: block;
+  }
+  #header .topHeader .rightHeader {
+    display: none;
+  }
+  #header .navigationPage {
+    margin: -25px 37.5% 0;
+    width: 25%;
+    position: absolute;
+    /*navigation start*/
+    /*navigation end*/
+    /*name page start*/
+    /*name page end*/
+  }
+  #header .navigationPage nav {
+    -webkit-border-radius: 25px;
+            border-radius: 25px;
+    padding: 5px 5px;
+    width: 160px;
+  }
+  #header .navigationPage nav .help_section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 150px;
+  }
+  #header .navigationPage nav .help_section .help {
+    margin: 0;
+    height: 40px;
+  }
+  #header .navigationPage nav .help_section h2 {
+    display: none;
+  }
+  #header .navigationPage nav .b-nav {
+    display: none;
+  }
+  #header .navigationPage .namePage {
+    display: none;
+  }
+}
+/*style for tablet size from 320px to 479px*/
+@media (min-width: 401px) and (max-width: 479px) {
+  #header {
+    width: 100%;
+    /*logo and help section start*/
+    /*logo and help section end*/
+    /*navigation section start*/
+    /*navigation section end*/
+  }
+  #header .topHeader {
+    margin-bottom: 25px;
+    /*logo section start*/
+    /*logo section end*/
+    /*help button section start*/
+    /*help button section end*/
+  }
+  #header .topHeader .leftHeader {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 2%;
+    /*burger menu start*/
+    /*burger menu end*/
+  }
+  #header .topHeader .leftHeader .logoDesktop {
+    position: absolute;
+    left: 77%;
+    top: 20%;
+  }
+  #header .topHeader .leftHeader .logoDesktop img {
+    height: 75%;
+    width: 75%;
+  }
+  #header .topHeader .leftHeader h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+  }
+  #header .topHeader .leftHeader h2:before {
+    content: 'благодійний фонд';
+  }
+  #header .topHeader .leftHeader h2 span:before {
+    content: '"твоє майбутнє"';
+  }
+  #header .topHeader .leftHeader #b-container {
+    left: 25px;
+    display: block;
+  }
+  #header .topHeader .rightHeader {
+    display: none;
+  }
+  #header .navigationPage {
+    margin: -20px 37.5% 0;
+    width: 25%;
+    position: absolute;
+    /*navigation start*/
+    /*navigation end*/
+    /*name page start*/
+    /*name page end*/
+  }
+  #header .navigationPage nav {
+    -webkit-border-radius: 22px;
+            border-radius: 22px;
+    padding: 5px 5px;
+    width: 160px;
+  }
+  #header .navigationPage nav .help_section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 150px;
+  }
+  #header .navigationPage nav .help_section .help {
+    margin: 0;
+    height: 35px;
+  }
+  #header .navigationPage nav .help_section h2 {
+    display: none;
+  }
+  #header .navigationPage nav .b-nav {
+    display: none;
+  }
+  #header .navigationPage .namePage {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 400px) {
+  #header {
+    width: 100%;
+    /*logo and help section start*/
+    /*logo and help section end*/
+    /*navigation section start*/
+    /*navigation section end*/
+  }
+  #header .topHeader {
+    margin-bottom: 25px;
+    /*logo section start*/
+    /*logo section end*/
+    /*help button section start*/
+    /*help button section end*/
+  }
+  #header .topHeader .leftHeader {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 2%;
+    /*burger menu start*/
+    /*burger menu end*/
+  }
+  #header .topHeader .leftHeader .logoDesktop {
+    position: absolute;
+    left: 77%;
+    top: 20%;
+  }
+  #header .topHeader .leftHeader .logoDesktop img {
+    height: 75%;
+    width: 75%;
+  }
+  #header .topHeader .leftHeader h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+  }
+  #header .topHeader .leftHeader h2:before {
+    content: 'бо мбф твоє';
+  }
+  #header .topHeader .leftHeader h2 span:before {
+    content: 'майбутнє';
+  }
+  #header .topHeader .leftHeader #b-container {
+    left: 25px;
+    display: block;
+  }
+  #header .topHeader .rightHeader {
+    display: none;
+  }
+  #header .navigationPage {
+    margin: -20px 37.5% 0;
+    width: 25%;
+    position: absolute;
+    /*navigation start*/
+    /*navigation end*/
+    /*name page start*/
+    /*name page end*/
+  }
+  #header .navigationPage nav {
+    -webkit-border-radius: 22px;
+            border-radius: 22px;
+    padding: 5px 5px;
+    width: 160px;
+  }
+  #header .navigationPage nav .help_section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 150px;
+  }
+  #header .navigationPage nav .help_section .help {
+    margin: 0;
+    height: 35px;
+  }
+  #header .navigationPage nav .help_section h2 {
+    display: none;
+  }
+  #header .navigationPage nav .b-nav {
+    display: none;
+  }
+  #header .navigationPage .namePage {
+    display: none;
   }
 }

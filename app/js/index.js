@@ -1,8 +1,9 @@
 $(document).ready(function() {
     $("#b-container").click(function() {
         $("#navigation_out_menu").toggleClass("open");
-        $("#main").toggleClass("open");
         $("header").toggleClass("open");
+        $("#main").toggleClass("open");
+        $("footer").toggleClass("open");
         $(this).toggleClass("open");
     });
 

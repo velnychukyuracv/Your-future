@@ -58,3 +58,61 @@ main{
 }
 
 @import "footer";
+
+/*style for  size from 320px to 768px*/
+@media  (min-width: 320px) and (max-width: 768px) {
+  main{
+    padding: 8% 4% 4%;
+    h3{
+      font-size: 18px;
+    }
+    ul{
+      margin-left: 20px;
+    }
+    h6{
+      font-size: 14px;
+      font-weight: 600;
+    }
+    p{
+      font-size: 14px;
+    }
+    a{
+      text-decoration: none;
+      color: @color_bg_dark;
+      &:hover{
+        color: @color_active;
+      }
+    }
+  }
+}
+
+/*header with name page*/
+@media  (min-width: 491px) and (max-width: 768px) {
+  #header .topHeader {
+    margin-bottom: 50px;
+    .leftHeader h2 {
+      font-size: 18px;
+      &:before {
+        content: 'бо мбф "твоє майбутнє"';
+      }
+      span:before {
+        content: 'Спеціаліст з фандрайзингу';
+      }
+    }
+  }
+}
+
+@media  (min-width: 320px) and (max-width: 490px) {
+  #header .topHeader {
+    margin-bottom: 50px;
+    .leftHeader h2 {
+      font-size: 20px;
+      &:before {
+        content: 'Спеціаліст з';
+      }
+      span:before {
+        content: 'фандрайзингу';
+      }
+    }
+  }
+}

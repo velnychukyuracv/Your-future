@@ -71,3 +71,58 @@ main{
 }
 
 @import "footer";
+
+
+/*style for  size from 320px to 768px*/
+@media  (min-width: 320px) and (max-width: 768px) {
+  main{
+    padding:8% 4% 4%;
+    .help{
+      width: 50%;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .text_about{
+      margin: 2% 1%;
+      width: 100%;
+      padding:0;
+      p{
+        font-size: 16px;
+      }
+      img{
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+/*header with name page*/
+@media  (min-width: 491px) and (max-width: 768px) {
+  #header .topHeader {
+    margin-bottom: 50px;
+    .leftHeader h2 {
+      font-size: 20px;
+      &:before {
+        content: 'бо мбф "твоє майбутнє"';
+      }
+      span:before {
+        content: 'Лист Діду Морозу';
+      }
+    }
+  }
+}
+
+@media  (min-width: 320px) and (max-width: 490px) {
+  #header .topHeader {
+    margin-bottom: 50px;
+    .leftHeader h2 {
+      font-size: 22px;
+      &:before {
+        content: 'Лист';
+      }
+      span:before {
+        content: ' Діду Морозу ';
+      }
+    }
+  }
+}

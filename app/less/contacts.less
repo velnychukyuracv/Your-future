@@ -29,7 +29,6 @@ body{
 #header .navigationPage .namePage h3:before{
   content: 'Контакти';
 }
-
 main{
   background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
   padding: 100px 60px 50px 60px;
@@ -65,3 +64,53 @@ main{
 }
 
 @import "footer";
+
+/*style for  size from 320px to 768px*/
+@media  (min-width: 320px) and (max-width: 768px) {
+    body{
+    font-size: 14px;
+  }
+  main{
+    padding: 8% 4% 4%;
+    h4{
+      font-size: 15px;
+    }
+    p{
+      font-size: 15px;
+    }
+    h5{
+      font-size: 15px;
+    }
+  }
+}
+
+/*header with name page*/
+@media  (min-width: 491px) and (max-width: 768px) {
+  #header .topHeader {
+    margin-bottom: 50px;
+    .leftHeader h2 {
+      font-size: 20px;
+      &:before {
+        content: 'бо мбф "твоє майбутнє"';
+      }
+      span:before {
+        content: 'контакти';
+      }
+    }
+  }
+}
+
+@media  (min-width: 320px) and (max-width: 490px) {
+  #header .topHeader {
+    margin-bottom: 50px;
+    .leftHeader h2 {
+      font-size: 22px;
+      &:before {
+        content: 'контакти';
+      }
+      span:before {
+        content: ' ';
+      }
+    }
+  }
+}

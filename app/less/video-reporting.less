@@ -111,3 +111,68 @@ main{
 }
 
 @import "footer";
+
+/*style for  size from 320px to 950px*/
+@media  (min-width: 320px) and (max-width: 950px){
+  main{
+    padding: 8% 4% 4%;
+    .sl-reporting-video {
+      width:96% ;
+      height: 100%;
+      margin-left: 2%;
+      margin-right: 2%;
+      .sl_slide {
+        display: flex;
+        justify-content: center;
+        width:96% ;
+        height: 100%;
+        outline: none;
+        border: none;
+        iframe{
+        min-width: 300px;
+         min-height: inherit;
+        }
+      }
+      /*Arrows*/
+      .slick-prev {
+        display: none;
+      }
+      .slick-next {
+        display: none;
+      }
+
+    }
+
+  }
+}
+
+/*header with name page*/
+@media  (min-width: 491px) and (max-width: 768px) {
+  #header .topHeader {
+    margin-bottom: 50px;
+    .leftHeader h2 {
+      font-size: 20px;
+      &:before {
+        content: 'бо мбф "твоє майбутнє"';
+      }
+      span:before {
+        content: 'Відео';
+      }
+    }
+  }
+}
+
+@media  (min-width: 320px) and (max-width: 490px) {
+  #header .topHeader {
+    margin-bottom: 50px;
+    .leftHeader h2 {
+      font-size: 22px;
+      &:before {
+        content: 'Відео';
+      }
+      span:before {
+        content: ' ';
+      }
+    }
+  }
+}

@@ -12,18 +12,6 @@ body {
   font-weight: 400;
   color: #494949;
 }
-* {
-  font-family: 'Roboto', cursive;
-}
-/*button help style*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Roboto', cursive;
-}
 /*button*/
 .help {
   text-decoration: none;
@@ -102,6 +90,7 @@ h6 {
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
+  font-family: Roboto, sans-serif;
 }
 .container_count .block_count .count.curent {
   color: #5d3f49;
@@ -121,12 +110,14 @@ h6 {
   -webkit-transform: translateX(220%);
       -ms-transform: translateX(220%);
           transform: translateX(220%);
+  font-family: Roboto, sans-serif;
 }
 .container_count form {
   margin-top: 50px;
 }
 .container_count form input[name='count'] {
   text-align: center;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   height: 50px;
   text-transform: uppercase;
@@ -153,6 +144,7 @@ h6 {
   font-size: 48px;
   text-align: center;
   margin-top: 50px;
+  font-family: Roboto, sans-serif;
 }
 /* Zoom-out effect style*/
 .mfp-zoom-out .mfp-with-anim {
@@ -192,8 +184,10 @@ h6 {
   display: none;
 }
 #navigation_out_menu {
-  min-width: 300px;
+  width: 280px;
+  min-width: 280px;
   height: 100%;
+  max-height: 100%;
   position: fixed;
   background: -webkit-gradient(linear, left top, left bottom, from(#6bf3d9), to(#336b54));
   background: -webkit-linear-gradient(top, #6bf3d9 0%, #336b54 100%);
@@ -234,20 +228,16 @@ h6 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px 0;
-  padding: 0 20px;
 }
 #navigation_out_menu .header_out_menu img {
   width: 90%;
-  padding: 0 10px ;
+  padding-left: 10px;
 }
 #navigation_out_menu .header_out_menu h2 {
   font-size: 16px;
   text-transform: uppercase;
   color: #fff;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  font-weight: 700;
   padding: 0 10px ;
 }
 #navigation_out_menu nav .nav_out_menu {
@@ -263,51 +253,55 @@ h6 {
           flex-direction: column;
 }
 #navigation_out_menu nav .nav_out_menu li {
-  padding: 8px 10px;
+  padding: 10px 10px;
   list-style-type: none;
   background: -webkit-gradient(linear, left top, left bottom, from(#6cffe5), to(#1b5148));
   background: -webkit-linear-gradient(top, #6cffe5 0%, #1b5148 100%);
   background: -o-linear-gradient(top, #6cffe5 0%, #1b5148 100%);
   background: linear-gradient(top, #6cffe5 0%, #1b5148 100%);
-  /*&:hover {
-         >.sub_nav_out_menu{
-           display: inherit;
-         }
-         &:hover{
-           >.link_out_menu{
-             color: @color_bg_dark;
-           }
-         }
-       }*/
 }
 #navigation_out_menu nav .nav_out_menu li .link_out_menu {
   color: #fff;
   text-decoration: none;
   display: block;
   height: 100%;
+  font-size: 20px;
 }
 #navigation_out_menu nav .nav_out_menu li .link_out_menu:hover {
   color: #5d3f49;
 }
 #navigation_out_menu nav .nav_out_menu li:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#6cffe5), to(#ff7f9c));
-  background: -webkit-linear-gradient(left, #6cffe5 0%, #ff7f9c 100%);
-  background: -o-linear-gradient(left, #6cffe5 0%, #ff7f9c 100%);
-  background: linear-gradient(left, #6cffe5 0%, #ff7f9c 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ff7f9c), to(#b64760));
+  background: -webkit-linear-gradient(left, #ff7f9c 0%, #b64760 100%);
+  background: -o-linear-gradient(left, #ff7f9c 0%, #b64760 100%);
+  background: linear-gradient(left, #ff7f9c 0%, #b64760 100%);
   color: #5d3f49;
 }
 #navigation_out_menu nav .nav_out_menu li .sub_nav_out_menu {
   display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: 20px;
+  width: 100%;
 }
 #navigation_out_menu nav .nav_out_menu li .sub_nav_out_menu li {
   background: none;
 }
 #navigation_out_menu .help {
   width: 80%;
-  margin: 10% 10%;
+  margin: 0 10%;
   -webkit-animation: none;
           animation: none;
+  height: 60px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  background: -webkit-gradient(linear, left top, right top, from(#ff7f9c), to(#fb5a87));
+  background: -webkit-linear-gradient(left, #ff7f9c 0%, #fb5a87 100%);
+  background: -o-linear-gradient(left, #ff7f9c 0%, #fb5a87 100%);
+  background: linear-gradient(left, #ff7f9c 0%, #fb5a87 100%);
 }
 #navigation_out_menu .help:hover {
   border: 2px solid #ff7f9c;
@@ -315,17 +309,34 @@ h6 {
   background: #fff;
 }
 #navigation_out_menu .footer_out_menu {
-  margin: 0 5%;
+  margin: 0 4% 2%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-#navigation_out_menu .footer_out_menu a {
+#navigation_out_menu .footer_out_menu .social_out_menu {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 8% 0;
+}
+#navigation_out_menu .footer_out_menu .social_out_menu a {
   width: 45px;
   height: 45px;
   -webkit-border-radius: 50%;
@@ -345,50 +356,48 @@ h6 {
           align-items: center;
   text-decoration: none;
 }
-#navigation_out_menu .footer_out_menu a .fa-facebook,
-#navigation_out_menu .footer_out_menu a .fa-instagram,
-#navigation_out_menu .footer_out_menu a .fa-youtube-play {
+#navigation_out_menu .footer_out_menu .social_out_menu a .fa-facebook,
+#navigation_out_menu .footer_out_menu .social_out_menu a .fa-instagram,
+#navigation_out_menu .footer_out_menu .social_out_menu a .fa-youtube-play {
   color: #c3bbbd;
 }
-#navigation_out_menu .footer_out_menu .instagram {
+#navigation_out_menu .footer_out_menu .social_out_menu .instagram {
   margin: 0 55px;
 }
-#navigation_out_menu .footer_out_menu .facebook:hover {
+#navigation_out_menu .footer_out_menu .social_out_menu .facebook:hover {
   border-color: #3B5998;
 }
-#navigation_out_menu .footer_out_menu .facebook:hover .fa-facebook {
+#navigation_out_menu .footer_out_menu .social_out_menu .facebook:hover .fa-facebook {
   color: #3B5998;
 }
-#navigation_out_menu .footer_out_menu .instagram:hover {
+#navigation_out_menu .footer_out_menu .social_out_menu .instagram:hover {
   border-color: #FE902E;
 }
-#navigation_out_menu .footer_out_menu .instagram:hover .fa-instagram {
+#navigation_out_menu .footer_out_menu .social_out_menu .instagram:hover .fa-instagram {
   color: #FE902E;
 }
-#navigation_out_menu .footer_out_menu .youtube:hover {
+#navigation_out_menu .footer_out_menu .social_out_menu .youtube:hover {
   border-color: #FF0000;
 }
-#navigation_out_menu .footer_out_menu .youtube:hover .fa-youtube-play {
+#navigation_out_menu .footer_out_menu .social_out_menu .youtube:hover .fa-youtube-play {
   color: #FF0000;
 }
-#navigation_out_menu .copyright_out_menu {
-  margin: 1% 5%;
-}
-#navigation_out_menu .copyright_out_menu h5 {
-  font-size: 12px;
-  font-weight: 400;
+#navigation_out_menu .footer_out_menu h5 {
+  font-size: 10px;
+  font-weight: 600;
   color: #fff;
 }
 #navigation_out_menu.open {
   left: 0px;
 }
+header.open {
+  opacity: 0.9;
+}
 main.open {
   opacity: 0.3;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  #navigation_out_menu .help {
-    margin: 2% 10%;
-  }
+footer.open {
+  opacity: 0.3;
 }
 /*header start*/
 #header {
@@ -434,6 +443,12 @@ main.open {
   font-weight: 600;
   padding: 18px 0 0 14px;
 }
+#header .topHeader .leftHeader h2:before {
+  content: 'благодійна організація';
+}
+#header .topHeader .leftHeader h2 span:before {
+  content: 'міжнародний благодійний фонд "твоє майбутнє"';
+}
 #header .topHeader .leftHeader #b-container {
   height: 60px;
   left: 30px;
@@ -451,6 +466,7 @@ main.open {
       -ms-user-select: none;
           user-select: none;
   width: 60px;
+  opacity: 1;
 }
 #header .topHeader .leftHeader .b-bun {
   background: white;
@@ -478,7 +494,8 @@ main.open {
   background: white;
 }
 #header .topHeader .leftHeader #b-container.open {
-  left: 320px;
+  left: 280px;
+  opacity: 1;
 }
 #header .topHeader .leftHeader #b-container.open .b-bun--top {
   background: #5d3f49;
@@ -486,6 +503,7 @@ main.open {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
+  opacity: 1;
 }
 #header .topHeader .leftHeader #b-container.open .b-bun--mid {
   opacity: 0;
@@ -496,9 +514,7 @@ main.open {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-}
-#header .topHeader .leftHeader header.open {
-  opacity: 0.8;
+  opacity: 1;
 }
 #header .topHeader .rightHeader {
   width: 40%;
@@ -579,6 +595,7 @@ main.open {
   padding: 25px 5px;
   color: #fff;
   text-decoration: none;
+  font-weight: 500;
 }
 #header .navigationPage nav .b-nav li .b-link:hover {
   color: #5bddbb;
@@ -647,8 +664,8 @@ main.open {
   font-weight: 600;
 }
 /*header section end*/
-/*style for  size from 1024px to 1145px*/
-@media (min-width: 1024px) and (max-width: 1145px) {
+/*style for  size from 1024px to 1250px*/
+@media (min-width: 1024px) and (max-width: 1250px) {
   #header {
     /*logo and help section end*/
     /*navigation section start*/
@@ -686,7 +703,7 @@ main.open {
     top: 44px;
   }
 }
-/*style for tablet size from 768px to 850px*/
+/*style for tablet size from 768px to 1023px*/
 @media (min-width: 768px) and (max-width: 1023px) {
   #header {
     width: 100%;
@@ -800,8 +817,8 @@ main.open {
     display: none;
   }
   #header .navigationPage {
-    margin: -28px 28% 0;
-    max-width: 410px;
+    margin: -28px 25% 0;
+    max-width: 50%;
     position: absolute;
     /*navigation start*/
     /*navigation end*/
@@ -809,8 +826,8 @@ main.open {
     /*name page end*/
   }
   #header .navigationPage nav {
-    -webkit-border-radius: 45px;
-            border-radius: 45px;
+    -webkit-border-radius: 25px;
+            border-radius: 25px;
     padding: 5px 5px;
   }
   #header .navigationPage nav .help_section {
@@ -825,11 +842,15 @@ main.open {
   }
   #header .navigationPage nav .help_section .help {
     margin: 0;
+    height: 40px;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
   }
   #header .navigationPage nav .help_section h2 {
     color: #fff;
-    font-size: 16px;
-    margin: 1% 5% 0;
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    margin: 0 5% ;
     text-align: right;
   }
   #header .navigationPage nav .b-nav {
@@ -837,6 +858,307 @@ main.open {
   }
   #header .navigationPage .namePage {
     width: 80%;
+  }
+}
+/*style for tablet size from 480px to 767px*/
+@media (min-width: 480px) and (max-width: 767px) {
+  #header {
+    width: 100%;
+    /*logo and help section start*/
+    /*logo and help section end*/
+    /*navigation section start*/
+    /*navigation section end*/
+  }
+  #header .topHeader {
+    margin-bottom: 35px;
+    /*logo section start*/
+    /*logo section end*/
+    /*help button section start*/
+    /*help button section end*/
+  }
+  #header .topHeader .leftHeader {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 3%;
+    /*burger menu start*/
+    /*burger menu end*/
+  }
+  #header .topHeader .leftHeader .logoDesktop {
+    position: absolute;
+    left: 80%;
+    top: 15%;
+  }
+  #header .topHeader .leftHeader h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 19px;
+  }
+  #header .topHeader .leftHeader h2:before {
+    content: 'благодійна організація';
+  }
+  #header .topHeader .leftHeader h2 span:before {
+    content: 'мбф "твоє майбутнє"';
+  }
+  #header .topHeader .leftHeader #b-container {
+    left: 20px;
+    display: block;
+  }
+  #header .topHeader .rightHeader {
+    display: none;
+  }
+  #header .navigationPage {
+    margin: -25px 37.5% 0;
+    width: 25%;
+    position: absolute;
+    /*navigation start*/
+    /*navigation end*/
+    /*name page start*/
+    /*name page end*/
+  }
+  #header .navigationPage nav {
+    -webkit-border-radius: 25px;
+            border-radius: 25px;
+    padding: 5px 5px;
+    width: 160px;
+  }
+  #header .navigationPage nav .help_section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 150px;
+  }
+  #header .navigationPage nav .help_section .help {
+    margin: 0;
+    height: 40px;
+  }
+  #header .navigationPage nav .help_section h2 {
+    display: none;
+  }
+  #header .navigationPage nav .b-nav {
+    display: none;
+  }
+  #header .navigationPage .namePage {
+    display: none;
+  }
+}
+/*style for tablet size from 320px to 479px*/
+@media (min-width: 401px) and (max-width: 479px) {
+  #header {
+    width: 100%;
+    /*logo and help section start*/
+    /*logo and help section end*/
+    /*navigation section start*/
+    /*navigation section end*/
+  }
+  #header .topHeader {
+    margin-bottom: 25px;
+    /*logo section start*/
+    /*logo section end*/
+    /*help button section start*/
+    /*help button section end*/
+  }
+  #header .topHeader .leftHeader {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 2%;
+    /*burger menu start*/
+    /*burger menu end*/
+  }
+  #header .topHeader .leftHeader .logoDesktop {
+    position: absolute;
+    left: 77%;
+    top: 20%;
+  }
+  #header .topHeader .leftHeader .logoDesktop img {
+    height: 75%;
+    width: 75%;
+  }
+  #header .topHeader .leftHeader h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+  }
+  #header .topHeader .leftHeader h2:before {
+    content: 'благодійний фонд';
+  }
+  #header .topHeader .leftHeader h2 span:before {
+    content: '"твоє майбутнє"';
+  }
+  #header .topHeader .leftHeader #b-container {
+    left: 25px;
+    display: block;
+  }
+  #header .topHeader .rightHeader {
+    display: none;
+  }
+  #header .navigationPage {
+    margin: -20px 37.5% 0;
+    width: 25%;
+    position: absolute;
+    /*navigation start*/
+    /*navigation end*/
+    /*name page start*/
+    /*name page end*/
+  }
+  #header .navigationPage nav {
+    -webkit-border-radius: 22px;
+            border-radius: 22px;
+    padding: 5px 5px;
+    width: 160px;
+  }
+  #header .navigationPage nav .help_section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 150px;
+  }
+  #header .navigationPage nav .help_section .help {
+    margin: 0;
+    height: 35px;
+  }
+  #header .navigationPage nav .help_section h2 {
+    display: none;
+  }
+  #header .navigationPage nav .b-nav {
+    display: none;
+  }
+  #header .navigationPage .namePage {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 400px) {
+  #header {
+    width: 100%;
+    /*logo and help section start*/
+    /*logo and help section end*/
+    /*navigation section start*/
+    /*navigation section end*/
+  }
+  #header .topHeader {
+    margin-bottom: 25px;
+    /*logo section start*/
+    /*logo section end*/
+    /*help button section start*/
+    /*help button section end*/
+  }
+  #header .topHeader .leftHeader {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 2%;
+    /*burger menu start*/
+    /*burger menu end*/
+  }
+  #header .topHeader .leftHeader .logoDesktop {
+    position: absolute;
+    left: 77%;
+    top: 20%;
+  }
+  #header .topHeader .leftHeader .logoDesktop img {
+    height: 75%;
+    width: 75%;
+  }
+  #header .topHeader .leftHeader h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+  }
+  #header .topHeader .leftHeader h2:before {
+    content: 'бо мбф твоє';
+  }
+  #header .topHeader .leftHeader h2 span:before {
+    content: 'майбутнє';
+  }
+  #header .topHeader .leftHeader #b-container {
+    left: 25px;
+    display: block;
+  }
+  #header .topHeader .rightHeader {
+    display: none;
+  }
+  #header .navigationPage {
+    margin: -20px 37.5% 0;
+    width: 25%;
+    position: absolute;
+    /*navigation start*/
+    /*navigation end*/
+    /*name page start*/
+    /*name page end*/
+  }
+  #header .navigationPage nav {
+    -webkit-border-radius: 22px;
+            border-radius: 22px;
+    padding: 5px 5px;
+    width: 160px;
+  }
+  #header .navigationPage nav .help_section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 150px;
+  }
+  #header .navigationPage nav .help_section .help {
+    margin: 0;
+    height: 35px;
+  }
+  #header .navigationPage nav .help_section h2 {
+    display: none;
+  }
+  #header .navigationPage nav .b-nav {
+    display: none;
+  }
+  #header .navigationPage .namePage {
+    display: none;
   }
 }
 #header .navigationPage .namePage h3:before {
@@ -926,7 +1248,7 @@ main .sl-reporting-video .slick-dots li.slick-active button:before {
 /*start footer style*/
 footer {
   background-color: #5d3f49;
-  padding: 70px 30px 55px;
+  padding: 5% 3% 4%;
   /*title*/
   /*Requisites section start*/
   /*Requisites section end*/
@@ -957,7 +1279,7 @@ footer .topFooter {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
   /*Requisites in Russian section start*/
   /*Requisites in Russian section end*/
   /*Requisites in English section start*/
@@ -966,6 +1288,7 @@ footer .topFooter {
 footer .topFooter h4 {
   font-size: 18px;
   font-weight: 500;
+  font-family: Roboto, sans-serif;
 }
 footer .topFooter .leftTopFooter {
   color: #fff;
@@ -1081,7 +1404,7 @@ footer .middleFooter .mail a {
   color: #fff;
 }
 footer .bottomFooter {
-  padding-top: 60px;
+  padding-top: 4%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1180,4 +1503,429 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
   color: #FF0000;
 }
 /*end footer style*/
-/*style for tablet size from 768px to 850px*/
+/*style for tablet size from 650px to 850px*/
+@media (min-width: 650px) and (max-width: 850px) {
+  footer {
+    width: 100%;
+    padding: 5% 4% 4%;
+    /*title*/
+    /*Requisites section start*/
+    /*Requisites section end*/
+    /*Contacts section start*/
+    /*Contacts section end*/
+    /*Copyright section start*/
+    /*Copyright section end*/
+  }
+  footer h3 {
+    font-size: 20px;
+  }
+  footer hr {
+    width: 20%;
+    margin: 15px 0;
+  }
+  footer .topFooter {
+    padding-bottom: 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    /*Requisites in Russian section start*/
+    /*Requisites in Russian section end*/
+    /*Requisites in English section start*/
+    /*Requisites in English section end*/
+  }
+  footer .topFooter .leftTopFooter {
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-right: 5px;
+    width: 50%;
+    text-align: right;
+  }
+  footer .topFooter .leftTopFooter h4 {
+    font-size: 13px;
+  }
+  footer .topFooter .rightTopFooter {
+    padding: 0;
+    width: 50%;
+    text-align: justify;
+    padding-left: 5px;
+  }
+  footer .topFooter .rightTopFooter h4 {
+    font-size: 12px;
+  }
+  footer .middleFooter {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding: 0;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+  }
+  footer .middleFooter h5 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 15px;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+  }
+  footer .middleFooter .address {
+    width: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2% 0;
+  }
+  footer .middleFooter .phone {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2% 0;
+    width: 50%;
+  }
+  footer .middleFooter .mail {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2% 0;
+    width: 50%;
+  }
+  footer .middleFooter .mail a {
+    font-size: 16px;
+  }
+  footer .bottomFooter {
+    padding-top: 4%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    /*Copyright section start*/
+    /*Copyright section end*/
+    /*Button to back start*/
+    /*Button to back end*/
+    /*Social section start*/
+    /*Social section end*/
+  }
+  footer .bottomFooter .leftBottomFooter {
+    width: 100%;
+    padding-top: 4%;
+  }
+  footer .bottomFooter .leftBottomFooter h5 {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  footer .bottomFooter .middleBottomFooter {
+    display: none;
+  }
+  footer .bottomFooter .rightBottomFooter {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 4%;
+  }
+  footer .bottomFooter .rightBottomFooter .instagram {
+    margin: 0;
+  }
+  footer .bottomFooter .rightBottomFooter a {
+    width: 50px;
+    height: 50px;
+  }
+}
+/*style for tablet size from 320px to 649px*/
+@media (min-width: 320px) and (max-width: 649px) {
+  footer {
+    width: 100%;
+    padding: 5% 4% 4%;
+    /*title*/
+    /*Requisites section start*/
+    /*Requisites section end*/
+    /*Contacts section start*/
+    /*Contacts section end*/
+    /*Copyright section start*/
+    /*Copyright section end*/
+  }
+  footer h3 {
+    font-size: 20px;
+  }
+  footer hr {
+    width: 20%;
+    margin: 15px 0;
+  }
+  footer .topFooter {
+    padding-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /*Requisites in Russian section start*/
+    /*Requisites in Russian section end*/
+    /*Requisites in English section start*/
+    /*Requisites in English section end*/
+  }
+  footer .topFooter .leftTopFooter {
+    padding: 0;
+    width: 100%;
+    text-align: justify;
+    padding-bottom: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer .topFooter .leftTopFooter h4 {
+    font-size: 13px;
+  }
+  footer .topFooter .rightTopFooter {
+    padding: 0;
+    width: 100%;
+    text-align: justify;
+  }
+  footer .topFooter .rightTopFooter h4 {
+    font-size: 12px;
+  }
+  footer .middleFooter {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    border-bottom: 1px solid #fff;
+  }
+  footer .middleFooter h5 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 15px;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+  }
+  footer .middleFooter .address {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2% 0;
+  }
+  footer .middleFooter .phone {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 2% 0;
+    width: 100%;
+  }
+  footer .middleFooter .mail {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 2% 0;
+    width: 100%;
+  }
+  footer .middleFooter .mail a {
+    font-size: 16px;
+  }
+  footer .bottomFooter {
+    padding-top: 4%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    /*Copyright section start*/
+    /*Copyright section end*/
+    /*Button to back start*/
+    /*Button to back end*/
+    /*Social section start*/
+    /*Social section end*/
+  }
+  footer .bottomFooter .leftBottomFooter {
+    width: 100%;
+    padding-top: 4%;
+  }
+  footer .bottomFooter .leftBottomFooter h5 {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  footer .bottomFooter .middleBottomFooter {
+    display: none;
+  }
+  footer .bottomFooter .rightBottomFooter {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 4%;
+  }
+  footer .bottomFooter .rightBottomFooter .instagram {
+    margin: 0;
+  }
+  footer .bottomFooter .rightBottomFooter a {
+    width: 50px;
+    height: 50px;
+  }
+}
+/*style for  size from 320px to 950px*/
+@media (min-width: 320px) and (max-width: 950px) {
+  main {
+    padding: 8% 4% 4%;
+  }
+  main .sl-reporting-video {
+    width: 96% ;
+    height: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    /*Arrows*/
+  }
+  main .sl-reporting-video .sl_slide {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 96% ;
+    height: 100%;
+    outline: none;
+    border: none;
+  }
+  main .sl-reporting-video .sl_slide iframe {
+    min-width: 300px;
+    min-height: inherit;
+  }
+  main .sl-reporting-video .slick-prev {
+    display: none;
+  }
+  main .sl-reporting-video .slick-next {
+    display: none;
+  }
+}
+/*header with name page*/
+@media (min-width: 491px) and (max-width: 768px) {
+  #header .topHeader {
+    margin-bottom: 50px;
+  }
+  #header .topHeader .leftHeader h2 {
+    font-size: 20px;
+  }
+  #header .topHeader .leftHeader h2:before {
+    content: 'бо мбф "твоє майбутнє"';
+  }
+  #header .topHeader .leftHeader h2 span:before {
+    content: 'Відео';
+  }
+}
+@media (min-width: 320px) and (max-width: 490px) {
+  #header .topHeader {
+    margin-bottom: 50px;
+  }
+  #header .topHeader .leftHeader h2 {
+    font-size: 22px;
+  }
+  #header .topHeader .leftHeader h2:before {
+    content: 'Відео';
+  }
+  #header .topHeader .leftHeader h2 span:before {
+    content: ' ';
+  }
+}
