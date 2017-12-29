@@ -1873,7 +1873,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     height: 100%;
     margin-left: 2%;
     margin-right: 2%;
-    /*Arrows*/
+    /* Arrows */
   }
   main .sl-reporting-video .sl_slide {
     display: -webkit-box;
@@ -1893,11 +1893,78 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     min-width: 300px;
     min-height: inherit;
   }
+  main .sl-reporting-video .slick-prev,
+  main .sl-reporting-video .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  main .sl-reporting-video .slick-prev:hover,
+  main .sl-reporting-video .slick-prev:focus,
+  main .sl-reporting-video .slick-next:hover,
+  main .sl-reporting-video .slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: transparent;
+  }
+  main .sl-reporting-video .slick-prev:hover:before,
+  main .sl-reporting-video .slick-prev:focus:before,
+  main .sl-reporting-video .slick-next:hover:before,
+  main .sl-reporting-video .slick-next:focus:before {
+    opacity: 1;
+  }
+  main .sl-reporting-video .slick-prev.slick-disabled:before,
+  main .sl-reporting-video .slick-next.slick-disabled:before {
+    opacity: .25;
+  }
+  main .sl-reporting-video .slick-prev:before,
+  main .sl-reporting-video .slick-next:before {
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
   main .sl-reporting-video .slick-prev {
-    display: none;
+    left: 15px;
+  }
+  main .sl-reporting-video [dir='rtl'] .slick-prev {
+    right: 25px;
+    left: auto;
+  }
+  main .sl-reporting-video .slick-prev:before {
+    content: '←';
+  }
+  main .sl-reporting-video [dir='rtl'] .slick-prev:before {
+    content: '→';
   }
   main .sl-reporting-video .slick-next {
-    display: none;
+    right: 25px;
+  }
+  main .sl-reporting-video [dir='rtl'] .slick-next {
+    right: auto;
+    left: 25px;
+  }
+  main .sl-reporting-video .slick-next:before {
+    content: '→';
+  }
+  main .sl-reporting-video [dir='rtl'] .slick-next:before {
+    content: '←';
   }
 }
 /*header with name page*/

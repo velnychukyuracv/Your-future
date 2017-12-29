@@ -1877,7 +1877,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     width: 96% ;
     margin-left: 2%;
     margin-right: 2%;
-    /*Arrows*/
+    /* Arrows */
     /*dots*/
   }
   main .sl-main .sl_slide {
@@ -1897,11 +1897,78 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     width: 100%;
     height: 60%;
   }
+  main .sl-main .slick-prev,
+  main .sl-main .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  main .sl-main .slick-prev:hover,
+  main .sl-main .slick-prev:focus,
+  main .sl-main .slick-next:hover,
+  main .sl-main .slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: transparent;
+  }
+  main .sl-main .slick-prev:hover:before,
+  main .sl-main .slick-prev:focus:before,
+  main .sl-main .slick-next:hover:before,
+  main .sl-main .slick-next:focus:before {
+    opacity: 1;
+  }
+  main .sl-main .slick-prev.slick-disabled:before,
+  main .sl-main .slick-next.slick-disabled:before {
+    opacity: 1;
+  }
+  main .sl-main .slick-prev:before,
+  main .sl-main .slick-next:before {
+    font-family: 'slick';
+    font-size: 30px;
+    line-height: 1;
+    opacity: 1;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
   main .sl-main .slick-prev {
-    display: none;
+    left: -5px;
+  }
+  main .sl-main [dir='rtl'] .slick-prev {
+    right: 5px;
+    left: auto;
+  }
+  main .sl-main .slick-prev:before {
+    content: '←';
+  }
+  main .sl-main [dir='rtl'] .slick-prev:before {
+    content: '→';
   }
   main .sl-main .slick-next {
-    display: none;
+    right: -5px;
+  }
+  main .sl-main [dir='rtl'] .slick-next {
+    right: auto;
+    left: 5px;
+  }
+  main .sl-main .slick-next:before {
+    content: '→';
+  }
+  main .sl-main [dir='rtl'] .slick-next:before {
+    content: '←';
   }
   main .sl-main .slick-dotted .slick-slider {
     margin-bottom: 20px;

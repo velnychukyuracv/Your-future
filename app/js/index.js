@@ -2,7 +2,7 @@ $(document).ready(function() {
     $("#b-container").click(function() {
         $("#navigation_out_menu").toggleClass("open");
         $("header").toggleClass("open");
-        $("#main").toggleClass("open");
+        $("#mainContainer").toggleClass("open");
         $("footer").toggleClass("open");
         $(this).toggleClass("open");
     });
@@ -12,8 +12,8 @@ $(document).ready(function() {
 //slick slider
 //slick slider at top header index,thanksgiving,reviews and photo-reporting (pop up)
 $('.sl-main').slick({
-        /*autoplay: true,
-        autoplaySpeed:3000,*/
+        autoplay: true,
+        autoplaySpeed:3000,
         dots:true,
     }
 );
@@ -23,25 +23,24 @@ $('.sl').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 4,
-        /*autoplay: true,
-        autoplaySpeed:3000,*/
-
+        autoplay: true,
+        autoplaySpeed:3000,
         dots:true
 });
 
 
 //slick  slider at photo-reporting-album
 $('.sl-reporting').slick({
-       /* autoplay: true,
-        autoplaySpeed:3000,*/
+        autoplay: true,
+        autoplaySpeed:3000,
         asNavFor: '.sl-reporting-2',
         centerMode: true,
         variableWidth: true
     }
 );
 $('.sl-reporting-2').slick({
-        /*autoplay: true,
-        autoplaySpeed:3000,*/
+        autoplay: true,
+        autoplaySpeed:3000,
         dots:true,
         speed:1000,
         cssEase:'ease-in',

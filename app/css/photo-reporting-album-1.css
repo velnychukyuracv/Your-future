@@ -1933,7 +1933,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     width: 96%;
     margin-left: 2%;
     margin-right: 2%;
-    /*Arrows*/
+    /* Arrows */
   }
   main .sl-reporting .sl_slide {
     display: -webkit-box;
@@ -1957,36 +1957,78 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
   main .sl-reporting .sl_slide img {
     max-height: 100%;
   }
-  main .sl-reporting .slick-prev {
-    -webkit-border-radius: 0;
-            border-radius: 0;
-    background-color: #fff;
-    height: 100px;
-    width: 60px;
-    opacity: 0.25;
-    left: -50px;
-    z-index: 10;
+  main .sl-reporting .slick-prev,
+  main .sl-reporting .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
   }
-  main .sl-reporting .slick-prev:hover {
-    opacity: 0.7;
+  main .sl-reporting .slick-prev:hover,
+  main .sl-reporting .slick-prev:focus,
+  main .sl-reporting .slick-next:hover,
+  main .sl-reporting .slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: transparent;
+  }
+  main .sl-reporting .slick-prev:hover:before,
+  main .sl-reporting .slick-prev:focus:before,
+  main .sl-reporting .slick-next:hover:before,
+  main .sl-reporting .slick-next:focus:before {
+    opacity: 1;
+  }
+  main .sl-reporting .slick-prev.slick-disabled:before,
+  main .sl-reporting .slick-next.slick-disabled:before {
+    opacity: .25;
+  }
+  main .sl-reporting .slick-prev:before,
+  main .sl-reporting .slick-next:before {
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  main .sl-reporting .slick-prev {
+    left: 15px;
+  }
+  main .sl-reporting [dir='rtl'] .slick-prev {
+    right: 15px;
+    left: auto;
   }
   main .sl-reporting .slick-prev:before {
-    content: url("../img/arrow-prev.png");
+    content: '←';
+  }
+  main .sl-reporting [dir='rtl'] .slick-prev:before {
+    content: '→';
   }
   main .sl-reporting .slick-next {
-    -webkit-border-radius: 0;
-            border-radius: 0;
-    background-color: #fff;
-    height: 100px;
-    width: 60px;
-    opacity: 0.25;
-    right: -50px;
+    right: 25px;
   }
-  main .sl-reporting .slick-next:hover {
-    opacity: 0.7;
+  main .sl-reporting [dir='rtl'] .slick-next {
+    right: auto;
+    left: 15px;
   }
   main .sl-reporting .slick-next:before {
-    content: url("../img/arrow-next.png");
+    content: '→';
+  }
+  main .sl-reporting [dir='rtl'] .slick-next:before {
+    content: '←';
   }
   main .sl-reporting-2 {
     padding-top: 1%;

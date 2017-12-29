@@ -2010,6 +2010,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
             align-items: center;
     position: relative;
     /*Arrows*/
+    /* Arrows */
     /*Dots*/
   }
   main .popup .content .sl-main .sl_slide {
@@ -2035,36 +2036,78 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     max-height: 100%;
     max-width: 100%;
   }
-  main .popup .content .sl-main .slick-prev {
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.25;
-    height: 100px;
-    width: 100px;
-    left: 5px;
-    z-index: 10;
+  main .popup .content .sl-main .slick-prev,
+  main .popup .content .sl-main .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
   }
-  main .popup .content .sl-main .slick-prev:hover {
-    opacity: 0.7;
+  main .popup .content .sl-main .slick-prev:hover,
+  main .popup .content .sl-main .slick-prev:focus,
+  main .popup .content .sl-main .slick-next:hover,
+  main .popup .content .sl-main .slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: transparent;
+  }
+  main .popup .content .sl-main .slick-prev:hover:before,
+  main .popup .content .sl-main .slick-prev:focus:before,
+  main .popup .content .sl-main .slick-next:hover:before,
+  main .popup .content .sl-main .slick-next:focus:before {
+    opacity: 1;
+  }
+  main .popup .content .sl-main .slick-prev.slick-disabled:before,
+  main .popup .content .sl-main .slick-next.slick-disabled:before {
+    opacity: .25;
+  }
+  main .popup .content .sl-main .slick-prev:before,
+  main .popup .content .sl-main .slick-next:before {
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  main .popup .content .sl-main .slick-prev {
+    left: 15px;
+  }
+  main .popup .content .sl-main [dir='rtl'] .slick-prev {
+    right: 15px;
+    left: auto;
   }
   main .popup .content .sl-main .slick-prev:before {
-    content: url("../img/arrow-prev.png");
+    content: '←';
+  }
+  main .popup .content .sl-main [dir='rtl'] .slick-prev:before {
+    content: '→';
   }
   main .popup .content .sl-main .slick-next {
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.25;
-    height: 100px;
-    width: 100px;
-    right: 5px;
+    right: 25px;
   }
-  main .popup .content .sl-main .slick-next:hover {
-    opacity: 0.7;
+  main .popup .content .sl-main [dir='rtl'] .slick-next {
+    right: auto;
+    left: 15px;
   }
   main .popup .content .sl-main .slick-next:before {
-    content: url("../img/arrow-next.png");
+    content: '→';
+  }
+  main .popup .content .sl-main [dir='rtl'] .slick-next:before {
+    content: '←';
   }
   main .popup .content .sl-main .slick-dots {
     bottom: 5px;
@@ -2167,6 +2210,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
         -ms-flex-align: center;
             align-items: center;
     position: relative;
+    /* Arrows */
     /*Dots*/
   }
   main .overlay .popup .content .sl-main .sl_slide {
@@ -2189,6 +2233,79 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     margin: auto 0;
     max-height: 100%;
     max-width: 100%;
+  }
+  main .overlay .popup .content .sl-main .slick-prev,
+  main .overlay .popup .content .sl-main .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  main .overlay .popup .content .sl-main .slick-prev:hover,
+  main .overlay .popup .content .sl-main .slick-prev:focus,
+  main .overlay .popup .content .sl-main .slick-next:hover,
+  main .overlay .popup .content .sl-main .slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: transparent;
+  }
+  main .overlay .popup .content .sl-main .slick-prev:hover:before,
+  main .overlay .popup .content .sl-main .slick-prev:focus:before,
+  main .overlay .popup .content .sl-main .slick-next:hover:before,
+  main .overlay .popup .content .sl-main .slick-next:focus:before {
+    opacity: 1;
+  }
+  main .overlay .popup .content .sl-main .slick-prev.slick-disabled:before,
+  main .overlay .popup .content .sl-main .slick-next.slick-disabled:before {
+    opacity: .25;
+  }
+  main .overlay .popup .content .sl-main .slick-prev:before,
+  main .overlay .popup .content .sl-main .slick-next:before {
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  main .overlay .popup .content .sl-main .slick-prev {
+    left: 15px;
+  }
+  main .overlay .popup .content .sl-main [dir='rtl'] .slick-prev {
+    right: 55px;
+    left: auto;
+  }
+  main .overlay .popup .content .sl-main .slick-prev:before {
+    content: '←';
+  }
+  main .overlay .popup .content .sl-main [dir='rtl'] .slick-prev:before {
+    content: '→';
+  }
+  main .overlay .popup .content .sl-main .slick-next {
+    right: 25px;
+  }
+  main .overlay .popup .content .sl-main [dir='rtl'] .slick-next {
+    right: auto;
+    left: 15px;
+  }
+  main .overlay .popup .content .sl-main .slick-next:before {
+    content: '→';
+  }
+  main .overlay .popup .content .sl-main [dir='rtl'] .slick-next:before {
+    content: '←';
   }
   main .overlay .popup .content .sl-main .slick-dots {
     bottom: 5px;
