@@ -24,7 +24,7 @@ $('.sl').slick({
         slidesToShow: 4,
         slidesToScroll: 4,
         autoplay: true,
-        autoplaySpeed:3000,
+        autoplaySpeed:2000,
         dots:true
 });
 
@@ -34,8 +34,7 @@ $('.sl-reporting').slick({
         autoplay: true,
         autoplaySpeed:3000,
         asNavFor: '.sl-reporting-2',
-        centerMode: true,
-        variableWidth: true
+
     }
 );
 $('.sl-reporting-2').slick({

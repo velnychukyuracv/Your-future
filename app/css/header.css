@@ -298,16 +298,16 @@
           justify-content: flex-end;
   margin-right: 30px;
 }
-#header .topHeader .rightHeader h2 {
+#header .topHeader .rightHeader h5 {
   color: #fff;
   font-size: 18px;
   font-weight: 600;
   padding-top: 23px;
   text-align: right;
 }
-#header .topHeader .rightHeader h2 span {
+#header .topHeader .rightHeader h5 span {
   font-family: Roboto, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 #header .navigationPage {
@@ -459,10 +459,10 @@
   #header .topHeader .rightHeader .help {
     margin: 23px 20px 0 0;
   }
-  #header .topHeader .rightHeader h2 {
+  #header .topHeader .rightHeader h5 {
     font-size: 16px;
   }
-  #header .topHeader .rightHeader h2 span {
+  #header .topHeader .rightHeader h5 span {
     font-size: 16px;
   }
   #header .navigationPage {

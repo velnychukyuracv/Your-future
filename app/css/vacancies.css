@@ -233,7 +233,7 @@ body {
   width: 90%;
   padding-left: 10px;
 }
-#navigation_out_menu .header_out_menu h2 {
+#navigation_out_menu .header_out_menu h4 {
   font-size: 16px;
   text-transform: uppercase;
   color: #fff;
@@ -528,16 +528,16 @@ footer.open {
           justify-content: flex-end;
   margin-right: 30px;
 }
-#header .topHeader .rightHeader h2 {
+#header .topHeader .rightHeader h5 {
   color: #fff;
   font-size: 18px;
   font-weight: 600;
   padding-top: 23px;
   text-align: right;
 }
-#header .topHeader .rightHeader h2 span {
+#header .topHeader .rightHeader h5 span {
   font-family: Roboto, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 #header .navigationPage {
@@ -689,10 +689,10 @@ footer.open {
   #header .topHeader .rightHeader .help {
     margin: 23px 20px 0 0;
   }
-  #header .topHeader .rightHeader h2 {
+  #header .topHeader .rightHeader h5 {
     font-size: 16px;
   }
-  #header .topHeader .rightHeader h2 span {
+  #header .topHeader .rightHeader h5 span {
     font-size: 16px;
   }
   #header .navigationPage {
@@ -1178,7 +1178,7 @@ main {
       -ms-flex-pack: distribute;
           justify-content: space-around;
 }
-main .button {
+main .buttonAbout {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1194,7 +1194,7 @@ main .button {
           justify-content: flex-end;
   margin: 5px 0 10px;
 }
-main .button .vacancies_link {
+main .buttonAbout .vacancies_link {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -1220,11 +1220,12 @@ main .button .vacancies_link {
           align-items: center;
   font-size: 16px;
   font-weight: 700;
+  border: none;
 }
-main .button .vacancies_link .fa-arrow-right {
+main .buttonAbout .vacancies_link .fa-arrow-right {
   margin-left: 10px;
 }
-main .button .vacancies_link:hover {
+main .buttonAbout .vacancies_link:hover {
   background: #ececec;
   border: 2px solid #5bddbb;
   color: #5bddbb;
