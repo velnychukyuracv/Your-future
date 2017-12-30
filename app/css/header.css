@@ -206,17 +206,17 @@
   /*burger menu start*/
   /*burger menu end*/
 }
-#header .topHeader .leftHeader h2 {
+#header .topHeader .leftHeader h1 {
   text-transform: capitalize;
   color: #fff;
   font-size: 20px;
   font-weight: 600;
-  padding: 18px 0 0 14px;
+  padding: 18px 0 0 25px;
 }
-#header .topHeader .leftHeader h2:before {
+#header .topHeader .leftHeader h1:before {
   content: 'благодійна організація';
 }
-#header .topHeader .leftHeader h2 span:before {
+#header .topHeader .leftHeader h1 span:before {
   content: 'міжнародний благодійний фонд "твоє майбутнє"';
 }
 #header .topHeader .leftHeader #b-container {
@@ -450,7 +450,7 @@
   #header .topHeader .leftHeader {
     margin-left: 70px;
   }
-  #header .topHeader .leftHeader h2 {
+  #header .topHeader .leftHeader h1 {
     font-size: 18px;
   }
   #header .topHeader .rightHeader {
@@ -483,7 +483,7 @@
     /*navigation section end*/
   }
   #header .topHeader {
-    margin-bottom: 25px;
+    margin-bottom: 25px !important;
     /*logo section start*/
     /*logo section end*/
     /*help button section start*/
@@ -513,8 +513,8 @@
     left: 85%;
     top: 15%;
   }
-  #header .topHeader .leftHeader h2 {
-    padding: 20px 0 2.5% 0;
+  #header .topHeader .leftHeader h1 {
+    padding: 20px 0 2% 0;
     text-align: center;
   }
   #header .topHeader .leftHeader #b-container {
@@ -616,7 +616,7 @@
     -webkit-border-radius: 20px;
             border-radius: 20px;
   }
-  #header .navigationPage nav .help_section h2 {
+  #header .navigationPage nav .help_section h5 {
     color: #fff;
     font-size: 15px;
     font-family: Roboto, sans-serif;
@@ -670,15 +670,15 @@
     left: 80%;
     top: 15%;
   }
-  #header .topHeader .leftHeader h2 {
+  #header .topHeader .leftHeader h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 19px;
   }
-  #header .topHeader .leftHeader h2:before {
+  #header .topHeader .leftHeader h1:before {
     content: 'благодійна організація';
   }
-  #header .topHeader .leftHeader h2 span:before {
+  #header .topHeader .leftHeader h1 span:before {
     content: 'мбф "твоє майбутнє"';
   }
   #header .topHeader .leftHeader #b-container {
@@ -718,7 +718,7 @@
     margin: 0;
     height: 40px;
   }
-  #header .navigationPage nav .help_section h2 {
+  #header .navigationPage nav .help_section h5 {
     display: none;
   }
   #header .navigationPage nav .b-nav {
@@ -772,15 +772,15 @@
     height: 75%;
     width: 75%;
   }
-  #header .topHeader .leftHeader h2 {
+  #header .topHeader .leftHeader h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 18px;
   }
-  #header .topHeader .leftHeader h2:before {
+  #header .topHeader .leftHeader h1:before {
     content: 'благодійний фонд';
   }
-  #header .topHeader .leftHeader h2 span:before {
+  #header .topHeader .leftHeader h1 span:before {
     content: '"твоє майбутнє"';
   }
   #header .topHeader .leftHeader #b-container {
@@ -820,7 +820,7 @@
     margin: 0;
     height: 35px;
   }
-  #header .navigationPage nav .help_section h2 {
+  #header .navigationPage nav .help_section h5 {
     display: none;
   }
   #header .navigationPage nav .b-nav {
@@ -873,15 +873,15 @@
     height: 75%;
     width: 75%;
   }
-  #header .topHeader .leftHeader h2 {
+  #header .topHeader .leftHeader h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 18px;
   }
-  #header .topHeader .leftHeader h2:before {
+  #header .topHeader .leftHeader h1:before {
     content: 'бо мбф твоє';
   }
-  #header .topHeader .leftHeader h2 span:before {
+  #header .topHeader .leftHeader h1 span:before {
     content: 'майбутнє';
   }
   #header .topHeader .leftHeader #b-container {
@@ -921,7 +921,7 @@
     margin: 0;
     height: 35px;
   }
-  #header .navigationPage nav .help_section h2 {
+  #header .navigationPage nav .help_section h5 {
     display: none;
   }
   #header .navigationPage nav .b-nav {

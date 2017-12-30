@@ -233,8 +233,8 @@ body {
   width: 90%;
   padding-left: 10px;
 }
-#navigation_out_menu .header_out_menu h4 {
-  font-size: 16px;
+#navigation_out_menu .header_out_menu h2 {
+  font-size: 18px;
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
@@ -436,17 +436,17 @@ footer.open {
   /*burger menu start*/
   /*burger menu end*/
 }
-#header .topHeader .leftHeader h2 {
+#header .topHeader .leftHeader h1 {
   text-transform: capitalize;
   color: #fff;
   font-size: 20px;
   font-weight: 600;
-  padding: 18px 0 0 14px;
+  padding: 18px 0 0 25px;
 }
-#header .topHeader .leftHeader h2:before {
+#header .topHeader .leftHeader h1:before {
   content: 'благодійна організація';
 }
-#header .topHeader .leftHeader h2 span:before {
+#header .topHeader .leftHeader h1 span:before {
   content: 'міжнародний благодійний фонд "твоє майбутнє"';
 }
 #header .topHeader .leftHeader #b-container {
@@ -680,7 +680,7 @@ footer.open {
   #header .topHeader .leftHeader {
     margin-left: 70px;
   }
-  #header .topHeader .leftHeader h2 {
+  #header .topHeader .leftHeader h1 {
     font-size: 18px;
   }
   #header .topHeader .rightHeader {
@@ -713,7 +713,7 @@ footer.open {
     /*navigation section end*/
   }
   #header .topHeader {
-    margin-bottom: 25px;
+    margin-bottom: 25px !important;
     /*logo section start*/
     /*logo section end*/
     /*help button section start*/
@@ -743,8 +743,8 @@ footer.open {
     left: 85%;
     top: 15%;
   }
-  #header .topHeader .leftHeader h2 {
-    padding: 20px 0 2.5% 0;
+  #header .topHeader .leftHeader h1 {
+    padding: 20px 0 2% 0;
     text-align: center;
   }
   #header .topHeader .leftHeader #b-container {
@@ -846,7 +846,7 @@ footer.open {
     -webkit-border-radius: 20px;
             border-radius: 20px;
   }
-  #header .navigationPage nav .help_section h2 {
+  #header .navigationPage nav .help_section h5 {
     color: #fff;
     font-size: 15px;
     font-family: Roboto, sans-serif;
@@ -900,15 +900,15 @@ footer.open {
     left: 80%;
     top: 15%;
   }
-  #header .topHeader .leftHeader h2 {
+  #header .topHeader .leftHeader h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 19px;
   }
-  #header .topHeader .leftHeader h2:before {
+  #header .topHeader .leftHeader h1:before {
     content: 'благодійна організація';
   }
-  #header .topHeader .leftHeader h2 span:before {
+  #header .topHeader .leftHeader h1 span:before {
     content: 'мбф "твоє майбутнє"';
   }
   #header .topHeader .leftHeader #b-container {
@@ -948,7 +948,7 @@ footer.open {
     margin: 0;
     height: 40px;
   }
-  #header .navigationPage nav .help_section h2 {
+  #header .navigationPage nav .help_section h5 {
     display: none;
   }
   #header .navigationPage nav .b-nav {
@@ -1002,15 +1002,15 @@ footer.open {
     height: 75%;
     width: 75%;
   }
-  #header .topHeader .leftHeader h2 {
+  #header .topHeader .leftHeader h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 18px;
   }
-  #header .topHeader .leftHeader h2:before {
+  #header .topHeader .leftHeader h1:before {
     content: 'благодійний фонд';
   }
-  #header .topHeader .leftHeader h2 span:before {
+  #header .topHeader .leftHeader h1 span:before {
     content: '"твоє майбутнє"';
   }
   #header .topHeader .leftHeader #b-container {
@@ -1050,7 +1050,7 @@ footer.open {
     margin: 0;
     height: 35px;
   }
-  #header .navigationPage nav .help_section h2 {
+  #header .navigationPage nav .help_section h5 {
     display: none;
   }
   #header .navigationPage nav .b-nav {
@@ -1103,15 +1103,15 @@ footer.open {
     height: 75%;
     width: 75%;
   }
-  #header .topHeader .leftHeader h2 {
+  #header .topHeader .leftHeader h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 18px;
   }
-  #header .topHeader .leftHeader h2:before {
+  #header .topHeader .leftHeader h1:before {
     content: 'бо мбф твоє';
   }
-  #header .topHeader .leftHeader h2 span:before {
+  #header .topHeader .leftHeader h1 span:before {
     content: 'майбутнє';
   }
   #header .topHeader .leftHeader #b-container {
@@ -1151,7 +1151,7 @@ footer.open {
     margin: 0;
     height: 35px;
   }
-  #header .navigationPage nav .help_section h2 {
+  #header .navigationPage nav .help_section h5 {
     display: none;
   }
   #header .navigationPage nav .b-nav {
@@ -1212,7 +1212,7 @@ footer {
   /*Copyright section start*/
   /*Copyright section end*/
 }
-footer h3 {
+footer h4 {
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1240,7 +1240,7 @@ footer .topFooter {
   /*Requisites in English section start*/
   /*Requisites in English section end*/
 }
-footer .topFooter h4 {
+footer .topFooter h5 {
   font-size: 18px;
   font-weight: 500;
   font-family: Roboto, sans-serif;
@@ -1374,7 +1374,7 @@ footer .bottomFooter {
 footer .bottomFooter .leftBottomFooter {
   width: 45%;
 }
-footer .bottomFooter .leftBottomFooter h5 {
+footer .bottomFooter .leftBottomFooter h6 {
   font-size: 18px;
   font-weight: 500;
   color: #c3bbbd;
@@ -1471,7 +1471,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     /*Copyright section start*/
     /*Copyright section end*/
   }
-  footer h3 {
+  footer h4 {
     font-size: 20px;
   }
   footer hr {
@@ -1509,7 +1509,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     width: 50%;
     text-align: right;
   }
-  footer .topFooter .leftTopFooter h4 {
+  footer .topFooter .leftTopFooter h5 {
     font-size: 13px;
   }
   footer .topFooter .rightTopFooter {
@@ -1518,7 +1518,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     text-align: justify;
     padding-left: 5px;
   }
-  footer .topFooter .rightTopFooter h4 {
+  footer .topFooter .rightTopFooter h5 {
     font-size: 12px;
   }
   footer .middleFooter {
@@ -1618,7 +1618,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     width: 100%;
     padding-top: 4%;
   }
-  footer .bottomFooter .leftBottomFooter h5 {
+  footer .bottomFooter .leftBottomFooter h6 {
     font-size: 10px;
     font-weight: 400;
   }
@@ -1658,7 +1658,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     /*Copyright section start*/
     /*Copyright section end*/
   }
-  footer h3 {
+  footer h4 {
     font-size: 20px;
   }
   footer hr {
@@ -1691,7 +1691,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  footer .topFooter .leftTopFooter h4 {
+  footer .topFooter .leftTopFooter h5 {
     font-size: 13px;
   }
   footer .topFooter .rightTopFooter {
@@ -1699,7 +1699,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     width: 100%;
     text-align: justify;
   }
-  footer .topFooter .rightTopFooter h4 {
+  footer .topFooter .rightTopFooter h5 {
     font-size: 12px;
   }
   footer .middleFooter {
@@ -1791,7 +1791,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     width: 100%;
     padding-top: 4%;
   }
-  footer .bottomFooter .leftBottomFooter h5 {
+  footer .bottomFooter .leftBottomFooter h6 {
     font-size: 10px;
     font-weight: 400;
   }
@@ -1837,17 +1837,18 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
   }
 }
 /*header with name page*/
-@media (min-width: 491px) and (max-width: 768px) {
+@media (min-width: 491px) and (max-width: 767px) {
   #header .topHeader {
     margin-bottom: 50px;
   }
-  #header .topHeader .leftHeader h2 {
+  #header .topHeader .leftHeader h1 {
     font-size: 20px;
+    padding-left: 0 !important;
   }
-  #header .topHeader .leftHeader h2:before {
+  #header .topHeader .leftHeader h1:before {
     content: 'бо мбф "твоє майбутнє"';
   }
-  #header .topHeader .leftHeader h2 span:before {
+  #header .topHeader .leftHeader h1 span:before {
     content: 'контакти';
   }
 }
@@ -1855,13 +1856,14 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
   #header .topHeader {
     margin-bottom: 50px;
   }
-  #header .topHeader .leftHeader h2 {
+  #header .topHeader .leftHeader h1 {
     font-size: 22px;
+    padding-left: 0 !important;
   }
-  #header .topHeader .leftHeader h2:before {
+  #header .topHeader .leftHeader h1:before {
     content: 'контакти';
   }
-  #header .topHeader .leftHeader h2 span:before {
+  #header .topHeader .leftHeader h1 span:before {
     content: ' ';
   }
 }

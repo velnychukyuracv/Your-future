@@ -233,8 +233,8 @@ body {
   width: 90%;
   padding-left: 10px;
 }
-#navigation_out_menu .header_out_menu h4 {
-  font-size: 16px;
+#navigation_out_menu .header_out_menu h2 {
+  font-size: 18px;
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
@@ -437,17 +437,17 @@ footer.open {
   /*burger menu start*/
   /*burger menu end*/
 }
-#header .topHeader .leftHeader h2 {
+#header .topHeader .leftHeader h1 {
   text-transform: capitalize;
   color: #fff;
   font-size: 20px;
   font-weight: 600;
-  padding: 18px 0 0 14px;
+  padding: 18px 0 0 25px;
 }
-#header .topHeader .leftHeader h2:before {
+#header .topHeader .leftHeader h1:before {
   content: 'благодійна організація';
 }
-#header .topHeader .leftHeader h2 span:before {
+#header .topHeader .leftHeader h1 span:before {
   content: 'міжнародний благодійний фонд "твоє майбутнє"';
 }
 #header .topHeader .leftHeader #b-container {
@@ -681,7 +681,7 @@ footer.open {
   #header .topHeader .leftHeader {
     margin-left: 70px;
   }
-  #header .topHeader .leftHeader h2 {
+  #header .topHeader .leftHeader h1 {
     font-size: 18px;
   }
   #header .topHeader .rightHeader {
@@ -714,7 +714,7 @@ footer.open {
     /*navigation section end*/
   }
   #header .topHeader {
-    margin-bottom: 25px;
+    margin-bottom: 25px !important;
     /*logo section start*/
     /*logo section end*/
     /*help button section start*/
@@ -744,8 +744,8 @@ footer.open {
     left: 85%;
     top: 15%;
   }
-  #header .topHeader .leftHeader h2 {
-    padding: 20px 0 2.5% 0;
+  #header .topHeader .leftHeader h1 {
+    padding: 20px 0 2% 0;
     text-align: center;
   }
   #header .topHeader .leftHeader #b-container {
@@ -847,7 +847,7 @@ footer.open {
     -webkit-border-radius: 20px;
             border-radius: 20px;
   }
-  #header .navigationPage nav .help_section h2 {
+  #header .navigationPage nav .help_section h5 {
     color: #fff;
     font-size: 15px;
     font-family: Roboto, sans-serif;
@@ -901,15 +901,15 @@ footer.open {
     left: 80%;
     top: 15%;
   }
-  #header .topHeader .leftHeader h2 {
+  #header .topHeader .leftHeader h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 19px;
   }
-  #header .topHeader .leftHeader h2:before {
+  #header .topHeader .leftHeader h1:before {
     content: 'благодійна організація';
   }
-  #header .topHeader .leftHeader h2 span:before {
+  #header .topHeader .leftHeader h1 span:before {
     content: 'мбф "твоє майбутнє"';
   }
   #header .topHeader .leftHeader #b-container {
@@ -949,7 +949,7 @@ footer.open {
     margin: 0;
     height: 40px;
   }
-  #header .navigationPage nav .help_section h2 {
+  #header .navigationPage nav .help_section h5 {
     display: none;
   }
   #header .navigationPage nav .b-nav {
@@ -1003,15 +1003,15 @@ footer.open {
     height: 75%;
     width: 75%;
   }
-  #header .topHeader .leftHeader h2 {
+  #header .topHeader .leftHeader h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 18px;
   }
-  #header .topHeader .leftHeader h2:before {
+  #header .topHeader .leftHeader h1:before {
     content: 'благодійний фонд';
   }
-  #header .topHeader .leftHeader h2 span:before {
+  #header .topHeader .leftHeader h1 span:before {
     content: '"твоє майбутнє"';
   }
   #header .topHeader .leftHeader #b-container {
@@ -1051,7 +1051,7 @@ footer.open {
     margin: 0;
     height: 35px;
   }
-  #header .navigationPage nav .help_section h2 {
+  #header .navigationPage nav .help_section h5 {
     display: none;
   }
   #header .navigationPage nav .b-nav {
@@ -1104,15 +1104,15 @@ footer.open {
     height: 75%;
     width: 75%;
   }
-  #header .topHeader .leftHeader h2 {
+  #header .topHeader .leftHeader h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 18px;
   }
-  #header .topHeader .leftHeader h2:before {
+  #header .topHeader .leftHeader h1:before {
     content: 'бо мбф твоє';
   }
-  #header .topHeader .leftHeader h2 span:before {
+  #header .topHeader .leftHeader h1 span:before {
     content: 'майбутнє';
   }
   #header .topHeader .leftHeader #b-container {
@@ -1152,7 +1152,7 @@ footer.open {
     margin: 0;
     height: 35px;
   }
-  #header .navigationPage nav .help_section h2 {
+  #header .navigationPage nav .help_section h5 {
     display: none;
   }
   #header .navigationPage nav .b-nav {
@@ -1247,7 +1247,7 @@ footer.open {
 .mission .leftMission {
   width: 50%;
 }
-.mission .leftMission h3 {
+.mission .leftMission h4 {
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1334,7 +1334,7 @@ footer.open {
   background-color: #ececec;
   padding: 120px 30px;
 }
-.team h3 {
+.team h4 {
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1381,21 +1381,23 @@ footer.open {
   width: 100%;
   height: 100%;
 }
-.team .teamCooperator .cooperator h4 {
+.team .teamCooperator .cooperator h5 {
   padding: 24px 0 25px;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 700;
 }
-.team .teamCooperator .cooperator h5 {
+.team .teamCooperator .cooperator h6 {
   text-align: center;
+  font-size: 15px;
+  font-weight: 600;
 }
 /*our team section end*/
 /*our way section start*/
 .ourWay {
   padding: 120px 30px;
 }
-.ourWay h3 {
+.ourWay h4 {
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1619,7 +1621,7 @@ article {
   background-color: #ececec;
   padding: 100px 30px 50px 30px;
 }
-article h3 {
+article h4 {
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1712,7 +1714,7 @@ article .sl .slick-dots li.slick-active button:before {
 .photo {
   padding: 120px 30px;
 }
-.photo h3 {
+.photo h4 {
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
@@ -2160,7 +2162,7 @@ footer {
   /*Copyright section start*/
   /*Copyright section end*/
 }
-footer h3 {
+footer h4 {
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
@@ -2188,7 +2190,7 @@ footer .topFooter {
   /*Requisites in English section start*/
   /*Requisites in English section end*/
 }
-footer .topFooter h4 {
+footer .topFooter h5 {
   font-size: 18px;
   font-weight: 500;
   font-family: Roboto, sans-serif;
@@ -2322,7 +2324,7 @@ footer .bottomFooter {
 footer .bottomFooter .leftBottomFooter {
   width: 45%;
 }
-footer .bottomFooter .leftBottomFooter h5 {
+footer .bottomFooter .leftBottomFooter h6 {
   font-size: 18px;
   font-weight: 500;
   color: #c3bbbd;
@@ -2419,7 +2421,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     /*Copyright section start*/
     /*Copyright section end*/
   }
-  footer h3 {
+  footer h4 {
     font-size: 20px;
   }
   footer hr {
@@ -2457,7 +2459,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     width: 50%;
     text-align: right;
   }
-  footer .topFooter .leftTopFooter h4 {
+  footer .topFooter .leftTopFooter h5 {
     font-size: 13px;
   }
   footer .topFooter .rightTopFooter {
@@ -2466,7 +2468,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     text-align: justify;
     padding-left: 5px;
   }
-  footer .topFooter .rightTopFooter h4 {
+  footer .topFooter .rightTopFooter h5 {
     font-size: 12px;
   }
   footer .middleFooter {
@@ -2566,7 +2568,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     width: 100%;
     padding-top: 4%;
   }
-  footer .bottomFooter .leftBottomFooter h5 {
+  footer .bottomFooter .leftBottomFooter h6 {
     font-size: 10px;
     font-weight: 400;
   }
@@ -2606,7 +2608,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     /*Copyright section start*/
     /*Copyright section end*/
   }
-  footer h3 {
+  footer h4 {
     font-size: 20px;
   }
   footer hr {
@@ -2639,7 +2641,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  footer .topFooter .leftTopFooter h4 {
+  footer .topFooter .leftTopFooter h5 {
     font-size: 13px;
   }
   footer .topFooter .rightTopFooter {
@@ -2647,7 +2649,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     width: 100%;
     text-align: justify;
   }
-  footer .topFooter .rightTopFooter h4 {
+  footer .topFooter .rightTopFooter h5 {
     font-size: 12px;
   }
   footer .middleFooter {
@@ -2739,7 +2741,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     width: 100%;
     padding-top: 4%;
   }
-  footer .bottomFooter .leftBottomFooter h5 {
+  footer .bottomFooter .leftBottomFooter h6 {
     font-size: 10px;
     font-weight: 400;
   }
@@ -2820,7 +2822,7 @@ footer .middleFooter {
   .mission .leftMission {
     width: 75%;
   }
-  .mission .leftMission h3 {
+  .mission .leftMission h4 {
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
@@ -2865,7 +2867,7 @@ footer .middleFooter {
     background-color: #ececec;
     padding: 50px 15px;
   }
-  .team h3 {
+  .team h4 {
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
@@ -2912,13 +2914,13 @@ footer .middleFooter {
     width: 75%;
     height: 70%;
   }
-  .team .teamCooperator .cooperator h4 {
+  .team .teamCooperator .cooperator h5 {
     padding: 24px 0 25px;
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 700;
   }
-  .team .teamCooperator .cooperator h5 {
+  .team .teamCooperator .cooperator h6 {
     text-align: center;
   }
   /*our team section end*/
@@ -2926,7 +2928,7 @@ footer .middleFooter {
   .ourWay {
     padding: 50px 15px;
   }
-  .ourWay h3 {
+  .ourWay h4 {
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
@@ -3147,7 +3149,7 @@ footer .middleFooter {
     background-color: #ececec;
     padding: 50px 15px;
   }
-  article h3 {
+  article h4 {
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
@@ -3293,7 +3295,7 @@ footer .middleFooter {
   .photo {
     padding: 50px 30px 120px;
   }
-  .photo h3 {
+  .photo h4 {
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
@@ -3873,7 +3875,7 @@ footer .middleFooter {
             flex-direction: column;
     width: 100%;
   }
-  .mission .leftMission h3 {
+  .mission .leftMission h4 {
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
@@ -3903,7 +3905,7 @@ footer .middleFooter {
     background-color: #ececec;
     padding: 30px 15px;
   }
-  .team h3 {
+  .team h4 {
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
@@ -3944,13 +3946,13 @@ footer .middleFooter {
     width: 45%;
     height: 60%;
   }
-  .team .teamCooperator .cooperator h4 {
+  .team .teamCooperator .cooperator h5 {
     padding: 15px 0 10px;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 700;
   }
-  .team .teamCooperator .cooperator h5 {
+  .team .teamCooperator .cooperator h6 {
     text-align: center;
   }
   /*our team section end*/
@@ -3958,7 +3960,7 @@ footer .middleFooter {
   .ourWay {
     padding: 50px 15px;
   }
-  .ourWay h3 {
+  .ourWay h4 {
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
@@ -4179,7 +4181,7 @@ footer .middleFooter {
     background-color: #ececec;
     padding: 30px 15px;
   }
-  article h3 {
+  article h4 {
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
@@ -4323,7 +4325,7 @@ footer .middleFooter {
   .photo {
     padding: 30px 15px 70px;
   }
-  .photo h3 {
+  .photo h4 {
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
@@ -4774,7 +4776,7 @@ footer .middleFooter {
     margin: 0 1%;
   }
   /*map, form, contact section end*/
-  footer h3 {
+  footer h4 {
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
@@ -4928,7 +4930,7 @@ footer .middleFooter {
             flex-direction: column;
     width: 100%;
   }
-  .mission .leftMission h3 {
+  .mission .leftMission h4 {
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
@@ -4958,7 +4960,7 @@ footer .middleFooter {
     background-color: #ececec;
     padding: 30px 15px;
   }
-  .team h3 {
+  .team h4 {
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
@@ -5005,13 +5007,13 @@ footer .middleFooter {
     width: 45%;
     height: 60%;
   }
-  .team .teamCooperator .cooperator h4 {
+  .team .teamCooperator .cooperator h5 {
     padding: 15px 0 10px;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 700;
   }
-  .team .teamCooperator .cooperator h5 {
+  .team .teamCooperator .cooperator h6 {
     text-align: center;
   }
   /*our team section end*/
@@ -5019,7 +5021,7 @@ footer .middleFooter {
   .ourWay {
     padding: 30px 15px 60px;
   }
-  .ourWay h3 {
+  .ourWay h4 {
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
@@ -5159,7 +5161,7 @@ footer .middleFooter {
     background-color: #ececec;
     padding: 30px 15px;
   }
-  article h3 {
+  article h4 {
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
@@ -5303,7 +5305,7 @@ footer .middleFooter {
   .photo {
     padding: 30px 15px 70px;
   }
-  .photo h3 {
+  .photo h4 {
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
@@ -5754,7 +5756,7 @@ footer .middleFooter {
     margin: 0 1%;
   }
   /*map, form, contact section end*/
-  footer h3 {
+  footer h4 {
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
@@ -5908,7 +5910,7 @@ footer .middleFooter {
             flex-direction: column;
     width: 100%;
   }
-  .mission .leftMission h3 {
+  .mission .leftMission h4 {
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
@@ -5942,7 +5944,7 @@ footer .middleFooter {
     background-color: #ececec;
     padding: 20px 10px;
   }
-  .team h3 {
+  .team h4 {
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
@@ -5989,13 +5991,13 @@ footer .middleFooter {
     width: 45%;
     height: 60%;
   }
-  .team .teamCooperator .cooperator h4 {
+  .team .teamCooperator .cooperator h5 {
     padding: 15px 0 10px;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
   }
-  .team .teamCooperator .cooperator h5 {
+  .team .teamCooperator .cooperator h6 {
     text-align: center;
     font-size: 12px;
   }
@@ -6004,7 +6006,7 @@ footer .middleFooter {
   .ourWay {
     padding: 20px 10px 40px;
   }
-  .ourWay h3 {
+  .ourWay h4 {
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
@@ -6150,7 +6152,7 @@ footer .middleFooter {
     background-color: #ececec;
     padding: 20px 10px;
   }
-  article h3 {
+  article h4 {
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
@@ -6294,7 +6296,7 @@ footer .middleFooter {
   .photo {
     padding: 20px 10px 65px;
   }
-  .photo h3 {
+  .photo h4 {
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
@@ -6738,7 +6740,7 @@ footer .middleFooter {
     padding: 10px 0;
   }
   /*map, form, contact section end*/
-  footer h3 {
+  footer h4 {
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;

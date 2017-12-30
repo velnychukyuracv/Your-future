@@ -1,9 +1,15 @@
+<!--Header section start-->
 <header id="header">
     <!--top logo-help section start-->
     <div class="topHeader">
         <div class="leftHeader">
-            <a  href="index.html" class="logoDesktop"><img class="img-responsive" src="img/logo.png" alt="Logo"></a>
-            <h2>благодійна організація <br> міжнародний благодійний фонд "твоє майбутнє" </h2>
+            <a  href="index.html" class="logoDesktop"><img class="img-responsive" src="img/logo.png" alt="БФ Твоє Майбутнє"></a>
+            <h1>  <br><span> </span> </h1> <!--the name in h2 include from css selector - h2:before-->
+            <div id="b-container">
+                    <div class="b-bun b-bun--top"></div>
+                    <div class="b-bun b-bun--mid"></div>
+                    <div class="b-bun b-bun--bottom"></div>
+            </div>
         </div>
 
         <div class="rightHeader">
@@ -20,7 +26,7 @@
                         <a href="" class=" count" data-count="5000" data-left="440"><span>5 000 грн.</span></a>
                         <div class="active"></div>
                     </div>
-                    <h2 class="price">1000 грн.</h2>
+                    <h4 class="price">1000 грн.</h4>
                     <form action="thanks-pay.html" >
                         <input type="number" name="count" placeholder="або інша сума" min="1">
                         <input type="hidden" name="final_price" value="1000">
@@ -28,7 +34,7 @@
                     </form>
                 </div>
             </div>
-            <h2>Зв'яжіться з нами <br> <span>+38 (067) 46-90-571</span> </h2>
+            <h5>Зв'яжіться з нами <br> <span>+38 (067) 46-90-571</span> </h5>
         </div>
     </div>
     <!--top logo-help section end-->
@@ -62,6 +68,10 @@
                 <li><a class="b-link" href="requisites.html" >Реквізити</a></li>
                 <li><a class="b-link" href="need-help.html" >Потрібна допомога?</a></li>
             </ul>
+            <div class="help_section">
+                <a href="help-pay.html" class="help">допомогти</a>
+                <h5>Зв'яжіться з нами <br> <span>+38 (067) 46-90-571</span> </h5>
+            </div>
         </nav>
         <!--name page section-->
         <div class="namePage">
@@ -69,4 +79,6 @@
         </div>
     </div>
     <!--navigation section end-->
+
 </header>
+<!--Header section end-->

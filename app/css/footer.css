@@ -10,7 +10,7 @@ footer {
   /*Copyright section start*/
   /*Copyright section end*/
 }
-footer h3 {
+footer h4 {
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
@@ -38,7 +38,7 @@ footer .topFooter {
   /*Requisites in English section start*/
   /*Requisites in English section end*/
 }
-footer .topFooter h4 {
+footer .topFooter h5 {
   font-size: 18px;
   font-weight: 500;
   font-family: Roboto, sans-serif;
@@ -172,7 +172,7 @@ footer .bottomFooter {
 footer .bottomFooter .leftBottomFooter {
   width: 45%;
 }
-footer .bottomFooter .leftBottomFooter h5 {
+footer .bottomFooter .leftBottomFooter h6 {
   font-size: 18px;
   font-weight: 500;
   color: #c3bbbd;
@@ -269,7 +269,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     /*Copyright section start*/
     /*Copyright section end*/
   }
-  footer h3 {
+  footer h4 {
     font-size: 20px;
   }
   footer hr {
@@ -307,7 +307,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     width: 50%;
     text-align: right;
   }
-  footer .topFooter .leftTopFooter h4 {
+  footer .topFooter .leftTopFooter h5 {
     font-size: 13px;
   }
   footer .topFooter .rightTopFooter {
@@ -316,7 +316,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     text-align: justify;
     padding-left: 5px;
   }
-  footer .topFooter .rightTopFooter h4 {
+  footer .topFooter .rightTopFooter h5 {
     font-size: 12px;
   }
   footer .middleFooter {
@@ -416,7 +416,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     width: 100%;
     padding-top: 4%;
   }
-  footer .bottomFooter .leftBottomFooter h5 {
+  footer .bottomFooter .leftBottomFooter h6 {
     font-size: 10px;
     font-weight: 400;
   }
@@ -456,7 +456,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     /*Copyright section start*/
     /*Copyright section end*/
   }
-  footer h3 {
+  footer h4 {
     font-size: 20px;
   }
   footer hr {
@@ -489,7 +489,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  footer .topFooter .leftTopFooter h4 {
+  footer .topFooter .leftTopFooter h5 {
     font-size: 13px;
   }
   footer .topFooter .rightTopFooter {
@@ -497,7 +497,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     width: 100%;
     text-align: justify;
   }
-  footer .topFooter .rightTopFooter h4 {
+  footer .topFooter .rightTopFooter h5 {
     font-size: 12px;
   }
   footer .middleFooter {
@@ -589,7 +589,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     width: 100%;
     padding-top: 4%;
   }
-  footer .bottomFooter .leftBottomFooter h5 {
+  footer .bottomFooter .leftBottomFooter h6 {
     font-size: 10px;
     font-weight: 400;
   }

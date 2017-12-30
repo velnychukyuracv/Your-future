@@ -9,6 +9,7 @@ var gulp         = require('gulp'), // Подключаем Gulp
     autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
     htmlmin      = require('gulp-html-minifier');// Подключаем пакет для минификации HTML
     uglify       = require('gulp-uglifyjs'); // Подключаем пакет для минификации JS
+    concat       = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
 
 
 //  таск Less+префиксы
@@ -35,7 +36,8 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 //  таск для минификации CSS
 gulp.task('css-libs', ['less'], function() {
     return gulp.src('app/css/*.css') // Выбираем файл для минификации
-        .pipe(cssnano()) // Сжимаем
+        .pipe(concat('style.css'))//Обєдинаєм все css
+        /*.pipe(cssnano()) // Сжимаем*/
         .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
         .pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
     });
@@ -87,6 +89,8 @@ gulp.task('img', function() {
 gulp.task('clean', function() {
     return del.sync('dist'); // Удаляем папку dist перед сборкой
 });
+
+
 
 // продакшен
 gulp.task('build', ['clean', 'img', 'css-libs','scripts','minify'], function() {
