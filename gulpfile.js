@@ -9,7 +9,8 @@ var gulp         = require('gulp'), // Подключаем Gulp
     autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
     htmlmin      = require('gulp-html-minifier');// Подключаем пакет для минификации HTML
     uglify       = require('gulp-uglifyjs'); // Подключаем пакет для минификации JS
-    concat       = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
+    concat       = require('gulp-concat'); // Подключаем gulp-concat (для конкатенации файлов)
+    concatCss    = require('gulp-concat-css');// Подключаем gulp-concat-css (для конкатенации файлов css)
 
 
 //  таск Less+префиксы
@@ -36,8 +37,8 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 //  таск для минификации CSS
 gulp.task('css-libs', ['less'], function() {
     return gulp.src('app/css/*.css') // Выбираем файл для минификации
-        .pipe(concat('style.css'))//Обєдинаєм все css
-        /*.pipe(cssnano()) // Сжимаем*/
+        .pipe(concatCss ('style.css'))//Объединить все css
+        .pipe(cssnano()) // Сжимаем
         .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
         .pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
     });
@@ -53,16 +54,11 @@ gulp.task('minify', function() {
 //таск для минификации scripts
 gulp.task('scripts', function() {
     return gulp.src(['app/js/*.js'])// Берем js
+        .pipe(jshint())// Проверка ошибок в скриптах
+        .pipe(jshint.reporter('default'))// Проверка ошибок в скриптах
         .pipe(uglify()) // Сжимаем JS файл
         .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
         .pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
-});
-
-// Проверка ошибок в скриптах
-gulp.task('lint', function() {
-    return gulp.src(['js/*.js', '!js/*.min.js', '!js/*jquery*', '!js/*bootstrap*'])
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
 });
 
 // Наблюдение
@@ -100,7 +96,7 @@ gulp.task('build', ['clean', 'img', 'css-libs','scripts','minify'], function() {
         .pipe(gulp.dest('dist/css'))
 
     var buildJs = gulp.src(['app/js/*.min.js']) // Переносим скрипты в продакшен
-        .pipe(rename('index.js'))
+        .pipe(rename('*.js'))
         .pipe(gulp.dest('dist/js'))
 
     var buildHtml = gulp.src(['app/*.min.html'])// Переносим библиотеки html в продакшен

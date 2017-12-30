@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Спеціаліст з фандрайзингу | Твоє майбутнє</title>
+
+    <!--Favicon logo-->
+    <link rel="shortcut icon" href="./img/logo.png" type="image/png">
+
+    <!--Font-Google-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet">
+
+    <!-- Magnific Popup core CSS file -->
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css'>
+
+    <!--Style-->
+    <link href="css/fundraising.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+<!--Navigation out menu section start-->
+<? require_once('navigation_out_menu.php') ?>
+<!--Navigation out menu section end-->
+
+
+<!--Header section start-->
+<? require_once('header.php') ?>
+<!--Header section end-->
+
+<!--Main section start-->
+<main id="mainContainer">
+    <h3>Спеціаліст з фандрайзингу</h3>
+    <br>
+    <h6>УВАГА! Відкрита вакансія на посаду Менеджер благодійних програм / Спеціаліст по залученню благодійних коштів / фандрайзерів</h6>
+    <br>
+    <br>
+    <h6>Вимоги:</h6>
+    <br>
+    <ul>
+        <li>досвід роботи в соціальній сфері є перевагою (але не є обов’язковим);</li>
+        <li>досвідчений користувач ПК (офісні програми, інтернет, електронна пошта), навички та вміння налагоджувати ділові контакти, бажано досвід роботи в НКО;</li>
+        <li>досвід роботи в торгівлі у сфері прямих продажів, «холодних дзвінків», наявність своєї клієнтської бази вітається.</li>
+    </ul>
+    <br>
+    <h6>Обов’язки:</h6>
+    <br>
+    <ul>
+        <li>залучення грошових і матеріальних коштів на реалізацію програм фонду;</li>
+        <li>формування та розширення донорської бази фонду, розробка і застосування стратегій залучення коштів;</li>
+        <li>системна робота по залученню із застосуванням маркетингових технологій (телемаркетинг, діректмейл, проведення зустрічей);</li>
+        <li>зв’язок з потенційними донорами, залучення у повторну участь та участь на регулярній основі;</li>
+        <li>організація та здійснення фандрайзинговоїдіяльності під час проведення благодійних заходів, оцінка результативності фандрайзингу у фонді;</li>
+        <li>пошук контактів потенційних благодійників, спонсорів, меценатів;</li>
+        <li>телефонний прозвон (телемаркетинг);</li>
+        <li>укладання домовленостей про зустріч з благодійниками;</li>
+        <li>ведення бази даних благодійників;</li>
+        <li>технічна підтримка існуючих процедур по залученню коштів;</li>
+        <li>участь у розробці нових ідей і джерел залучення коштів.</li>
+    </ul>
+    <br>
+    <br>
+    <h6>Особистісні якості:</h6>
+    <br>
+    <ul>
+        <li>націленість на результат;</li>
+        <li>гармонійне поєднання креативності та скрупульозності;</li>
+        <li>відповідальність;</li>
+        <li>комунікабельність;</li>
+        <li>організаційні здібності; </li>
+        <li>стресостійкість. </li>
+    </ul>
+    <br>
+    <p>Робочий день з 09:30 — 18:00.</p>
+    <br>
+    <p>Дружній, молодий колектив.</p>
+    <br>
+    <h6>Прохання надсилати Ваше резюме з фотографією на електронну пошту: <a href="mailto:icf.your.future@ukr.net">icf.your.future@ukr.net</a> </h6>
+    <br>
+    <h6>З повагою,</h6>
+    <br>
+    <h6>Команда Твоє Майбутнє!</h6>
+</main>
+<!--Main section end-->
+
+<!--Footer section start-->
+<? require_once('footer.php') ?>
+<!--Footer section end-->
+
+<!--scripts-->
+
+    <!--Font-Awesome-->
+    <script  src="https://use.fontawesome.com/2ce0afabeb.js"></script>
+
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+
+
+    <!--js-->
+    <script  src="js/index.js"></script>
+    <script  src="js/scroll.js"></script>
+    <script  src="js/effects_button_help.js"></script>
+
+</body>
+</html>
