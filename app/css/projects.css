@@ -188,6 +188,7 @@ body {
   min-width: 280px;
   height: 100%;
   max-height: 100%;
+  min-height: 450px;
   position: fixed;
   background: -webkit-gradient(linear, left top, left bottom, from(#6bf3d9), to(#336b54));
   background: -webkit-linear-gradient(top, #6bf3d9 0%, #336b54 100%);
@@ -451,12 +452,12 @@ footer.open {
 }
 #header .topHeader .leftHeader #b-container {
   height: 60px;
-  left: 30px;
+  left: 20px;
   position: absolute;
   top: 20px;
   cursor: pointer;
   display: none;
-  padding-left: 15.5px;
+  padding-left: 12.5px;
   padding-top: 17.5px;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -494,7 +495,7 @@ footer.open {
   background: white;
 }
 #header .topHeader .leftHeader #b-container.open {
-  left: 280px;
+  left: 265px;
   opacity: 1;
 }
 #header .topHeader .leftHeader #b-container.open .b-bun--top {
@@ -1115,7 +1116,7 @@ footer.open {
     content: 'майбутнє';
   }
   #header .topHeader .leftHeader #b-container {
-    left: 25px;
+    left: 20px;
     display: block;
   }
   #header .topHeader .rightHeader {
@@ -2030,7 +2031,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     font-weight: 500;
   }
   main .project h4 {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
     margin: 10px 0;
   }
@@ -2104,7 +2105,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     font-size: 18px;
   }
   main .project h4 {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
     margin: 10px 0;
   }

@@ -221,12 +221,12 @@
 }
 #header .topHeader .leftHeader #b-container {
   height: 60px;
-  left: 30px;
+  left: 20px;
   position: absolute;
   top: 20px;
   cursor: pointer;
   display: none;
-  padding-left: 15.5px;
+  padding-left: 12.5px;
   padding-top: 17.5px;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -264,7 +264,7 @@
   background: white;
 }
 #header .topHeader .leftHeader #b-container.open {
-  left: 280px;
+  left: 265px;
   opacity: 1;
 }
 #header .topHeader .leftHeader #b-container.open .b-bun--top {
@@ -885,7 +885,7 @@
     content: 'майбутнє';
   }
   #header .topHeader .leftHeader #b-container {
-    left: 25px;
+    left: 20px;
     display: block;
   }
   #header .topHeader .rightHeader {
