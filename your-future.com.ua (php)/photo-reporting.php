@@ -20,11 +20,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
 
     <!--Style-->
-    <link href="css/photo-reporting.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
 
 </head>
-<body>
+<body class="photoReporting">
 
 <!--Navigation out menu section start-->
 <? require_once('navigation_out_menu.php') ?>

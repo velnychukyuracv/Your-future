@@ -4,14 +4,26 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-body {
+.thanksPay {
   min-width: 320px;
   margin: 0 auto;
   font-family: Raleway, sans-serif;
   font-weight: 400;
+  /*button*/
+  /*pop-up window*/
+  /* Zoom-out effect style*/
+  /*header start*/
+  /*header section end*/
+  /*style for  size from 1024px to 1250px*/
+  /*style for tablet size from 768px to 1023px*/
+  /*style for tablet size from 480px to 767px*/
+  /*style for tablet size from 320px to 479px*/
+  /*start footer style*/
+  /*end footer style*/
+  /*style for tablet size from 650px to 850px*/
+  /*style for tablet size from 320px to 649px*/
 }
-/*button*/
-.help {
+.thanksPay .help {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -40,7 +52,7 @@ body {
   outline: none;
   border: none;
 }
-.help:hover {
+.thanksPay .help:hover {
   background-color: #fb5a87;
 }
 @-webkit-keyframes pulsate {
@@ -55,8 +67,7 @@ body {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
   }
 }
-/*pop-up window*/
-.container_count {
+.thanksPay .container_count {
   max-width: 760px;
   width: 100%;
   margin: 150px auto;
@@ -67,7 +78,7 @@ body {
           background-size: cover;
   padding: 10px;
 }
-.container_count .block_count {
+.thanksPay .container_count .block_count {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -77,7 +88,7 @@ body {
   -webkit-border-radius: 5px;
           border-radius: 5px;
 }
-.container_count .block_count .count {
+.thanksPay .container_count .block_count .count {
   cursor: pointer;
   text-align: center;
   color: #fff;
@@ -90,10 +101,10 @@ body {
   font-size: 18px;
   font-family: Roboto, sans-serif;
 }
-.container_count .block_count .count.curent {
+.thanksPay .container_count .block_count .count.curent {
   color: #5d3f49;
 }
-.container_count .block_count .active {
+.thanksPay .container_count .block_count .active {
   position: absolute;
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -110,10 +121,10 @@ body {
           transform: translateX(220%);
   font-family: Roboto, sans-serif;
 }
-.container_count form {
+.thanksPay .container_count form {
   margin-top: 50px;
 }
-.container_count form input[name='count'] {
+.thanksPay .container_count form input[name='count'] {
   text-align: center;
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -122,7 +133,7 @@ body {
   color: #333;
   width: 100%;
 }
-.container_count form input[type='submit'] {
+.thanksPay .container_count form input[type='submit'] {
   margin: 30px auto;
   display: block;
   -webkit-border-radius: 5px;
@@ -134,18 +145,17 @@ body {
   font-weight: 700;
   font-size: 14px;
 }
-.container_count form input[type='submit']:hover {
+.thanksPay .container_count form input[type='submit']:hover {
   background: rgba(255, 255, 255, 0.85);
 }
-.container_count .price {
+.thanksPay .container_count .price {
   color: #fff;
   font-size: 48px;
   text-align: center;
   margin-top: 50px;
   font-family: Roboto, sans-serif;
 }
-/* Zoom-out effect style*/
-.mfp-zoom-out .mfp-with-anim {
+.thanksPay .mfp-zoom-out .mfp-with-anim {
   opacity: 0;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -154,39 +164,38 @@ body {
       -ms-transform: scale(1.3);
           transform: scale(1.3);
 }
-.mfp-zoom-out.mfp-bg {
+.thanksPay .mfp-zoom-out.mfp-bg {
   opacity: 0;
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-.mfp-zoom-out.mfp-ready .mfp-with-anim {
+.thanksPay .mfp-zoom-out.mfp-ready .mfp-with-anim {
   opacity: 1;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
 }
-.mfp-zoom-out.mfp-ready.mfp-bg {
+.thanksPay .mfp-zoom-out.mfp-ready.mfp-bg {
   opacity: 0.8;
 }
-.mfp-zoom-out.mfp-removing .mfp-with-anim {
+.thanksPay .mfp-zoom-out.mfp-removing .mfp-with-anim {
   -webkit-transform: scale(1.3);
       -ms-transform: scale(1.3);
           transform: scale(1.3);
   opacity: 0;
 }
-.mfp-zoom-out.mfp-removing.mfp-bg {
+.thanksPay .mfp-zoom-out.mfp-removing.mfp-bg {
   opacity: 0;
 }
-.mfp-close-btn-in .mfp-close {
+.thanksPay .mfp-close-btn-in .mfp-close {
   display: none;
 }
-#navigation_out_menu {
+.thanksPay #navigation_out_menu {
   width: 280px;
   min-width: 280px;
   height: 100%;
   max-height: 100%;
-  min-height: 450px;
   position: fixed;
   background: -webkit-gradient(linear, left top, left bottom, from(#6bf3d9), to(#336b54));
   background: -webkit-linear-gradient(top, #6bf3d9 0%, #336b54 100%);
@@ -210,7 +219,7 @@ body {
   -o-transition: left ease 0.4s;
   transition: left ease 0.4s;
 }
-#navigation_out_menu .header_out_menu {
+.thanksPay #navigation_out_menu .header_out_menu {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -228,18 +237,18 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-#navigation_out_menu .header_out_menu img {
+.thanksPay #navigation_out_menu .header_out_menu img {
   width: 90%;
   padding-left: 10px;
 }
-#navigation_out_menu .header_out_menu h2 {
+.thanksPay #navigation_out_menu .header_out_menu h2 {
   font-size: 18px;
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
   padding: 0 10px ;
 }
-#navigation_out_menu nav .nav_out_menu {
+.thanksPay #navigation_out_menu nav .nav_out_menu {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -251,7 +260,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-#navigation_out_menu nav .nav_out_menu li {
+.thanksPay #navigation_out_menu nav .nav_out_menu li {
   padding: 10px 10px;
   list-style-type: none;
   background: -webkit-gradient(linear, left top, left bottom, from(#6cffe5), to(#1b5148));
@@ -259,24 +268,24 @@ body {
   background: -o-linear-gradient(top, #6cffe5 0%, #1b5148 100%);
   background: linear-gradient(top, #6cffe5 0%, #1b5148 100%);
 }
-#navigation_out_menu nav .nav_out_menu li .link_out_menu {
+.thanksPay #navigation_out_menu nav .nav_out_menu li .link_out_menu {
   color: #fff;
   text-decoration: none;
   display: block;
   height: 100%;
   font-size: 20px;
 }
-#navigation_out_menu nav .nav_out_menu li .link_out_menu:hover {
+.thanksPay #navigation_out_menu nav .nav_out_menu li .link_out_menu:hover {
   color: #5d3f49;
 }
-#navigation_out_menu nav .nav_out_menu li:hover {
+.thanksPay #navigation_out_menu nav .nav_out_menu li:hover {
   background: -webkit-gradient(linear, left top, right top, from(#ff7f9c), to(#b64760));
   background: -webkit-linear-gradient(left, #ff7f9c 0%, #b64760 100%);
   background: -o-linear-gradient(left, #ff7f9c 0%, #b64760 100%);
   background: linear-gradient(left, #ff7f9c 0%, #b64760 100%);
   color: #5d3f49;
 }
-#navigation_out_menu nav .nav_out_menu li .sub_nav_out_menu {
+.thanksPay #navigation_out_menu nav .nav_out_menu li .sub_nav_out_menu {
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -286,10 +295,10 @@ body {
   margin-left: 20px;
   width: 100%;
 }
-#navigation_out_menu nav .nav_out_menu li .sub_nav_out_menu li {
+.thanksPay #navigation_out_menu nav .nav_out_menu li .sub_nav_out_menu li {
   background: none;
 }
-#navigation_out_menu .help {
+.thanksPay #navigation_out_menu .help {
   width: 80%;
   margin: 0 10%;
   -webkit-animation: none;
@@ -302,12 +311,12 @@ body {
   background: -o-linear-gradient(left, #ff7f9c 0%, #fb5a87 100%);
   background: linear-gradient(left, #ff7f9c 0%, #fb5a87 100%);
 }
-#navigation_out_menu .help:hover {
+.thanksPay #navigation_out_menu .help:hover {
   border: 2px solid #ff7f9c;
   color: #ff7f9c;
   background: #fff;
 }
-#navigation_out_menu .footer_out_menu {
+.thanksPay #navigation_out_menu .footer_out_menu {
   margin: 0 4% 2%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -319,7 +328,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-#navigation_out_menu .footer_out_menu .social_out_menu {
+.thanksPay #navigation_out_menu .footer_out_menu .social_out_menu {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -335,7 +344,7 @@ body {
           justify-content: space-between;
   margin: 8% 0;
 }
-#navigation_out_menu .footer_out_menu .social_out_menu a {
+.thanksPay #navigation_out_menu .footer_out_menu .social_out_menu a {
   width: 45px;
   height: 45px;
   -webkit-border-radius: 50%;
@@ -355,51 +364,50 @@ body {
           align-items: center;
   text-decoration: none;
 }
-#navigation_out_menu .footer_out_menu .social_out_menu a .fa-facebook,
-#navigation_out_menu .footer_out_menu .social_out_menu a .fa-instagram,
-#navigation_out_menu .footer_out_menu .social_out_menu a .fa-youtube-play {
+.thanksPay #navigation_out_menu .footer_out_menu .social_out_menu a .fa-facebook,
+.thanksPay #navigation_out_menu .footer_out_menu .social_out_menu a .fa-instagram,
+.thanksPay #navigation_out_menu .footer_out_menu .social_out_menu a .fa-youtube-play {
   color: #c3bbbd;
 }
-#navigation_out_menu .footer_out_menu .social_out_menu .instagram {
+.thanksPay #navigation_out_menu .footer_out_menu .social_out_menu .instagram {
   margin: 0 55px;
 }
-#navigation_out_menu .footer_out_menu .social_out_menu .facebook:hover {
+.thanksPay #navigation_out_menu .footer_out_menu .social_out_menu .facebook:hover {
   border-color: #3B5998;
 }
-#navigation_out_menu .footer_out_menu .social_out_menu .facebook:hover .fa-facebook {
+.thanksPay #navigation_out_menu .footer_out_menu .social_out_menu .facebook:hover .fa-facebook {
   color: #3B5998;
 }
-#navigation_out_menu .footer_out_menu .social_out_menu .instagram:hover {
+.thanksPay #navigation_out_menu .footer_out_menu .social_out_menu .instagram:hover {
   border-color: #FE902E;
 }
-#navigation_out_menu .footer_out_menu .social_out_menu .instagram:hover .fa-instagram {
+.thanksPay #navigation_out_menu .footer_out_menu .social_out_menu .instagram:hover .fa-instagram {
   color: #FE902E;
 }
-#navigation_out_menu .footer_out_menu .social_out_menu .youtube:hover {
+.thanksPay #navigation_out_menu .footer_out_menu .social_out_menu .youtube:hover {
   border-color: #FF0000;
 }
-#navigation_out_menu .footer_out_menu .social_out_menu .youtube:hover .fa-youtube-play {
+.thanksPay #navigation_out_menu .footer_out_menu .social_out_menu .youtube:hover .fa-youtube-play {
   color: #FF0000;
 }
-#navigation_out_menu .footer_out_menu h5 {
+.thanksPay #navigation_out_menu .footer_out_menu h5 {
   font-size: 10px;
   font-weight: 600;
   color: #fff;
 }
-#navigation_out_menu.open {
+.thanksPay #navigation_out_menu.open {
   left: 0px;
 }
-header.open {
+.thanksPay header.open {
   opacity: 0.9;
 }
-main.open {
+.thanksPay main.open {
   opacity: 0.3;
 }
-footer.open {
+.thanksPay footer.open {
   opacity: 0.3;
 }
-/*header start*/
-#header {
+.thanksPay #header {
   background: -webkit-gradient(linear, left top, left bottom, from(#65dec4), to(#48b097));
   background: -webkit-linear-gradient(top, #65dec4 0%, #48b097 100%);
   background: -o-linear-gradient(top, #65dec4 0%, #48b097 100%);
@@ -413,7 +421,7 @@ footer.open {
   /*navigation section start*/
   /*navigation section end*/
 }
-#header .topHeader {
+.thanksPay #header .topHeader {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -425,7 +433,7 @@ footer.open {
   /*help button section start*/
   /*help button section end*/
 }
-#header .topHeader .leftHeader {
+.thanksPay #header .topHeader .leftHeader {
   width: 60%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -435,20 +443,20 @@ footer.open {
   /*burger menu start*/
   /*burger menu end*/
 }
-#header .topHeader .leftHeader h1 {
+.thanksPay #header .topHeader .leftHeader h1 {
   text-transform: capitalize;
   color: #fff;
   font-size: 20px;
   font-weight: 600;
   padding: 18px 0 0 25px;
 }
-#header .topHeader .leftHeader h1:before {
+.thanksPay #header .topHeader .leftHeader h1:before {
   content: 'благодійна організація';
 }
-#header .topHeader .leftHeader h1 span:before {
+.thanksPay #header .topHeader .leftHeader h1 span:before {
   content: 'міжнародний благодійний фонд "твоє майбутнє"';
 }
-#header .topHeader .leftHeader #b-container {
+.thanksPay #header .topHeader .leftHeader #b-container {
   height: 60px;
   left: 20px;
   position: absolute;
@@ -467,36 +475,36 @@ footer.open {
   width: 60px;
   opacity: 1;
 }
-#header .topHeader .leftHeader .b-bun {
+.thanksPay #header .topHeader .leftHeader .b-bun {
   background: white;
   position: relative;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-#header .topHeader .leftHeader .b-bun--top {
+.thanksPay #header .topHeader .leftHeader .b-bun--top {
   height: 2px;
   top: 0;
   width: 30px;
   background: white;
 }
-#header .topHeader .leftHeader .b-bun--mid {
+.thanksPay #header .topHeader .leftHeader .b-bun--mid {
   height: 2px;
   top: 8px;
   width: 30px;
   background: white;
 }
-#header .topHeader .leftHeader .b-bun--bottom {
+.thanksPay #header .topHeader .leftHeader .b-bun--bottom {
   height: 2px;
   top: 16px;
   width: 30px;
   background: white;
 }
-#header .topHeader .leftHeader #b-container.open {
+.thanksPay #header .topHeader .leftHeader #b-container.open {
   left: 265px;
   opacity: 1;
 }
-#header .topHeader .leftHeader #b-container.open .b-bun--top {
+.thanksPay #header .topHeader .leftHeader #b-container.open .b-bun--top {
   background: #5d3f49;
   top: 9px;
   -webkit-transform: rotate(45deg);
@@ -504,10 +512,10 @@ footer.open {
           transform: rotate(45deg);
   opacity: 1;
 }
-#header .topHeader .leftHeader #b-container.open .b-bun--mid {
+.thanksPay #header .topHeader .leftHeader #b-container.open .b-bun--mid {
   opacity: 0;
 }
-#header .topHeader .leftHeader #b-container.open .b-bun--bottom {
+.thanksPay #header .topHeader .leftHeader #b-container.open .b-bun--bottom {
   background: #5d3f49;
   top: 5px;
   -webkit-transform: rotate(-45deg);
@@ -515,7 +523,7 @@ footer.open {
           transform: rotate(-45deg);
   opacity: 1;
 }
-#header .topHeader .rightHeader {
+.thanksPay #header .topHeader .rightHeader {
   width: 40%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -527,19 +535,19 @@ footer.open {
           justify-content: flex-end;
   margin-right: 30px;
 }
-#header .topHeader .rightHeader h5 {
+.thanksPay #header .topHeader .rightHeader h5 {
   color: #fff;
   font-size: 18px;
   font-weight: 600;
   padding-top: 23px;
   text-align: right;
 }
-#header .topHeader .rightHeader h5 span {
+.thanksPay #header .topHeader .rightHeader h5 span {
   font-family: Roboto, sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
-#header .navigationPage {
+.thanksPay #header .navigationPage {
   margin: -1.5% 15% 0;
   position: absolute;
   width: 70%;
@@ -565,7 +573,7 @@ footer.open {
   /*name page start*/
   /*name page end*/
 }
-#header .navigationPage nav {
+.thanksPay #header .navigationPage nav {
   width: 100%;
   -webkit-border-radius: 25px;
           border-radius: 25px;
@@ -575,10 +583,10 @@ footer.open {
   background: linear-gradient(left, #825c60 0%, #493136 100%);
   padding: 13px 20px;
 }
-#header .navigationPage nav .help_section {
+.thanksPay #header .navigationPage nav .help_section {
   display: none;
 }
-#header .navigationPage nav .b-nav {
+.thanksPay #header .navigationPage nav .b-nav {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -587,19 +595,19 @@ footer.open {
       -ms-flex-pack: distribute;
           justify-content: space-around;
 }
-#header .navigationPage nav .b-nav li {
+.thanksPay #header .navigationPage nav .b-nav li {
   list-style-type: none;
 }
-#header .navigationPage nav .b-nav li .b-link {
+.thanksPay #header .navigationPage nav .b-nav li .b-link {
   padding: 25px 5px;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
 }
-#header .navigationPage nav .b-nav li .b-link:hover {
+.thanksPay #header .navigationPage nav .b-nav li .b-link:hover {
   color: #5bddbb;
 }
-#header .navigationPage nav .b-nav li .b-nav {
+.thanksPay #header .navigationPage nav .b-nav li .b-nav {
   position: absolute;
   -webkit-border-radius: 0 0 15px 15px;
           border-radius: 0 0 15px 15px;
@@ -616,23 +624,23 @@ footer.open {
           flex-direction: column;
   list-style-type: none;
 }
-#header .navigationPage nav .b-nav li .b-nav li {
+.thanksPay #header .navigationPage nav .b-nav li .b-nav li {
   width: 180px;
   display: list-item;
   position: relative;
   padding: 5px 0;
   margin: 5px 5px;
 }
-#header .navigationPage nav .b-nav li .b-nav li a {
+.thanksPay #header .navigationPage nav .b-nav li .b-nav li a {
   padding: 5px 5px ;
 }
-#header .navigationPage nav .b-nav li:hover > .b-nav {
+.thanksPay #header .navigationPage nav .b-nav li:hover > .b-nav {
   display: inherit;
 }
-#header .navigationPage nav .b-nav li:hover:hover > .b-link {
+.thanksPay #header .navigationPage nav .b-nav li:hover:hover > .b-link {
   color: #5bddbb;
 }
-#header .navigationPage .namePage {
+.thanksPay #header .navigationPage .namePage {
   background: -webkit-gradient(linear, left top, left bottom, from(#65dec4), to(#48b097));
   background: -webkit-linear-gradient(top, #65dec4 0%, #48b097 100%);
   background: -o-linear-gradient(top, #65dec4 0%, #48b097 100%);
@@ -656,69 +664,66 @@ footer.open {
   -webkit-border-bottom-right-radius: 25px;
           border-bottom-right-radius: 25px;
 }
-#header .navigationPage .namePage h3 {
+.thanksPay #header .navigationPage .namePage h3 {
   text-transform: uppercase;
   color: #fff;
   font-size: 16px;
   font-weight: 600;
 }
-/*header section end*/
-/*style for  size from 1024px to 1250px*/
 @media (min-width: 1024px) and (max-width: 1250px) {
-  #header {
+  .thanksPay #header {
     /*logo and help section end*/
     /*navigation section start*/
     /*navigation section end*/
   }
-  #header .topHeader {
+  .thanksPay #header .topHeader {
     /*logo section start*/
     /*logo section end*/
     /*help button section start*/
     /*help button section end*/
   }
-  #header .topHeader .leftHeader {
+  .thanksPay #header .topHeader .leftHeader {
     margin-left: 70px;
   }
-  #header .topHeader .leftHeader h1 {
+  .thanksPay #header .topHeader .leftHeader h1 {
     font-size: 18px;
   }
-  #header .topHeader .rightHeader {
+  .thanksPay #header .topHeader .rightHeader {
     margin-right: 30px;
   }
-  #header .topHeader .rightHeader .help {
+  .thanksPay #header .topHeader .rightHeader .help {
     margin: 23px 20px 0 0;
   }
-  #header .topHeader .rightHeader h5 {
+  .thanksPay #header .topHeader .rightHeader h5 {
     font-size: 16px;
   }
-  #header .topHeader .rightHeader h5 span {
+  .thanksPay #header .topHeader .rightHeader h5 span {
     font-size: 16px;
   }
-  #header .navigationPage {
+  .thanksPay #header .navigationPage {
     margin: -1.8% 12.5% 0;
     width: 75%;
   }
-  #header .navigationPage nav .b-nav li .b-nav {
+  .thanksPay #header .navigationPage nav .b-nav li .b-nav {
     top: 44px;
   }
 }
-/*style for tablet size from 768px to 1023px*/
 @media (min-width: 768px) and (max-width: 1023px) {
-  #header {
+  .thanksPay #header {
     width: 100%;
     /*logo and help section start*/
     /*logo and help section end*/
     /*navigation section start*/
     /*navigation section end*/
   }
-  #header .topHeader {
+  .thanksPay #header .topHeader {
     margin-bottom: 25px !important;
     /*logo section start*/
     /*logo section end*/
     /*help button section start*/
     /*help button section end*/
   }
-  #header .topHeader .leftHeader {
+  .thanksPay #header .topHeader .leftHeader {
     width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -737,16 +742,16 @@ footer.open {
     /*burger menu start*/
     /*burger menu end*/
   }
-  #header .topHeader .leftHeader .logoDesktop {
+  .thanksPay #header .topHeader .leftHeader .logoDesktop {
     position: absolute;
     left: 85%;
     top: 15%;
   }
-  #header .topHeader .leftHeader h1 {
+  .thanksPay #header .topHeader .leftHeader h1 {
     padding: 20px 0 2% 0;
     text-align: center;
   }
-  #header .topHeader .leftHeader #b-container {
+  .thanksPay #header .topHeader .leftHeader #b-container {
     height: 60px;
     left: 40px;
     position: absolute;
@@ -764,58 +769,58 @@ footer.open {
             user-select: none;
     width: 60px;
   }
-  #header .topHeader .leftHeader .b-bun {
+  .thanksPay #header .topHeader .leftHeader .b-bun {
     background: white;
     position: relative;
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
   }
-  #header .topHeader .leftHeader .b-bun--top {
+  .thanksPay #header .topHeader .leftHeader .b-bun--top {
     height: 2px;
     top: 0;
     width: 30px;
     background: white;
   }
-  #header .topHeader .leftHeader .b-bun--mid {
+  .thanksPay #header .topHeader .leftHeader .b-bun--mid {
     height: 2px;
     top: 8px;
     width: 30px;
     background: white;
   }
-  #header .topHeader .leftHeader .b-bun--bottom {
+  .thanksPay #header .topHeader .leftHeader .b-bun--bottom {
     height: 2px;
     top: 16px;
     width: 30px;
     background: white;
   }
-  #header .topHeader .leftHeader #b-container.open {
+  .thanksPay #header .topHeader .leftHeader #b-container.open {
     left: 320px;
   }
-  #header .topHeader .leftHeader #b-container.open .b-bun--top {
+  .thanksPay #header .topHeader .leftHeader #b-container.open .b-bun--top {
     background: #5d3f49;
     top: 9px;
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
   }
-  #header .topHeader .leftHeader #b-container.open .b-bun--mid {
+  .thanksPay #header .topHeader .leftHeader #b-container.open .b-bun--mid {
     opacity: 0;
   }
-  #header .topHeader .leftHeader #b-container.open .b-bun--bottom {
+  .thanksPay #header .topHeader .leftHeader #b-container.open .b-bun--bottom {
     background: #5d3f49;
     top: 5px;
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
   }
-  #header .topHeader .leftHeader header.open {
+  .thanksPay #header .topHeader .leftHeader header.open {
     opacity: 0.8;
   }
-  #header .topHeader .rightHeader {
+  .thanksPay #header .topHeader .rightHeader {
     display: none;
   }
-  #header .navigationPage {
+  .thanksPay #header .navigationPage {
     margin: -28px 25% 0;
     max-width: 50%;
     position: absolute;
@@ -824,12 +829,12 @@ footer.open {
     /*name page start*/
     /*name page end*/
   }
-  #header .navigationPage nav {
+  .thanksPay #header .navigationPage nav {
     -webkit-border-radius: 25px;
             border-radius: 25px;
     padding: 5px 5px;
   }
-  #header .navigationPage nav .help_section {
+  .thanksPay #header .navigationPage nav .help_section {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -839,43 +844,42 @@ footer.open {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  #header .navigationPage nav .help_section .help {
+  .thanksPay #header .navigationPage nav .help_section .help {
     margin: 0;
     height: 40px;
     -webkit-border-radius: 20px;
             border-radius: 20px;
   }
-  #header .navigationPage nav .help_section h5 {
+  .thanksPay #header .navigationPage nav .help_section h5 {
     color: #fff;
     font-size: 15px;
     font-family: Roboto, sans-serif;
     margin: 0 5% ;
     text-align: right;
   }
-  #header .navigationPage nav .b-nav {
+  .thanksPay #header .navigationPage nav .b-nav {
     display: none;
   }
-  #header .navigationPage .namePage {
+  .thanksPay #header .navigationPage .namePage {
     width: 80%;
   }
 }
-/*style for tablet size from 480px to 767px*/
 @media (min-width: 480px) and (max-width: 767px) {
-  #header {
+  .thanksPay #header {
     width: 100%;
     /*logo and help section start*/
     /*logo and help section end*/
     /*navigation section start*/
     /*navigation section end*/
   }
-  #header .topHeader {
+  .thanksPay #header .topHeader {
     margin-bottom: 35px;
     /*logo section start*/
     /*logo section end*/
     /*help button section start*/
     /*help button section end*/
   }
-  #header .topHeader .leftHeader {
+  .thanksPay #header .topHeader .leftHeader {
     width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -894,30 +898,30 @@ footer.open {
     /*burger menu start*/
     /*burger menu end*/
   }
-  #header .topHeader .leftHeader .logoDesktop {
+  .thanksPay #header .topHeader .leftHeader .logoDesktop {
     position: absolute;
     left: 80%;
     top: 15%;
   }
-  #header .topHeader .leftHeader h1 {
+  .thanksPay #header .topHeader .leftHeader h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 19px;
   }
-  #header .topHeader .leftHeader h1:before {
+  .thanksPay #header .topHeader .leftHeader h1:before {
     content: 'благодійна організація';
   }
-  #header .topHeader .leftHeader h1 span:before {
+  .thanksPay #header .topHeader .leftHeader h1 span:before {
     content: 'мбф "твоє майбутнє"';
   }
-  #header .topHeader .leftHeader #b-container {
+  .thanksPay #header .topHeader .leftHeader #b-container {
     left: 20px;
     display: block;
   }
-  #header .topHeader .rightHeader {
+  .thanksPay #header .topHeader .rightHeader {
     display: none;
   }
-  #header .navigationPage {
+  .thanksPay #header .navigationPage {
     margin: -25px 37.5% 0;
     width: 25%;
     position: absolute;
@@ -926,13 +930,13 @@ footer.open {
     /*name page start*/
     /*name page end*/
   }
-  #header .navigationPage nav {
+  .thanksPay #header .navigationPage nav {
     -webkit-border-radius: 25px;
             border-radius: 25px;
     padding: 5px 5px;
     width: 160px;
   }
-  #header .navigationPage nav .help_section {
+  .thanksPay #header .navigationPage nav .help_section {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -943,37 +947,36 @@ footer.open {
             justify-content: center;
     width: 150px;
   }
-  #header .navigationPage nav .help_section .help {
+  .thanksPay #header .navigationPage nav .help_section .help {
     margin: 0;
     height: 40px;
   }
-  #header .navigationPage nav .help_section h5 {
+  .thanksPay #header .navigationPage nav .help_section h5 {
     display: none;
   }
-  #header .navigationPage nav .b-nav {
+  .thanksPay #header .navigationPage nav .b-nav {
     display: none;
   }
-  #header .navigationPage .namePage {
+  .thanksPay #header .navigationPage .namePage {
     display: none;
   }
 }
-/*style for tablet size from 320px to 479px*/
 @media (min-width: 401px) and (max-width: 479px) {
-  #header {
+  .thanksPay #header {
     width: 100%;
     /*logo and help section start*/
     /*logo and help section end*/
     /*navigation section start*/
     /*navigation section end*/
   }
-  #header .topHeader {
+  .thanksPay #header .topHeader {
     margin-bottom: 25px;
     /*logo section start*/
     /*logo section end*/
     /*help button section start*/
     /*help button section end*/
   }
-  #header .topHeader .leftHeader {
+  .thanksPay #header .topHeader .leftHeader {
     width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -992,34 +995,34 @@ footer.open {
     /*burger menu start*/
     /*burger menu end*/
   }
-  #header .topHeader .leftHeader .logoDesktop {
+  .thanksPay #header .topHeader .leftHeader .logoDesktop {
     position: absolute;
     left: 77%;
     top: 20%;
   }
-  #header .topHeader .leftHeader .logoDesktop img {
+  .thanksPay #header .topHeader .leftHeader .logoDesktop img {
     height: 75%;
     width: 75%;
   }
-  #header .topHeader .leftHeader h1 {
+  .thanksPay #header .topHeader .leftHeader h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 18px;
   }
-  #header .topHeader .leftHeader h1:before {
+  .thanksPay #header .topHeader .leftHeader h1:before {
     content: 'благодійний фонд';
   }
-  #header .topHeader .leftHeader h1 span:before {
+  .thanksPay #header .topHeader .leftHeader h1 span:before {
     content: '"твоє майбутнє"';
   }
-  #header .topHeader .leftHeader #b-container {
+  .thanksPay #header .topHeader .leftHeader #b-container {
     left: 25px;
     display: block;
   }
-  #header .topHeader .rightHeader {
+  .thanksPay #header .topHeader .rightHeader {
     display: none;
   }
-  #header .navigationPage {
+  .thanksPay #header .navigationPage {
     margin: -20px 37.5% 0;
     width: 25%;
     position: absolute;
@@ -1028,13 +1031,13 @@ footer.open {
     /*name page start*/
     /*name page end*/
   }
-  #header .navigationPage nav {
+  .thanksPay #header .navigationPage nav {
     -webkit-border-radius: 22px;
             border-radius: 22px;
     padding: 5px 5px;
     width: 160px;
   }
-  #header .navigationPage nav .help_section {
+  .thanksPay #header .navigationPage nav .help_section {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1045,36 +1048,36 @@ footer.open {
             justify-content: center;
     width: 150px;
   }
-  #header .navigationPage nav .help_section .help {
+  .thanksPay #header .navigationPage nav .help_section .help {
     margin: 0;
     height: 35px;
   }
-  #header .navigationPage nav .help_section h5 {
+  .thanksPay #header .navigationPage nav .help_section h5 {
     display: none;
   }
-  #header .navigationPage nav .b-nav {
+  .thanksPay #header .navigationPage nav .b-nav {
     display: none;
   }
-  #header .navigationPage .namePage {
+  .thanksPay #header .navigationPage .namePage {
     display: none;
   }
 }
 @media (min-width: 320px) and (max-width: 400px) {
-  #header {
+  .thanksPay #header {
     width: 100%;
     /*logo and help section start*/
     /*logo and help section end*/
     /*navigation section start*/
     /*navigation section end*/
   }
-  #header .topHeader {
+  .thanksPay #header .topHeader {
     margin-bottom: 25px;
     /*logo section start*/
     /*logo section end*/
     /*help button section start*/
     /*help button section end*/
   }
-  #header .topHeader .leftHeader {
+  .thanksPay #header .topHeader .leftHeader {
     width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1093,34 +1096,34 @@ footer.open {
     /*burger menu start*/
     /*burger menu end*/
   }
-  #header .topHeader .leftHeader .logoDesktop {
+  .thanksPay #header .topHeader .leftHeader .logoDesktop {
     position: absolute;
     left: 77%;
     top: 20%;
   }
-  #header .topHeader .leftHeader .logoDesktop img {
+  .thanksPay #header .topHeader .leftHeader .logoDesktop img {
     height: 75%;
     width: 75%;
   }
-  #header .topHeader .leftHeader h1 {
+  .thanksPay #header .topHeader .leftHeader h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 18px;
   }
-  #header .topHeader .leftHeader h1:before {
+  .thanksPay #header .topHeader .leftHeader h1:before {
     content: 'бо мбф твоє';
   }
-  #header .topHeader .leftHeader h1 span:before {
+  .thanksPay #header .topHeader .leftHeader h1 span:before {
     content: 'майбутнє';
   }
-  #header .topHeader .leftHeader #b-container {
+  .thanksPay #header .topHeader .leftHeader #b-container {
     left: 20px;
     display: block;
   }
-  #header .topHeader .rightHeader {
+  .thanksPay #header .topHeader .rightHeader {
     display: none;
   }
-  #header .navigationPage {
+  .thanksPay #header .navigationPage {
     margin: -20px 37.5% 0;
     width: 25%;
     position: absolute;
@@ -1129,13 +1132,13 @@ footer.open {
     /*name page start*/
     /*name page end*/
   }
-  #header .navigationPage nav {
+  .thanksPay #header .navigationPage nav {
     -webkit-border-radius: 22px;
             border-radius: 22px;
     padding: 5px 5px;
     width: 160px;
   }
-  #header .navigationPage nav .help_section {
+  .thanksPay #header .navigationPage nav .help_section {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1146,24 +1149,24 @@ footer.open {
             justify-content: center;
     width: 150px;
   }
-  #header .navigationPage nav .help_section .help {
+  .thanksPay #header .navigationPage nav .help_section .help {
     margin: 0;
     height: 35px;
   }
-  #header .navigationPage nav .help_section h5 {
+  .thanksPay #header .navigationPage nav .help_section h5 {
     display: none;
   }
-  #header .navigationPage nav .b-nav {
+  .thanksPay #header .navigationPage nav .b-nav {
     display: none;
   }
-  #header .navigationPage .namePage {
+  .thanksPay #header .navigationPage .namePage {
     display: none;
   }
 }
-#header .navigationPage .namePage {
+.thanksPay #header .navigationPage .namePage {
   display: none;
 }
-main {
+.thanksPay main {
   width: 100%;
   height: 700px;
   display: -webkit-box;
@@ -1179,17 +1182,16 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
-main .bg_thanks {
+.thanksPay main .bg_thanks {
   width: 100%;
   height: 100%;
 }
-main h4 {
+.thanksPay main h4 {
   font-size: 100px;
   color: #5d3f49;
   position: absolute;
 }
-/*start footer style*/
-footer {
+.thanksPay footer {
   background-color: #5d3f49;
   padding: 5% 3% 4%;
   /*title*/
@@ -1200,20 +1202,20 @@ footer {
   /*Copyright section start*/
   /*Copyright section end*/
 }
-footer h4 {
+.thanksPay footer h4 {
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
 }
-footer hr {
+.thanksPay footer hr {
   width: 15%;
   height: 8px;
   background-color: #fd537c;
   border: none;
   margin: 15px 0 50px;
 }
-footer .topFooter {
+.thanksPay footer .topFooter {
   padding-bottom: 25px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1228,12 +1230,12 @@ footer .topFooter {
   /*Requisites in English section start*/
   /*Requisites in English section end*/
 }
-footer .topFooter h5 {
+.thanksPay footer .topFooter h5 {
   font-size: 18px;
   font-weight: 500;
   font-family: Roboto, sans-serif;
 }
-footer .topFooter .leftTopFooter {
+.thanksPay footer .topFooter .leftTopFooter {
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1252,7 +1254,7 @@ footer .topFooter .leftTopFooter {
   width: 50%;
   text-align: right;
 }
-footer .topFooter .rightTopFooter {
+.thanksPay footer .topFooter .rightTopFooter {
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1270,7 +1272,7 @@ footer .topFooter .rightTopFooter {
   padding-left: 15px;
   width: 50%;
 }
-footer .middleFooter {
+.thanksPay footer .middleFooter {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1289,13 +1291,13 @@ footer .middleFooter {
   padding: 0 30px;
   border-bottom: 2px solid #fff;
 }
-footer .middleFooter h5 {
+.thanksPay footer .middleFooter h5 {
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
   color: #fff;
 }
-footer .middleFooter .address {
+.thanksPay footer .middleFooter .address {
   width: 33%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1307,7 +1309,7 @@ footer .middleFooter .address {
           align-items: center;
   padding: 19px 0 23px 24px;
 }
-footer .middleFooter .phone {
+.thanksPay footer .middleFooter .phone {
   width: 33%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1323,7 +1325,7 @@ footer .middleFooter .phone {
           justify-content: center;
   padding: 19px 0 23px 0;
 }
-footer .middleFooter .mail {
+.thanksPay footer .middleFooter .mail {
   width: 33%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1339,14 +1341,14 @@ footer .middleFooter .mail {
           justify-content: center;
   padding: 19px 0 23px 0;
 }
-footer .middleFooter .mail a {
+.thanksPay footer .middleFooter .mail a {
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
   color: #fff;
 }
-footer .bottomFooter {
+.thanksPay footer .bottomFooter {
   padding-top: 4%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1359,15 +1361,15 @@ footer .bottomFooter {
   /*Social section start*/
   /*Social section end*/
 }
-footer .bottomFooter .leftBottomFooter {
+.thanksPay footer .bottomFooter .leftBottomFooter {
   width: 45%;
 }
-footer .bottomFooter .leftBottomFooter h6 {
+.thanksPay footer .bottomFooter .leftBottomFooter h6 {
   font-size: 18px;
   font-weight: 500;
   color: #c3bbbd;
 }
-footer .bottomFooter .middleBottomFooter {
+.thanksPay footer .bottomFooter .middleBottomFooter {
   width: 10%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1382,13 +1384,13 @@ footer .bottomFooter .middleBottomFooter {
       -ms-flex-align: center;
           align-items: center;
 }
-footer .bottomFooter .middleBottomFooter .fa-arrow-circle-o-up {
+.thanksPay footer .bottomFooter .middleBottomFooter .fa-arrow-circle-o-up {
   color: #c3bbbd;
 }
-footer .bottomFooter .middleBottomFooter .fa-arrow-circle-o-up:hover {
+.thanksPay footer .bottomFooter .middleBottomFooter .fa-arrow-circle-o-up:hover {
   color: #fff;
 }
-footer .bottomFooter .rightBottomFooter {
+.thanksPay footer .bottomFooter .rightBottomFooter {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1399,7 +1401,7 @@ footer .bottomFooter .rightBottomFooter {
           justify-content: flex-end;
   width: 45%;
 }
-footer .bottomFooter .rightBottomFooter a {
+.thanksPay footer .bottomFooter .rightBottomFooter a {
   width: 50px;
   height: 50px;
   -webkit-border-radius: 50%;
@@ -1419,36 +1421,34 @@ footer .bottomFooter .rightBottomFooter a {
           align-items: center;
   text-decoration: none;
 }
-footer .bottomFooter .rightBottomFooter a .fa-facebook,
-footer .bottomFooter .rightBottomFooter a .fa-instagram,
-footer .bottomFooter .rightBottomFooter a .fa-youtube-play {
+.thanksPay footer .bottomFooter .rightBottomFooter a .fa-facebook,
+.thanksPay footer .bottomFooter .rightBottomFooter a .fa-instagram,
+.thanksPay footer .bottomFooter .rightBottomFooter a .fa-youtube-play {
   color: #c3bbbd;
 }
-footer .bottomFooter .rightBottomFooter .instagram {
+.thanksPay footer .bottomFooter .rightBottomFooter .instagram {
   margin: 0 55px;
 }
-footer .bottomFooter .rightBottomFooter .facebook:hover {
+.thanksPay footer .bottomFooter .rightBottomFooter .facebook:hover {
   border-color: #3B5998;
 }
-footer .bottomFooter .rightBottomFooter .facebook:hover .fa-facebook {
+.thanksPay footer .bottomFooter .rightBottomFooter .facebook:hover .fa-facebook {
   color: #3B5998;
 }
-footer .bottomFooter .rightBottomFooter .instagram:hover {
+.thanksPay footer .bottomFooter .rightBottomFooter .instagram:hover {
   border-color: #FE902E;
 }
-footer .bottomFooter .rightBottomFooter .instagram:hover .fa-instagram {
+.thanksPay footer .bottomFooter .rightBottomFooter .instagram:hover .fa-instagram {
   color: #FE902E;
 }
-footer .bottomFooter .rightBottomFooter .youtube:hover {
+.thanksPay footer .bottomFooter .rightBottomFooter .youtube:hover {
   border-color: #FF0000;
 }
-footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
+.thanksPay footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
   color: #FF0000;
 }
-/*end footer style*/
-/*style for tablet size from 650px to 850px*/
 @media (min-width: 650px) and (max-width: 850px) {
-  footer {
+  .thanksPay footer {
     width: 100%;
     padding: 5% 4% 4%;
     /*title*/
@@ -1459,14 +1459,14 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     /*Copyright section start*/
     /*Copyright section end*/
   }
-  footer h4 {
+  .thanksPay footer h4 {
     font-size: 20px;
   }
-  footer hr {
+  .thanksPay footer hr {
     width: 20%;
     margin: 15px 0;
   }
-  footer .topFooter {
+  .thanksPay footer .topFooter {
     padding-bottom: 15px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1478,7 +1478,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     /*Requisites in English section start*/
     /*Requisites in English section end*/
   }
-  footer .topFooter .leftTopFooter {
+  .thanksPay footer .topFooter .leftTopFooter {
     color: #fff;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1497,19 +1497,19 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     width: 50%;
     text-align: right;
   }
-  footer .topFooter .leftTopFooter h5 {
+  .thanksPay footer .topFooter .leftTopFooter h5 {
     font-size: 13px;
   }
-  footer .topFooter .rightTopFooter {
+  .thanksPay footer .topFooter .rightTopFooter {
     padding: 0;
     width: 50%;
     text-align: justify;
     padding-left: 5px;
   }
-  footer .topFooter .rightTopFooter h5 {
+  .thanksPay footer .topFooter .rightTopFooter h5 {
     font-size: 12px;
   }
-  footer .middleFooter {
+  .thanksPay footer .middleFooter {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1526,14 +1526,14 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     border-bottom: 1px solid #fff;
     width: 100%;
   }
-  footer .middleFooter h5 {
+  .thanksPay footer .middleFooter h5 {
     font-size: 14px;
     font-weight: 500;
     margin-left: 15px;
     color: #fff;
     font-family: Roboto, sans-serif;
   }
-  footer .middleFooter .address {
+  .thanksPay footer .middleFooter .address {
     width: 50%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1549,7 +1549,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
             align-items: center;
     padding: 2% 0;
   }
-  footer .middleFooter .phone {
+  .thanksPay footer .middleFooter .phone {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1565,7 +1565,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     padding: 2% 0;
     width: 50%;
   }
-  footer .middleFooter .mail {
+  .thanksPay footer .middleFooter .mail {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1581,10 +1581,10 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     padding: 2% 0;
     width: 50%;
   }
-  footer .middleFooter .mail a {
+  .thanksPay footer .middleFooter .mail a {
     font-size: 16px;
   }
-  footer .bottomFooter {
+  .thanksPay footer .bottomFooter {
     padding-top: 4%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1602,18 +1602,18 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     /*Social section start*/
     /*Social section end*/
   }
-  footer .bottomFooter .leftBottomFooter {
+  .thanksPay footer .bottomFooter .leftBottomFooter {
     width: 100%;
     padding-top: 4%;
   }
-  footer .bottomFooter .leftBottomFooter h6 {
+  .thanksPay footer .bottomFooter .leftBottomFooter h6 {
     font-size: 10px;
     font-weight: 400;
   }
-  footer .bottomFooter .middleBottomFooter {
+  .thanksPay footer .bottomFooter .middleBottomFooter {
     display: none;
   }
-  footer .bottomFooter .rightBottomFooter {
+  .thanksPay footer .bottomFooter .rightBottomFooter {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1625,17 +1625,16 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     border-bottom: 1px solid #fff;
     padding-bottom: 4%;
   }
-  footer .bottomFooter .rightBottomFooter .instagram {
+  .thanksPay footer .bottomFooter .rightBottomFooter .instagram {
     margin: 0;
   }
-  footer .bottomFooter .rightBottomFooter a {
+  .thanksPay footer .bottomFooter .rightBottomFooter a {
     width: 50px;
     height: 50px;
   }
 }
-/*style for tablet size from 320px to 649px*/
 @media (min-width: 320px) and (max-width: 649px) {
-  footer {
+  .thanksPay footer {
     width: 100%;
     padding: 5% 4% 4%;
     /*title*/
@@ -1646,14 +1645,14 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     /*Copyright section start*/
     /*Copyright section end*/
   }
-  footer h4 {
+  .thanksPay footer h4 {
     font-size: 20px;
   }
-  footer hr {
+  .thanksPay footer hr {
     width: 20%;
     margin: 15px 0;
   }
-  footer .topFooter {
+  .thanksPay footer .topFooter {
     padding-bottom: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1665,7 +1664,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     /*Requisites in English section start*/
     /*Requisites in English section end*/
   }
-  footer .topFooter .leftTopFooter {
+  .thanksPay footer .topFooter .leftTopFooter {
     padding: 0;
     width: 100%;
     text-align: justify;
@@ -1679,18 +1678,18 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  footer .topFooter .leftTopFooter h5 {
+  .thanksPay footer .topFooter .leftTopFooter h5 {
     font-size: 13px;
   }
-  footer .topFooter .rightTopFooter {
+  .thanksPay footer .topFooter .rightTopFooter {
     padding: 0;
     width: 100%;
     text-align: justify;
   }
-  footer .topFooter .rightTopFooter h5 {
+  .thanksPay footer .topFooter .rightTopFooter h5 {
     font-size: 12px;
   }
-  footer .middleFooter {
+  .thanksPay footer .middleFooter {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1703,14 +1702,14 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     padding: 0;
     border-bottom: 1px solid #fff;
   }
-  footer .middleFooter h5 {
+  .thanksPay footer .middleFooter h5 {
     font-size: 14px;
     font-weight: 500;
     margin-left: 15px;
     color: #fff;
     font-family: Roboto, sans-serif;
   }
-  footer .middleFooter .address {
+  .thanksPay footer .middleFooter .address {
     width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1722,23 +1721,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
             align-items: center;
     padding: 2% 0;
   }
-  footer .middleFooter .phone {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    padding: 2% 0;
-    width: 100%;
-  }
-  footer .middleFooter .mail {
+  .thanksPay footer .middleFooter .phone {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1754,10 +1737,26 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     padding: 2% 0;
     width: 100%;
   }
-  footer .middleFooter .mail a {
+  .thanksPay footer .middleFooter .mail {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 2% 0;
+    width: 100%;
+  }
+  .thanksPay footer .middleFooter .mail a {
     font-size: 16px;
   }
-  footer .bottomFooter {
+  .thanksPay footer .bottomFooter {
     padding-top: 4%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1775,18 +1774,18 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     /*Social section start*/
     /*Social section end*/
   }
-  footer .bottomFooter .leftBottomFooter {
+  .thanksPay footer .bottomFooter .leftBottomFooter {
     width: 100%;
     padding-top: 4%;
   }
-  footer .bottomFooter .leftBottomFooter h6 {
+  .thanksPay footer .bottomFooter .leftBottomFooter h6 {
     font-size: 10px;
     font-weight: 400;
   }
-  footer .bottomFooter .middleBottomFooter {
+  .thanksPay footer .bottomFooter .middleBottomFooter {
     display: none;
   }
-  footer .bottomFooter .rightBottomFooter {
+  .thanksPay footer .bottomFooter .rightBottomFooter {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1798,17 +1797,17 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     border-bottom: 1px solid #fff;
     padding-bottom: 4%;
   }
-  footer .bottomFooter .rightBottomFooter .instagram {
+  .thanksPay footer .bottomFooter .rightBottomFooter .instagram {
     margin: 0;
   }
-  footer .bottomFooter .rightBottomFooter a {
+  .thanksPay footer .bottomFooter .rightBottomFooter a {
     width: 50px;
     height: 50px;
   }
 }
 /*style for  size from 320px to 480px*/
 @media (min-width: 320px) and (max-width: 480px) {
-  main {
+  .thanksPay main {
     max-width: 100%;
     max-height: 100%;
     display: -webkit-box;
@@ -1824,11 +1823,11 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
         -ms-flex-align: center;
             align-items: center;
   }
-  main .bg_thanks {
+  .thanksPay main .bg_thanks {
     width: 100%;
     height: 100%;
   }
-  main h4 {
+  .thanksPay main h4 {
     font-size: 50px;
     color: #5d3f49;
     position: absolute;

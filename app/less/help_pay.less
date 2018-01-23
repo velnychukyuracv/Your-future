@@ -15,28 +15,29 @@
   box-sizing: border-box;
 }
 
-body{
+.helpPay {
   min-width: 320px;
   margin: 0 auto;
   font-family: @font_Raleway;
   font-size: 16px;
   font-weight: 400;
   color: #494949;
-}
-@import "navigation_out_menu";
-@import "header";
 
-#header .navigationPage .namePage h3:before{
-  content: 'Допомогти';
+  @import "navigation_out_menu";
+  @import "header";
 
-}
+  #header .navigationPage .namePage h3:before {
+    content: 'Допомогти';
 
-main{
-  background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
-  padding: 100px 10px 50px 10px;
-  .container_count {
-    margin: 0 auto;
   }
-}
 
-@import "footer";
+  main {
+    background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
+    padding: 100px 10px 50px 10px;
+    .container_count {
+      margin: 0 auto;
+    }
+  }
+
+  @import "footer";
+}

@@ -20,11 +20,11 @@
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css'>
 
     <!--Style-->
-    <link href="css/quarterly-reporting.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
 
 </head>
-<body>
+<body class="quarterlyReporting">
 <!--Navigation out menu section start-->
 <? require_once('navigation_out_menu.php') ?>
 <!--Navigation out menu section end-->

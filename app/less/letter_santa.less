@@ -15,82 +15,82 @@
   box-sizing: border-box;
 }
 
-body{
+.letterSanta {
   min-width: 320px;
   margin: 0 auto;
   font-family: @font_Raleway;
   font-size: 16px;
   font-weight: 400;
   color: #494949;
-}
-@import "navigation_out_menu";
-@import "header";
 
-#header .navigationPage .namePage h3:before{
-  content:'Лист Діду Морозу';
-}
+  @import "navigation_out_menu";
+  @import "header";
 
-main{
-  background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
-  padding: 100px 60px 50px 60px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .help{
-    width: 35%;
-    font-size: 25px;
-    font-weight: 700;
-    animation: none;
-    margin: 23px 5px 0 0;
+  #header .navigationPage .namePage h3:before {
+    content: 'Лист Діду Морозу';
   }
-  .help:hover{
-    background-color: #fff;
-    border: 2px solid @color_button_normal;
-    color: @color_button_normal;
-  }
-  .text_about{
-    margin: 30px 80px;
+
+  main {
+    background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
+    padding: 100px 60px 50px 60px;
     width: 100%;
-    padding:0 100px;
-    p{
-      font-size: 18px;
-      font-family: 'PT Sans', sans-serif;
-      text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .help {
+      width: 35%;
+      font-size: 25px;
+      font-weight: 700;
+      animation: none;
+      margin: 23px 5px 0 0;
     }
-    img{
+    .help:hover {
+      background-color: #fff;
+      border: 2px solid @color_button_normal;
+      color: @color_button_normal;
+    }
+    .text_about {
+      margin: 30px 80px;
       width: 100%;
-      height: 100%;
-      margin: 20px 0;
+      padding: 0 100px;
+      p {
+        font-size: 18px;
+        font-family: 'PT Sans', sans-serif;
+        text-align: justify;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        margin: 20px 0;
+      }
     }
+
   }
 
-
-
-
+  @import "footer";
 }
-
-@import "footer";
 
 
 /*style for  size from 320px to 768px*/
 @media  (min-width: 320px) and (max-width: 768px) {
-  main{
-    padding:8% 4% 4%;
-    .help{
-      width: 50%;
-      font-size: 20px;
-      font-weight: 700;
-    }
-    .text_about{
-      margin: 2% 1%;
-      width: 100%;
-      padding:0;
-      p{
-        font-size: 16px;
+  .letterSanta{
+    main{
+      padding:8% 4% 4%;
+      .help{
+        width: 50%;
+        font-size: 20px;
+        font-weight: 700;
       }
-      img{
-        margin: 10px 0;
+      .text_about{
+        margin: 2% 1%;
+        width: 100%;
+        padding:0;
+        p{
+          font-size: 16px;
+        }
+        img{
+          margin: 10px 0;
+        }
       }
     }
   }
@@ -98,32 +98,36 @@ main{
 
 /*header with name page*/
 @media  (min-width: 491px) and (max-width: 767px) {
-  #header .topHeader {
-    margin-bottom: 50px;
-    .leftHeader h1 {
-      font-size: 20px;
-      padding-left: 0 !important;
-      &:before {
-        content: 'бо мбф "твоє майбутнє"';
-      }
-      span:before {
-        content: 'Лист Діду Морозу';
+  .letterSanta{
+    #header .topHeader {
+      margin-bottom: 50px;
+      .leftHeader h1 {
+        font-size: 20px;
+        padding-left: 0 !important;
+        &:before {
+          content: 'бо мбф "твоє майбутнє"';
+        }
+        span:before {
+          content: 'Лист Діду Морозу';
+        }
       }
     }
   }
 }
 
 @media  (min-width: 320px) and (max-width: 490px) {
-  #header .topHeader {
-    margin-bottom: 50px;
-    .leftHeader h1 {
-      font-size: 22px;
-      padding-left: 0 !important;
-      &:before {
-        content: 'Лист';
-      }
-      span:before {
-        content: ' Діду Морозу ';
+  .letterSanta{
+    #header .topHeader {
+      margin-bottom: 50px;
+      .leftHeader h1 {
+        font-size: 22px;
+        padding-left: 0 !important;
+        &:before {
+          content: 'Лист';
+        }
+        span:before {
+          content: ' Діду Морозу ';
+        }
       }
     }
   }

@@ -15,90 +15,98 @@
   box-sizing: border-box;
 }
 
-body{
+.needHelp {
   min-width: 320px;
   margin: 0 auto;
   font-family: @font_Raleway;
   font-size: 16px;
   font-weight: 400;
   color: #494949;
-}
-@import "navigation_out_menu";
-@import "header";
 
-#header .navigationPage .namePage h3:before{
-  content: 'Потрібна допомога?';
-}
+  @import "navigation_out_menu";
+  @import "header";
 
-main{
-  background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
-  padding: 100px 60px 50px 60px;
-  h4{
-    font-size: 18px;
-    font-weight: 600;
+  #header .navigationPage .namePage h3:before {
+    content: 'Потрібна допомога?';
   }
-  ol{
-    margin-left: 20px;
-  }
-  h5{
-    font-size: 16px;
-    font-weight: 600;
-    a{
-      text-decoration: none;
-      color: @color_bg_dark;
-      font-weight: 500;
-      &:hover{
-        color: @color_active;
+
+  main {
+    background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
+    padding: 100px 60px 50px 60px;
+    h4 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    ol {
+      margin-left: 20px;
+    }
+    h5 {
+      font-size: 16px;
+      font-weight: 600;
+      a {
+        text-decoration: none;
+        color: @color_bg_dark;
+        font-weight: 500;
+        &:hover {
+          color: @color_active;
+        }
       }
     }
+
   }
 
+  @import "footer";
 }
-
-@import "footer";
 
 
 /*style for  size from 320px to 768px*/
 @media  (min-width: 320px) and (max-width: 768px) {
-  main {
-    padding: 8% 4% 4%;
-    h3{
-      font-size:18px;
-    }
-    a{
-      font-size: 15px;
+  .needHelp {
+    main {
+      padding: 8% 4% 4%;
+      h3{
+        font-size:18px;
+      }
+      a{
+        font-size: 15px;
+      }
     }
   }
 }
 
 /*header with name page*/
 @media  (min-width: 491px) and (max-width: 767px) {
-  #header .topHeader {
-    margin-bottom: 25px;
-    .leftHeader h1 {
-      font-size: 20px;
-      padding-left: 0 !important;
-      &:before {
-        content: 'бо мбф "твоє майбутнє"';
-      }
-      span:before {
-        content: 'Потрібна допомога?';
+  .needHelp {
+    #header .topHeader {
+      margin-bottom: 25px;
+      .leftHeader h1 {
+        font-size: 20px;
+        padding-left: 0 !important;
+        &:before {
+          content: 'бо мбф "твоє майбутнє"';
+        }
+        span:before {
+          content: 'Потрібна допомога?';
+        }
       }
     }
   }
+
 }
 
 @media  (min-width: 320px) and (max-width: 490px) {
-  #header .topHeader {
-    margin-bottom: 25px;
-    .leftHeader h1 {
-      font-size: 22px;
-      padding-left: 0 !important;
-      &:before {
-        content: 'Потрібна ';
-      }
-      span:before {
-        content: 'допомога?';
+  .needHelp {
+    #header .topHeader {
+      margin-bottom: 25px;
+      .leftHeader h1 {
+        font-size: 22px;
+        padding-left: 0 !important;
+        &:before {
+          content: 'Потрібна ';
+        }
+        span:before {
+          content: 'допомога?';
+        }
       }
     }
   }

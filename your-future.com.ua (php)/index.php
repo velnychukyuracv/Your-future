@@ -24,7 +24,7 @@
 
 
 </head>
-<body>
+<body class="basic">
 
 <!--Navigation out menu section start-->
 <? require_once('navigation_out_menu.php') ?>

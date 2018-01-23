@@ -15,103 +15,108 @@
   box-sizing: border-box;
 }
 
-body{
+.contacts {
   min-width: 320px;
   margin: 0 auto;
   font-family: @font_Raleway;
   font-size: 16px;
   font-weight: 400;
   color: #2a2a2a;
-}
-@import "navigation_out_menu";
-@import "header";
 
-#header .navigationPage .namePage h3:before{
-  content: 'Контакти';
-}
-main{
-  background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
-  padding: 100px 60px 50px 60px;
-  a{
-    text-decoration: none;
-    font-weight: 500;
-    color: @color_bg_dark;
-    &:hover{
-      color: @color_active;
-    }
+  @import "navigation_out_menu";
+  @import "header";
+
+  #header .navigationPage .namePage h3:before {
+    content: 'Контакти';
   }
-  h4{
-    font-size: 18px;
-    font-weight: 600;
-    span{
-      font-weight: 400;
-      margin-left: 10px;
-    }
-  }
-  p{
-    font-size: 17px;
-    font-weight: 400;
-  }
-  h5{
-    font-size: 17px;
-    font-weight: 500;
-    span{
+  main {
+    background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
+    padding: 100px 60px 50px 60px;
+    a {
+      text-decoration: none;
       font-weight: 500;
-      margin-left: 10px;
-      color: #180c0d;
+      color: @color_bg_dark;
+      &:hover {
+        color: @color_active;
+      }
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: 600;
+      span {
+        font-weight: 400;
+        margin-left: 10px;
+      }
+    }
+    p {
+      font-size: 17px;
+      font-weight: 400;
+    }
+    h5 {
+      font-size: 17px;
+      font-weight: 500;
+      span {
+        font-weight: 500;
+        margin-left: 10px;
+        color: #180c0d;
+      }
     }
   }
-}
 
-@import "footer";
+  @import "footer";
+}
 
 /*style for  size from 320px to 768px*/
 @media  (min-width: 320px) and (max-width: 768px) {
-    body{
+  .contacts {
     font-size: 14px;
-  }
-  main{
-    padding: 8% 4% 4%;
-    h4{
-      font-size: 15px;
-    }
-    p{
-      font-size: 15px;
-    }
-    h5{
-      font-size: 15px;
+    main {
+      padding: 8% 4% 4%;
+      h4 {
+        font-size: 15px;
+      }
+      p {
+        font-size: 15px;
+      }
+      h5 {
+        font-size: 15px;
+      }
     }
   }
 }
 
 /*header with name page*/
 @media  (min-width: 491px) and (max-width: 767px) {
-  #header .topHeader {
-    margin-bottom: 50px;
-    .leftHeader h1 {
-      font-size: 20px;
-      padding-left: 0 !important;
-      &:before {
-        content: 'бо мбф "твоє майбутнє"';
-      }
-      span:before {
-        content: 'контакти';
+  .contacts{
+    #header .topHeader {
+      margin-bottom: 50px;
+      .leftHeader h1 {
+        font-size: 20px;
+        padding-left: 0 !important;
+        &:before {
+          content: 'бо мбф "твоє майбутнє"';
+        }
+        span:before {
+          content: 'контакти';
+        }
       }
     }
   }
 }
 
 @media  (min-width: 320px) and (max-width: 490px) {
-  #header .topHeader {
-    margin-bottom: 50px;
-    .leftHeader h1 {
-      font-size: 22px;
-      padding-left: 0 !important;
-      &:before {
-        content: 'контакти';
-      }
-      span:before {
-        content: ' ';
+  .contacts{
+    #header .topHeader {
+      margin-bottom: 50px;
+      .leftHeader h1 {
+        font-size: 22px;
+        padding-left: 0 !important;
+        &:before {
+          content: 'контакти';
+        }
+        span:before {
+          content: ' ';
+        }
       }
     }
   }

@@ -15,346 +15,66 @@
   box-sizing: border-box;
 }
 
-body{
+.photoReporting {
   min-width: 320px;
   margin: 0 auto;
   font-family: @font_Raleway;
   font-size: 16px;
   font-weight: 400;
   color: #494949;
-}
-@import "navigation_out_menu";
-@import "header";
 
-#header .navigationPage .namePage h3:before{
-  content:'Фотозвітність';
-}
+  @import "navigation_out_menu";
+  @import "header";
 
-main {
-  background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
-  padding: 100px 60px 50px 60px;
-  display: flex;
-  justify-content: space-around;
-  .link_album {
-    position: relative;
-    border: 3px solid @color_text_header_nav;
-    margin: 5px;
-    img {
-      width: 350px;
-      height: auto;
-      padding: 5px;
-    }
-    .link_album_container{
-      position: absolute;
-      bottom: 35px;
-      z-index: 50;
-      left: 14px;
-      padding: 1% 5%;
-      h4 {
-        font: 600 20px @font_Raleway;
-        color: @color_text_header_nav;
-        text-transform: uppercase;
-        margin-bottom: 5px;
-      }
-      a{
-        font: 600 12px @font_Raleway;
-        color: @color_text_header_nav;
-        padding: 3px 8px;
-        border: 1px solid @color_text_header_nav;
-        text-transform: uppercase;
-        text-decoration: none;
-        &:hover{
-          color: @color_active;
-          border: 1px solid @color_active;
-        }
-      }
-    }
-    &:hover {
-      border: 3px solid @color_active;
-      transform: scale(1.05, 1.05);
-      transition-timing-function: ease-out;
-      transition-duration: 250ms;
-
-    }
+  #header .navigationPage .namePage h3:before {
+    content: 'Фотозвітність';
   }
 
-  .overlay {
-    position: fixed;
-    margin: 0 auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.3);
-    transition: opacity 500ms;
-    visibility: hidden;
-    z-index: 200;
-    width: auto;
-    height:auto ;
-    &:target {
-      visibility: visible;
-      opacity: 1;
-    }
-    .popup {
-      margin: 0 auto;
-      padding: 5px;
-      border-radius: 5px;
-      width: auto;
-      height: auto;
-      position: relative;
-      .close {
-        position: absolute;
-        right: 40px;
-        transition: all 200ms;
-        font-size: 50px;
-        font-weight: bold;
-        text-decoration: none;
-        color: @color_footer;
-        z-index: 3;
-        &:hover{
-          color: @color_bg_dark;
-        }
-      }
-      .content {
-        overflow: hidden;
-        height: auto;
-        .sl-main {
-          display: flex;
-          align-items: center;
-          position: relative;
-          .sl_slide {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            outline: none;
-            border: none;
-            img{
-              margin: auto 0;
-              max-height: 100%;
-              max-width: 100%;
-            }
-          }
-
-          /*Arrows*/
-          .slick-prev {
-            border-radius: 50%;
-            background-color: #fff;
-            opacity: 0.25;
-            height: 100px;
-            width: 100px;
-            left: 5px;
-            z-index: 10;
-            &:hover {
-              opacity: 0.7;
-            }
-            &:before{
-              content: url("../img/arrow-prev.png");
-            }
-          }
-          .slick-next {
-            border-radius: 50%;
-            background-color: #fff;
-            opacity: 0.25;
-            height: 100px;
-            width: 100px;
-            right: 5px;
-            &:hover {
-              opacity: 0.7;
-            }
-            &:before{
-              content: url("../img/arrow-next.png");
-            }
-          }
-          /*Dots*/
-          .slick-dots {
-            bottom: 5px;
-            li {
-              button {
-                &:before {
-                  content: '';
-                  background-color: @color_bg;
-                  border-radius: 50%;
-                  border: 1px solid @color_bg_dark;
-                  width: 10px;
-                  height: 10px;
-                  opacity: 0.5;
-                }
-              }
-              &.slick-active button:before {
-                background-color: @color_bg_dark;
-                opacity: 0.7;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@import "footer";
-
-
-
-/*style for  size from 400px to 768px*/
-@media  (min-width: 400px) and (max-width: 768px) {
   main {
     background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
-    padding: 8% 4% 4% ;
+    padding: 100px 60px 50px 60px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-      .popup {
-        .content {
-          overflow: hidden;
-          height: auto;
-          .sl-main {
-            display: flex;
-            align-items: center;
-            position: relative;
-            .sl_slide {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              outline: none;
-              border: none;
-              max-height: 100%;
-              max-width: 100%;
-              img{
-                margin: auto 0;
-
-                max-height: 100%;
-                max-width: 100%;
-              }
-            }
-
-            /*Arrows*/
-            /* Arrows */
-            .slick-prev,
-            .slick-next
-            {
-              font-size: 0;
-              line-height: 0;
-              position: absolute;
-              top: 50%;
-              display: block;
-              width: 20px;
-              height: 20px;
-              padding: 0;
-              -webkit-transform: translate(0, -50%);
-              -ms-transform: translate(0, -50%);
-              transform: translate(0, -50%);
-              cursor: pointer;
-              color: transparent;
-              border: none;
-              outline: none;
-              background: transparent;
-            }
-            .slick-prev:hover,
-            .slick-prev:focus,
-            .slick-next:hover,
-            .slick-next:focus
-            {
-              color: transparent;
-              outline: none;
-              background: transparent;
-            }
-            .slick-prev:hover:before,
-            .slick-prev:focus:before,
-            .slick-next:hover:before,
-            .slick-next:focus:before
-            {
-              opacity: 1;
-            }
-            .slick-prev.slick-disabled:before,
-            .slick-next.slick-disabled:before
-            {
-              opacity: .25;
-            }
-
-            .slick-prev:before,
-            .slick-next:before
-            {
-              font-family: 'slick';
-              font-size: 40px;
-              line-height: 1;
-              opacity: .75;
-              color: white;
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smoothing: grayscale;
-            }
-
-            .slick-prev
-            {
-              left: 15px;
-            }
-            [dir='rtl'] .slick-prev
-            {
-              right: 15px;
-              left: auto;
-            }
-            .slick-prev:before
-            {
-              content: '←';
-            }
-            [dir='rtl'] .slick-prev:before
-            {
-              content: '→';
-            }
-
-            .slick-next
-            {
-              right:25px;
-            }
-            [dir='rtl'] .slick-next
-            {
-              right: auto;
-              left: 15px;
-            }
-            .slick-next:before
-            {
-              content: '→';
-            }
-            [dir='rtl'] .slick-next:before
-            {
-              content: '←';
-            }
-            /*Dots*/
-            .slick-dots {
-              bottom: 5px;
-              li {
-                button {
-                  &:before {
-                    content: '';
-                    background-color: @color_bg;
-                    border-radius: 50%;
-                    border: 1px solid @color_bg_dark;
-                    width: 10px;
-                    height: 10px;
-                    opacity: 0.5;
-                  }
-                }
-                &.slick-active button:before {
-                  background-color: @color_bg_dark;
-                  opacity: 0.7;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-}
-/*style for  size from 320px to 400px*/
-@media  (min-width: 320px) and (max-width: 400px) {
-  main {
-    background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
-    padding: 8% 4% 4% ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
     .link_album {
+      position: relative;
+      border: 3px solid @color_text_header_nav;
+      margin: 5px;
       img {
-        width: 250px;
+        width: 350px;
+        height: auto;
+        padding: 5px;
+      }
+      .link_album_container {
+        position: absolute;
+        bottom: 35px;
+        z-index: 50;
+        left: 14px;
+        padding: 1% 5%;
+        h4 {
+          font: 600 20px @font_Raleway;
+          color: @color_text_header_nav;
+          text-transform: uppercase;
+          margin-bottom: 5px;
+        }
+        a {
+          font: 600 12px @font_Raleway;
+          color: @color_text_header_nav;
+          padding: 3px 8px;
+          border: 1px solid @color_text_header_nav;
+          text-transform: uppercase;
+          text-decoration: none;
+          &:hover {
+            color: @color_active;
+            border: 1px solid @color_active;
+          }
+        }
+      }
+      &:hover {
+        border: 3px solid @color_active;
+        transform: scale(1.05, 1.05);
+        transition-timing-function: ease-out;
+        transition-duration: 250ms;
+
       }
     }
 
@@ -370,7 +90,7 @@ main {
       visibility: hidden;
       z-index: 200;
       width: auto;
-      height:auto ;
+      height: auto;
       &:target {
         visibility: visible;
         opacity: 1;
@@ -391,7 +111,7 @@ main {
           text-decoration: none;
           color: @color_footer;
           z-index: 3;
-          &:hover{
+          &:hover {
             color: @color_bg_dark;
           }
         }
@@ -408,17 +128,112 @@ main {
               justify-content: center;
               outline: none;
               border: none;
-              img{
+              img {
                 margin: auto 0;
                 max-height: 100%;
                 max-width: 100%;
               }
             }
 
+            /*Arrows*/
+            .slick-prev {
+              border-radius: 50%;
+              background-color: #fff;
+              opacity: 0.25;
+              height: 100px;
+              width: 100px;
+              left: 5px;
+              z-index: 10;
+              &:hover {
+                opacity: 0.7;
+              }
+              &:before {
+                content: url("../img/arrow-prev.png");
+              }
+            }
+            .slick-next {
+              border-radius: 50%;
+              background-color: #fff;
+              opacity: 0.25;
+              height: 100px;
+              width: 100px;
+              right: 5px;
+              &:hover {
+                opacity: 0.7;
+              }
+              &:before {
+                content: url("../img/arrow-next.png");
+              }
+            }
+            /*Dots*/
+            .slick-dots {
+              bottom: 5px;
+              li {
+                button {
+                  &:before {
+                    content: '';
+                    background-color: @color_bg;
+                    border-radius: 50%;
+                    border: 1px solid @color_bg_dark;
+                    width: 10px;
+                    height: 10px;
+                    opacity: 0.5;
+                  }
+                }
+                &.slick-active button:before {
+                  background-color: @color_bg_dark;
+                  opacity: 0.7;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @import "footer";
+}
+
+
+
+/*style for  size from 400px to 768px*/
+@media  (min-width: 400px) and (max-width: 768px) {
+  .photoReporting {
+    main {
+      background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
+      padding: 8% 4% 4%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .popup {
+        .content {
+          overflow: hidden;
+          height: auto;
+          .sl-main {
+            display: flex;
+            align-items: center;
+            position: relative;
+            .sl_slide {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              outline: none;
+              border: none;
+              max-height: 100%;
+              max-width: 100%;
+              img {
+                margin: auto 0;
+
+                max-height: 100%;
+                max-width: 100%;
+              }
+            }
+
+            /*Arrows*/
             /* Arrows */
             .slick-prev,
-            .slick-next
-            {
+            .slick-next {
               font-size: 0;
               line-height: 0;
               position: absolute;
@@ -439,8 +254,7 @@ main {
             .slick-prev:hover,
             .slick-prev:focus,
             .slick-next:hover,
-            .slick-next:focus
-            {
+            .slick-next:focus {
               color: transparent;
               outline: none;
               background: transparent;
@@ -448,19 +262,16 @@ main {
             .slick-prev:hover:before,
             .slick-prev:focus:before,
             .slick-next:hover:before,
-            .slick-next:focus:before
-            {
+            .slick-next:focus:before {
               opacity: 1;
             }
             .slick-prev.slick-disabled:before,
-            .slick-next.slick-disabled:before
-            {
+            .slick-next.slick-disabled:before {
               opacity: .25;
             }
 
             .slick-prev:before,
-            .slick-next:before
-            {
+            .slick-next:before {
               font-family: 'slick';
               font-size: 40px;
               line-height: 1;
@@ -470,42 +281,33 @@ main {
               -moz-osx-font-smoothing: grayscale;
             }
 
-            .slick-prev
-            {
+            .slick-prev {
               left: 15px;
             }
-            [dir='rtl'] .slick-prev
-            {
-              right: 55px;
+            [dir='rtl'] .slick-prev {
+              right: 15px;
               left: auto;
             }
-            .slick-prev:before
-            {
+            .slick-prev:before {
               content: '←';
             }
-            [dir='rtl'] .slick-prev:before
-            {
+            [dir='rtl'] .slick-prev:before {
               content: '→';
             }
 
-            .slick-next
-            {
-              right:25px;
+            .slick-next {
+              right: 25px;
             }
-            [dir='rtl'] .slick-next
-            {
+            [dir='rtl'] .slick-next {
               right: auto;
               left: 15px;
             }
-            .slick-next:before
-            {
+            .slick-next:before {
               content: '→';
             }
-            [dir='rtl'] .slick-next:before
-            {
+            [dir='rtl'] .slick-next:before {
               content: '←';
             }
-
             /*Dots*/
             .slick-dots {
               bottom: 5px;
@@ -534,34 +336,217 @@ main {
   }
 }
 
+/*style for  size from 320px to 400px*/
+@media  (min-width: 320px) and (max-width: 400px) {
+  .photoReporting {
+    main {
+      background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
+      padding: 8% 4% 4%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .link_album {
+        img {
+          width: 250px;
+        }
+      }
+
+      .overlay {
+        position: fixed;
+        margin: 0 auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.3);
+        transition: opacity 500ms;
+        visibility: hidden;
+        z-index: 200;
+        width: auto;
+        height: auto;
+        &:target {
+          visibility: visible;
+          opacity: 1;
+        }
+        .popup {
+          margin: 0 auto;
+          padding: 5px;
+          border-radius: 5px;
+          width: auto;
+          height: auto;
+          position: relative;
+          .close {
+            position: absolute;
+            right: 40px;
+            transition: all 200ms;
+            font-size: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            color: @color_footer;
+            z-index: 3;
+            &:hover {
+              color: @color_bg_dark;
+            }
+          }
+          .content {
+            overflow: hidden;
+            height: auto;
+            .sl-main {
+              display: flex;
+              align-items: center;
+              position: relative;
+              .sl_slide {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                outline: none;
+                border: none;
+                img {
+                  margin: auto 0;
+                  max-height: 100%;
+                  max-width: 100%;
+                }
+              }
+
+              /* Arrows */
+              .slick-prev,
+              .slick-next {
+                font-size: 0;
+                line-height: 0;
+                position: absolute;
+                top: 50%;
+                display: block;
+                width: 20px;
+                height: 20px;
+                padding: 0;
+                -webkit-transform: translate(0, -50%);
+                -ms-transform: translate(0, -50%);
+                transform: translate(0, -50%);
+                cursor: pointer;
+                color: transparent;
+                border: none;
+                outline: none;
+                background: transparent;
+              }
+              .slick-prev:hover,
+              .slick-prev:focus,
+              .slick-next:hover,
+              .slick-next:focus {
+                color: transparent;
+                outline: none;
+                background: transparent;
+              }
+              .slick-prev:hover:before,
+              .slick-prev:focus:before,
+              .slick-next:hover:before,
+              .slick-next:focus:before {
+                opacity: 1;
+              }
+              .slick-prev.slick-disabled:before,
+              .slick-next.slick-disabled:before {
+                opacity: .25;
+              }
+
+              .slick-prev:before,
+              .slick-next:before {
+                font-family: 'slick';
+                font-size: 40px;
+                line-height: 1;
+                opacity: .75;
+                color: white;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+              }
+
+              .slick-prev {
+                left: 15px;
+              }
+              [dir='rtl'] .slick-prev {
+                right: 55px;
+                left: auto;
+              }
+              .slick-prev:before {
+                content: '←';
+              }
+              [dir='rtl'] .slick-prev:before {
+                content: '→';
+              }
+
+              .slick-next {
+                right: 25px;
+              }
+              [dir='rtl'] .slick-next {
+                right: auto;
+                left: 15px;
+              }
+              .slick-next:before {
+                content: '→';
+              }
+              [dir='rtl'] .slick-next:before {
+                content: '←';
+              }
+
+              /*Dots*/
+              .slick-dots {
+                bottom: 5px;
+                li {
+                  button {
+                    &:before {
+                      content: '';
+                      background-color: @color_bg;
+                      border-radius: 50%;
+                      border: 1px solid @color_bg_dark;
+                      width: 10px;
+                      height: 10px;
+                      opacity: 0.5;
+                    }
+                  }
+                  &.slick-active button:before {
+                    background-color: @color_bg_dark;
+                    opacity: 0.7;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 /*header with name page*/
 @media  (min-width: 491px) and (max-width: 767px) {
-  #header .topHeader {
-    margin-bottom: 50px;
-    .leftHeader h1 {
-      font-size: 20px;
-      padding-left: 0 !important;
-      &:before {
-        content: 'бо мбф "твоє майбутнє"';
-      }
-      span:before {
-        content: 'Фотозвітність';
+  .photoReporting {
+    #header .topHeader {
+      margin-bottom: 50px;
+      .leftHeader h1 {
+        font-size: 20px;
+        padding-left: 0 !important;
+        &:before {
+          content: 'бо мбф "твоє майбутнє"';
+        }
+        span:before {
+          content: 'Фотозвітність';
+        }
       }
     }
   }
 }
 
 @media  (min-width: 320px) and (max-width: 490px) {
-  #header .topHeader {
-    margin-bottom: 50px;
-    .leftHeader h1 {
-      font-size: 20px;
-      padding-left: 0 !important;
-      &:before {
-        content: 'Фотозвітність';
-      }
-      span:before {
-        content: ' ';
+  .photoReporting {
+    #header .topHeader {
+      margin-bottom: 50px;
+      .leftHeader h1 {
+        font-size: 20px;
+        padding-left: 0 !important;
+        &:before {
+          content: 'Фотозвітність';
+        }
+        span:before {
+          content: ' ';
+        }
       }
     }
   }

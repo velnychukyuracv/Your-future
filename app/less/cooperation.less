@@ -15,87 +15,91 @@
   box-sizing: border-box;
 }
 
-body{
+.cooperation {
   min-width: 320px;
   margin: 0 auto;
   font-family: @font_Raleway;
   font-size: 16px;
   font-weight: 400;
   color: #494949;
-}
-@import "navigation_out_menu";
-@import "header";
 
-#header .navigationPage .namePage h3:before{
-  content:'Співпраця';
-}
+  @import "navigation_out_menu";
+  @import "header";
 
-main{
-  background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
-  padding: 100px 60px 50px 60px;
-  ul{
-    margin-left: 50px;
-  }
-  h4{
-    font-size: 18px;
-  }
-  h5{
-    font-size: 17px;
-  }
-
-  a{
-    text-decoration: none;
-    color: @color_bg_dark;
-    &:hover{
-      color: @color_active;
-    }
-  }
-}
-
-@import "footer";
-
-/*style for  size from 320px to 768px*/
-@media  (min-width: 320px) and (max-width: 768px) {
-  body{
-    font-size: 14px;
+  #header .navigationPage .namePage h3:before {
+    content: 'Співпраця';
   }
 
   main {
-    padding: 8% 4% 4%;
-    ul{
-      margin-left: 20px;
+    background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
+    padding: 100px 60px 50px 60px;
+    ul {
+      margin-left: 50px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+    h5 {
+      font-size: 17px;
+    }
+
+    a {
+      text-decoration: none;
+      color: @color_bg_dark;
+      &:hover {
+        color: @color_active;
+      }
+    }
+  }
+
+  @import "footer";
+}
+
+/*style for  size from 320px to 768px*/
+@media  (min-width: 320px) and (max-width: 768px) {
+  .cooperation {
+    font-size: 14px;
+    main {
+      padding: 8% 4% 4%;
+      ul {
+        margin-left: 20px;
+      }
     }
   }
 }
 
 /*header with name page*/
 @media  (min-width: 491px) and (max-width: 767px) {
-  #header .topHeader {
-    margin-bottom: 50px;
-    .leftHeader h1 {
-      font-size: 20px;
-      padding-left: 0 !important;
-      &:before {
-        content: 'бо мбф "твоє майбутнє"';
-      }
-      span:before {
-        content: 'Співпраця ';
+  .cooperation{
+    #header .topHeader {
+      margin-bottom: 50px;
+      .leftHeader h1 {
+        font-size: 20px;
+        padding-left: 0 !important;
+        &:before {
+          content: 'бо мбф "твоє майбутнє"';
+        }
+        span:before {
+          content: 'Співпраця ';
+        }
       }
     }
   }
 }
 
 @media  (min-width: 320px) and (max-width: 490px) {
-  #header .topHeader {
-    margin-bottom: 50px;
-    .leftHeader h1 {
-      font-size: 22px;
-      padding-left: 0 !important;
-      &:before {
-        content: 'Співпраця';
-      }
-      span:before {
-        content: ' ';
+  .cooperation{
+    #header .topHeader {
+      margin-bottom: 50px;
+      .leftHeader h1 {
+        font-size: 22px;
+        padding-left: 0 !important;
+        &:before {
+          content: 'Співпраця';
+        }
+        span:before {
+          content: ' ';
+        }
       }
     }
   }

@@ -38,7 +38,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 gulp.task('css-libs', ['less'], function() {
     return gulp.src('app/css/*.css') // Выбираем файл для минификации
         .pipe(concatCss ('style.css'))//Объединить все css
-        .pipe(cssnano()) // Сжимаем
+
         .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
         .pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
     });

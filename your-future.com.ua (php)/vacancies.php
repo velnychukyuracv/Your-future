@@ -16,11 +16,11 @@
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css'>
 
     <!--Style-->
-    <link href="css/vacancies.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
 
 </head>
-<body>
+<body class="vacancies">
 <!--Navigation out menu section start-->
 <? require_once('navigation_out_menu.php') ?>
 <!--Navigation out menu section end-->
@@ -44,7 +44,7 @@
          <img class="img-responsive " src="img/fotograf.jpg" alt="photographer">
          <h4>Фотограф</h4>
          <div class="buttonAbout">
-             <a href="fotograf.php"  class="vacancies_link">Детальніше<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+             <a href="photographer.php"  class="vacancies_link">Детальніше<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
          </div>
 
      </div>

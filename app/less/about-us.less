@@ -15,54 +15,54 @@
   box-sizing: border-box;
 }
 
-body{
+.aboutUs {
   min-width: 320px;
   margin: 0 auto;
   font-family: @font_Raleway;
   font-size: 16px;
   font-weight: 400;
   color: #494949;
-}
-@import "navigation_out_menu";
-@import "header";
 
-#header .navigationPage .namePage h3:before{
-  content: 'Про нас';
-}
+  @import "navigation_out_menu";
+  @import "header";
 
-main{
-  background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
-  padding: 100px 60px 50px 60px;
-  p{
-    span{
-      font-size: 18px;
-      font-weight: 600;
-    }
-
-    a{
-      text-decoration: none;
-      color: @color_bg_dark;
-      font-weight: 500;
-      &:hover{
-        color: @color_active;
-      }
-    }
-  }
-}
-
-@import "footer";
-
-/*style for  size from 320px to 768px*/
-@media  (min-width: 320px) and (max-width: 768px) {
-  body{
-    font-size: 14px;
+  #header .navigationPage .namePage h3:before {
+    content: 'Про нас';
   }
 
   main {
-    padding: 8% 4% 4%;
-    p{
-      span{
-        font-size: 14px;
+    background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
+    padding: 100px 60px 50px 60px;
+    p {
+      span {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      a {
+        text-decoration: none;
+        color: @color_bg_dark;
+        font-weight: 500;
+        &:hover {
+          color: @color_active;
+        }
+      }
+    }
+  }
+
+  @import "footer";
+}
+
+/*style for  size from 320px to 768px*/
+@media  (min-width: 320px) and (max-width: 768px) {
+  .aboutUs{
+    font-size: 14px;
+    main {
+      padding: 8% 4% 4%;
+      p {
+        span {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -70,32 +70,36 @@ main{
 
 /*header with name page*/
 @media  (min-width: 491px) and (max-width: 767px) {
-  #header .topHeader {
-    margin-bottom: 50px;
-    .leftHeader h1 {
-      font-size: 20px;
-      padding-left: 0 !important;
-      &:before {
-        content: 'бо мбф "твоє майбутнє"';
-      }
-      span:before {
-        content: 'про нас ';
+  .aboutUs{
+    #header .topHeader {
+      margin-bottom: 50px;
+      .leftHeader h1 {
+        font-size: 20px;
+        padding-left: 0 !important;
+        &:before {
+          content: 'бо мбф "твоє майбутнє"';
+        }
+        span:before {
+          content: 'про нас ';
+        }
       }
     }
   }
 }
 
 @media  (min-width: 320px) and (max-width: 490px) {
-  #header .topHeader {
-    margin-bottom: 50px;
-    .leftHeader h1 {
-      font-size: 22px;
-      padding-left: 0 !important;
-      &:before {
-        content: 'про нас';
-      }
-      span:before {
-        content: ' ';
+  .aboutUs{
+    #header .topHeader {
+      margin-bottom: 50px;
+      .leftHeader h1 {
+        font-size: 22px;
+        padding-left: 0 !important;
+        &:before {
+          content: 'про нас';
+        }
+        span:before {
+          content: ' ';
+        }
       }
     }
   }

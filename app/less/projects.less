@@ -15,224 +15,113 @@
   box-sizing: border-box;
 }
 
-body{
+.projects {
   min-width: 320px;
   margin: 0 auto;
   font-family: @font_Raleway;
   font-size: 16px;
   font-weight: 400;
   color: #494949;
-}
-@import "navigation_out_menu";
-@import "header";
 
-#header .navigationPage .namePage h3:before{
-  content: 'Проекти';
-}
+  @import "navigation_out_menu";
+  @import "header";
 
-main{
-  background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
-  padding: 100px 60px 50px 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .project{
-    width: 80%;
-    border: 2px solid @color_bg;
-    padding: 25px 20px;
-    .project_title{
-      border-bottom: 2px solid @color_bg_dark;
-      width: 25%;
-      .letter_santa{
-        font-size: 27px;
-        font-weight: 400;
-        margin: 5px 0;
-        color: @color_bg_dark;
-        text-decoration: none;
-      }
-    }
-    h4{
-      font-size: 12px;
-      font-weight: 400;
-      margin: 15px 0 10px;
-    }
-    .description_project{
-      display: flex;
-      justify-content: space-between;
-      .picture{
-        width: 20%;
-        img{
-          width: 100%;
-        }
-      }
-
-      .about{
-        width: 50%;
-        p{
-          font-size: 17px;
-          font-weight: 400;
-          font-family: 'PT Sans', sans-serif;
-          text-align: justify;
-        }
-      }
-
-      .price{
-        width: 25%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        .help{
-          width: 100%;
-          font-size: 18px;
-          font-weight: 700;
-          animation: none;
-        }
-        .help:hover{
-          background-color: #fff;
-          border: 3px solid @color_button_hover;
-          color: @color_button_hover;
-        }
-        .progress {
-          display: flex;
-          flex-wrap: wrap;
-          flex-direction: column;
-          align-items: flex-end;
-
-          .need{
-             margin:30px 0 5px;
-            h4{
-              font-size: 17px;
-              font-weight: 400;
-              margin: 0;
-            }
-          }
-          .need_progress{
-            margin: 20px 0;
-            width: 100%;
-            border: 1px solid #e3e3e3;
-            height: 20px;
-            border-radius: 15px;
-            overflow: hidden;
-            span{
-              background-color: #EF87A2;
-              display: inline-block;
-              height: 100%;
-            }
-          }
-          .left_progress{
-            h5{
-              font-size: 14px;
-              font-weight: 400;
-              line-height: 20px;
-            }
-          }
-        }
-      }
-    }
+  #header .navigationPage .namePage h3:before {
+    content: 'Проекти';
   }
-}
 
-@import "footer";
-
-/*style for  size from 1024px to 1280px*/
-@media  (min-width: 1024px) and (max-width: 1280px) {
-  main{
-    .project{
-      width: 90%;
-      .project_title{
-        width: 30%;
-      }
-      .description_project{
-        .about{
-          p{
-            font-size: 16px;
-          }
-        }
-        .price{
-          .help{
-            margin: 0;
-          }
-          .progress {
-            .need{
-              h4{
-                font-size: 16px;
-              }
-            }
-            .left_progress{
-              h5{
-                font-size: 13px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-/*style for  size from 768px to 1023px*/
-@media  (min-width: 768px) and (max-width: 1023px){
-  main{
-    padding: 8% 4% 6%;
-    .project{
-      width: 95%;
-      .project_title{
+  main {
+    background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
+    padding: 100px 60px 50px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .project {
+      width: 80%;
+      border: 2px solid @color_bg;
+      padding: 25px 20px;
+      .project_title {
         border-bottom: 2px solid @color_bg_dark;
-        width: 30%;
-        .letter_santa{
-          font-size: 22px;
+        width: 25%;
+        .letter_santa {
+          font-size: 27px;
+          font-weight: 400;
+          margin: 5px 0;
+          color: @color_bg_dark;
+          text-decoration: none;
         }
       }
-      h4{
+      h4 {
         font-size: 12px;
         font-weight: 400;
         margin: 15px 0 10px;
       }
-      .description_project{
+      .description_project {
         display: flex;
         justify-content: space-between;
-        .picture{
+        .picture {
           width: 20%;
-          img{
+          img {
             width: 100%;
           }
         }
 
-        .about{
+        .about {
           width: 50%;
-          p{
-            font-size: 14px;
+          p {
+            font-size: 17px;
+            font-weight: 400;
+            font-family: 'PT Sans', sans-serif;
+            text-align: justify;
           }
         }
 
-        .price{
-          .help{
-            margin: 0;
-            font-size: 17px;
+        .price {
+          width: 25%;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          .help {
+            width: 100%;
+            font-size: 18px;
+            font-weight: 700;
+            animation: none;
+          }
+          .help:hover {
+            background-color: #fff;
+            border: 3px solid @color_button_hover;
+            color: @color_button_hover;
           }
           .progress {
-            .need{
-              margin:15px 0 5px;
-              h4{
-                font-size: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .need {
+              margin: 30px 0 5px;
+              h4 {
+                font-size: 17px;
+                font-weight: 400;
                 margin: 0;
               }
             }
-            .need_progress{
+            .need_progress {
               margin: 20px 0;
               width: 100%;
               border: 1px solid #e3e3e3;
               height: 20px;
               border-radius: 15px;
               overflow: hidden;
-              span{
+              span {
                 background-color: #EF87A2;
                 display: inline-block;
                 height: 100%;
               }
             }
-            .left_progress{
-              h5{
-                font-size: 12px;
+            .left_progress {
+              h5 {
+                font-size: 14px;
                 font-weight: 400;
                 line-height: 20px;
               }
@@ -242,69 +131,190 @@ main{
       }
     }
   }
+
+  @import "footer";
+
 }
+
+/*style for  size from 1024px to 1280px*/
+@media  (min-width: 1024px) and (max-width: 1280px) {
+  .projects {
+    main {
+      .project {
+        width: 90%;
+        .project_title {
+          width: 30%;
+        }
+        .description_project {
+          .about {
+            p {
+              font-size: 16px;
+            }
+          }
+          .price {
+            .help {
+              margin: 0;
+            }
+            .progress {
+              .need {
+                h4 {
+                  font-size: 16px;
+                }
+              }
+              .left_progress {
+                h5 {
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*style for  size from 768px to 1023px*/
+@media  (min-width: 768px) and (max-width: 1023px){
+  .projects {
+    main {
+      padding: 8% 4% 6%;
+      .project {
+        width: 95%;
+        .project_title {
+          border-bottom: 2px solid @color_bg_dark;
+          width: 30%;
+          .letter_santa {
+            font-size: 22px;
+          }
+        }
+        h4 {
+          font-size: 12px;
+          font-weight: 400;
+          margin: 15px 0 10px;
+        }
+        .description_project {
+          display: flex;
+          justify-content: space-between;
+          .picture {
+            width: 20%;
+            img {
+              width: 100%;
+            }
+          }
+
+          .about {
+            width: 50%;
+            p {
+              font-size: 14px;
+            }
+          }
+
+          .price {
+            .help {
+              margin: 0;
+              font-size: 17px;
+            }
+            .progress {
+              .need {
+                margin: 15px 0 5px;
+                h4 {
+                  font-size: 15px;
+                  margin: 0;
+                }
+              }
+              .need_progress {
+                margin: 20px 0;
+                width: 100%;
+                border: 1px solid #e3e3e3;
+                height: 20px;
+                border-radius: 15px;
+                overflow: hidden;
+                span {
+                  background-color: #EF87A2;
+                  display: inline-block;
+                  height: 100%;
+                }
+              }
+              .left_progress {
+                h5 {
+                  font-size: 12px;
+                  font-weight: 400;
+                  line-height: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 /*style for  size from 480px to 767px*/
 @media  (min-width: 480px) and (max-width: 767px){
-  main{
-    padding: 8% 2% 6%;
-    .project{
-      width: 96%;
-      .project_title{
-        border-bottom: 2px solid @color_bg_dark;
-        width: 43%;
-        .letter_santa{
-          font-size: 20px;
-          font-weight: 500;
-        }
-      }
-      h4{
-        font-size: 12px;
-        font-weight: 400;
-        margin: 10px 0;
-      }
-      .description_project{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        .picture{
-          display: none;
-        }
-
-        .about{
-          width: 70%;
-          p{
-            font-size: 15px;
+  .projects {
+    main {
+      padding: 8% 2% 6%;
+      .project {
+        width: 96%;
+        .project_title {
+          border-bottom: 2px solid @color_bg_dark;
+          width: 43%;
+          .letter_santa {
+            font-size: 20px;
+            font-weight: 500;
           }
         }
-
-        .price{
-          width: 26%;
-          .help{
-            width: 100%;
-            margin: 0;
-            font-size: 14px;
+        h4 {
+          font-size: 12px;
+          font-weight: 400;
+          margin: 10px 0;
+        }
+        .description_project {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .picture {
+            display: none;
           }
-          .progress {
-            .need{
-              margin:10px 0;
-              h4{
-                font-size: 14px;
-                margin: 0;
-              }
+
+          .about {
+            width: 70%;
+            p {
+              font-size: 15px;
             }
-            .need_progress{
-              margin: 5px 0;
-              span{
-                background-color: #EF87A2;
-                display: inline-block;
-                height: 100%;
-              }
+          }
+
+          .price {
+            width: 26%;
+            .help {
+              width: 100%;
+              margin: 0;
+              font-size: 14px;
             }
-            .left_progress{
-              h5{
-                font-size: 12px;
-                font-weight: 400;
-                line-height: 20px;
+            .progress {
+              .need {
+                margin: 10px 0;
+                h4 {
+                  font-size: 14px;
+                  margin: 0;
+                }
+              }
+              .need_progress {
+                margin: 5px 0;
+                span {
+                  background-color: #EF87A2;
+                  display: inline-block;
+                  height: 100%;
+                }
+              }
+              .left_progress {
+                h5 {
+                  font-size: 12px;
+                  font-weight: 400;
+                  line-height: 20px;
+                }
               }
             }
           }
@@ -313,75 +323,78 @@ main{
     }
   }
 }
+
 /*style for  size from 320px to 479px*/
 @media  (min-width: 320px) and (max-width: 479px){
-  main{
-    padding: 8% 2% 6%;
-    .project{
-      width: 96%;
-      padding: 5px;
-      .project_title{
-        border-bottom: 2px solid @color_bg_dark;
-        width: 60%;
-        .letter_santa{
-          font-size: 18px;
-        }
-      }
-      h4{
-        font-size: 12px;
-        font-weight: 400;
-        margin: 10px 0;
-      }
-      .description_project{
-        display: flex;
-        flex-direction: column;
-        .picture{
-          display: none;
-        }
-
-        .about{
-          width: 100%;
-          p{
-            font-size: 15px;
+  .projects {
+    main {
+      padding: 8% 2% 6%;
+      .project {
+        width: 96%;
+        padding: 5px;
+        .project_title {
+          border-bottom: 2px solid @color_bg_dark;
+          width: 60%;
+          .letter_santa {
+            font-size: 18px;
           }
         }
-
-        .price{
-          width: 96%;
+        h4 {
+          font-size: 12px;
+          font-weight: 400;
+          margin: 10px 0;
+        }
+        .description_project {
           display: flex;
           flex-direction: column;
-          margin: 2% 1%;
-          padding: 1%;
-          border: 1px solid @color_bg;
-          align-items: center;
-          justify-content: center;
-          .help{
-            width: 80%;
-            margin: 0;
-            font-size: 14px;
+          .picture {
+            display: none;
           }
-          .progress {
-            .need{
-              margin:15px 0 10px;
-              h4{
-                font-size: 14px;
-                margin: 0;
-                text-align: center;
-              }
+
+          .about {
+            width: 100%;
+            p {
+              font-size: 15px;
             }
-            .need_progress{
-              margin: 5px 0;
-              span{
-                background-color: #EF87A2;
-                display: inline-block;
-                height: 100%;
-              }
+          }
+
+          .price {
+            width: 96%;
+            display: flex;
+            flex-direction: column;
+            margin: 2% 1%;
+            padding: 1%;
+            border: 1px solid @color_bg;
+            align-items: center;
+            justify-content: center;
+            .help {
+              width: 80%;
+              margin: 0;
+              font-size: 14px;
             }
-            .left_progress{
-              h5{
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 20px;
+            .progress {
+              .need {
+                margin: 15px 0 10px;
+                h4 {
+                  font-size: 14px;
+                  margin: 0;
+                  text-align: center;
+                }
+              }
+              .need_progress {
+                margin: 5px 0;
+                span {
+                  background-color: #EF87A2;
+                  display: inline-block;
+                  height: 100%;
+                }
+              }
+              .left_progress {
+                h5 {
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 20px;
+                }
               }
             }
           }
@@ -393,32 +406,36 @@ main{
 
 /*header with name page*/
 @media  (min-width: 491px) and (max-width: 767px) {
-  #header .topHeader {
-    margin-bottom: 50px;
-    .leftHeader h1 {
-      font-size: 20px;
-      padding-left: 0 !important;
-      &:before {
-        content: 'бо мбф "твоє майбутнє"';
-      }
-      span:before {
-        content: 'Проекти';
+  .projects {
+    #header .topHeader {
+      margin-bottom: 50px;
+      .leftHeader h1 {
+        font-size: 20px;
+        padding-left: 0 !important;
+        &:before {
+          content: 'бо мбф "твоє майбутнє"';
+        }
+        span:before {
+          content: 'Проекти';
+        }
       }
     }
   }
 }
 
 @media  (min-width: 320px) and (max-width: 490px) {
-  #header .topHeader {
-    margin-bottom: 50px;
-    .leftHeader h1 {
-      font-size: 22px;
-      padding-left: 0 !important;
-      &:before {
-        content: 'Проекти';
-      }
-      span:before {
-        content: ' ';
+  .projects {
+    #header .topHeader {
+      margin-bottom: 50px;
+      .leftHeader h1 {
+        font-size: 22px;
+        padding-left: 0 !important;
+        &:before {
+          content: 'Проекти';
+        }
+        span:before {
+          content: ' ';
+        }
       }
     }
   }
