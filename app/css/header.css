@@ -1,10 +1,21 @@
+.standard {
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #494949;
+}
+.standard_box {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 /*header start*/
 #header {
-  background: -webkit-gradient(linear, left top, left bottom, from(#65dec4), to(#48b097));
-  background: -webkit-linear-gradient(top, #65dec4 0%, #48b097 100%);
-  background: -o-linear-gradient(top, #65dec4 0%, #48b097 100%);
-  background: linear-gradient(top, #65dec4 0%, #48b097 100%);
-  border-bottom: #5d3f49 2px solid;
+  background-color: #b2fefc;
+  border-bottom: #66696e 2px solid;
   z-index: 100;
   position: relative;
   width: 100%;
@@ -37,7 +48,7 @@
 }
 #header .topHeader .leftHeader h1 {
   text-transform: capitalize;
-  color: #fff;
+  color: #66696e;
   font-size: 20px;
   font-weight: 600;
   padding: 18px 0 0 25px;
@@ -68,7 +79,7 @@
   opacity: 1;
 }
 #header .topHeader .leftHeader .b-bun {
-  background: white;
+  background: #fff;
   position: relative;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -78,26 +89,26 @@
   height: 2px;
   top: 0;
   width: 30px;
-  background: white;
+  background: #fff;
 }
 #header .topHeader .leftHeader .b-bun--mid {
   height: 2px;
   top: 8px;
   width: 30px;
-  background: white;
+  background: #fff;
 }
 #header .topHeader .leftHeader .b-bun--bottom {
   height: 2px;
   top: 16px;
   width: 30px;
-  background: white;
+  background: #fff;
 }
 #header .topHeader .leftHeader #b-container.open {
-  left: 265px;
+  left: 275px;
   opacity: 1;
 }
 #header .topHeader .leftHeader #b-container.open .b-bun--top {
-  background: #5d3f49;
+  background: #66696e;
   top: 9px;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -108,7 +119,7 @@
   opacity: 0;
 }
 #header .topHeader .leftHeader #b-container.open .b-bun--bottom {
-  background: #5d3f49;
+  background: #66696e;
   top: 5px;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
@@ -191,7 +202,7 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  background: #8CD0B7;
+  background: #b2fefc;
   -webkit-border-radius: 5px;
           border-radius: 5px;
 }
@@ -209,7 +220,7 @@
   font-family: Roboto, sans-serif;
 }
 #header .topHeader .rightHeader .container_count .block_count .count.curent {
-  color: #5d3f49;
+  color: #66696e;
 }
 #header .topHeader .rightHeader .container_count .block_count .active {
   position: absolute;
@@ -237,7 +248,7 @@
   font-size: 16px;
   height: 50px;
   text-transform: uppercase;
-  color: #333;
+  color: #66696e;
   width: 100%;
 }
 #header .topHeader .rightHeader .container_count form input[type='submit'] {
@@ -248,7 +259,7 @@
   background: rgba(255, 255, 255, 0.3);
   width: 100%;
   height: 40px;
-  color: #444;
+  color: #66696e;
   font-weight: 700;
   font-size: 14px;
 }
@@ -257,7 +268,7 @@
 }
 #header .topHeader .rightHeader .container_count .price {
   color: #fff;
-  font-size: 48px;
+  font-size: 32px;
   text-align: center;
   margin-top: 50px;
   font-family: Roboto, sans-serif;
@@ -299,7 +310,7 @@
   display: none;
 }
 #header .topHeader .rightHeader h5 {
-  color: #fff;
+  color: #66696e;
   font-size: 18px;
   font-weight: 600;
   padding-top: 23px;
@@ -340,11 +351,8 @@
   width: 100%;
   -webkit-border-radius: 25px;
           border-radius: 25px;
-  background: -webkit-gradient(linear, left top, right top, from(#825c60), to(#493136));
-  background: -webkit-linear-gradient(left, #825c60 0%, #493136 100%);
-  background: -o-linear-gradient(left, #825c60 0%, #493136 100%);
-  background: linear-gradient(left, #825c60 0%, #493136 100%);
-  padding: 13px 20px;
+  background-color: #66696e;
+  padding: 8px 7px;
 }
 #header .navigationPage nav .help_section {
   display: none;
@@ -360,6 +368,13 @@
 }
 #header .navigationPage nav .b-nav li {
   list-style-type: none;
+  padding: 5px 15px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#868990), to(#66696e));
+  background: -webkit-linear-gradient(top, #868990 0%, #66696e 100%);
+  background: -o-linear-gradient(top, #868990 0%, #66696e 100%);
+  background: linear-gradient(top, #868990 0%, #66696e 100%);
 }
 #header .navigationPage nav .b-nav li .b-link {
   padding: 25px 5px;
@@ -368,17 +383,17 @@
   font-weight: 500;
 }
 #header .navigationPage nav .b-nav li .b-link:hover {
-  color: #5bddbb;
+  color: #b2fefc;
 }
 #header .navigationPage nav .b-nav li .b-nav {
   position: absolute;
   -webkit-border-radius: 0 0 15px 15px;
           border-radius: 0 0 15px 15px;
-  top: 45px;
+  top: 44px;
   padding-left: 15px;
   margin: 0;
-  background-color: #5d3f49;
-  opacity: 0.8;
+  background-color: #66696e;
+  opacity: 0.9;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -393,6 +408,7 @@
   position: relative;
   padding: 5px 0;
   margin: 5px 5px;
+  background: none;
 }
 #header .navigationPage nav .b-nav li .b-nav li a {
   padding: 5px 5px ;
@@ -401,13 +417,10 @@
   display: inherit;
 }
 #header .navigationPage nav .b-nav li:hover:hover > .b-link {
-  color: #5bddbb;
+  color: #b2fefc;
 }
 #header .navigationPage .namePage {
-  background: -webkit-gradient(linear, left top, left bottom, from(#65dec4), to(#48b097));
-  background: -webkit-linear-gradient(top, #65dec4 0%, #48b097 100%);
-  background: -o-linear-gradient(top, #65dec4 0%, #48b097 100%);
-  background: linear-gradient(top, #65dec4 0%, #48b097 100%);
+  background-color: #b2fefc;
   width: 45%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -429,13 +442,13 @@
 }
 #header .navigationPage .namePage h3 {
   text-transform: uppercase;
-  color: #fff;
+  color: #66696e;
   font-size: 16px;
   font-weight: 600;
 }
 /*header section end*/
-/*style for  size from 1024px to 1250px*/
-@media (min-width: 1024px) and (max-width: 1250px) {
+/*style for  size from 1100px to 1270px*/
+@media (min-width: 1100px) and (max-width: 1270px) {
   #header {
     /*logo and help section end*/
     /*navigation section start*/
@@ -468,6 +481,51 @@
   #header .navigationPage {
     margin: -1.8% 12.5% 0;
     width: 75%;
+  }
+  #header .navigationPage nav .b-nav li {
+    padding: 5px 10px;
+  }
+  #header .navigationPage nav .b-nav li .b-nav {
+    top: 44px;
+  }
+}
+/*style for  size from 1024px to 1100px*/
+@media (min-width: 1024px) and (max-width: 1100px) {
+  #header {
+    /*logo and help section end*/
+    /*navigation section start*/
+    /*navigation section end*/
+  }
+  #header .topHeader {
+    /*logo section start*/
+    /*logo section end*/
+    /*help button section start*/
+    /*help button section end*/
+  }
+  #header .topHeader .leftHeader {
+    margin-left: 70px;
+  }
+  #header .topHeader .leftHeader h1 {
+    font-size: 18px;
+  }
+  #header .topHeader .rightHeader {
+    margin-right: 30px;
+  }
+  #header .topHeader .rightHeader .help {
+    margin: 23px 20px 0 0;
+  }
+  #header .topHeader .rightHeader h5 {
+    font-size: 16px;
+  }
+  #header .topHeader .rightHeader h5 span {
+    font-size: 16px;
+  }
+  #header .navigationPage {
+    margin: -1.8% 12.5% 0;
+    width: 75%;
+  }
+  #header .navigationPage nav .b-nav li {
+    padding: 5px ;
   }
   #header .navigationPage nav .b-nav li .b-nav {
     top: 44px;
@@ -564,7 +622,7 @@
     left: 320px;
   }
   #header .topHeader .leftHeader #b-container.open .b-bun--top {
-    background: #5d3f49;
+    background: #66696e;
     top: 9px;
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -574,7 +632,7 @@
     opacity: 0;
   }
   #header .topHeader .leftHeader #b-container.open .b-bun--bottom {
-    background: #5d3f49;
+    background: #66696e;
     top: 5px;
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
@@ -728,7 +786,7 @@
     display: none;
   }
 }
-/*style for tablet size from 320px to 479px*/
+/*style for tablet size from 401px to 479px*/
 @media (min-width: 401px) and (max-width: 479px) {
   #header {
     width: 100%;
@@ -775,7 +833,7 @@
   #header .topHeader .leftHeader h1 {
     text-transform: uppercase;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px 2px;
   }
   #header .topHeader .leftHeader h1:before {
     content: 'благодійний фонд';
@@ -830,6 +888,7 @@
     display: none;
   }
 }
+/*style for tablet size from 320px to 400px*/
 @media (min-width: 320px) and (max-width: 400px) {
   #header {
     width: 100%;

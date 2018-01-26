@@ -1,16 +1,16 @@
 var gulp         = require('gulp'), // Подключаем Gulp
     less         = require('gulp-less'), //Подключаем Less пакет,
     browserSync  = require('browser-sync'), // Подключаем Browser Sync
-    cssnano      = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
+    concat       = require('gulp-concat'); // Подключаем gulp-concat (для конкатенации файлов)
     rename       = require('gulp-rename'), // Подключаем библиотеку для переименования файлов
-    del          = require('del'), // Подключаем библиотеку для удаления файлов и папок
+    cssnano      = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
+    autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
+    concatCss    = require('gulp-concat-css');// Подключаем gulp-concat-css (для конкатенации файлов css)
+    uglify       = require('gulp-uglifyjs'); // Подключаем пакет для минификации JS
+    htmlmin      = require('gulp-html-minifier');// Подключаем пакет для минификации HTML
     imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
     pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
-    autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
-    htmlmin      = require('gulp-html-minifier');// Подключаем пакет для минификации HTML
-    uglify       = require('gulp-uglifyjs'); // Подключаем пакет для минификации JS
-    concat       = require('gulp-concat'); // Подключаем gulp-concat (для конкатенации файлов)
-    concatCss    = require('gulp-concat-css');// Подключаем gulp-concat-css (для конкатенации файлов css)
+    del          = require('del'), // Подключаем библиотеку для удаления файлов и папок
 
 
 //  таск Less+префиксы
@@ -46,16 +46,15 @@ gulp.task('css-libs', ['less'], function() {
 // таск для минификации HTML
 gulp.task('minify', function() {
     gulp.src('app/*.html')// Выбираем файл для минификации
-        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(htmlmin({collapseWhitespace: true}))// Сжимаем
         .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
         .pipe(gulp.dest('app'))// Выгружаем в папку app
 });
 
-//таск для минификации scripts
+//таск для минификации Scripts
 gulp.task('scripts', function() {
     return gulp.src(['app/js/*.js'])// Берем js
-        .pipe(jshint())// Проверка ошибок в скриптах
-        .pipe(jshint.reporter('default'))// Проверка ошибок в скриптах
+
         .pipe(uglify()) // Сжимаем JS файл
         .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
         .pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
@@ -63,7 +62,7 @@ gulp.task('scripts', function() {
 
 // Наблюдение
 gulp.task('watch', ['browser-sync'], function() {
-    gulp.watch('app/less/*.less', ['less']); // Наблюдение за sass файлами в папке less
+    gulp.watch('app/less/*.less', ['less']); // Наблюдение за less файлами в папке less
     gulp.watch('app/js/*.js', browserSync.reload); // Наблюдение за js файлами в папке js
     gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
 });

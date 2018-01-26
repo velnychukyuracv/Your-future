@@ -1,27 +1,11 @@
-@font_Raleway: Raleway, sans-serif;
-@font_size_title: 30px;
-@color_text_header_nav: #fff;
-@color_bg_dark: #5d3f49;
-@color_button_normal: #ff7f9c;
-@color_button_hover: #fb5a87;
-@color_title_line: #fd537c ;
-@color_bg:#ececec;
-@color_active:#61d1b7;
-@color_footer:#c3bbbd;
+@import "constants";
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  .standard_box
 }
 
 .projects {
-  min-width: 320px;
-  margin: 0 auto;
-  font-family: @font_Raleway;
-  font-size: 16px;
-  font-weight: 400;
-  color: #494949;
+  .standard;
 
   @import "navigation_out_menu";
   @import "header";
@@ -31,30 +15,34 @@
   }
 
   main {
-    background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
+    background: @color_content_bg;
     padding: 100px 60px 50px 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     .project {
       width: 80%;
-      border: 2px solid @color_bg;
+      border: 2px solid @color_link;
       padding: 25px 20px;
-      .project_title {
-        border-bottom: 2px solid @color_bg_dark;
-        width: 25%;
-        .letter_santa {
-          font-size: 27px;
-          font-weight: 400;
-          margin: 5px 0;
-          color: @color_bg_dark;
-          text-decoration: none;
+      .title_project{
+        h3{
+          padding-bottom: 10px;
+          display: inline-block;
+          border-bottom: 2px solid @color_content;
+          a{
+            color: @color_content;
+            font-size: @font_size_standard + 12px;
+            text-decoration: none;
+          }
         }
-      }
-      h4 {
-        font-size: 12px;
-        font-weight: 400;
-        margin: 15px 0 10px;
+        p{
+          margin-top: 0;
+          margin-bottom: 5px;
+          span{
+            font-size: @font_size_standard - 4px;
+            font-family: @font_Roboto;
+          }
+        }
       }
       .description_project {
         display: flex;
@@ -69,9 +57,9 @@
         .about {
           width: 50%;
           p {
-            font-size: 17px;
+            font-size: @font_size_standard;
             font-weight: 400;
-            font-family: 'PT Sans', sans-serif;
+            font-family: @font_Raleway;
             text-align: justify;
           }
         }
@@ -83,12 +71,13 @@
           flex-direction: column;
           .help {
             width: 100%;
-            font-size: 18px;
+            font-size: @font_size_standard + 2px;
             font-weight: 700;
             animation: none;
+            margin: 0;
           }
           .help:hover {
-            background-color: #fff;
+            background-color: @color_text;
             border: 3px solid @color_button_hover;
             color: @color_button_hover;
           }
@@ -101,7 +90,7 @@
             .need {
               margin: 30px 0 5px;
               h4 {
-                font-size: 17px;
+                font-size: @font_size_standard + 1px;
                 font-weight: 400;
                 margin: 0;
               }
@@ -109,19 +98,19 @@
             .need_progress {
               margin: 20px 0;
               width: 100%;
-              border: 1px solid #e3e3e3;
+              border: 1px solid @color_link;
               height: 20px;
               border-radius: 15px;
               overflow: hidden;
               span {
-                background-color: #EF87A2;
+                background-color: @color_button_hover;
                 display: inline-block;
                 height: 100%;
               }
             }
             .left_progress {
               h5 {
-                font-size: 14px;
+                font-size: @font_size_standard - 1px;
                 font-weight: 400;
                 line-height: 20px;
               }
@@ -142,13 +131,12 @@
     main {
       .project {
         width: 90%;
-        .project_title {
-          width: 30%;
+        .title_project {
         }
         .description_project {
           .about {
             p {
-              font-size: 16px;
+              font-size: @font_size_standard;
             }
           }
           .price {
@@ -158,12 +146,12 @@
             .progress {
               .need {
                 h4 {
-                  font-size: 16px;
+                  font-size: @font_size_standard;
                 }
               }
               .left_progress {
                 h5 {
-                  font-size: 13px;
+                  font-size: @font_size_standard - 3px;
                 }
               }
             }
@@ -181,18 +169,13 @@
       padding: 8% 4% 6%;
       .project {
         width: 95%;
-        .project_title {
-          border-bottom: 2px solid @color_bg_dark;
-          width: 30%;
-          .letter_santa {
+        .title_project {
+
+          .h3 > a {
             font-size: 22px;
           }
         }
-        h4 {
-          font-size: 12px;
-          font-weight: 400;
-          margin: 15px 0 10px;
-        }
+
         .description_project {
           display: flex;
           justify-content: space-between;
@@ -206,39 +189,39 @@
           .about {
             width: 50%;
             p {
-              font-size: 14px;
+              font-size: @font_size_standard - 2px;
             }
           }
 
           .price {
             .help {
               margin: 0;
-              font-size: 17px;
+              font-size: @font_size_standard + 1px;
             }
             .progress {
               .need {
                 margin: 15px 0 5px;
                 h4 {
-                  font-size: 15px;
+                  font-size: @font_size_standard ;
                   margin: 0;
                 }
               }
               .need_progress {
                 margin: 20px 0;
                 width: 100%;
-                border: 1px solid #e3e3e3;
+                border: 1px solid @color_link;
                 height: 20px;
                 border-radius: 15px;
                 overflow: hidden;
                 span {
-                  background-color: #EF87A2;
+                  background-color: @color_button_hover;
                   display: inline-block;
                   height: 100%;
                 }
               }
               .left_progress {
                 h5 {
-                  font-size: 12px;
+                  font-size: @font_size_standard - 2px;
                   font-weight: 400;
                   line-height: 20px;
                 }
@@ -258,18 +241,11 @@
       padding: 8% 2% 6%;
       .project {
         width: 96%;
-        .project_title {
-          border-bottom: 2px solid @color_bg_dark;
-          width: 43%;
-          .letter_santa {
+        .title_project {
+          .h3 {
             font-size: 20px;
             font-weight: 500;
           }
-        }
-        h4 {
-          font-size: 12px;
-          font-weight: 400;
-          margin: 10px 0;
         }
         .description_project {
           display: flex;
@@ -282,7 +258,7 @@
           .about {
             width: 70%;
             p {
-              font-size: 15px;
+              font-size: @font_size_standard - 1px;
             }
           }
 
@@ -297,21 +273,21 @@
               .need {
                 margin: 10px 0;
                 h4 {
-                  font-size: 14px;
+                  font-size: @font_size_standard - 2px;
                   margin: 0;
                 }
               }
               .need_progress {
                 margin: 5px 0;
                 span {
-                  background-color: #EF87A2;
+                  background-color: @color_button_hover;
                   display: inline-block;
                   height: 100%;
                 }
               }
               .left_progress {
                 h5 {
-                  font-size: 12px;
+                  font-size: @font_size_standard - 4px;
                   font-weight: 400;
                   line-height: 20px;
                 }
@@ -332,29 +308,24 @@
       .project {
         width: 96%;
         padding: 5px;
-        .project_title {
-          border-bottom: 2px solid @color_bg_dark;
-          width: 60%;
-          .letter_santa {
+        .title_project {
+          .h3 {
             font-size: 18px;
           }
-        }
-        h4 {
-          font-size: 12px;
-          font-weight: 400;
-          margin: 10px 0;
         }
         .description_project {
           display: flex;
           flex-direction: column;
           .picture {
-            display: none;
+            display: block;
+            margin: 0 auto;
+
           }
 
           .about {
             width: 100%;
             p {
-              font-size: 15px;
+              font-size: @font_size_standard - 1px;
             }
           }
 
@@ -364,19 +335,19 @@
             flex-direction: column;
             margin: 2% 1%;
             padding: 1%;
-            border: 1px solid @color_bg;
+            border: 1px solid @color_link;
             align-items: center;
             justify-content: center;
             .help {
               width: 80%;
               margin: 0;
-              font-size: 14px;
+              font-size: @font_size_standard - 2px;
             }
             .progress {
               .need {
                 margin: 15px 0 10px;
                 h4 {
-                  font-size: 14px;
+                  font-size: @font_size_standard - 2px;
                   margin: 0;
                   text-align: center;
                 }
@@ -384,14 +355,14 @@
               .need_progress {
                 margin: 5px 0;
                 span {
-                  background-color: #EF87A2;
+                  background-color: @color_button_hover;
                   display: inline-block;
                   height: 100%;
                 }
               }
               .left_progress {
                 h5 {
-                  font-size: 14px;
+                  font-size: @font_size_standard - 2px;
                   font-weight: 400;
                   line-height: 20px;
                 }
@@ -410,7 +381,7 @@
     #header .topHeader {
       margin-bottom: 50px;
       .leftHeader h1 {
-        font-size: 20px;
+        font-size: @font_size_standard + 4px;
         padding-left: 0 !important;
         &:before {
           content: 'бо мбф "твоє майбутнє"';
@@ -428,7 +399,7 @@
     #header .topHeader {
       margin-bottom: 50px;
       .leftHeader h1 {
-        font-size: 22px;
+        font-size: @font_size_standard + 6px;
         padding-left: 0 !important;
         &:before {
           content: 'Проекти';

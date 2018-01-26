@@ -1,27 +1,11 @@
-@font_Raleway: Raleway, sans-serif;
-@font_size_title: 30px;
-@color_text_header_nav: #fff;
-@color_bg_dark: #5d3f49;
-@color_button_normal: #ff7f9c;
-@color_button_hover: #fb5a87;
-@color_title_line: #fd537c ;
-@color_bg:#ececec;
-@color_active:#61d1b7;
-@color_footer:#c3bbbd;
+@import "constants";
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  .standard_box;
 }
 
 .contacts {
-  min-width: 320px;
-  margin: 0 auto;
-  font-family: @font_Raleway;
-  font-size: 16px;
-  font-weight: 400;
-  color: #2a2a2a;
+  .standard;
 
   @import "navigation_out_menu";
   @import "header";
@@ -30,35 +14,34 @@
     content: 'Контакти';
   }
   main {
-    background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
+    background: @color_content_bg;
     padding: 100px 60px 50px 60px;
     a {
       text-decoration: none;
       font-weight: 500;
-      color: @color_bg_dark;
+      color: @color_grey;
       &:hover {
-        color: @color_active;
+        color: @color_link;
       }
     }
     h4 {
-      font-size: 18px;
-      font-weight: 600;
+      font-size: @font_size_standard + 2px;
+      font-weight: 700;
       span {
         font-weight: 400;
         margin-left: 10px;
       }
     }
     p {
-      font-size: 17px;
+      font-size: @font_size_standard;
       font-weight: 400;
     }
     h5 {
-      font-size: 17px;
-      font-weight: 500;
+      font-size: @font_size_standard + 1px;
+      font-weight: 400;
       span {
         font-weight: 500;
         margin-left: 10px;
-        color: #180c0d;
       }
     }
   }
@@ -69,18 +52,8 @@
 /*style for  size from 320px to 768px*/
 @media  (min-width: 320px) and (max-width: 768px) {
   .contacts {
-    font-size: 14px;
     main {
       padding: 8% 4% 4%;
-      h4 {
-        font-size: 15px;
-      }
-      p {
-        font-size: 15px;
-      }
-      h5 {
-        font-size: 15px;
-      }
     }
   }
 }
@@ -91,7 +64,7 @@
     #header .topHeader {
       margin-bottom: 50px;
       .leftHeader h1 {
-        font-size: 20px;
+        font-size: @font_size_standard + 4px;
         padding-left: 0 !important;
         &:before {
           content: 'бо мбф "твоє майбутнє"';
@@ -109,7 +82,7 @@
     #header .topHeader {
       margin-bottom: 50px;
       .leftHeader h1 {
-        font-size: 22px;
+        font-size: @font_size_standard + 6px;
         padding-left: 0 !important;
         &:before {
           content: 'контакти';

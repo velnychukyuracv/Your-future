@@ -1,3 +1,4 @@
+//mobile menu
 $(document).ready(function() {
     $("#b-container").click(function() {
         $("#navigation_out_menu").toggleClass("open");

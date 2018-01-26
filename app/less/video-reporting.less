@@ -1,27 +1,11 @@
-@font_Raleway: Raleway, sans-serif;
-@font_size_title: 30px;
-@color_text_header_nav: #fff;
-@color_bg_dark: #5d3f49;
-@color_button_normal: #ff7f9c;
-@color_button_hover: #fb5a87;
-@color_title_line: #fd537c ;
-@color_bg:#ececec;
-@color_active:#61d1b7;
-@color_footer:#c3bbbd;
+@import "constants";
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  .standard_box;
 }
 
 .videoReporting {
-  min-width: 320px;
-  margin: 0 auto;
-  font-family: @font_Raleway;
-  font-size: 16px;
-  font-weight: 400;
-  color: #494949;
+  .standard;
 
   @import "navigation_out_menu";
 
@@ -32,7 +16,7 @@
   }
 
   main {
-    background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
+    background: @color_content_bg;
     padding: 100px 60px 50px 60px;
 
     .sl-reporting-video {
@@ -92,16 +76,16 @@
           button {
             &:before {
               content: '';
-              background-color: @color_bg;
+              background-color: @color_content;
               border-radius: 50%;
-              border: 1px solid @color_bg_dark;
+              border: 1px solid @color_content;
               width: 10px;
               height: 10px;
               opacity: 0.5;
             }
           }
           &.slick-active button:before {
-            background-color: @color_bg_dark;
+            background-color: @color_content;
             opacity: 0.7;
           }
         }
@@ -226,7 +210,7 @@
     #header .topHeader {
       margin-bottom: 50px;
       .leftHeader h1 {
-        font-size: 20px;
+        font-size: @font_size_standard + 4px;
         padding-left: 0 !important;
         &:before {
           content: 'бо мбф "твоє майбутнє"';
@@ -244,7 +228,7 @@
     #header .topHeader {
       margin-bottom: 50px;
       .leftHeader h1 {
-        font-size: 22px;
+        font-size: @font_size_standard + 6px;
         padding-left: 0 !important;
         &:before {
           content: 'Відео';

@@ -1,27 +1,11 @@
-@font_Raleway: Raleway, sans-serif;
-@font_size_title: 30px;
-@color_text_header_nav: #fff;
-@color_bg_dark: #5d3f49;
-@color_button_normal: #ff7f9c;
-@color_button_hover: #fb5a87;
-@color_title_line: #fd537c ;
-@color_bg:#ececec;
-@color_active:#61d1b7;
-@color_footer:#c3bbbd;
+@import "constants";
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  .standard_box;
 }
 
 .helpPay {
-  min-width: 320px;
-  margin: 0 auto;
-  font-family: @font_Raleway;
-  font-size: 16px;
-  font-weight: 400;
-  color: #494949;
+  .standard;
 
   @import "navigation_out_menu";
   @import "header";
@@ -32,7 +16,7 @@
   }
 
   main {
-    background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
+    background: @color_content_bg;
     padding: 100px 10px 50px 10px;
     .container_count {
       margin: 0 auto;

@@ -10,3 +10,7 @@ $(window).scroll(function(){
 });
 
 
+$('.middleBottomFooter').click(function(){
+    $('html, body').animate({scrollTop:$('#mainContainer').position().top}, 1500);
+});
+

@@ -1,6 +1,23 @@
+.standard {
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #494949;
+}
+.standard_box {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 /*start footer style*/
 footer {
-  background-color: #5d3f49;
+  background: -webkit-gradient(linear, left top, left bottom, from(#868990), to(#4b4e53));
+  background: -webkit-linear-gradient(top, #868990 0%, #4b4e53 100%);
+  background: -o-linear-gradient(top, #868990 0%, #4b4e53 100%);
+  background: linear-gradient(top, #868990 0%, #4b4e53 100%);
   padding: 5% 3% 4%;
   /*title*/
   /*Requisites section start*/
@@ -132,6 +149,7 @@ footer .middleFooter .phone {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 19px 0 23px 0;
+  font-family: Roboto, sans-serif;
 }
 footer .middleFooter .mail {
   width: 33%;
@@ -156,6 +174,9 @@ footer .middleFooter .mail a {
   margin-left: 25px;
   color: #fff;
 }
+footer .middleFooter .mail a:hover {
+  color: #babbb5;
+}
 footer .bottomFooter {
   padding-top: 4%;
   display: -webkit-box;
@@ -175,7 +196,7 @@ footer .bottomFooter .leftBottomFooter {
 footer .bottomFooter .leftBottomFooter h6 {
   font-size: 18px;
   font-weight: 500;
-  color: #c3bbbd;
+  color: #fff;
 }
 footer .bottomFooter .middleBottomFooter {
   width: 10%;
@@ -193,7 +214,7 @@ footer .bottomFooter .middleBottomFooter {
           align-items: center;
 }
 footer .bottomFooter .middleBottomFooter .fa-arrow-circle-o-up {
-  color: #c3bbbd;
+  color: #868990;
 }
 footer .bottomFooter .middleBottomFooter .fa-arrow-circle-o-up:hover {
   color: #fff;
@@ -214,7 +235,7 @@ footer .bottomFooter .rightBottomFooter a {
   height: 50px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  border: 2px solid #c3bbbd;
+  border: 2px solid #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -232,7 +253,7 @@ footer .bottomFooter .rightBottomFooter a {
 footer .bottomFooter .rightBottomFooter a .fa-facebook,
 footer .bottomFooter .rightBottomFooter a .fa-instagram,
 footer .bottomFooter .rightBottomFooter a .fa-youtube-play {
-  color: #c3bbbd;
+  color: #fff;
 }
 footer .bottomFooter .rightBottomFooter .instagram {
   margin: 0 55px;
@@ -308,16 +329,15 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     text-align: right;
   }
   footer .topFooter .leftTopFooter h5 {
-    font-size: 13px;
+    font-size: 15px;
   }
   footer .topFooter .rightTopFooter {
-    padding: 0;
     width: 50%;
     text-align: justify;
     padding-left: 5px;
   }
   footer .topFooter .rightTopFooter h5 {
-    font-size: 12px;
+    font-size: 15px;
   }
   footer .middleFooter {
     display: -webkit-box;
@@ -337,7 +357,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     width: 100%;
   }
   footer .middleFooter h5 {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     margin-left: 15px;
     color: #fff;
@@ -476,7 +496,6 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     /*Requisites in English section end*/
   }
   footer .topFooter .leftTopFooter {
-    padding: 0;
     width: 100%;
     text-align: justify;
     padding-bottom: 15px;
@@ -490,7 +509,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
             align-items: flex-start;
   }
   footer .topFooter .leftTopFooter h5 {
-    font-size: 13px;
+    font-size: 15px;
   }
   footer .topFooter .rightTopFooter {
     padding: 0;
@@ -498,7 +517,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     text-align: justify;
   }
   footer .topFooter .rightTopFooter h5 {
-    font-size: 12px;
+    font-size: 15px;
   }
   footer .middleFooter {
     display: -webkit-box;
@@ -514,7 +533,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     border-bottom: 1px solid #fff;
   }
   footer .middleFooter h5 {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     margin-left: 15px;
     color: #fff;
@@ -590,7 +609,7 @@ footer .bottomFooter .rightBottomFooter .youtube:hover .fa-youtube-play {
     padding-top: 4%;
   }
   footer .bottomFooter .leftBottomFooter h6 {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 400;
   }
   footer .bottomFooter .middleBottomFooter {

@@ -1,26 +1,11 @@
-@font_Raleway: Raleway, sans-serif;
-
-@color_text_header_nav: #fff;
-@color_bg_dark: #5d3f49;
-@color_button_normal: #ff7f9c;
-@color_button_hover: #fb5a87;
-@color_title_line: #fd537c ;
-@color_bg:#ececec;
-@color_active: #67efd5;
+@import "constants";
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  .standard_box;
 }
 
 .vacancies {
-  min-width: 320px;
-  margin: 0 auto;
-  font-family: @font_Raleway;
-  font-size: 16px;
-  font-weight: 400;
-  color: #494949;
+  .standard;
 
   @import "navigation_out_menu";
 
@@ -31,7 +16,7 @@
   }
 
   main {
-    background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
+    background: @color_content_bg;
     padding: 100px 60px;
     display: flex;
     justify-content: space-around;
@@ -44,15 +29,15 @@
       .vacancies_link {
         text-decoration: none;
         text-transform: uppercase;
-        color: @color_text_header_nav;
-        background: linear-gradient(top, #65dec4 0%, #48b097 100%);
+        color: @color_text;
+        background: linear-gradient(top , #b3fffd 0%, #7ed9ae 100%);;
         border-radius: 20px;
         width: 200px;
         height: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 16px;
+        font-size: @font_size_standard;
         font-weight: 700;
         border: none;
         .fa-arrow-right {
@@ -60,14 +45,14 @@
         }
       }
       .vacancies_link:hover {
-        background: @color_bg;
-        border: 2px solid @color_active;
-        color: @color_active;
+        background: #ececec;
+        border: 2px solid #67efd5;
+        color: #67efd5;
       }
     }
 
     h4 {
-      font-size: 30px;
+      font-size: @font_size_standard + 14px;
       font-weight: 500;
       margin: 10px 0 5px;
     }
@@ -75,7 +60,7 @@
     .vacancies {
       width: 400px;
       height: 350px;
-      border: 2px solid #C3C3C3;
+      border: 2px solid @color_bg;
       background-color: @color_bg;
       display: flex;
       align-items: center;
@@ -96,22 +81,21 @@
 @media  (min-width: 701px) and (max-width: 950px) {
   .vacancies {
     main {
-      background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
+      background: @color_content_bg;
       padding: 8% 4% 4%;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
 
       h4 {
-        font-size: 20px;
+        font-size: @font_size_standard + 4px;
         font-weight: 700;
         margin: 10px 0 5px;
       }
-
       .vacancies {
         width: 280px;
         height: 240px;
-        border: 2px solid #C3C3C3;
+        border: 2px solid @color_bg;
         background-color: @color_bg;
         display: flex;
         align-items: center;
@@ -131,14 +115,14 @@
 @media  (min-width: 320px) and (max-width: 700px) {
   .vacancies {
     main {
-      background: linear-gradient(top, #ddfcf6 0%, #E6FDF7 100%);
+      background: @color_content_bg;
       padding: 8% 4% 4%;
       display: flex;
       flex-direction: column;
       align-items: center;
 
       h4 {
-        font-size: 20px;
+        font-size: @font_size_standard + 4px;
         font-weight: 700;
         margin: 10px 0 5px;
       }
@@ -146,7 +130,7 @@
       .vacancies {
         width: 280px;
         height: 240px;
-        border: 2px solid #C3C3C3;
+        border: 2px solid @color_bg;
         background-color: @color_bg;
         display: flex;
         align-items: center;
@@ -168,7 +152,7 @@
     #header .topHeader {
       margin-bottom: 50px;
       .leftHeader h1 {
-        font-size: 20px;
+        font-size: @font_size_standard + 4px;
         padding-left: 0 !important;
         &:before {
           content: 'бо мбф "твоє майбутнє"';
@@ -186,7 +170,7 @@
     #header .topHeader {
       margin-bottom: 50px;
       .leftHeader h1 {
-        font-size: 22px;
+        font-size: @font_size_standard + 6px;
         padding-left: 0 !important;
         &:before {
           content: 'Вакансії';

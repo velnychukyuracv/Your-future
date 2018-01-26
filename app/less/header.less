@@ -1,17 +1,11 @@
-@color_text_header_nav: #fff;
-@color_bg_dark: #5d3f49;
-@color_button_normal: #ff7f9c;
-@color_button_hover: #fb5a87;
-@color_active: #5bddbb;
-@color_footer:#c3bbbd;
-
+@import "constants";
 
 
 
 /*header start*/
 #header {
-  background: linear-gradient(top, #65dec4 0%, #48b097 100%);
-  border-bottom: @color_bg_dark 2px solid;
+  background-color: @color_active_header_bg;
+  border-bottom: @color_grey 2px solid;
   z-index: 100;
   position: relative;
   width:100%;
@@ -29,8 +23,8 @@
       margin-left: 130px;
       h1{
         text-transform: capitalize;
-        color: @color_text_header_nav;
-        font-size: 20px;
+        color: @color_grey;
+        font-size: @font_size_standard + 4px;
         font-weight: 600;
         padding: 18px 0 0 25px;
 
@@ -57,7 +51,7 @@
         opacity: 1;
       }
       .b-bun {
-        background: white;
+        background: @color_burger_menu;
         position: relative;
         transition: all 0.4s ease;
       }
@@ -66,28 +60,28 @@
         height: 2px;
         top: 0;
         width: 30px;
-        background: white;
+        background: @color_burger_menu;
       }
 
       .b-bun--mid {
         height: 2px;
         top: 8px;
         width: 30px;
-        background: white;
+        background: @color_burger_menu;
       }
 
       .b-bun--bottom {
         height: 2px;
         top: 16px;
         width: 30px;
-        background: white;
+        background: @color_burger_menu;
       }
       #b-container.open  {
-        left:265px;
+        left:275px;
         opacity: 1;
       }
       #b-container.open .b-bun--top {
-        background: @color_bg_dark;
+        background: @color_grey;
         top: 9px;
         transform: rotate(45deg);
         opacity: 1;
@@ -96,7 +90,7 @@
         opacity: 0;
       }
       #b-container.open .b-bun--bottom {
-        background: @color_bg_dark;
+        background: @color_grey;
         top: 5px;
         transform: rotate(-45deg);
         opacity: 1;
@@ -113,14 +107,14 @@
       justify-content: flex-end;
       margin-right: 30px;
       h5{
-        color: @color_text_header_nav;
-        font-size: 18px;
+        color: @color_grey;
+        font-size: @font_size_standard + 2px;
         font-weight: 600;
         padding-top: 23px;
         text-align: right;
         span{
-          font-family: Roboto, sans-serif;
-          font-size: 18px;
+          font-family: @font_Roboto;
+          font-size: @font_size_standard + 2px;
           font-weight: 700;
         }
       }
@@ -142,8 +136,8 @@
     nav {
       width: 100%;
       border-radius: 25px;
-      background: linear-gradient(left, #825c60 0%, #493136 100%);
-      padding: 13px 20px;
+      background-color: @color_grey;
+      padding: 8px 7px;
       .help_section{
         display: none;
       }
@@ -152,23 +146,26 @@
         justify-content: space-around;
         li {
           list-style-type: none;
+          padding: 5px 15px;
+          border-radius: 15px;
+          background: linear-gradient(top, #868990 0%, #66696e 100%);
           .b-link {
             padding:25px 5px;
-            color: @color_text_header_nav;
+            color: @color_text;
             text-decoration: none;
             font-weight: 500;
             &:hover {
-              color: @color_active;
+              color: @color_active_header_bg;
             }
           }
           .b-nav {
             position: absolute;
             border-radius: 0 0 15px 15px;
-            top: 45px;
+            top: 44px;
             padding-left: 15px;
             margin: 0;
-            background-color:@color_bg_dark ;
-            opacity: 0.8;
+            background-color:@color_grey ;
+            opacity: 0.9;
             display: none;
             flex-direction: column;
             list-style-type: none;
@@ -178,6 +175,7 @@
               position: relative;
               padding: 5px 0;
               margin: 5px 5px;
+              background: none;
               a{
                 padding: 5px 5px ;
               }
@@ -189,7 +187,7 @@
             }
             &:hover{
               >.b-link{
-                color: @color_active;
+                color: @color_active_header_bg;
               }
             }
           }
@@ -200,7 +198,7 @@
 
     /*name page start*/
     .namePage{
-      background: linear-gradient(top, #65dec4 0%, #48b097 100%);
+      background-color: @color_active_header_bg;
       width: 45%;
       display: flex;
       justify-content: center;
@@ -210,8 +208,8 @@
       border-bottom-right-radius: 25px;
       h3{
         text-transform: uppercase;
-        color: @color_text_header_nav ;
-        font-size: 16px;
+        color: @color_grey ;
+        font-size: @font_size_standard;
         font-weight: 600;
       }
     }
@@ -221,15 +219,15 @@
 }
 /*header section end*/
 
-/*style for  size from 1024px to 1250px*/
-@media  (min-width: 1024px) and (max-width: 1250px) {
+/*style for  size from 1100px to 1270px*/
+@media  (min-width: 1100px) and (max-width: 1270px) {
   #header {
     .topHeader{
       /*logo section start*/
       .leftHeader{
         margin-left: 70px;
         h1{
-          font-size: 18px;
+          font-size: @font_size_standard + 2px;
         }
       }
       /*logo section end*/
@@ -241,9 +239,9 @@
           margin: 23px 20px 0 0;
         }
         h5{
-          font-size: 16px;
+          font-size: @font_size_standard;
           span{
-            font-size: 16px;
+            font-size: @font_size_standard;
           }
         }
       }
@@ -258,6 +256,56 @@
       nav {
         .b-nav {
           li {
+            padding: 5px 10px;
+            .b-nav {
+              top: 44px;
+            }
+          }
+        }
+      }
+    }
+    /*navigation section end*/
+  }
+}
+
+/*style for  size from 1024px to 1100px*/
+@media  (min-width: 1024px) and (max-width: 1100px) {
+  #header {
+    .topHeader{
+      /*logo section start*/
+      .leftHeader{
+        margin-left: 70px;
+        h1{
+          font-size: @font_size_standard + 2px;
+        }
+      }
+      /*logo section end*/
+
+      /*help button section start*/
+      .rightHeader{
+        margin-right: 30px;
+        .help{
+          margin: 23px 20px 0 0;
+        }
+        h5{
+          font-size: @font_size_standard;
+          span{
+            font-size: @font_size_standard;
+          }
+        }
+      }
+      /*help button section end*/
+    }
+    /*logo and help section end*/
+
+    /*navigation section start*/
+    .navigationPage{
+      margin: -1.8% 12.5% 0;
+      width: 75%;
+      nav {
+        .b-nav {
+          li {
+            padding: 5px ;
             .b-nav {
               top: 44px;
             }
@@ -338,7 +386,7 @@
         }
 
         #b-container.open .b-bun--top {
-          background: @color_bg_dark;
+          background: @color_grey;
           top: 9px;
           transform: rotate(45deg);
 
@@ -347,7 +395,7 @@
           opacity: 0;
         }
         #b-container.open .b-bun--bottom {
-          background: @color_bg_dark;
+          background: @color_grey;
           top: 5px;
           transform: rotate(-45deg);
         }
@@ -385,9 +433,9 @@
             border-radius: 20px;
           }
           h5{
-            color: @color_text_header_nav;
-            font-size: 15px;
-            font-family: Roboto, sans-serif;
+            color: @color_text;
+            font-size: @font_size_standard - 1px;
+            font-family: @font_Roboto;
             margin: 0 5% ;
             text-align: right;
           }
@@ -430,7 +478,7 @@
         h1{
           text-transform: uppercase;
           text-align: center;
-          font-size: 19px;
+          font-size: @font_size_standard + 3px;
           &:before{
             content:'благодійна організація';
           }
@@ -494,7 +542,7 @@
   }
 }
 
-/*style for tablet size from 320px to 479px*/
+/*style for tablet size from 401px to 479px*/
 @media  (min-width: 401px) and (max-width: 479px) {
   #header {
     width:100%;
@@ -520,7 +568,7 @@
         h1{
           text-transform: uppercase;
           text-align: center;
-          font-size: 18px;
+          font-size: @font_size_standard +2px;
           &:before{
             content:'благодійний фонд';
           }
@@ -584,6 +632,7 @@
   }
 }
 
+/*style for tablet size from 320px to 400px*/
 @media  (min-width: 320px) and (max-width: 400px) {
   #header {
     width:100%;
@@ -609,7 +658,7 @@
         h1{
           text-transform: uppercase;
           text-align: center;
-          font-size: 18px;
+          font-size: @font_size_standard + 2px;
           &:before{
             content:'бо мбф твоє';
           }

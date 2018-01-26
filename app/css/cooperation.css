@@ -1,3 +1,17 @@
+.standard {
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #494949;
+}
+.standard_box {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,10 +30,12 @@
   /* Zoom-out effect style*/
   /*header start*/
   /*header section end*/
-  /*style for  size from 1024px to 1250px*/
+  /*style for  size from 1100px to 1270px*/
+  /*style for  size from 1024px to 1100px*/
   /*style for tablet size from 768px to 1023px*/
   /*style for tablet size from 480px to 767px*/
-  /*style for tablet size from 320px to 479px*/
+  /*style for tablet size from 401px to 479px*/
+  /*style for tablet size from 320px to 400px*/
   /*start footer style*/
   /*end footer style*/
   /*style for tablet size from 650px to 850px*/
@@ -86,7 +102,7 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  background: #8CD0B7;
+  background: #b2fefc;
   -webkit-border-radius: 5px;
           border-radius: 5px;
 }
@@ -104,7 +120,7 @@
   font-family: Roboto, sans-serif;
 }
 .cooperation .container_count .block_count .count.curent {
-  color: #5d3f49;
+  color: #66696e;
 }
 .cooperation .container_count .block_count .active {
   position: absolute;
@@ -132,7 +148,7 @@
   font-size: 16px;
   height: 50px;
   text-transform: uppercase;
-  color: #333;
+  color: #66696e;
   width: 100%;
 }
 .cooperation .container_count form input[type='submit'] {
@@ -143,7 +159,7 @@
   background: rgba(255, 255, 255, 0.3);
   width: 100%;
   height: 40px;
-  color: #444;
+  color: #66696e;
   font-weight: 700;
   font-size: 14px;
 }
@@ -152,7 +168,7 @@
 }
 .cooperation .container_count .price {
   color: #fff;
-  font-size: 48px;
+  font-size: 32px;
   text-align: center;
   margin-top: 50px;
   font-family: Roboto, sans-serif;
@@ -199,10 +215,10 @@
   height: 100%;
   max-height: 100%;
   position: fixed;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6bf3d9), to(#336b54));
-  background: -webkit-linear-gradient(top, #6bf3d9 0%, #336b54 100%);
-  background: -o-linear-gradient(top, #6bf3d9 0%, #336b54 100%);
-  background: linear-gradient(top, #6bf3d9 0%, #336b54 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b2fefc), to(#80ffd4));
+  background: -webkit-linear-gradient(top, #b2fefc 0%, #80ffd4 100%);
+  background: -o-linear-gradient(top, #b2fefc 0%, #80ffd4 100%);
+  background: linear-gradient(top, #b2fefc 0%, #80ffd4 100%);
   z-index: 200;
   display: -webkit-box;
   display: -webkit-flex;
@@ -244,9 +260,9 @@
   padding-left: 10px;
 }
 .cooperation #navigation_out_menu .header_out_menu h2 {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
-  color: #fff;
+  color: #66696e;
   font-weight: 700;
   padding: 0 10px ;
 }
@@ -265,27 +281,27 @@
 .cooperation #navigation_out_menu nav .nav_out_menu li {
   padding: 10px 10px;
   list-style-type: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6cffe5), to(#1b5148));
-  background: -webkit-linear-gradient(top, #6cffe5 0%, #1b5148 100%);
-  background: -o-linear-gradient(top, #6cffe5 0%, #1b5148 100%);
-  background: linear-gradient(top, #6cffe5 0%, #1b5148 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b3fffd), to(#7ed9ae));
+  background: -webkit-linear-gradient(top, #b3fffd 0%, #7ed9ae 100%);
+  background: -o-linear-gradient(top, #b3fffd 0%, #7ed9ae 100%);
+  background: linear-gradient(top, #b3fffd 0%, #7ed9ae 100%);
 }
 .cooperation #navigation_out_menu nav .nav_out_menu li .link_out_menu {
-  color: #fff;
+  color: #66696e;
   text-decoration: none;
   display: block;
   height: 100%;
   font-size: 20px;
 }
 .cooperation #navigation_out_menu nav .nav_out_menu li .link_out_menu:hover {
-  color: #5d3f49;
+  color: #fff;
 }
 .cooperation #navigation_out_menu nav .nav_out_menu li:hover {
   background: -webkit-gradient(linear, left top, right top, from(#ff7f9c), to(#b64760));
   background: -webkit-linear-gradient(left, #ff7f9c 0%, #b64760 100%);
   background: -o-linear-gradient(left, #ff7f9c 0%, #b64760 100%);
   background: linear-gradient(left, #ff7f9c 0%, #b64760 100%);
-  color: #5d3f49;
+  color: #66696e;
 }
 .cooperation #navigation_out_menu nav .nav_out_menu li .sub_nav_out_menu {
   display: none;
@@ -314,8 +330,8 @@
   background: linear-gradient(left, #ff7f9c 0%, #fb5a87 100%);
 }
 .cooperation #navigation_out_menu .help:hover {
-  border: 2px solid #ff7f9c;
-  color: #ff7f9c;
+  border: 2px solid #fb5a87;
+  color: #fb5a87;
   background: #fff;
 }
 .cooperation #navigation_out_menu .footer_out_menu {
@@ -340,18 +356,17 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   margin: 8% 0;
 }
 .cooperation #navigation_out_menu .footer_out_menu .social_out_menu a {
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  border: 2px solid #c3bbbd;
+  border: 2px solid #66696e;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -369,10 +384,7 @@
 .cooperation #navigation_out_menu .footer_out_menu .social_out_menu a .fa-facebook,
 .cooperation #navigation_out_menu .footer_out_menu .social_out_menu a .fa-instagram,
 .cooperation #navigation_out_menu .footer_out_menu .social_out_menu a .fa-youtube-play {
-  color: #c3bbbd;
-}
-.cooperation #navigation_out_menu .footer_out_menu .social_out_menu .instagram {
-  margin: 0 55px;
+  color: #66696e;
 }
 .cooperation #navigation_out_menu .footer_out_menu .social_out_menu .facebook:hover {
   border-color: #3B5998;
@@ -395,7 +407,7 @@
 .cooperation #navigation_out_menu .footer_out_menu h5 {
   font-size: 10px;
   font-weight: 600;
-  color: #fff;
+  color: #66696e;
 }
 .cooperation #navigation_out_menu.open {
   left: 0px;
@@ -410,11 +422,8 @@
   opacity: 0.3;
 }
 .cooperation #header {
-  background: -webkit-gradient(linear, left top, left bottom, from(#65dec4), to(#48b097));
-  background: -webkit-linear-gradient(top, #65dec4 0%, #48b097 100%);
-  background: -o-linear-gradient(top, #65dec4 0%, #48b097 100%);
-  background: linear-gradient(top, #65dec4 0%, #48b097 100%);
-  border-bottom: #5d3f49 2px solid;
+  background-color: #b2fefc;
+  border-bottom: #66696e 2px solid;
   z-index: 100;
   position: relative;
   width: 100%;
@@ -447,7 +456,7 @@
 }
 .cooperation #header .topHeader .leftHeader h1 {
   text-transform: capitalize;
-  color: #fff;
+  color: #66696e;
   font-size: 20px;
   font-weight: 600;
   padding: 18px 0 0 25px;
@@ -478,7 +487,7 @@
   opacity: 1;
 }
 .cooperation #header .topHeader .leftHeader .b-bun {
-  background: white;
+  background: #fff;
   position: relative;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -488,26 +497,26 @@
   height: 2px;
   top: 0;
   width: 30px;
-  background: white;
+  background: #fff;
 }
 .cooperation #header .topHeader .leftHeader .b-bun--mid {
   height: 2px;
   top: 8px;
   width: 30px;
-  background: white;
+  background: #fff;
 }
 .cooperation #header .topHeader .leftHeader .b-bun--bottom {
   height: 2px;
   top: 16px;
   width: 30px;
-  background: white;
+  background: #fff;
 }
 .cooperation #header .topHeader .leftHeader #b-container.open {
-  left: 265px;
+  left: 275px;
   opacity: 1;
 }
 .cooperation #header .topHeader .leftHeader #b-container.open .b-bun--top {
-  background: #5d3f49;
+  background: #66696e;
   top: 9px;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -518,7 +527,7 @@
   opacity: 0;
 }
 .cooperation #header .topHeader .leftHeader #b-container.open .b-bun--bottom {
-  background: #5d3f49;
+  background: #66696e;
   top: 5px;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
@@ -538,7 +547,7 @@
   margin-right: 30px;
 }
 .cooperation #header .topHeader .rightHeader h5 {
-  color: #fff;
+  color: #66696e;
   font-size: 18px;
   font-weight: 600;
   padding-top: 23px;
@@ -579,11 +588,8 @@
   width: 100%;
   -webkit-border-radius: 25px;
           border-radius: 25px;
-  background: -webkit-gradient(linear, left top, right top, from(#825c60), to(#493136));
-  background: -webkit-linear-gradient(left, #825c60 0%, #493136 100%);
-  background: -o-linear-gradient(left, #825c60 0%, #493136 100%);
-  background: linear-gradient(left, #825c60 0%, #493136 100%);
-  padding: 13px 20px;
+  background-color: #66696e;
+  padding: 8px 7px;
 }
 .cooperation #header .navigationPage nav .help_section {
   display: none;
@@ -599,6 +605,13 @@
 }
 .cooperation #header .navigationPage nav .b-nav li {
   list-style-type: none;
+  padding: 5px 15px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#868990), to(#66696e));
+  background: -webkit-linear-gradient(top, #868990 0%, #66696e 100%);
+  background: -o-linear-gradient(top, #868990 0%, #66696e 100%);
+  background: linear-gradient(top, #868990 0%, #66696e 100%);
 }
 .cooperation #header .navigationPage nav .b-nav li .b-link {
   padding: 25px 5px;
@@ -607,17 +620,17 @@
   font-weight: 500;
 }
 .cooperation #header .navigationPage nav .b-nav li .b-link:hover {
-  color: #5bddbb;
+  color: #b2fefc;
 }
 .cooperation #header .navigationPage nav .b-nav li .b-nav {
   position: absolute;
   -webkit-border-radius: 0 0 15px 15px;
           border-radius: 0 0 15px 15px;
-  top: 45px;
+  top: 44px;
   padding-left: 15px;
   margin: 0;
-  background-color: #5d3f49;
-  opacity: 0.8;
+  background-color: #66696e;
+  opacity: 0.9;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -632,6 +645,7 @@
   position: relative;
   padding: 5px 0;
   margin: 5px 5px;
+  background: none;
 }
 .cooperation #header .navigationPage nav .b-nav li .b-nav li a {
   padding: 5px 5px ;
@@ -640,13 +654,10 @@
   display: inherit;
 }
 .cooperation #header .navigationPage nav .b-nav li:hover:hover > .b-link {
-  color: #5bddbb;
+  color: #b2fefc;
 }
 .cooperation #header .navigationPage .namePage {
-  background: -webkit-gradient(linear, left top, left bottom, from(#65dec4), to(#48b097));
-  background: -webkit-linear-gradient(top, #65dec4 0%, #48b097 100%);
-  background: -o-linear-gradient(top, #65dec4 0%, #48b097 100%);
-  background: linear-gradient(top, #65dec4 0%, #48b097 100%);
+  background-color: #b2fefc;
   width: 45%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -668,11 +679,11 @@
 }
 .cooperation #header .navigationPage .namePage h3 {
   text-transform: uppercase;
-  color: #fff;
+  color: #66696e;
   font-size: 16px;
   font-weight: 600;
 }
-@media (min-width: 1024px) and (max-width: 1250px) {
+@media (min-width: 1100px) and (max-width: 1270px) {
   .cooperation #header {
     /*logo and help section end*/
     /*navigation section start*/
@@ -705,6 +716,50 @@
   .cooperation #header .navigationPage {
     margin: -1.8% 12.5% 0;
     width: 75%;
+  }
+  .cooperation #header .navigationPage nav .b-nav li {
+    padding: 5px 10px;
+  }
+  .cooperation #header .navigationPage nav .b-nav li .b-nav {
+    top: 44px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1100px) {
+  .cooperation #header {
+    /*logo and help section end*/
+    /*navigation section start*/
+    /*navigation section end*/
+  }
+  .cooperation #header .topHeader {
+    /*logo section start*/
+    /*logo section end*/
+    /*help button section start*/
+    /*help button section end*/
+  }
+  .cooperation #header .topHeader .leftHeader {
+    margin-left: 70px;
+  }
+  .cooperation #header .topHeader .leftHeader h1 {
+    font-size: 18px;
+  }
+  .cooperation #header .topHeader .rightHeader {
+    margin-right: 30px;
+  }
+  .cooperation #header .topHeader .rightHeader .help {
+    margin: 23px 20px 0 0;
+  }
+  .cooperation #header .topHeader .rightHeader h5 {
+    font-size: 16px;
+  }
+  .cooperation #header .topHeader .rightHeader h5 span {
+    font-size: 16px;
+  }
+  .cooperation #header .navigationPage {
+    margin: -1.8% 12.5% 0;
+    width: 75%;
+  }
+  .cooperation #header .navigationPage nav .b-nav li {
+    padding: 5px ;
   }
   .cooperation #header .navigationPage nav .b-nav li .b-nav {
     top: 44px;
@@ -800,7 +855,7 @@
     left: 320px;
   }
   .cooperation #header .topHeader .leftHeader #b-container.open .b-bun--top {
-    background: #5d3f49;
+    background: #66696e;
     top: 9px;
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -810,7 +865,7 @@
     opacity: 0;
   }
   .cooperation #header .topHeader .leftHeader #b-container.open .b-bun--bottom {
-    background: #5d3f49;
+    background: #66696e;
     top: 5px;
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
@@ -1009,7 +1064,7 @@
   .cooperation #header .topHeader .leftHeader h1 {
     text-transform: uppercase;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px 2px;
   }
   .cooperation #header .topHeader .leftHeader h1:before {
     content: 'благодійний фонд';
@@ -1182,17 +1237,20 @@
   font-size: 18px;
 }
 .cooperation main h5 {
-  font-size: 17px;
+  font-size: 16px;
 }
 .cooperation main a {
   text-decoration: none;
-  color: #5d3f49;
+  color: #66696e;
 }
 .cooperation main a:hover {
-  color: #5bddbb;
+  color: #babbb5;
 }
 .cooperation footer {
-  background-color: #5d3f49;
+  background: -webkit-gradient(linear, left top, left bottom, from(#868990), to(#4b4e53));
+  background: -webkit-linear-gradient(top, #868990 0%, #4b4e53 100%);
+  background: -o-linear-gradient(top, #868990 0%, #4b4e53 100%);
+  background: linear-gradient(top, #868990 0%, #4b4e53 100%);
   padding: 5% 3% 4%;
   /*title*/
   /*Requisites section start*/
@@ -1324,6 +1382,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 19px 0 23px 0;
+  font-family: Roboto, sans-serif;
 }
 .cooperation footer .middleFooter .mail {
   width: 33%;
@@ -1348,6 +1407,9 @@
   margin-left: 25px;
   color: #fff;
 }
+.cooperation footer .middleFooter .mail a:hover {
+  color: #babbb5;
+}
 .cooperation footer .bottomFooter {
   padding-top: 4%;
   display: -webkit-box;
@@ -1367,7 +1429,7 @@
 .cooperation footer .bottomFooter .leftBottomFooter h6 {
   font-size: 18px;
   font-weight: 500;
-  color: #c3bbbd;
+  color: #fff;
 }
 .cooperation footer .bottomFooter .middleBottomFooter {
   width: 10%;
@@ -1385,7 +1447,7 @@
           align-items: center;
 }
 .cooperation footer .bottomFooter .middleBottomFooter .fa-arrow-circle-o-up {
-  color: #c3bbbd;
+  color: #868990;
 }
 .cooperation footer .bottomFooter .middleBottomFooter .fa-arrow-circle-o-up:hover {
   color: #fff;
@@ -1406,7 +1468,7 @@
   height: 50px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  border: 2px solid #c3bbbd;
+  border: 2px solid #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1424,7 +1486,7 @@
 .cooperation footer .bottomFooter .rightBottomFooter a .fa-facebook,
 .cooperation footer .bottomFooter .rightBottomFooter a .fa-instagram,
 .cooperation footer .bottomFooter .rightBottomFooter a .fa-youtube-play {
-  color: #c3bbbd;
+  color: #fff;
 }
 .cooperation footer .bottomFooter .rightBottomFooter .instagram {
   margin: 0 55px;
@@ -1498,16 +1560,15 @@
     text-align: right;
   }
   .cooperation footer .topFooter .leftTopFooter h5 {
-    font-size: 13px;
+    font-size: 15px;
   }
   .cooperation footer .topFooter .rightTopFooter {
-    padding: 0;
     width: 50%;
     text-align: justify;
     padding-left: 5px;
   }
   .cooperation footer .topFooter .rightTopFooter h5 {
-    font-size: 12px;
+    font-size: 15px;
   }
   .cooperation footer .middleFooter {
     display: -webkit-box;
@@ -1527,7 +1588,7 @@
     width: 100%;
   }
   .cooperation footer .middleFooter h5 {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     margin-left: 15px;
     color: #fff;
@@ -1665,7 +1726,6 @@
     /*Requisites in English section end*/
   }
   .cooperation footer .topFooter .leftTopFooter {
-    padding: 0;
     width: 100%;
     text-align: justify;
     padding-bottom: 15px;
@@ -1679,7 +1739,7 @@
             align-items: flex-start;
   }
   .cooperation footer .topFooter .leftTopFooter h5 {
-    font-size: 13px;
+    font-size: 15px;
   }
   .cooperation footer .topFooter .rightTopFooter {
     padding: 0;
@@ -1687,7 +1747,7 @@
     text-align: justify;
   }
   .cooperation footer .topFooter .rightTopFooter h5 {
-    font-size: 12px;
+    font-size: 15px;
   }
   .cooperation footer .middleFooter {
     display: -webkit-box;
@@ -1703,7 +1763,7 @@
     border-bottom: 1px solid #fff;
   }
   .cooperation footer .middleFooter h5 {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     margin-left: 15px;
     color: #fff;
@@ -1779,7 +1839,7 @@
     padding-top: 4%;
   }
   .cooperation footer .bottomFooter .leftBottomFooter h6 {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 400;
   }
   .cooperation footer .bottomFooter .middleBottomFooter {

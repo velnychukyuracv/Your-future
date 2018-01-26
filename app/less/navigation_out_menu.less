@@ -1,9 +1,4 @@
-@color_text_header_nav: #fff;
-@color_bg_dark: #5d3f49;
-@color_button_normal: #ff7f9c;
-@color_button_hover: #fb5a87;
-@color_active: #5bddbb;
-@color_footer:#c3bbbd;
+@import "constants";
 
 @import "button_help";
 
@@ -13,7 +8,7 @@
   height: 100%;
   max-height: 100%;
   position: fixed;
-  background: linear-gradient(top, #6bf3d9 0%, #336b54 100%);
+  background: linear-gradient(top , #b2fefc 0%, #80ffd4 100%);
   z-index: 200;
   display: flex;
   left: -350px;
@@ -30,9 +25,9 @@
       padding-left: 10px;
     }
     h2{
-      font-size: 18px;
+      font-size: @font_size_standard;
       text-transform: uppercase;
-      color: @color_text_header_nav;
+      color: @color_grey;
       font-weight: 700;
       padding: 0 10px ;
     }
@@ -46,20 +41,20 @@
      li {
        padding: 10px 10px;
        list-style-type: none;
-       background: linear-gradient(top , #6cffe5 0%, #1b5148 100%);
+       background: linear-gradient(top , #b3fffd 0%, #7ed9ae 100%);
        .link_out_menu {
-         color: @color_text_header_nav;
+         color: @color_grey;
          text-decoration: none;
          display: block;
          height: 100%;
-         font-size: 20px;
+         font-size: @font_size_standard + 4px;
          &:hover {
-           color: @color_bg_dark;
+           color: @color_text;
          }
        }
        &:hover {
          background: linear-gradient(left, #ff7f9c 0%, #b64760 100%);
-         color: @color_bg_dark;
+         color: @color_grey;
        }
        .sub_nav_out_menu{
          display: none;
@@ -81,9 +76,9 @@
     border-radius: 30px;
     background: linear-gradient(left, #ff7f9c 0%, #fb5a87 100%);
     &:hover{
-      border: 2px solid @color_button_normal;
-      color: @color_button_normal;
-      background:  #fff;
+      border: 2px solid @color_button_hover;
+      color: @color_button_hover;
+      background:  @color_text;
     }
   }
 
@@ -94,23 +89,20 @@
     .social_out_menu {
       flex-direction: row;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       margin: 8% 0;
       a{
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
-        border: 2px solid @color_footer;
+        border: 2px solid @color_grey;
         display: flex;
         justify-content: center;
         align-items: center;
         text-decoration: none;
         .fa-facebook,.fa-instagram,.fa-youtube-play {
-          color: @color_footer;
+          color: @color_grey;
         }
-      }
-      .instagram{
-        margin: 0 55px;
       }
       .facebook:hover{
         border-color: #3B5998;
@@ -132,9 +124,9 @@
       }
     }
     h5{
-    font-size: 10px;
+    font-size: @font_size_standard - 6px;
     font-weight: 600;
-    color: @color_text_header_nav;
+    color: @color_grey;
     }
   }
 }
