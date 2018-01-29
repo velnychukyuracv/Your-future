@@ -7,6 +7,7 @@
 .basic {
   .standard;
 
+
   main {
     padding: 0;
     background: none;
@@ -408,6 +409,11 @@
       margin-left: 5%;
       margin-right: 5%;
       padding: 1% 0;
+      .slick-track{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
       .sl_slide {
         display: flex;
         align-items: center;
@@ -607,8 +613,8 @@
       flex-direction: column;
       background-color: @color_text;
       width: 430px;
-      margin-left: 30px;
-      margin-bottom: 70px;
+      margin-left: 80px;
+      margin-bottom:50px;
       border-radius: 10px;
       h4 {
         text-align: center;
@@ -761,6 +767,15 @@
       }
     }
     /*partners section end*/
+
+    /*map, form, contact section start*/
+    .map {
+      .logoLocation {
+        width: 100px;
+        height: 100px;
+      }
+      /*map, form, contact section end*/
+    }
   }
 }
 
@@ -838,7 +853,7 @@
           align-items: center;
           margin: 0 10px;
           .cooperatorPicture {
-            border: 10px solid @color_link;
+            border: 10px solid @color_grey;
             border-radius: 50%;
             width: 75%;
             height: 70%;
@@ -878,7 +893,7 @@
           justify-content: center;
           align-items: center;
           .logo {
-            border: 7px solid #b6b6b6;
+            border: 7px solid @color_link;
             border-radius: 50%;
           }
         }
@@ -1427,7 +1442,6 @@
           margin-top: 10px;
           outline: none;
           border: none;
-
           img {
             width: 100%;
             height: 100%;
@@ -1560,13 +1574,13 @@
           margin: 10px 0 30px;
         }
         P {
-          font-size: 16px;
-          padding-right: 0;
+          font-size: @font_size_standard;
           text-align: justify;
+          padding: 15px;
         }
         .button .about {
           margin: 8px 0;
-          width: 35%;
+          width: 30%;
         }
       }
       /*mission main section end*/
@@ -1601,17 +1615,17 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-          margin: 0 5px;
+          margin:  5px;
           .cooperatorPicture {
-            border: 5px solid @color_link;
+            border: 8px solid @color_grey;
             border-radius: 50%;
-            width: 45%;
-            height: 60%;
+            width: 75%;
+            height: auto;
           }
           h5 {
             padding: 15px 0 10px;
             text-transform: uppercase;
-            font-size: 18px;
+            font-size: @font_size_standard+2px;
             font-weight: 700;
           }
           h6 {
@@ -1643,7 +1657,7 @@
           justify-content: center;
           align-items: center;
           .logo {
-            border: 7px solid #b6b6b6;
+            border: 7px solid @color_link;
             border-radius: 50%;
           }
         }
@@ -1651,17 +1665,17 @@
           display: flex;
           .leftWayMain {
             width: 50%;
-            height: 50%;
-            border-right: 4px solid #b6b6b6;
+            height: 40%;
+            border-right: 4px solid @color_link;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
             position: relative;
             .pentagon {
               width: 80%;
-              height: 60px;
+              height: 80px;
               position: relative;
-              background: #f1f1f1;
+              background: @color_bg;
               margin-right: 60px;
               display: flex;
               align-items: center;
@@ -1670,17 +1684,17 @@
             .pentagon:before {
               content: "";
               position: absolute;
-              right: -29px;
+              right: -40px;
               bottom: 0;
               width: 0;
               height: 0;
-              border-left: 30px solid #f1f1f1;
-              border-top: 30px solid transparent;
-              border-bottom: 30px solid transparent;
+              border-left: 40px solid @color_bg;
+              border-top: 40px solid transparent;
+              border-bottom: 40px solid transparent;
             }
             .circle1 {
               border-radius: 50%;
-              background-color: #b6b6b6;
+              background-color: @color_link;
               position: absolute;
               width: 28px;
               height: 28px;
@@ -1688,11 +1702,11 @@
               top: 48px;
             }
             .way1 {
-              margin-top: 33px;
+              margin-top: 25px;
             }
             .circle3 {
               border-radius: 50%;
-              background-color: #b6b6b6;
+              background-color: @color_link;
               position: absolute;
               width: 28px;
               height: 28px;
@@ -1700,12 +1714,12 @@
               top: 278px;
             }
             .way3 {
-              margin-top: 170px;
-              margin-bottom: 170px;
+              margin-top: 150px;
+              margin-bottom: 150px;
             }
             .circle5 {
               border-radius: 50%;
-              background-color: #b6b6b6;
+              background-color:@color_link;
               position: absolute;
               width: 28px;
               height: 28px;
@@ -1713,22 +1727,22 @@
               top: 508px;
             }
             .way5 {
-              margin-bottom: 100px;
+              margin-bottom: 80px;
             }
           }
           .rightWayMain {
             width: 50%;
             height: 50%;
-            border-left: 4px solid #b6b6b6;
+            border-left: 4px solid @color_link;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             position: relative;
             .pentagon {
               width: 80%;
-              height: 60px;
+              height: 80px;
               position: relative;
-              background: #f1f1f1;
+              background: @color_bg;
               margin-left: 60px;
               display: flex;
               align-items: center;
@@ -1739,18 +1753,18 @@
             .pentagon:before {
               content: "";
               position: absolute;
-              left: -29px;
+              left: -40px;
               transform: rotate(180deg);
               bottom: 0;
               width: 0;
               height: 0;
-              border-left: 30px solid #f1f1f1;
-              border-top: 30px solid transparent;
-              border-bottom: 30px solid transparent;
+              border-left: 40px solid @color_bg;
+              border-top: 40px solid transparent;
+              border-bottom: 40px solid transparent;
             }
             .circle2 {
               border-radius: 50%;
-              background-color: #b6b6b6;
+              background-color: @color_link;
               position: absolute;
               width: 28px;
               height: 28px;
@@ -1758,11 +1772,11 @@
               top: 165px;
             }
             .way2 {
-              margin-top: 150px;
+              margin-top: 140px;
             }
             .circle4 {
               border-radius: 50%;
-              background-color: #b6b6b6;
+              background-color: @color_link;
               position: absolute;
               width: 28px;
               height: 28px;
@@ -1770,12 +1784,12 @@
               top: 392px;
             }
             .way4 {
-              margin-top: 170px;
+              margin-top: 145px;
               margin-bottom: 190px;
             }
             .circle6 {
               border-radius: 50%;
-              background-color: #b6b6b6;
+              background-color: @color_link;
               position: absolute;
               width: 28px;
               height: 28px;
@@ -1785,7 +1799,7 @@
             .way6 {
               margin-bottom: 0;
               position: absolute;
-              top: 610px;
+              top: 600px;
             }
           }
         }
@@ -2005,11 +2019,6 @@
           align-items: center;
           position: relative;
         }
-        .leftPhoto:hover {
-          .fa-search {
-            display: block;
-          }
-        }
         .middlePhoto {
           height: 100%;
           width: 48%;
@@ -2028,22 +2037,6 @@
               justify-content: center;
               align-items: center;
               position: relative;
-              .zoom {
-                position: absolute;
-                text-decoration: none;
-                padding: 20px;
-                .fa-search {
-                  color: #99868c;
-                  transform: rotate(90deg);
-                  display: none;
-                  opacity: 0.8;
-                }
-              }
-            }
-            .topLeftPhoto:hover, .bottomLeftPhoto:hover {
-              .fa-search {
-                display: block;
-              }
             }
             .topRightPhoto, .bottomRightPhoto {
               height: 100%;
@@ -2052,22 +2045,6 @@
               justify-content: center;
               align-items: center;
               position: relative;
-              .zoom {
-                position: absolute;
-                text-decoration: none;
-                padding: 20px;
-                .fa-search {
-                  color: #99868c;
-                  transform: rotate(90deg);
-                  display: none;
-                  opacity: 0.8;
-                }
-              }
-            }
-            .topRightPhoto:hover, .bottomRightPhoto:hover {
-              .fa-search {
-                display: block;
-              }
             }
           }
         }
@@ -2078,22 +2055,6 @@
           justify-content: center;
           align-items: center;
           position: relative;
-          .zoom {
-            position: absolute;
-            text-decoration: none;
-            padding: 20px;
-            .fa-search {
-              color: #99868c;
-              transform: rotate(90deg);
-              display: none;
-              opacity: 0.8;
-            }
-          }
-        }
-        .rightPhoto:hover {
-          .fa-search {
-            display: block;
-          }
         }
       }
     }
@@ -2105,10 +2066,10 @@
       position: relative;
       padding-top: 57px;
       .logoLocation {
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
         border-radius: 20px;
-        background-color: @color_link;
+        background-color: @color_grey;
         transform: rotate(45deg);
         display: flex;
         justify-content: center;
@@ -2142,23 +2103,23 @@
           input {
             margin: 10px 0;
             border-radius: 10px;
-            background-color: #eeeeee;
+            background-color: @color_form_input;
             border: none;
             padding: 10px 10px;
 
           }
           input[placeholder] {
-            font-size: 16px;
+            font-size: @font_size_standard;
           }
           textarea {
             margin: 10px 0;
             border-radius: 10px;
-            background-color: #eeeeee;
+            background-color: @color_form_input;
             border: none;
             padding: 12px 12px 45px 12px;
           }
           textarea[placeholder] {
-            font-size: 20px;
+            font-size: @font_size_standard;
           }
         }
         .button {
@@ -2176,7 +2137,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 18px;
+            font-size: @font_size_standard + 2px;
             font-weight: 700;
             margin: 10px 30px 14px;
           }
@@ -2194,14 +2155,14 @@
         align-items: center;
         flex-wrap: wrap;
         h5 {
-          font-size: 15px;
+          font-size: @font_size_standard - 1px;
           font-weight: 500;
         }
         a {
-          font-size: 16px;
+          font-size: @font_size_standard;
           font-weight: 500;
           text-decoration: none;
-          color: #494949;
+          color: @color_content;
         }
         .address {
           width: 220px;
@@ -2396,7 +2357,7 @@
           margin: 10px 0 30px;
         }
         P {
-          font-size: 14px;
+          font-size: @font_size_standard - 1px;
           padding-right: 0;
           text-align: justify;
         }
@@ -2439,21 +2400,21 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-          margin: 0 5px;
+          margin: 5px;
           .cooperatorPicture {
-            border: 5px solid @color_link;
+            border: 5px solid @color_grey;
             border-radius: 50%;
-            width: 45%;
-            height: 60%;
+            width: 55%;
           }
           h5 {
             padding: 15px 0 10px;
             text-transform: uppercase;
-            font-size: 18px;
+            font-size: @font_size_standard + 2px;
             font-weight: 700;
           }
           h6 {
             text-align: center;
+            font-size: @font_size_standard - 1px;
           }
         }
       }
@@ -2483,12 +2444,12 @@
           justify-content: flex-end;
           align-items: center;
           .logo {
-            border: 5px solid #b6b6b6;
+            border: 5px solid @color_link;
             border-radius: 50%;
           }
         }
         .mainWayMobile {
-          border-right: 8px solid #b6b6b6;
+          border-right: 8px solid @color_link;
           width: 90%;
           padding: 10px 0 40px;
           position: relative;
@@ -2496,7 +2457,7 @@
             width: 90%;
             height: 60px;
             position: relative;
-            background: #f1f1f1;
+            background: @color_bg;
             display: flex;
             align-items: center;
             padding-left: 16px;
@@ -2509,7 +2470,7 @@
             bottom: 0;
             width: 0;
             height: 0;
-            border-left: 30px solid #f1f1f1;
+            border-left: 30px solid @color_bg;
             border-top: 30px solid transparent;
             border-bottom: 30px solid transparent;
           }
@@ -2519,56 +2480,56 @@
           }
           .circle1 {
             border-radius: 50%;
-            background-color: #b6b6b6;
+            background-color: @color_link;
             position: absolute;
             width: 20px;
             height: 20px;
-            right: -13px;
+            right: -14px;
             top: 40px;
           }
           .circle2 {
             border-radius: 50%;
-            background-color: #b6b6b6;
+            background-color: @color_link;
             position: absolute;
             width: 20px;
             height: 20px;
-            right: -13px;
+            right: -14px;
             top: 110px;
           }
           .circle3 {
             border-radius: 50%;
-            background-color: #b6b6b6;
+            background-color: @color_link;
             position: absolute;
             width: 20px;
             height: 20px;
-            right: -13px;
+            right: -14px;
             top: 180px;
           }
           .circle4 {
             border-radius: 50%;
-            background-color: #b6b6b6;
+            background-color: @color_link;
             position: absolute;
             width: 20px;
             height: 20px;
-            right: -13px;
+            right: -14px;
             top: 250px;
           }
           .circle5 {
             border-radius: 50%;
-            background-color: #b6b6b6;
+            background-color: @color_link;
             position: absolute;
             width: 20px;
             height: 20px;
-            right: -13px;
+            right: -14px;
             top: 320px;
           }
           .circle6 {
             border-radius: 50%;
-            background-color: #b6b6b6;
+            background-color: @color_link;
             position: absolute;
             width: 20px;
             height: 20px;
-            right: -13px;
+            right: -14px;
             top: 400px;
           }
         }
@@ -2791,11 +2752,6 @@
           align-items: center;
           position: relative;
         }
-        .leftPhoto:hover {
-          .fa-search {
-            display: block;
-          }
-        }
         .middlePhoto {
           height: 100%;
           width: 48%;
@@ -2814,22 +2770,6 @@
               justify-content: center;
               align-items: center;
               position: relative;
-              .zoom {
-                position: absolute;
-                text-decoration: none;
-                padding: 20px;
-                .fa-search {
-                  color: #99868c;
-                  transform: rotate(90deg);
-                  display: none;
-                  opacity: 0.8;
-                }
-              }
-            }
-            .topLeftPhoto:hover, .bottomLeftPhoto:hover {
-              .fa-search {
-                display: block;
-              }
             }
             .topRightPhoto, .bottomRightPhoto {
               height: 100%;
@@ -2838,22 +2778,6 @@
               justify-content: center;
               align-items: center;
               position: relative;
-              .zoom {
-                position: absolute;
-                text-decoration: none;
-                padding: 20px;
-                .fa-search {
-                  color: #99868c;
-                  transform: rotate(90deg);
-                  display: none;
-                  opacity: 0.8;
-                }
-              }
-            }
-            .topRightPhoto:hover, .bottomRightPhoto:hover {
-              .fa-search {
-                display: block;
-              }
             }
           }
         }
@@ -2864,22 +2788,6 @@
           justify-content: center;
           align-items: center;
           position: relative;
-          .zoom {
-            position: absolute;
-            text-decoration: none;
-            padding: 20px;
-            .fa-search {
-              color: #99868c;
-              transform: rotate(90deg);
-              display: none;
-              opacity: 0.8;
-            }
-          }
-        }
-        .rightPhoto:hover {
-          .fa-search {
-            display: block;
-          }
         }
       }
     }
@@ -2891,15 +2799,15 @@
       position: relative;
       padding-top: 57px;
       .logoLocation {
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
         border-radius: 20px;
-        background-color: @color_link;
+        background-color: @color_grey;
         transform: rotate(45deg);
         display: flex;
         justify-content: center;
         align-items: center;
-        left: 45%;
+        left: 42%;
         position: absolute;
         top: -40px;
         .fa-map-marker {
@@ -2917,7 +2825,7 @@
         h4 {
           text-align: center;
           text-transform: uppercase;
-          font-size: 30px;
+          font-size: @font_size_title;
           font-weight: 700;
           padding: 15px 0;
         }
@@ -2928,23 +2836,23 @@
           input {
             margin: 10px 0;
             border-radius: 10px;
-            background-color: #eeeeee;
+            background-color: @color_form_input;
             border: none;
             padding: 10px 10px;
 
           }
           input[placeholder] {
-            font-size: 16px;
+            font-size: @font_size_standard;
           }
           textarea {
             margin: 10px 0;
             border-radius: 10px;
-            background-color: #eeeeee;
+            background-color: @color_form_input;
             border: none;
             padding: 12px 12px 45px 12px;
           }
           textarea[placeholder] {
-            font-size: 20px;
+            font-size: @font_size_standard;
           }
         }
         .button {
@@ -2962,7 +2870,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 18px;
+            font-size: @font_size_standard + 2px;
             font-weight: 700;
             margin: 10px 30px 14px;
           }
@@ -2980,14 +2888,15 @@
         align-items: center;
         flex-wrap: wrap;
         h5 {
-          font-size: 14px;
+          font-size: @font_size_standard ;
           font-weight: 500;
+          margin-left: 10px;
         }
         a {
-          font-size: 16px;
+          font-size: @font_size_standard;
           font-weight: 500;
           text-decoration: none;
-          color: #494949;
+          color: @color_content;
         }
         .address {
           width: 210px;
@@ -3170,7 +3079,7 @@
         flex-direction: column;
         width: 100%;
         h4 {
-          font-size: 18px;
+          font-size: @font_size_standard + 2px;
           font-weight: 600;
           text-transform: uppercase;
         }
@@ -3183,15 +3092,15 @@
         }
         P {
           font-size: 13px;
-          padding-right: 0;
           text-align: justify;
+          padding: 3px;
         }
         .button .about {
           margin: 5px 0;
-          width: 35%;
+          width: 40%;
           height: 30px;
           border-radius: 15px;
-          font-size: 14px;
+          font-size: @font_size_standard - 1px;
         }
       }
       /*mission main section end*/
@@ -3209,7 +3118,7 @@
       background-color: @color_bg;
       padding: 20px 10px;
       h4 {
-        font-size: 18px;
+        font-size: @font_size_standard + 2px;
         font-weight: 600;
         text-transform: uppercase;
       }
@@ -3228,9 +3137,9 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-          margin: 0 5px;
+          margin: 5px;
           .cooperatorPicture {
-            border: 5px solid @color_link;
+            border: 5px solid @color_grey;
             border-radius: 50%;
             width: 50%;
             height: 65%;
@@ -3238,12 +3147,12 @@
           h5 {
             padding: 15px 0 10px;
             text-transform: uppercase;
-            font-size: 16px;
+            font-size: @font_size_standard;
             font-weight: 700;
           }
           h6 {
             text-align: center;
-            font-size: 12px;
+            font-size: @font_size_standard - 3px;
           }
         }
       }
@@ -3254,7 +3163,7 @@
     .ourWay {
       padding: 20px 10px 40px;
       h4 {
-        font-size: 18px;
+        font-size: @font_size_standard + 2px;
         font-weight: 600;
         text-transform: uppercase;
       }
@@ -3273,7 +3182,7 @@
           justify-content: flex-end;
           align-items: center;
           .logo {
-            border: 5px solid #b6b6b6;
+            border: 5px solid @color_link;
             border-radius: 50%;
             img {
               width: 60px;
@@ -3281,7 +3190,7 @@
           }
         }
         .mainWayMobile {
-          border-right: 6px solid #b6b6b6;
+          border-right: 6px solid @color_link;
           width: 90%;
           padding: 10px 0 40px;
           position: relative;
@@ -3289,13 +3198,13 @@
             width: 85%;
             height: 60px;
             position: relative;
-            background: #f1f1f1;
+            background: @color_bg;
             display: flex;
             align-items: center;
             padding-left: 16px;
             margin: 10px 0;
             p {
-              font-size: 13px;
+              font-size: @font_size_standard - 3px;
             }
           }
           .pentagon:before {
@@ -3305,7 +3214,7 @@
             bottom: 0;
             width: 0;
             height: 0;
-            border-left: 30px solid #f1f1f1;
+            border-left: 30px solid @color_bg;
             border-top: 30px solid transparent;
             border-bottom: 30px solid transparent;
           }
@@ -3315,7 +3224,7 @@
           }
           .circle1 {
             border-radius: 50%;
-            background-color: #b6b6b6;
+            background-color: @color_link;
             position: absolute;
             width: 20px;
             height: 20px;
@@ -3324,7 +3233,7 @@
           }
           .circle2 {
             border-radius: 50%;
-            background-color: #b6b6b6;
+            background-color: @color_link;;
             position: absolute;
             width: 20px;
             height: 20px;
@@ -3333,7 +3242,7 @@
           }
           .circle3 {
             border-radius: 50%;
-            background-color: #b6b6b6;
+            background-color: @color_link;
             position: absolute;
             width: 20px;
             height: 20px;
@@ -3342,7 +3251,7 @@
           }
           .circle4 {
             border-radius: 50%;
-            background-color: #b6b6b6;
+            background-color: @color_link;
             position: absolute;
             width: 20px;
             height: 20px;
@@ -3351,7 +3260,7 @@
           }
           .circle5 {
             border-radius: 50%;
-            background-color: #b6b6b6;
+            background-color: @color_link;
             position: absolute;
             width: 20px;
             height: 20px;
@@ -3360,7 +3269,7 @@
           }
           .circle6 {
             border-radius: 50%;
-            background-color: #b6b6b6;
+            background-color: @color_link;
             position: absolute;
             width: 20px;
             height: 20px;
@@ -3381,7 +3290,7 @@
       background-color: @color_bg;
       padding: 20px 10px;
       h4 {
-        font-size: 18px;
+        font-size: @font_size_standard + 2px;
         font-weight: 600;
         text-transform: uppercase;
       }
@@ -3524,7 +3433,7 @@
     .photo {
       padding: 20px 10px 65px;
       h4 {
-        font-size: 18px;
+        font-size: @font_size_standard + 2px;
         font-weight: 600;
         text-transform: uppercase;
       }
@@ -3589,11 +3498,6 @@
           align-items: center;
           position: relative;
         }
-        .leftPhoto:hover {
-          .fa-search {
-            display: block;
-          }
-        }
         .middlePhoto {
           height: 100%;
           width: 48%;
@@ -3612,22 +3516,6 @@
               justify-content: center;
               align-items: center;
               position: relative;
-              .zoom {
-                position: absolute;
-                text-decoration: none;
-                padding: 20px;
-                .fa-search {
-                  color: #99868c;
-                  transform: rotate(90deg);
-                  display: none;
-                  opacity: 0.8;
-                }
-              }
-            }
-            .topLeftPhoto:hover, .bottomLeftPhoto:hover {
-              .fa-search {
-                display: block;
-              }
             }
             .topRightPhoto, .bottomRightPhoto {
               height: 100%;
@@ -3636,22 +3524,6 @@
               justify-content: center;
               align-items: center;
               position: relative;
-              .zoom {
-                position: absolute;
-                text-decoration: none;
-                padding: 20px;
-                .fa-search {
-                  color: #99868c;
-                  transform: rotate(90deg);
-                  display: none;
-                  opacity: 0.8;
-                }
-              }
-            }
-            .topRightPhoto:hover, .bottomRightPhoto:hover {
-              .fa-search {
-                display: block;
-              }
             }
           }
         }
@@ -3662,22 +3534,6 @@
           justify-content: center;
           align-items: center;
           position: relative;
-          .zoom {
-            position: absolute;
-            text-decoration: none;
-            padding: 20px;
-            .fa-search {
-              color: #99868c;
-              transform: rotate(90deg);
-              display: none;
-              opacity: 0.8;
-            }
-          }
-        }
-        .rightPhoto:hover {
-          .fa-search {
-            display: block;
-          }
         }
       }
     }
@@ -3689,15 +3545,15 @@
       position: relative;
       padding-top: 57px;
       .logoLocation {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
         border-radius: 10px;
-        background-color: @color_link;
+        background-color: @color_grey;
         transform: rotate(45deg);
         display: flex;
         justify-content: center;
         align-items: center;
-        left: 40%;
+        left: 37%;
         position: absolute;
         top: -30px;
         .fa-map-marker {
@@ -3715,7 +3571,7 @@
         h4 {
           text-align: center;
           text-transform: uppercase;
-          font-size: 25px;
+          font-size: @font_size_standard + 9px;
           font-weight: 700;
           padding: 10px 0 5px;
         }
@@ -3726,23 +3582,23 @@
           input {
             margin: 5px 0;
             border-radius: 10px;
-            background-color: #eeeeee;
+            background-color: @color_form_input;
             border: none;
             padding: 8px 10px;
 
           }
           input[placeholder] {
-            font-size: 16px;
+            font-size: @font_size_standard;
           }
           textarea {
             margin: 10px 0;
             border-radius: 10px;
-            background-color: #eeeeee;
+            background-color: @color_form_input;
             border: none;
             padding: 10px 12px 40px 12px;
           }
           textarea[placeholder] {
-            font-size: 16px;
+            font-size: @font_size_standard;
           }
         }
         .button {
@@ -3760,9 +3616,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 14px;
+            font-size: @font_size_standard ;
             font-weight: 700;
-            margin: 0px 10px 10px;
+            margin: 0 10px 10px;
           }
           .send:hover {
             background-color: @color_button_hover;
@@ -3776,14 +3632,14 @@
         display: flex;
         flex-wrap: wrap;
         h5 {
-          font-size: 14px;
+          font-size: @font_size_standard - 2px;
           font-weight: 500;
         }
         a {
-          font-size: 15px;
+          font-size: @font_size_standard - 1px;
           font-weight: 500;
           text-decoration: none;
-          color: #494949;
+          color: @color_content;
         }
         .address {
           width: 90%;
@@ -3798,7 +3654,7 @@
           align-items: center;
           justify-content: flex-start;
           padding: 10px 0;
-          font-family: 'Roboto', sans-serif;
+          font-family: @font_Roboto;
         }
         .mail {
           width: 90%;
@@ -3813,7 +3669,7 @@
 
     footer {
       h4 {
-        font-size: 18px;
+        font-size: @font_size_standard + 2px;
         font-weight: 600;
         text-transform: uppercase;
       }

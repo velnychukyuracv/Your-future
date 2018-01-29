@@ -1720,6 +1720,20 @@
   /*Arrows*/
   /*dots*/
 }
+.basic article .sl .slick-track {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .basic article .sl .sl_slide {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1994,8 +2008,8 @@
           flex-direction: column;
   background-color: #fff;
   width: 430px;
-  margin-left: 30px;
-  margin-bottom: 70px;
+  margin-left: 80px;
+  margin-bottom: 50px;
   -webkit-border-radius: 10px;
           border-radius: 10px;
 }
@@ -2781,6 +2795,7 @@
     /*mission section end*/
     /*partners section start*/
     /*partners section end*/
+    /*map, form, contact section start*/
   }
   .basic .mission {
     display: -webkit-box;
@@ -2810,6 +2825,13 @@
     margin: auto 0;
     width: 80%;
     height: 80%;
+  }
+  .basic .map {
+    /*map, form, contact section end*/
+  }
+  .basic .map .logoLocation {
+    width: 100px;
+    height: 100px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -2925,7 +2947,7 @@
     margin: 0 10px;
   }
   .basic .team .teamCooperator .cooperator .cooperatorPicture {
-    border: 10px solid #babbb5;
+    border: 10px solid #66696e;
     -webkit-border-radius: 50%;
             border-radius: 50%;
     width: 75%;
@@ -2970,7 +2992,7 @@
             align-items: center;
   }
   .basic .ourWay .waySection .wayHeader .logo {
-    border: 7px solid #b6b6b6;
+    border: 7px solid #babbb5;
     -webkit-border-radius: 50%;
             border-radius: 50%;
   }
@@ -3841,12 +3863,12 @@
   }
   .basic .mission .leftMission P {
     font-size: 16px;
-    padding-right: 0;
     text-align: justify;
+    padding: 15px;
   }
   .basic .mission .leftMission .button .about {
     margin: 8px 0;
-    width: 35%;
+    width: 30%;
   }
   .basic .mission .rightMission {
     display: none;
@@ -3887,14 +3909,14 @@
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0 5px;
+    margin: 5px;
   }
   .basic .team .teamCooperator .cooperator .cooperatorPicture {
-    border: 5px solid #babbb5;
+    border: 8px solid #66696e;
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    width: 45%;
-    height: 60%;
+    width: 75%;
+    height: auto;
   }
   .basic .team .teamCooperator .cooperator h5 {
     padding: 15px 0 10px;
@@ -3935,7 +3957,7 @@
             align-items: center;
   }
   .basic .ourWay .waySection .wayHeader .logo {
-    border: 7px solid #b6b6b6;
+    border: 7px solid #babbb5;
     -webkit-border-radius: 50%;
             border-radius: 50%;
   }
@@ -3947,8 +3969,8 @@
   }
   .basic .ourWay .waySection .mainWay .leftWayMain {
     width: 50%;
-    height: 50%;
-    border-right: 4px solid #b6b6b6;
+    height: 40%;
+    border-right: 4px solid #babbb5;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3966,9 +3988,9 @@
   }
   .basic .ourWay .waySection .mainWay .leftWayMain .pentagon {
     width: 80%;
-    height: 60px;
+    height: 80px;
     position: relative;
-    background: #f1f1f1;
+    background: #ececec;
     margin-right: 60px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -3983,18 +4005,18 @@
   .basic .ourWay .waySection .mainWay .leftWayMain .pentagon:before {
     content: "";
     position: absolute;
-    right: -29px;
+    right: -40px;
     bottom: 0;
     width: 0;
     height: 0;
-    border-left: 30px solid #f1f1f1;
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
+    border-left: 40px solid #ececec;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
   }
   .basic .ourWay .waySection .mainWay .leftWayMain .circle1 {
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #b6b6b6;
+    background-color: #babbb5;
     position: absolute;
     width: 28px;
     height: 28px;
@@ -4002,12 +4024,12 @@
     top: 48px;
   }
   .basic .ourWay .waySection .mainWay .leftWayMain .way1 {
-    margin-top: 33px;
+    margin-top: 25px;
   }
   .basic .ourWay .waySection .mainWay .leftWayMain .circle3 {
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #b6b6b6;
+    background-color: #babbb5;
     position: absolute;
     width: 28px;
     height: 28px;
@@ -4015,13 +4037,13 @@
     top: 278px;
   }
   .basic .ourWay .waySection .mainWay .leftWayMain .way3 {
-    margin-top: 170px;
-    margin-bottom: 170px;
+    margin-top: 150px;
+    margin-bottom: 150px;
   }
   .basic .ourWay .waySection .mainWay .leftWayMain .circle5 {
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #b6b6b6;
+    background-color: #babbb5;
     position: absolute;
     width: 28px;
     height: 28px;
@@ -4029,12 +4051,12 @@
     top: 508px;
   }
   .basic .ourWay .waySection .mainWay .leftWayMain .way5 {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
   .basic .ourWay .waySection .mainWay .rightWayMain {
     width: 50%;
     height: 50%;
-    border-left: 4px solid #b6b6b6;
+    border-left: 4px solid #babbb5;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -4052,9 +4074,9 @@
   }
   .basic .ourWay .waySection .mainWay .rightWayMain .pentagon {
     width: 80%;
-    height: 60px;
+    height: 80px;
     position: relative;
-    background: #f1f1f1;
+    background: #ececec;
     margin-left: 60px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -4070,21 +4092,21 @@
   .basic .ourWay .waySection .mainWay .rightWayMain .pentagon:before {
     content: "";
     position: absolute;
-    left: -29px;
+    left: -40px;
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg);
     bottom: 0;
     width: 0;
     height: 0;
-    border-left: 30px solid #f1f1f1;
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
+    border-left: 40px solid #ececec;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
   }
   .basic .ourWay .waySection .mainWay .rightWayMain .circle2 {
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #b6b6b6;
+    background-color: #babbb5;
     position: absolute;
     width: 28px;
     height: 28px;
@@ -4092,12 +4114,12 @@
     top: 165px;
   }
   .basic .ourWay .waySection .mainWay .rightWayMain .way2 {
-    margin-top: 150px;
+    margin-top: 140px;
   }
   .basic .ourWay .waySection .mainWay .rightWayMain .circle4 {
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #b6b6b6;
+    background-color: #babbb5;
     position: absolute;
     width: 28px;
     height: 28px;
@@ -4105,13 +4127,13 @@
     top: 392px;
   }
   .basic .ourWay .waySection .mainWay .rightWayMain .way4 {
-    margin-top: 170px;
+    margin-top: 145px;
     margin-bottom: 190px;
   }
   .basic .ourWay .waySection .mainWay .rightWayMain .circle6 {
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #b6b6b6;
+    background-color: #babbb5;
     position: absolute;
     width: 28px;
     height: 28px;
@@ -4121,7 +4143,7 @@
   .basic .ourWay .waySection .mainWay .rightWayMain .way6 {
     margin-bottom: 0;
     position: absolute;
-    top: 610px;
+    top: 600px;
   }
   .basic article {
     background-color: #ececec;
@@ -4348,9 +4370,6 @@
             align-items: center;
     position: relative;
   }
-  .basic .photo .photoSection .leftPhoto:hover .fa-search {
-    display: block;
-  }
   .basic .photo .photoSection .middlePhoto {
     height: 100%;
     width: 48%;
@@ -4401,31 +4420,6 @@
             align-items: center;
     position: relative;
   }
-  .basic .photo .photoSection .middlePhoto .topPhoto .topLeftPhoto .zoom,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .topLeftPhoto .zoom,
-  .basic .photo .photoSection .middlePhoto .topPhoto .bottomLeftPhoto .zoom,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .bottomLeftPhoto .zoom {
-    position: absolute;
-    text-decoration: none;
-    padding: 20px;
-  }
-  .basic .photo .photoSection .middlePhoto .topPhoto .topLeftPhoto .zoom .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .topLeftPhoto .zoom .fa-search,
-  .basic .photo .photoSection .middlePhoto .topPhoto .bottomLeftPhoto .zoom .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .bottomLeftPhoto .zoom .fa-search {
-    color: #99868c;
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-    display: none;
-    opacity: 0.8;
-  }
-  .basic .photo .photoSection .middlePhoto .topPhoto .topLeftPhoto:hover .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .topLeftPhoto:hover .fa-search,
-  .basic .photo .photoSection .middlePhoto .topPhoto .bottomLeftPhoto:hover .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .bottomLeftPhoto:hover .fa-search {
-    display: block;
-  }
   .basic .photo .photoSection .middlePhoto .topPhoto .topRightPhoto,
   .basic .photo .photoSection .middlePhoto .bottomPhoto .topRightPhoto,
   .basic .photo .photoSection .middlePhoto .topPhoto .bottomRightPhoto,
@@ -4446,31 +4440,6 @@
             align-items: center;
     position: relative;
   }
-  .basic .photo .photoSection .middlePhoto .topPhoto .topRightPhoto .zoom,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .topRightPhoto .zoom,
-  .basic .photo .photoSection .middlePhoto .topPhoto .bottomRightPhoto .zoom,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .bottomRightPhoto .zoom {
-    position: absolute;
-    text-decoration: none;
-    padding: 20px;
-  }
-  .basic .photo .photoSection .middlePhoto .topPhoto .topRightPhoto .zoom .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .topRightPhoto .zoom .fa-search,
-  .basic .photo .photoSection .middlePhoto .topPhoto .bottomRightPhoto .zoom .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .bottomRightPhoto .zoom .fa-search {
-    color: #99868c;
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-    display: none;
-    opacity: 0.8;
-  }
-  .basic .photo .photoSection .middlePhoto .topPhoto .topRightPhoto:hover .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .topRightPhoto:hover .fa-search,
-  .basic .photo .photoSection .middlePhoto .topPhoto .bottomRightPhoto:hover .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .bottomRightPhoto:hover .fa-search {
-    display: block;
-  }
   .basic .photo .photoSection .rightPhoto {
     height: 100%;
     width: 25%;
@@ -4488,33 +4457,17 @@
             align-items: center;
     position: relative;
   }
-  .basic .photo .photoSection .rightPhoto .zoom {
-    position: absolute;
-    text-decoration: none;
-    padding: 20px;
-  }
-  .basic .photo .photoSection .rightPhoto .zoom .fa-search {
-    color: #99868c;
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-    display: none;
-    opacity: 0.8;
-  }
-  .basic .photo .photoSection .rightPhoto:hover .fa-search {
-    display: block;
-  }
   .basic .map {
     background-image: url("../img/map.jpg");
     position: relative;
     padding-top: 57px;
   }
   .basic .map .logoLocation {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     -webkit-border-radius: 20px;
             border-radius: 20px;
-    background-color: #babbb5;
+    background-color: #66696e;
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
@@ -4595,7 +4548,7 @@
     padding: 12px 12px 45px 12px;
   }
   .basic .map form .input_form textarea[placeholder] {
-    font-size: 20px;
+    font-size: 16px;
   }
   .basic .map form .button {
     display: -webkit-box;
@@ -4897,7 +4850,7 @@
     margin: 10px 0 30px;
   }
   .basic .mission .leftMission P {
-    font-size: 14px;
+    font-size: 15px;
     padding-right: 0;
     text-align: justify;
   }
@@ -4950,14 +4903,13 @@
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0 5px;
+    margin: 5px;
   }
   .basic .team .teamCooperator .cooperator .cooperatorPicture {
-    border: 5px solid #babbb5;
+    border: 5px solid #66696e;
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    width: 45%;
-    height: 60%;
+    width: 55%;
   }
   .basic .team .teamCooperator .cooperator h5 {
     padding: 15px 0 10px;
@@ -4967,6 +4919,7 @@
   }
   .basic .team .teamCooperator .cooperator h6 {
     text-align: center;
+    font-size: 15px;
   }
   .basic .ourWay {
     padding: 30px 15px 60px;
@@ -5002,12 +4955,12 @@
             align-items: center;
   }
   .basic .ourWay .waySectionMobile .wayHeaderMobile .logo {
-    border: 5px solid #b6b6b6;
+    border: 5px solid #babbb5;
     -webkit-border-radius: 50%;
             border-radius: 50%;
   }
   .basic .ourWay .waySectionMobile .mainWayMobile {
-    border-right: 8px solid #b6b6b6;
+    border-right: 8px solid #babbb5;
     width: 90%;
     padding: 10px 0 40px;
     position: relative;
@@ -5016,7 +4969,7 @@
     width: 90%;
     height: 60px;
     position: relative;
-    background: #f1f1f1;
+    background: #ececec;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -5035,7 +4988,7 @@
     bottom: 0;
     width: 0;
     height: 0;
-    border-left: 30px solid #f1f1f1;
+    border-left: 30px solid #ececec;
     border-top: 30px solid transparent;
     border-bottom: 30px solid transparent;
   }
@@ -5045,61 +4998,61 @@
   .basic .ourWay .waySectionMobile .mainWayMobile .circle1 {
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #b6b6b6;
+    background-color: #babbb5;
     position: absolute;
     width: 20px;
     height: 20px;
-    right: -13px;
+    right: -14px;
     top: 40px;
   }
   .basic .ourWay .waySectionMobile .mainWayMobile .circle2 {
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #b6b6b6;
+    background-color: #babbb5;
     position: absolute;
     width: 20px;
     height: 20px;
-    right: -13px;
+    right: -14px;
     top: 110px;
   }
   .basic .ourWay .waySectionMobile .mainWayMobile .circle3 {
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #b6b6b6;
+    background-color: #babbb5;
     position: absolute;
     width: 20px;
     height: 20px;
-    right: -13px;
+    right: -14px;
     top: 180px;
   }
   .basic .ourWay .waySectionMobile .mainWayMobile .circle4 {
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #b6b6b6;
+    background-color: #babbb5;
     position: absolute;
     width: 20px;
     height: 20px;
-    right: -13px;
+    right: -14px;
     top: 250px;
   }
   .basic .ourWay .waySectionMobile .mainWayMobile .circle5 {
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #b6b6b6;
+    background-color: #babbb5;
     position: absolute;
     width: 20px;
     height: 20px;
-    right: -13px;
+    right: -14px;
     top: 320px;
   }
   .basic .ourWay .waySectionMobile .mainWayMobile .circle6 {
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #b6b6b6;
+    background-color: #babbb5;
     position: absolute;
     width: 20px;
     height: 20px;
-    right: -13px;
+    right: -14px;
     top: 400px;
   }
   .basic .ourWay .waySection {
@@ -5330,9 +5283,6 @@
             align-items: center;
     position: relative;
   }
-  .basic .photo .photoSection .leftPhoto:hover .fa-search {
-    display: block;
-  }
   .basic .photo .photoSection .middlePhoto {
     height: 100%;
     width: 48%;
@@ -5383,31 +5333,6 @@
             align-items: center;
     position: relative;
   }
-  .basic .photo .photoSection .middlePhoto .topPhoto .topLeftPhoto .zoom,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .topLeftPhoto .zoom,
-  .basic .photo .photoSection .middlePhoto .topPhoto .bottomLeftPhoto .zoom,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .bottomLeftPhoto .zoom {
-    position: absolute;
-    text-decoration: none;
-    padding: 20px;
-  }
-  .basic .photo .photoSection .middlePhoto .topPhoto .topLeftPhoto .zoom .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .topLeftPhoto .zoom .fa-search,
-  .basic .photo .photoSection .middlePhoto .topPhoto .bottomLeftPhoto .zoom .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .bottomLeftPhoto .zoom .fa-search {
-    color: #99868c;
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-    display: none;
-    opacity: 0.8;
-  }
-  .basic .photo .photoSection .middlePhoto .topPhoto .topLeftPhoto:hover .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .topLeftPhoto:hover .fa-search,
-  .basic .photo .photoSection .middlePhoto .topPhoto .bottomLeftPhoto:hover .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .bottomLeftPhoto:hover .fa-search {
-    display: block;
-  }
   .basic .photo .photoSection .middlePhoto .topPhoto .topRightPhoto,
   .basic .photo .photoSection .middlePhoto .bottomPhoto .topRightPhoto,
   .basic .photo .photoSection .middlePhoto .topPhoto .bottomRightPhoto,
@@ -5428,31 +5353,6 @@
             align-items: center;
     position: relative;
   }
-  .basic .photo .photoSection .middlePhoto .topPhoto .topRightPhoto .zoom,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .topRightPhoto .zoom,
-  .basic .photo .photoSection .middlePhoto .topPhoto .bottomRightPhoto .zoom,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .bottomRightPhoto .zoom {
-    position: absolute;
-    text-decoration: none;
-    padding: 20px;
-  }
-  .basic .photo .photoSection .middlePhoto .topPhoto .topRightPhoto .zoom .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .topRightPhoto .zoom .fa-search,
-  .basic .photo .photoSection .middlePhoto .topPhoto .bottomRightPhoto .zoom .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .bottomRightPhoto .zoom .fa-search {
-    color: #99868c;
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-    display: none;
-    opacity: 0.8;
-  }
-  .basic .photo .photoSection .middlePhoto .topPhoto .topRightPhoto:hover .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .topRightPhoto:hover .fa-search,
-  .basic .photo .photoSection .middlePhoto .topPhoto .bottomRightPhoto:hover .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .bottomRightPhoto:hover .fa-search {
-    display: block;
-  }
   .basic .photo .photoSection .rightPhoto {
     height: 100%;
     width: 25%;
@@ -5470,33 +5370,17 @@
             align-items: center;
     position: relative;
   }
-  .basic .photo .photoSection .rightPhoto .zoom {
-    position: absolute;
-    text-decoration: none;
-    padding: 20px;
-  }
-  .basic .photo .photoSection .rightPhoto .zoom .fa-search {
-    color: #99868c;
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-    display: none;
-    opacity: 0.8;
-  }
-  .basic .photo .photoSection .rightPhoto:hover .fa-search {
-    display: block;
-  }
   .basic .map {
     background-image: url("../img/map.jpg");
     position: relative;
     padding-top: 57px;
   }
   .basic .map .logoLocation {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     -webkit-border-radius: 20px;
             border-radius: 20px;
-    background-color: #babbb5;
+    background-color: #66696e;
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
@@ -5512,7 +5396,7 @@
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    left: 45%;
+    left: 42%;
     position: absolute;
     top: -40px;
   }
@@ -5577,7 +5461,7 @@
     padding: 12px 12px 45px 12px;
   }
   .basic .map form .input_form textarea[placeholder] {
-    font-size: 20px;
+    font-size: 16px;
   }
   .basic .map form .button {
     display: -webkit-box;
@@ -5642,8 +5526,9 @@
             flex-wrap: wrap;
   }
   .basic .map .contact h5 {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
+    margin-left: 10px;
   }
   .basic .map .contact a {
     font-size: 16px;
@@ -5880,16 +5765,16 @@
   }
   .basic .mission .leftMission P {
     font-size: 13px;
-    padding-right: 0;
     text-align: justify;
+    padding: 3px;
   }
   .basic .mission .leftMission .button .about {
     margin: 5px 0;
-    width: 35%;
+    width: 40%;
     height: 30px;
     -webkit-border-radius: 15px;
             border-radius: 15px;
-    font-size: 14px;
+    font-size: 15px;
   }
   .basic .mission .rightMission {
     display: none;
@@ -5936,10 +5821,10 @@
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0 5px;
+    margin: 5px;
   }
   .basic .team .teamCooperator .cooperator .cooperatorPicture {
-    border: 5px solid #babbb5;
+    border: 5px solid #66696e;
     -webkit-border-radius: 50%;
             border-radius: 50%;
     width: 50%;
@@ -5953,7 +5838,7 @@
   }
   .basic .team .teamCooperator .cooperator h6 {
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
   }
   .basic .ourWay {
     padding: 20px 10px 40px;
@@ -5989,7 +5874,7 @@
             align-items: center;
   }
   .basic .ourWay .waySectionMobile .wayHeaderMobile .logo {
-    border: 5px solid #b6b6b6;
+    border: 5px solid #babbb5;
     -webkit-border-radius: 50%;
             border-radius: 50%;
   }
@@ -5997,7 +5882,7 @@
     width: 60px;
   }
   .basic .ourWay .waySectionMobile .mainWayMobile {
-    border-right: 6px solid #b6b6b6;
+    border-right: 6px solid #babbb5;
     width: 90%;
     padding: 10px 0 40px;
     position: relative;
@@ -6006,7 +5891,7 @@
     width: 85%;
     height: 60px;
     position: relative;
-    background: #f1f1f1;
+    background: #ececec;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -6028,7 +5913,7 @@
     bottom: 0;
     width: 0;
     height: 0;
-    border-left: 30px solid #f1f1f1;
+    border-left: 30px solid #ececec;
     border-top: 30px solid transparent;
     border-bottom: 30px solid transparent;
   }
@@ -6038,7 +5923,7 @@
   .basic .ourWay .waySectionMobile .mainWayMobile .circle1 {
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #b6b6b6;
+    background-color: #babbb5;
     position: absolute;
     width: 20px;
     height: 20px;
@@ -6048,7 +5933,7 @@
   .basic .ourWay .waySectionMobile .mainWayMobile .circle2 {
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #b6b6b6;
+    background-color: #babbb5;
     position: absolute;
     width: 20px;
     height: 20px;
@@ -6058,7 +5943,7 @@
   .basic .ourWay .waySectionMobile .mainWayMobile .circle3 {
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #b6b6b6;
+    background-color: #babbb5;
     position: absolute;
     width: 20px;
     height: 20px;
@@ -6068,7 +5953,7 @@
   .basic .ourWay .waySectionMobile .mainWayMobile .circle4 {
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #b6b6b6;
+    background-color: #babbb5;
     position: absolute;
     width: 20px;
     height: 20px;
@@ -6078,7 +5963,7 @@
   .basic .ourWay .waySectionMobile .mainWayMobile .circle5 {
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #b6b6b6;
+    background-color: #babbb5;
     position: absolute;
     width: 20px;
     height: 20px;
@@ -6088,7 +5973,7 @@
   .basic .ourWay .waySectionMobile .mainWayMobile .circle6 {
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #b6b6b6;
+    background-color: #babbb5;
     position: absolute;
     width: 20px;
     height: 20px;
@@ -6327,9 +6212,6 @@
             align-items: center;
     position: relative;
   }
-  .basic .photo .photoSection .leftPhoto:hover .fa-search {
-    display: block;
-  }
   .basic .photo .photoSection .middlePhoto {
     height: 100%;
     width: 48%;
@@ -6380,31 +6262,6 @@
             align-items: center;
     position: relative;
   }
-  .basic .photo .photoSection .middlePhoto .topPhoto .topLeftPhoto .zoom,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .topLeftPhoto .zoom,
-  .basic .photo .photoSection .middlePhoto .topPhoto .bottomLeftPhoto .zoom,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .bottomLeftPhoto .zoom {
-    position: absolute;
-    text-decoration: none;
-    padding: 20px;
-  }
-  .basic .photo .photoSection .middlePhoto .topPhoto .topLeftPhoto .zoom .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .topLeftPhoto .zoom .fa-search,
-  .basic .photo .photoSection .middlePhoto .topPhoto .bottomLeftPhoto .zoom .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .bottomLeftPhoto .zoom .fa-search {
-    color: #99868c;
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-    display: none;
-    opacity: 0.8;
-  }
-  .basic .photo .photoSection .middlePhoto .topPhoto .topLeftPhoto:hover .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .topLeftPhoto:hover .fa-search,
-  .basic .photo .photoSection .middlePhoto .topPhoto .bottomLeftPhoto:hover .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .bottomLeftPhoto:hover .fa-search {
-    display: block;
-  }
   .basic .photo .photoSection .middlePhoto .topPhoto .topRightPhoto,
   .basic .photo .photoSection .middlePhoto .bottomPhoto .topRightPhoto,
   .basic .photo .photoSection .middlePhoto .topPhoto .bottomRightPhoto,
@@ -6425,31 +6282,6 @@
             align-items: center;
     position: relative;
   }
-  .basic .photo .photoSection .middlePhoto .topPhoto .topRightPhoto .zoom,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .topRightPhoto .zoom,
-  .basic .photo .photoSection .middlePhoto .topPhoto .bottomRightPhoto .zoom,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .bottomRightPhoto .zoom {
-    position: absolute;
-    text-decoration: none;
-    padding: 20px;
-  }
-  .basic .photo .photoSection .middlePhoto .topPhoto .topRightPhoto .zoom .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .topRightPhoto .zoom .fa-search,
-  .basic .photo .photoSection .middlePhoto .topPhoto .bottomRightPhoto .zoom .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .bottomRightPhoto .zoom .fa-search {
-    color: #99868c;
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-    display: none;
-    opacity: 0.8;
-  }
-  .basic .photo .photoSection .middlePhoto .topPhoto .topRightPhoto:hover .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .topRightPhoto:hover .fa-search,
-  .basic .photo .photoSection .middlePhoto .topPhoto .bottomRightPhoto:hover .fa-search,
-  .basic .photo .photoSection .middlePhoto .bottomPhoto .bottomRightPhoto:hover .fa-search {
-    display: block;
-  }
   .basic .photo .photoSection .rightPhoto {
     height: 100%;
     width: 25%;
@@ -6467,33 +6299,17 @@
             align-items: center;
     position: relative;
   }
-  .basic .photo .photoSection .rightPhoto .zoom {
-    position: absolute;
-    text-decoration: none;
-    padding: 20px;
-  }
-  .basic .photo .photoSection .rightPhoto .zoom .fa-search {
-    color: #99868c;
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-    display: none;
-    opacity: 0.8;
-  }
-  .basic .photo .photoSection .rightPhoto:hover .fa-search {
-    display: block;
-  }
   .basic .map {
     background-image: url("../img/map.jpg");
     position: relative;
     padding-top: 57px;
   }
   .basic .map .logoLocation {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     -webkit-border-radius: 10px;
             border-radius: 10px;
-    background-color: #babbb5;
+    background-color: #66696e;
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
@@ -6509,7 +6325,7 @@
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    left: 40%;
+    left: 37%;
     position: absolute;
     top: -30px;
   }
@@ -6612,9 +6428,9 @@
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
-    margin: 0px 10px 10px;
+    margin: 0 10px 10px;
   }
   .basic .map form .button .send:hover {
     background-color: #fb5a87;
@@ -6671,7 +6487,7 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
     padding: 10px 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
   }
   .basic .map .contact .mail {
     width: 90%;

@@ -1,16 +1,16 @@
 var gulp         = require('gulp'), // Подключаем Gulp
     less         = require('gulp-less'), //Подключаем Less пакет,
     browserSync  = require('browser-sync'), // Подключаем Browser Sync
-    concat       = require('gulp-concat'); // Подключаем gulp-concat (для конкатенации файлов)
+    concat       = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
     rename       = require('gulp-rename'), // Подключаем библиотеку для переименования файлов
     cssnano      = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
-    autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
-    concatCss    = require('gulp-concat-css');// Подключаем gulp-concat-css (для конкатенации файлов css)
-    uglify       = require('gulp-uglifyjs'); // Подключаем пакет для минификации JS
-    htmlmin      = require('gulp-html-minifier');// Подключаем пакет для минификации HTML
+    autoprefixer = require('gulp-autoprefixer'),// Подключаем библиотеку для автоматического добавления префиксов
+    concatCss    = require('gulp-concat-css'),// Подключаем gulp-concat-css (для конкатенации файлов css)
+    uglify       = require('gulp-uglifyjs'), // Подключаем пакет для минификации JS
+    htmlmin      = require('gulp-html-minifier'),// Подключаем пакет для минификации HTML
     imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
     pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
-    del          = require('del'), // Подключаем библиотеку для удаления файлов и папок
+    del          = require('del'); // Подключаем библиотеку для удаления файлов и папок
 
 
 //  таск Less+префиксы
@@ -54,7 +54,7 @@ gulp.task('minify', function() {
 //таск для минификации Scripts
 gulp.task('scripts', function() {
     return gulp.src(['app/js/*.js'])// Берем js
-
+        .pipe(concat ('js.js'))//Объединить все css
         .pipe(uglify()) // Сжимаем JS файл
         .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
         .pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
@@ -91,11 +91,9 @@ gulp.task('clean', function() {
 gulp.task('build', ['clean', 'img', 'css-libs','scripts','minify'], function() {
 
     var buildCss = gulp.src(['app/css/*.min.css']) // Переносим библиотеки css в продакшен
-        .pipe(rename('*.css'))
         .pipe(gulp.dest('dist/css'))
 
     var buildJs = gulp.src(['app/js/*.min.js']) // Переносим скрипты в продакшен
-        .pipe(rename('*.js'))
         .pipe(gulp.dest('dist/js'))
 
     var buildHtml = gulp.src(['app/*.min.html'])// Переносим библиотеки html в продакшен
