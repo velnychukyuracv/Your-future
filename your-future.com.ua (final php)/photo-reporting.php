@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -45,40 +45,14 @@
         </div>
     </div>
 
-    <!-- album 2 -->
-    <div class='link_album'>
-        <img src="img/portfolio1.jpg" alt="image">
-        <div class="link_album_container">
-            <h4>Альбом</h4>
-            <a href="#popup">Переглянути</a>
-        </div>
-    </div>
-
-    <!-- popups to album 2-->
-    <!-- Inside coup -->
-    <div id="popup" class="overlay">
-        <div class="popup">
-            <a class="close" href="#">&times;</a>
-            <!--wrapper to slider-->
-            <div class='content'>
-                <!-- Slider -->
-                <div class="sl-main">
-                    <div class="sl_slide">
-                        <img class="img-responsive thanksgiving" src="img/portfolio1.jpg" alt="фото">
-                    </div>
-                    <div class="sl_slide">
-                        <img class="img-responsive thanksgiving" src="img/portfolio2.jpg" alt="фото">
-                    </div>
-                    <div class="sl_slide">
-                        <img class="img-responsive thanksgiving" src="img/portfolio3.jpg" alt="фото">
-                    </div>
-                    <div class="sl_slide">
-                        <img class="img-responsive thanksgiving" src="img/portfolio4.jpg" alt="фото">
-                    </div>
-                </div>
+    <!-- album 1 -->
+        <div class='link_album'>
+            <img src="img/portfolio1.jpg" alt="image">
+            <div class="link_album_container">
+                <h4>Альбом</h4>
+                <a href="photo-reporting-album-1.php">Переглянути</a>
             </div>
         </div>
-    </div>
 
 </main>
 <!--Main section end-->
